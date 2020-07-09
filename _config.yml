@@ -1,0 +1,17 @@
+plugins: [jekyll-paginate]
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'Andrew Wilkinson'
+tagline:          'Meaningless Musings'
+description:      "I'm an Engineering Manager at <a href='https://www.ocadotechnology.com/'>Ocado Technology</a> and these are my thoughts on work, technology, music and anything else that piques my interest."
+url:              http://www.theandrewwilkinson.com
+baseurl:          /
+
+author:
+  name:           'Andrew Wilkinson'
+  url:            https://twitter.com/andrewjw
+
+paginate:         5

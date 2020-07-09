@@ -1,0 +1,18 @@
+@media (max-width: 48em) {
+   .mobile-hide {
+       display: none;
+   }
+}
+
+div.footer {
+    color: grey;
+    font-size: 0.9em;
+}
+
+div.footer p {
+    margin-top: 1em;
+}
+
+div.footer .nowrap {
+    white-space: nowrap;
+}

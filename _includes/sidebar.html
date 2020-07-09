@@ -1,0 +1,35 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          Andrew <span style="font-size: 0.9em;">Wilkinson</span>
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="mobile-hide">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      </div>
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="mobile-hide">
+      <a class="sidebar-nav-item" href="https://github.com/andrewjw">GitHub</a>
+      <a class="sidebar-nav-item" href="https://twitter.com/andrew_j_w">Twitter</a>
+      <a class="sidebar-nav-item" href="https://www.flickr.com/photos/andrew_j_w/">Flickr</a>
+      <a class="sidebar-nav-item" href="https://www.linkedin.com/in/andrewjwilkinson/">LinkedIn</a>
+      <a class="sidebar-nav-item" href="https://last.fm/user/andrew_j_w">Last.fm</a>
+      </div>
+    </nav>
+  </div>
+</div>
