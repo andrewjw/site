@@ -2,9 +2,7 @@
 layout: post
 title: CouchDB Performance
 date: 2008-09-19 12:17:31
-tags:
-- couchdb
-- performance
+tags: couchdb performance
 permalink: "/2008/09/19/couchdb-performance/"
 ---
 I've been toying with <a href="http://couchdb.org/">CouchDB</a> for a short while, and I'm definitely
