@@ -12,8 +12,5 @@ before_script:
  - ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
 
 script:
- - bundle exec jekyll build
- 
-after_success:
- - rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
+ - bundle exec jekyll build && rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
  
