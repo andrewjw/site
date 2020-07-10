@@ -7,7 +7,7 @@ script:
  - bundle exec jekyll build
  
 before_deploy:
- - mkdir ~/.ssh
+ - mkdir -p ~/.ssh
  - chmod go-rwx ~/.ssh
  - cat $SSH_PRIVATE_KEY | base64 -d > ~/.ssh/id_rsa
  - cat $SSH_PUBLIC_KEY | base64 -d > ~/.ssh/id_rsa.pub
