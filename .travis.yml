@@ -2,3 +2,6 @@ language: ruby
 
 before_install:
  - gem install bundler
+
+compile:
+ - bundle exec jekyll build
