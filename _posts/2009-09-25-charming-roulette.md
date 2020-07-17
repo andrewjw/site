@@ -22,8 +22,8 @@ author:
   first_name: Andrew
   last_name: Wilkinson
 permalink: /2009/09/25/charming-roulette/
-flickr_user: 'http://www.flickr.com/photos/johnwardell/'
-flickr_username: John Wardell
+flickr_user: 'https://www.flickr.com/people/johnwardell/'
+flickr_username: John Wardell (Netinho)
 flickr_image: 'https://live.staticflickr.com/43/80125882_3347a3ab46_w.jpg'
 flickr_imagelink: 'http://www.flickr.com/photos/johnwardell/80125882/'
 flickr_imagename: Roulette wheel
@@ -86,4 +86,3 @@ The final chart shows the chance of reaching $200 with a bet which doubles when 
 So, what's the outcome of all this? What ever you do, you've got a less than 50/50 chance of winning, but doubling your bet each time you lose will give a longer run before your lose your house.
 
 Charts generated with Google Charts.
-
