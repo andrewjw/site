@@ -1,0 +1,15 @@
+name: Andrew Wilkinson
+date: '2011-03-09 09:16:31'
+url: 'http://www.tvutopia.net'
+message: >-
+  All your arguments make sense, and I do keep my lines as short as possible.
+  What I don't do is keep to a hard limit of 80 columns. Sometimes I think it's
+  clearer to have a function call on one line, even though it might be 85 or 90
+  characters long. If you're hitting 80 columns because of nested ifs or for
+  loops then your code definitely needs to be refactored.
+
+
+  I think it's important to only get PyLint to alert to the more serious
+  problems with the code, otherwise you'll be overwhelmed with changes that need
+  to be made.
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

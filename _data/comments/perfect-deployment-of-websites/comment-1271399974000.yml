@@ -1,0 +1,5 @@
+name: m0n5t3r
+date: '2010-04-16 07:39:34'
+url: ''
+message: "for personal projects, I have something like\r\n$ fab push:syncdb=1,pip=1\r\n\r\nwhich does bzr push to the remote host, bzr update over there, etc (syncdb --migrate and pip being optional)\r\n\r\nfor initial deployment I do\r\n$ fab setup\r\n\r\n... which kinda feels like working through the exhaust to change the oil :D"
+email: 7cf8fc060fab11ebe536161d47714611

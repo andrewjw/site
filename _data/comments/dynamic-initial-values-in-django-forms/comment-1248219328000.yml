@@ -1,0 +1,5 @@
+name: Tomasz
+date: '2009-07-22 00:35:28'
+url: 'http://pyconsultant.eu'
+message: "Why not just:\r\n\r\nf = MyForm(initial={'date_from': (date.today() - timedelta(days=7))}"
+email: a97589645d0606dc4aefc4c40301c429

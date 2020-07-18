@@ -1,0 +1,7 @@
+name: Harro
+date: '2011-01-14 12:55:18'
+url: ''
+message: >-
+  Fuse sucks.. we had been using s3fs for 3 days now and twice we had to remount
+  to fix : [Errno 107] Transport endpoint is not connected errors.
+email: 0fd673e16e0d039061fd66ef72bbdfc2

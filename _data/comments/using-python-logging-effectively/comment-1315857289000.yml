@@ -1,0 +1,5 @@
+name: Mario Steinhoff
+date: '2011-09-12 20:54:49'
+url: ''
+message: "logging.error(\"Error retrieving %s\", url)\r\n[...] so that line equivalent to this one.\r\nlogging.error(\"Error retrieving %s\" % (url, ))\r\n\r\nNot exactly and the wrong usage can lead to serious performance problems.\r\n\r\nIn the first statement, the log message and parameters are pushed on the stack, then the public log method is called. This method first checks if the desired log level is actually enabled before creating a LogRecord for further processing. When the log level is enabled, the LogRecord is passed to the configured log handlers (e.g. StreamHandler). The actual string formatting is done at each handlers emit() method.\r\n\r\nWith the second statement, string formatting is done first. The formatted string will then be passed to the logger and thrown away if the desired log level is disabled, effectively wasting computing resources."
+email: 2acb82b04ed99506c16f5065324bd28e

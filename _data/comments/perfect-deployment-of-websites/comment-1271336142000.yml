@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2010-04-15 13:55:42'
+url: 'http://www.tvutopia.net'
+message: "I agree with Joel on this point - a single line deployment process definitely indicates that an appropriate amount of time has been spent on tools and processes, rather than just getting the code written.\r\n\r\nFor a website written in a scripting language a single line deployment process shouldn't be too hard. If something requires building or packaging then it's harder, but still far from impossible."
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

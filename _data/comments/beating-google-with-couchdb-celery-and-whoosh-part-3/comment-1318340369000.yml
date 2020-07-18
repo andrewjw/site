@@ -1,0 +1,5 @@
+name: Rafael Durán Castañeda
+date: '2011-10-11 14:39:29'
+url: 'http://www.facebook.com/RafaDuranCastaneda'
+message: "Hi,\r\n\r\nThanks for your answer, but don worry I've got it working. Kombu (celery amqp framework) has a bug, so credentials wasn't used. I've fixed it and sent a pull request on GitHub, so this will be fixed on new Kombu versions, in the meantime I'm using my own patched version.\r\n\r\nBye"
+email: 9e5aa24b6dc92f05f2cbfd0ab079ae36

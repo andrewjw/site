@@ -1,0 +1,11 @@
+name: Andrew Wilkinson
+date: '2011-10-05 09:08:44'
+url: 'http://www.tvutopia.net'
+message: >-
+  You're completely right, but I think that if I were serious about "beating
+  Google" then even SOLR wouldn't cut it! SOLR's a great piece of tech, but it's
+  not as simple as Whoosh to get up and running. For a few shortish blog posts I
+  didn't want to have to spend ages describing how to configure SOLR, with
+  Whoosh it's a few lines of code and you're away. Whoosh also has the advantage
+  of being pure-Python, so it fits with Django and Celery.
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

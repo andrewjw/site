@@ -1,0 +1,35 @@
+name: Cédric Beuzit
+date: '2013-05-14 00:21:04'
+url: 'http://www.cblab.net'
+message: >-
+  Hi,
+
+
+  This post is pretty old now, so maybe at that time, what I will say here was
+  not correct, but as of now, as soon as you set a stemmed field up, and specify
+  the right schema to the QueryParser, you do not need to set the termclass to
+  whoosh.query.Variations. 
+
+
+  In fact, if you use Variations of the user's query, you most likely wouldn't
+  use stemming at indexing time. It's either using stemming at indexing-time,
+  either using the morphological variations of the query at querying-time.
+
+
+  The results are the same, just, using variations is more computing-power
+  consuming at querying time since your python application needs to compare
+  every querying term variation to the terms in the indexed field.
+
+
+  In addition, in the case you want to use the Variations termclass of the terms
+  in the user's query instead of stemming the fields while indexing, you would
+  need to import the Variations class from whoosh.query before using it, like
+  this: `from whoosh.query import Variations` ;)
+
+
+  Anyway, thanks for this post, it helped me a lot while investigating in the
+  good direction now that I'm discovering Whoosh.
+
+
+  Cheers
+email: b1c26b4ceb9d7e26a5c47296fe92ea2b

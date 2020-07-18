@@ -1,0 +1,14 @@
+name: Andrew Wilkinson
+date: '2011-08-03 13:37:28'
+url: 'http://www.tvutopia.net'
+message: >-
+  Hi Peter,
+
+
+  The rsync doesn't know it's copying the file remotely, it thinks it's doing a
+  local rsync. You need to limit the bandwidth of the fuse filesystem as that is
+  what is actually transferring the data over the network.
+
+
+  Andrew
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

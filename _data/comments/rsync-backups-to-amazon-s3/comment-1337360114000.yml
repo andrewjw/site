@@ -1,0 +1,17 @@
+name: Alister
+date: '2012-05-18 17:55:14'
+url: ''
+message: >-
+  Hi Andrew,
+
+
+  Going back to what we were talking about the other day, s3fs doesn't currently
+  support server-side encryption out-of-the-box, but someone has created a patch
+  for it which enables it with a command-line option:
+
+
+  http://code.google.com/p/s3fs/issues/detail?id=226
+
+
+  From the comments it doesn't appear to work with RRS at the moment.
+email: 676322ae9654b8facb6df3859efec971

@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2011-01-25 13:14:15'
+url: 'http://www.tvutopia.net'
+message: "Hi,\r\n\r\nOn my todo list is to make it possible to use PySide rather than PyQt, which I think is a drop-in replacement. PySide is available in PyPI so hopefully that'll help.\r\n\r\nIn my projects I set the PYTHONPATH inside manage.py so I don't need to remember to activate the virtualenv just to run it. This will work with DjangoDE at the moment. I do intend to make it possible to specify a script that should be run before running the server, hopefully that'll make it into the next version.\r\n\r\nAndrew"
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

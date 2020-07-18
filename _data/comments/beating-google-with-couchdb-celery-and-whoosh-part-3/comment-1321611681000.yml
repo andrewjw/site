@@ -1,0 +1,5 @@
+name: Thomas Bikeev (@thomas_bikeev)
+date: '2011-11-18 10:21:21'
+url: 'http://twitter.com/thomas_bikeev'
+message: "Hi Andrew,\r\n\r\nI think there is a small mistake in robotstxt.is_allowed call, it should take an argument being a full url and not parse.netloc\r\n\r\nCheers, Thomas"
+email: c508dae6d7705401cdd1b554b9a68753

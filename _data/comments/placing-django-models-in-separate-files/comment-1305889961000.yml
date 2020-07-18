@@ -1,0 +1,9 @@
+name: Vimukthi
+date: '2011-05-20 12:12:41'
+url: ''
+message: >-
+  Thanks for this post. I spent hours trying to figure out how to do this. But
+  in addition to this I had to import these models in the '__init__.py' placed
+  in the models directory. I don't if this is due to some recent change in
+  Django. Any comments?
+email: 0f3648552f79fe9101d1315884e1d8a5

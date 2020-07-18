@@ -1,0 +1,5 @@
+name: ziv
+date: '2011-06-25 15:54:10'
+url: ''
+message: "Hi,\r\n\r\nIt didn't work for me well. The backup time was very long, It alway re upload the modify files all over again.\r\nBetter way is to use your own Rsync server in Amazon. I end up using s3rsymc.com. Modified file are partly upload the my backup is much faster.\r\n\r\nziv"
+email: 62da3683293eae16280eeb1e58c04045

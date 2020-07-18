@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2014-03-08 14:14:39'
+url: 'http://andrewwilkinson.wordpress.com'
+message: "Hi,\r\n\r\nI've just committed a fix so if you git pull you should be good to go. Fitbit have started redirecting users to an https site, which broke the script.\r\n\r\nAndrew"
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

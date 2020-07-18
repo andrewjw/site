@@ -1,0 +1,5 @@
+name: Peter Risdon
+date: '2011-08-03 15:14:49'
+url: 'http://www.peterrisdon.com/blog'
+message: "I didn't realise the --bwlimit only worked on remote filesystems. There's nothing in the manpage to that effect.\r\n\r\nBTW s3cmd is a good tool that's quite like rsync when used with --synch"
+email: 17d0584d110c70075359c9cefd88f817

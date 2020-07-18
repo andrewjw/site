@@ -1,0 +1,8 @@
+name: Chris Webstar
+date: '2010-06-19 17:36:58'
+url: 'http://github.com/chriswebstar'
+message: >-
+  Stuff started with `stuff &amp;` runs in the background but is still attached
+  to your session. When you terminate your session (eg, logout), it will
+  terminate any background processes.
+email: 24db25a514cca237098febc931d0bf09

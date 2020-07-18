@@ -1,0 +1,22 @@
+name: Heine
+date: '2013-04-22 20:15:38'
+url: ''
+message: >-
+  I had the Problem that running it as described above yielded the following
+  error: 
+
+
+  Traceback (most recent call last):
+    File "examples/dump.py", line 14, in 
+      import fitbit
+  ImportError: No module named fitbit
+
+
+  I moved the dump.py from the example folder to the parent folder, so it lies
+  beside the fitbit folder.
+
+  I now run: python dump.py   
+
+
+  works. Python is 2.7 on OS X (from macports)
+email: 5dd11f77e3465bc847d94f53915d989b

@@ -1,0 +1,19 @@
+name: Andrew Wilkinson
+date: '2011-10-17 14:13:15'
+url: 'http://www.tvutopia.net'
+message: >-
+  Hi,
+
+
+  I don't think storing the md5 of the url will be much help. If the url is
+  different then the md5 would be different too. In my code if a url issues a
+  301/302 redirect then you'll get one document under the url which redirects
+  and one for the url it redirects to. I think the best solution is to check
+  what url the page was actually loaded from and only store the document under
+  that.
+
+
+  Hope that helps,
+
+  Andrew
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

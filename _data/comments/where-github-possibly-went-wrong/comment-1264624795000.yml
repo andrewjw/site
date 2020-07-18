@@ -1,0 +1,5 @@
+name: Augie Fackler
+date: '2010-01-27 20:39:55'
+url: ''
+message: "Actually, Google Code does offer support for non-project members to publish changes using Mercurial:\r\nhttp://googlecode.blogspot.com/2009/10/mercurial-server-side-clone-support-for.html\r\n\r\nThat lets any other user make their own server-side clone and push their own changes up to the server."
+email: 2cc58624569a92f3fa0fb7f32aab56ee

@@ -1,0 +1,5 @@
+name: Victor Hooi
+date: '2011-01-25 00:02:58'
+url: ''
+message: "Hi,\r\n\r\nThis is very AWESOME! =).\r\n\r\nJust thought I'd wish you good luck as well.\r\n\r\nThe only thing is it requires PyQT and SIP, and that isn't available under pip. And all my Django development occurs with virtualenv/pip - so it's a bit of a pain having to manually copy over site-packages directories over to get it working.\r\n\r\nCan you think of any way around that?\r\n\r\nCheers,\r\nVictor"
+email: 7c0fa8fb73fe4c951ea79b476007c77d

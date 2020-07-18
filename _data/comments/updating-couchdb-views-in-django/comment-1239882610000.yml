@@ -1,0 +1,8 @@
+name: Introducing CouchQL &laquo; Andrew Wilkinson
+date: '2009-04-16 12:50:10'
+url: 'http://andrewwilkinson.wordpress.com/2009/04/16/introducing-couchql/'
+message: >-
+  [...] that I have created are extremely simple and could easily be represented
+  using SQL. Although I wrote some code to help make life easier, creating a
+  view such as that below is never going to be as simple as [...]
+email: d41d8cd98f00b204e9800998ecf8427e

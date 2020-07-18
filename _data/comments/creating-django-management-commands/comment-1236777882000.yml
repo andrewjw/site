@@ -1,0 +1,9 @@
+name: Updating CouchDB Views In Django &laquo; Andrew Wilkinson
+date: '2009-03-11 13:24:42'
+url: >-
+  http://andrewwilkinson.wordpress.com/2009/03/11/updating-couchdb-views-in-django/
+message: >-
+  [...] to keep them in your version control system. In this article I&#8217;ll
+  show you how you can use a django management command to update your views from
+  files in your code [...]
+email: d41d8cd98f00b204e9800998ecf8427e

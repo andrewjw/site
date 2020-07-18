@@ -1,0 +1,5 @@
+name: Victor Hooi
+date: '2011-01-25 12:26:27'
+url: ''
+message: "Andrew,\r\n\r\nThanks for the reply =).\r\n\r\nAs Douglas noted, I did want to test it out inside a virtualenv, rather than installing everything to my main environment.\r\n\r\nMy issue is that my various Django projects have their own dependencies. If I work on that project from within DjangoDE, how will the in-built server (when we're able to run that from DjangoDE) know which virtualenv to use? Or will every Django project we're using need to have all it's dependencies installed in the global?\r\n\r\nCheers,\r\nVictor"
+email: 7c0fa8fb73fe4c951ea79b476007c77d

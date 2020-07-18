@@ -1,0 +1,9 @@
+name: Thomas Bikeev (@thomas_bikeev)
+date: '2011-10-18 13:38:10'
+url: 'http://twitter.com/thomas_bikeev'
+message: >-
+  Thanks Andrew, you are absolutely right about redirects. In my case they did
+  not matter to much and I have ended up storing hashlib.sha224(url).hexdigest()
+  as id - that would spare me one view and make look-ups slightly more direct.
+  Many thanks for the great walk-through! Thomas
+email: c508dae6d7705401cdd1b554b9a68753

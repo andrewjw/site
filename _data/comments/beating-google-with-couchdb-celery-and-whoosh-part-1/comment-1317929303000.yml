@@ -1,0 +1,22 @@
+name: Andrew Wilkinson
+date: '2011-10-06 20:28:23'
+url: 'http://www.tvutopia.net'
+message: >-
+  Thanks for the comment Kristian.
+
+
+  I think the title is more hyperbole than arrogance! You need a hook to get
+  people reading :-)
+
+
+  You're right, Whoosh is not as fully featured as Solr and of course even Solr
+  would not be enough to scale up to petabytes of data. The big advantage that
+  Whoosh gives you is that it is very easy to set up. Just a few lines of code
+  and you've got a full text search engine. No messing around with daemons or
+  xml configuration files. For a series of short blog posts that was the
+  deciding factor.
+
+
+  I use both Solr and Whoosh at work, depending on the context. I think they
+  both have their place.
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

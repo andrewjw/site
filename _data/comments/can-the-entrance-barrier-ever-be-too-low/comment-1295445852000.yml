@@ -1,0 +1,5 @@
+name: fgm2r
+date: '2011-01-19 14:04:12'
+url: 'http://fgm2r.wordpress.com'
+message: "While I agree that you usually need to test code first, I think that this makes small edits a lot easier (e.g. editing UI strings, fixing a typo in the comments, fixing simple stuff that you forgot last time). This feature allows you to avoid waiting for your IDE to load and typing commands to commit.\r\nAlso, most small one-developer projects love any kind of contribution, its easier to just edit a typo than to post a \"long\" message pointing out the type.\r\nI'm pretty sure that this won't be much use for editing anything algorithmic though."
+email: 9bcb19c81a6f03e8a5b78d1100c4d3c8

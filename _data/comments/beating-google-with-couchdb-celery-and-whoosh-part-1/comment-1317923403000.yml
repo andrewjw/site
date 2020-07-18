@@ -1,0 +1,5 @@
+name: Kristian Rickert (@foobardude)
+date: '2011-10-06 18:50:03'
+url: 'http://twitter.com/foobardude'
+message: "BEATING Google?  Title shows a form of arrogance.  To make that claim you need PETABYTES of data.  I know the article says otherwise off the bat, but the title is misleading.\r\n\r\nBut there's a LOT of functionality woosh is missing that you have to build that comes with solr - stemming, multi-language support, synonyms, boost queries, easy administration, and sooo much more.  I don't mean just adding UTF-8 for multi language support either.\r\n\r\nI think it's great to have something like this in place, but these days if you want real awesome textual search features using large corpuses you'd be silly not to consider solr before building a custom solution."
+email: 341224b6ad27ec57c23666643918d0e7

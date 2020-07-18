@@ -1,0 +1,5 @@
+name: Peter Bengtsson
+date: '2011-03-09 08:40:14'
+url: 'http://www.peterbe.com'
+message: "80 columns please!!\r\n\r\nPeople who don't use IDE but use hard core editors like vim, jed, emacs, etc. often have one terminal or terminal screen for the editor and one for the unit test runner or a development server running side by side.\r\n\r\nAnother very real argument for 80 characters is readability. Code is supposed to be read from top to bottom or bottom to top. Like a parser/compiler sort of. When you're then reading and sporadically have to track your attention away to the side the code becomes harder to read. \r\n\r\nA third very real argument for 80 characters is that if you allow your code to grow too much horizontally, perhaps huge control flows need to be refactored into functions or new classes."
+email: 23c6d359b6f7af3d3f91ca9e17b804b3

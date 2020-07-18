@@ -1,0 +1,7 @@
+name: wilson
+date: '2009-08-11 22:25:00'
+url: ''
+message: >-
+  Did you ever use couchdb for a &gt; 1 million dataset? I have a mere 100K
+  dataset yet the view(* a word counter) is taking FOREVER to compute.
+email: bbf363dd7ead7fc29a03afd194aa5d0b

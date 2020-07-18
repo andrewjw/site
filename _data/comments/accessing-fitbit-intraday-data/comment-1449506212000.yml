@@ -1,0 +1,5 @@
+name: Nick White
+date: '2015-12-07 16:36:52'
+url: ''
+message: "Great piece of code - does just what I want. I'm definitely not a Python developer but know enough about coding in general to get this to work. I'm running Python 3.5 on Windows and found a couple of minor issues in the client.py which I got round by making the following changes (which may or may not be the best solution):\r\nLine 9: HTTPError = urllib.error.HTTPError\r\nLine 91: return ET.fromstring(data.strip().replace(b'\"&hellip;\"', b'\"...\"'))\r\n\r\nAlso, whenever the day changes in the Sleep data there was a carriage return missing - which I couldn't resolve in the code but fixed easily enough by editing the files being produced"
+email: 8803cb53d15b760c8ba903bfd1f24d81

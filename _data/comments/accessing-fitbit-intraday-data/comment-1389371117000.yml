@@ -1,0 +1,5 @@
+name: TD
+date: '2014-01-10 16:25:17'
+url: ''
+message: "Not sure if anyone is still reading this, but there's no issue tracker open on Github....\r\n\r\nWas initially getting \"NameError: global name 'HTTPError' is not defined\" -- which may be caused by differences between Python versions of versions of urllib; adding \"from urllib2 import HTTPError\" to client.py helps.\r\n\r\nNow getting \"NameError: global name 'HTTPError' is not defined\" -- which seems to be because Fitbit is now returning the HTML ellipsis character in its results, which is not defined in XML and thus not understood by xml.etree.ElementTree....  Not sure what the fix is there.\r\n\r\nWhatever the cause, it's successfully grabbing data for the first day (ie, today), then dying.  Looks promising otherwise; thanks for keeping this alive!"
+email: 0bca6835341c4649a76f16fbca68200a

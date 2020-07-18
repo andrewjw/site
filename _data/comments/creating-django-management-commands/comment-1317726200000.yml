@@ -1,0 +1,12 @@
+name: >-
+  Beating Google With CouchDB, Celery and Whoosh (Part 3) &laquo; Andrew
+  Wilkinson
+date: '2011-10-04 12:03:20'
+url: >-
+  http://andrewwilkinson.wordpress.com/2011/10/04/beating-google-with-couchdb-celery-and-whoosh-part-3/
+message: >-
+  [...] to be kicked off by seeding it with some URLs. I&#8217;ve previously
+  posted about how to create a Django management command and they&#8217;re a
+  perfect fit here. The command takes one argument, the url, and creates a
+  Celery [...]
+email: d41d8cd98f00b204e9800998ecf8427e

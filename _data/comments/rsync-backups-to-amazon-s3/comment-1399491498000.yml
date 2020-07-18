@@ -1,0 +1,8 @@
+name: da
+date: '2014-05-07 20:38:18'
+url: 'http://gravatar.com/darrencruse'
+message: >-
+  If anybody sees my question above if it helps others I did figure it out - it
+  was simply that the "Extra Packages" repo was not enabled on this beanstalk
+  instance in /etc/yum.repos.d/epel.repo
+email: 975648b14ce5e5dc5b396251d70788b1

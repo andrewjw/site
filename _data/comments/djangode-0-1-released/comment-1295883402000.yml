@@ -1,0 +1,5 @@
+name: Brandon Taylor
+date: '2011-01-24 15:36:42'
+url: 'http://btaylordesign.com/'
+message: "Hi Andrew,\r\n\r\nI've been using Aptana + PyDev for about 3 years and have had tremendous success with it. I'm able to set a per-project Python path, and have code assist for Python, HTML, CSS, XML and JavaScript. Aptana also runs on Windows, OS X and Linux (my primary dev environment) and is quite easy to configure.\r\n\r\nI've tried Kate, TextMate, PyCharm and a few others. None have been able to match the speed and support I get in Aptana.\r\n\r\nFrom looking at your screenshot, it's nearly identical to the outline pane provided by Aptana to jump to any method, property, class or variable in my file.\r\n\r\nPyDev also provides the ability to jump to a class or method definition in another file, so for example, it's trivial to open django.contrib.auth.models.User from an import in my models.py file. Just hover over the import and PyDev will tell me exactly where it is, in addition to the definition.\r\n\r\nYou might give it a try!\r\n\r\nHappy coding"
+email: 6e7eadd377324208d6b5c0fd0a7fd545

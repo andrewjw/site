@@ -1,0 +1,7 @@
+name: kanzure
+date: '2013-09-21 18:44:35'
+url: 'http://gravatar.com/kanzure'
+message: >-
+  I think you mean "export V8_HOME=`pwd`" and not "export PyV8=`pwd`". Otherwise
+  pyv8's setup.py will run "svn clone" instead of "svn up".
+email: 2b8a1b81ef28ded70009b316a504024b

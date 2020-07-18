@@ -1,0 +1,5 @@
+name: P. F. Hawkins
+date: '2010-02-03 14:31:51'
+url: 'http://pfhawkins.com'
+message: "It's also possible to name the screen when you create it, like so:\r\n\r\nscreen -S nameofscreen\r\n\r\nThen when you want to attach to it later\r\n\r\nscreen -r nameofscreen\r\n\r\nAlso useful: multiple people can attach to the same screen with -x in place of -r."
+email: 7033d0e84d10d256a4b850461f69a10b

@@ -1,0 +1,22 @@
+name: Robert Collier
+date: '2012-08-31 18:46:35'
+url: ''
+message: >-
+  Using the -a flag will cause comparison with timestamps of the files at Source
+  and Destination - since S3FS does not support timestamp modification on the S3
+  bucket - this will cause rsync to find all the files to be different and it
+  will always recopy all the files every time. The solution is to use
+  --size-only and -r instead of -a.
+
+  rsync -v -r --size-only /path/to/sourcefolder/ /path/to/destfolder/ 
+
+  (-v is for verbose output, -r is for recursive directory copying, --size-only
+  only uses file-size to determine if files are different or not).
+
+
+  You can verify the difference yourself by doing a rsync dry-run with -n flag
+  (rsync test mode which only lists which files are going to be synced, but does
+  not actually copy any files):
+
+  rsync -n -v -r --size-only /path/to/sourcefolder/ /path/to/destfolder/
+email: 399e6b6c7a6d1ca3cbf46a6bb83d4b4b

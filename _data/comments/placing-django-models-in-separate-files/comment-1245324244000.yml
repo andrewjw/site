@@ -1,0 +1,10 @@
+name: Andrew Wilkinson
+date: '2009-06-18 12:24:04'
+url: 'http://www.tvutopia.net'
+message: >-
+  I think that's a good solution for small websites, but if you've got a
+  largeish website with a number of models and views there's something to be
+  said for keeping your source files separated. I like to keep my source files
+  tidy, and I think mixing views and models is just going to lead to some
+  confusion.
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

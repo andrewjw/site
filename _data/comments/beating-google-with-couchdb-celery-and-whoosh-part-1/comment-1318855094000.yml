@@ -1,0 +1,5 @@
+name: Thomas Bikeev (@thomas_bikeev)
+date: '2011-10-17 13:38:14'
+url: 'http://twitter.com/thomas_bikeev'
+message: "Hi Andrew, a quick question on ensuring uniqueness of pages. I have run quick example based on your tutorial and in some cases ended up with multiple documents being the copy of the same page. What would be the consequences to ensure that the Page is unique by storing the md5 of the url as the_id of the couchdb document? Is it a good idea?\r\n\r\nRegards, Thomas"
+email: c508dae6d7705401cdd1b554b9a68753

@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2010-07-07 13:03:23'
+url: 'http://www.tvutopia.net'
+message: "Hi Joe,\r\n\r\nI'm a Python developer so although I think you're right, the Buildbot configuration file is complicated, I'm quite at home with them as they're just Python files.\r\n\r\nI find it simplest to use one tool that covers everything I might want to do, rather than using several for similar but different sized tasks. I find that buildbot scales very well from a simple one branch single platform build up to many branches on many platforms.\r\n\r\nCheers,\r\nAndrew"
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

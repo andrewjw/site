@@ -1,0 +1,5 @@
+name: Dougal Matthews
+date: '2011-01-25 09:43:24'
+url: 'http://www.dougalmatthews.com'
+message: "I suspect he probably wanted to do this while simply testing out the IDE. I was planning on doing the same, installing it in a virtualenv while testing rather than constantly adding things to the global site packages.\r\n\r\nHowever, falling back to the global PyQt isn't a problem."
+email: 305cabbbad7039ea3a7e8b9be6f59619

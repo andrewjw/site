@@ -1,0 +1,5 @@
+name: Richard
+date: '2013-11-12 23:15:09'
+url: 'http://photography.eibrand.net'
+message: "HI again,\r\n\r\nJust to say that I fiddled a little with the code, and commented out (see below) the condition in the dump_day method that checked for zero steps to continue on, this then populated the steps.csv file for me correctly (when compared with the same fitbit data on the dashboard).\r\n\r\n    # Assume that if no steps were recorded then there is no data\r\n    #if sum([s[1] for s in steps]) == 0:\r\n    #    return False\r\n\r\nThanks again, \r\n\r\nR"
+email: d5e23016b0e081939c26d6d69780e721

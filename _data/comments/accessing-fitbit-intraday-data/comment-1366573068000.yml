@@ -1,0 +1,14 @@
+name: rickpack
+date: '2013-04-21 20:37:48'
+url: ''
+message: >-
+  I am giving up now, but at least I learned a fair amount about Python and its
+  programming community. Anyone who wishes to use Andrew's module and comes from
+  an inexperienced position like me might experiment with the latest version of
+  Python 2 instead of Python 3. If you decide to go with Python 3 like I did
+  (latest final version is the greatest?), this site can help with installing
+  modules that may be necessary to use Andrew's module: . Also, errors
+  encountered on commas appear to be fixed in Python 3 by replacing the comma
+  with an open parenthesis and then closing it appropriately. I hope this saves
+  someone the few hours I spent bumbling around.
+email: d3e2d42bef585ff98d8ab62631bf487a

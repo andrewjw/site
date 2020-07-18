@@ -1,0 +1,5 @@
+name: grig (@growlerpig)
+date: '2015-03-18 12:40:45'
+url: 'http://twitter.com/growlerpig'
+message: "Hello Andrew,\r\n\r\n    In the dump_day function, steps = c.intraday_steps(date) keeps returning zero steps, even though in the fitbit.com dashboard I can clearly see activity at the respective date. This results in no data being dumped, of course.\r\n\r\n    Could you please look into it? Am I doing something wrong?"
+email: 1c45d2a40cbf559a02cc9031f58230c6

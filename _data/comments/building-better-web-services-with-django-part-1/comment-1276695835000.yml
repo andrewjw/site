@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2010-06-16 14:43:55'
+url: 'http://www.tvutopia.net'
+message: "Hi Moritz,\r\n\r\nNo, because that function only tells you if it is an AJAX request. Here I'm building something can be consumed by programs running on other machines, not just browsers.\r\n\r\nAndrew"
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

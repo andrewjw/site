@@ -1,0 +1,9 @@
+name: bjunix
+date: '2010-02-03 14:25:18'
+url: ''
+message: >-
+  You could also just use one screen session and create a new window inside your
+  session with "^a c". Than you can switch between windows with "^a n" and "^a
+  p" (next and previous). You can also name windows and let screen display these
+  names in a "tab bar". Just google up "screen hardstatus"
+email: 93809cd956a7ac478d3a61f0040f7996

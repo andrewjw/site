@@ -1,0 +1,9 @@
+name: Chris
+date: '2014-06-20 23:39:36'
+url: ''
+message: >-
+  Hi Andrew, I was using your (fixed) script to obtain intraday data from
+  fitbit. Unfortunately the script stopped working. It looks like opener =
+  build_opener(HTTPCookieProcessor(cj)) in the login method returns a http 500
+  error.
+email: 693a4661eaa71435ce5ebe61de64c5a4

@@ -1,0 +1,20 @@
+name: Heine
+date: '2013-04-22 20:19:45'
+url: ''
+message: >-
+  Thanks for your work. 
+
+  I had a problem due to the time format. As I'm European I use 24hour Time
+  Format. 
+
+  That leads to a crash: ValueError: time data '23:16' does not match format
+  '%I:%M%p'
+
+
+  I had to change line 104 in client.py to the following:
+          timestamps = [datetime.datetime.strptime(e.attrib['description'].split(' ')[-1], "%H:%M") for e in elements]
+
+  now it works like a charme.
+
+  Thanks again!
+email: 5dd11f77e3465bc847d94f53915d989b

@@ -1,0 +1,5 @@
+name: ram
+date: '2012-10-29 12:08:13'
+url: ''
+message: "I always get this error after running the command \"python setup.py build\"..\r\n\r\nError : /usr/bin/ld: cannot find -lv8\r\n\r\nplease help me to fix it..thank you in advance"
+email: 4875f42383f80d5d96a09474a7e5e739

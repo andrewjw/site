@@ -1,0 +1,11 @@
+name: >-
+  Trouble installing PyV8 on Debian - different functions between PyV8 and v8 |
+  BlogoSfera
+date: '2013-06-05 17:02:24'
+url: >-
+  http://www.blogosfera.co.uk/2013/06/trouble-installing-pyv8-on-debian-different-functions-between-pyv8-and-v8/
+message: >-
+  [&#8230;] am trying to install PyV8 on a Debian machine. I have been using
+  this link as a guide, using the v8 and pyv8 check outs found on that web page.
+  I also believe I have all [&#8230;]
+email: d41d8cd98f00b204e9800998ecf8427e

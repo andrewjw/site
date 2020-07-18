@@ -1,0 +1,9 @@
+name: Andrew Wilkinson
+date: '2012-05-19 09:13:53'
+url: 'http://andrewwilkinson.wordpress.com'
+message: >-
+  That's an interesting find. How does the encryption work? Is it encrypted by
+  Amazon or s3fs? If it's done by Amazon then presumably they can decrypt your
+  data, and if it's done by s3fs how do ensure you can access your backups from
+  a different machine?
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

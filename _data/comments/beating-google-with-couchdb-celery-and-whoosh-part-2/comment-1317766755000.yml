@@ -1,0 +1,5 @@
+name: Diederik van der Boor
+date: '2011-10-04 23:19:15'
+url: 'http://www.codingdomain.com/'
+message: "Interesting idea, building a search index this way.\r\n\r\nI do wonder about something, since you want to be \"beating Google\".\r\nWhy are you adding Whoosh to the stack, instead of something like SOLR?\r\nBoth can also be used from django-haystack if you want to build a search index.\r\n\r\nHaving seen a db index of +1000 records crawl under Whoosh, and fly with SOLR, I'd kindly suggest to reconsider something :)"
+email: fa7f6c8be0d09fd8438332eef28a40d3

@@ -1,0 +1,5 @@
+name: Andrew Wilkinson
+date: '2011-05-20 13:34:49'
+url: 'http://www.tvutopia.net'
+message: "Hi Vimukthi,\r\n\r\nYou're right, you will need to import them in __init__.py. Django does a 'from models import *' to find all the models in app, if you don' import them it won't find them.\r\n\r\nAndrew"
+email: 0d5abb071bb1ab8518c3e9b0f4e718eb

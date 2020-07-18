@@ -1,0 +1,10 @@
+name: da
+date: '2014-05-07 17:56:33'
+url: 'http://gravatar.com/darrencruse'
+message: >-
+  Was wanting to try this, including the trickle part, on an amazon beanstalk
+  instance but trickle isn't there and "sudo yum install trickle" fails. 
+  Downloaded the trickle source but the configure step fails not finding
+  libevent, yet "sudo yum install libevent" says libevent is already installed. 
+  Any tips on how I'd install trickle on amazon linux?
+email: 975648b14ce5e5dc5b396251d70788b1

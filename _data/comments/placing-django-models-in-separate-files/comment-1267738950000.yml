@@ -1,0 +1,5 @@
+name: Ivan
+date: '2010-03-04 21:42:30'
+url: 'http://ephramzerb.com'
+message: "A note in case someone is searching for it.\r\n\r\nIf you're seeding your app with initial sql data (by specifying sql/.sql) , you'll need to move the sql dir to be under the new models dir (models/sql/.sql)."
+email: 074d18f816c0eef8468da7cde2d81dcd

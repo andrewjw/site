@@ -1,0 +1,5 @@
+name: Michael Halls-Moore
+date: '2010-11-08 12:41:17'
+url: 'http://www.michaelhallsmoore.com'
+message: "Hi Joe,\r\n\r\nGood article - I'm going to give Buildbot a try myself. I've been looking for a CI server for a while that fits my needs. Something that scales will be useful if and when our team grows!\r\n\r\nYou might also want to take a look at Django-Lint, written by a friend of mine. It's basically a wrapper around PyLint, but makes more sense for Django projects.\r\nhttp://chris-lamb.co.uk/projects/django-lint/\r\n\r\nMike."
+email: 6fb352ab9ac3b5f5934ffbd8f6860324

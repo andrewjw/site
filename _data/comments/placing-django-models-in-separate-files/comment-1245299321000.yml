@@ -1,0 +1,5 @@
+name: john
+date: '2009-06-18 05:28:41'
+url: 'http://www.johnmee.com'
+message: "What's wrong with creating various files in the directory you have?  You don't have to put everything into the views.py or models.py or forms.py.\r\n\r\nurls.py names the file which holds the view...\r\n\r\n('^hello/$','apps.module.hello_view')\r\n('^goodbye/$','apps.module.goodbye_view')\r\n\r\nModels import from the relevant model file...\r\n\r\nfrom apps.hello.hi_models import HelloMessage\r\nfrom apps.hello.bye_models import ByeMessage"
+email: d21a93c385caf25a074a16c9e524b4ab

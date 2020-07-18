@@ -1,0 +1,7 @@
+name: Harry French
+date: '2012-08-01 15:12:00'
+url: ''
+message: |-
+  if you have more than one bucket, prefix it's name like so:
+  "bucketname:accessKeyId:secretAccessKey"
+email: 79d194adf01cd9fdc4e6af8928ff0f9f
