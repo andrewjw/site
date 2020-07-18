@@ -3,11 +3,6 @@ layout: post
 title: Building Better Web Services With Django (Part 2)
 date: 2009-04-23T11:28:00.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - web development
 tags:
   - web development
   - content type
@@ -17,14 +12,6 @@ tags:
   - rest
   - restful
   - web services
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/04/23/building-better-web-services-with-django-part-2/
 ---
 In the <a href="https://www.theandrewwilkinson.com/2009/04/08/building-better-web-services-with-django-part-1/">first part</a> I talked about using the <tt>Content-Type</tt> and <tt>Accept</tt> HTTP headers to allow a single website to be use both by humans and programs.n
@@ -45,7 +32,7 @@ The decorator given below relies on a <a href="http://www.djangosnippets.org/sni
                 args, kwargs = json_in(req, req.POST, *args, *kwargs), {}
             else:
                 return HttpResponse(status=415, "Unsupported Media Type")
-    
+
             if isinstance(args, HttpResponse): return args
 
             for (media_type, q_value) in req.accepted_types:
@@ -73,7 +60,7 @@ Next we write two functions to handle the cases where the users POSTs a form enc
     def json_in(req, json, blog_post):
         # process json
         return (blog_post ,)
-    
+
     def form_in(req, form, blog_post):
         # process form
         return (blog_post, )

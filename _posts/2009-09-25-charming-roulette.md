@@ -3,24 +3,11 @@ layout: post
 title: Charming Roulette
 date: 2009-09-25T11:28:25.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - python
 tags:
   - gambling
   - roulette
   - statistics
   - python
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/09/25/charming-roulette/
 flickr_user: 'https://www.flickr.com/people/johnwardell/'
 flickr_username: John Wardell (Netinho)

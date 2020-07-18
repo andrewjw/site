@@ -3,22 +3,9 @@ layout: post
 title: iPhone 3.0 Thoughts
 date: 2009-03-18T13:34:28.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - iphone
 tags:
   - iphone
   - apple
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/03/18/iphone-30-thoughts/
 ---
 Yesterday, as was splashed all over the web, <a href="http://www.apple.com">Apple</a> <a href="http://news.bbc.co.uk/1/hi/technology/7949557.stm">announced the iPhone OS 3.0</a>. The key features in my view that were announced are cut and paste, push services and the possibility of turn by turn navigation.

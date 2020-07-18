@@ -3,25 +3,12 @@ layout: post
 title: Strict Development
 date: 2009-05-07T11:28:34.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - etiquette of programming
 tags:
   - etiquette of programming
   - best practice
   - development
   - issue driven development
   - test driven development
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/05/07/strict-development/
 ---
 While working on my new open source project, <a href="http://code.google.com/p/couchql/">CouchQL</a>, I'm being very strict with my development process and following both issue driven development, and test driven development.

@@ -3,9 +3,6 @@ layout: post
 title: Darkslide Flickr iPhone App Reviewed
 date: 2009-02-19 13:12:35.000000000 +00:00
 type: post
-categories:
-- iphone
-- review
 tags:
 - flickr
 - iphone

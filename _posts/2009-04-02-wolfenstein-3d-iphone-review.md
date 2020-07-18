@@ -3,24 +3,10 @@ layout: post
 title: Wolfenstein 3d iPhone Review
 date: 2009-04-02T11:27:33.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - iphone
-  - review
 tags:
   - iphone
   - review
   - game
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/04/02/wolfenstein-3d-iphone-review/
 ---
 <a href="http://www.idsoftware.com">ID Software</a> have taken time out from letting you play Quake 3 in your browser to release a port of the granddaddy of all first person shooters - <a href="http://en.wikipedia.org/wiki/Wolfenstein_3D">Wolfenstein 3d</a>. The iPhone is really beginning to show itself as an excellent gaming platform, and despite its age Wolfenstein really looks at home on the phone.

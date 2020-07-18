@@ -3,24 +3,11 @@ layout: post
 title: Interestingness
 date: 2009-06-18T11:13:53.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - other websites
 tags:
   - other websites
   - flickr
   - interestingness
   - seo
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/06/18/interestingness/
 ---
 As an amateur photographer I upload all my photographs to <a href="http://www.flickr.com/photos/andrew_j_w/">Flickr</a>. Most of the them are mediocre, but <a href="http://www.flickr.com/photos/andrew_j_w/2642278607/in/set-72157606347800664/">one</a> or <a href="http://www.flickr.com/photos/andrew_j_w/3624698099/in/set-72157606347800664/">two</a> are good enough that I think they can stand along side the photos from more professional users of Flickr.

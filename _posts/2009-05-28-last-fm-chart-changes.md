@@ -3,24 +3,11 @@ layout: post
 title: Last.fm Chart Changes
 date: 2009-05-28T11:16:08.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - Last.fm
 tags:
   - chart changes
   - firefox
   - greasemonkey
   - lastfm
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/05/28/last-fm-chart-changes/
 ---
 For several years I've written and maintained a <a href="https://addons.mozilla.org/en-US/firefox/addon/748">GreaseMonkey</a> script which adds chart change information to your music charts. The biggest problem with a greasemonkey script is that you don't control the page you're modifying. Last week, for the umpteenth time, Last.fm changed their page again and broke the script.

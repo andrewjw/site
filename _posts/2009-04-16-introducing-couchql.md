@@ -3,24 +3,12 @@ layout: post
 title: Introducing CouchQL
 date: 2009-04-16T11:49:40.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories: []
 tags:
   - couchdb
   - couchql
   - databases
   - python
   - sql
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/04/16/introducing-couchql/
 ---
 <a href="http://couchdb.apache.org/">CouchDB</a> is a very exciting development in the world of databases and I'm greatly enjoying building a website which uses it. One problem is that most of the of views that I have created are extremely simple and could easily be represented using SQL. Although I <a href="https://www.theandrewwilkinson.com/2009/03/11/updating-couchdb-views-in-django/">wrote some code</a> to help make life easier, creating a view such as that below is never going to be as simple as including <tt>SELECT * FROM table WHERE (status="open" OR status="accepted") AND latest AND key="xyz"</tt> directly in your code.

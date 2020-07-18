@@ -3,21 +3,9 @@ layout: post
 title: CouchQL development progressing
 date: 2009-04-30T11:14:54.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories: []
 tags:
   - couchdb
   - couchql
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/04/30/couchql-development-progressing/
 ---
 As I mentioned in a <a href="http://www.theandrewwilkinson.com/2009/04/16/introducing-couchql/">previous post</a> I have been working of a library to ease the creation of map/reduce views in <a href="http://code.google.com/p/couchdb-python/">CouchDB</a>.

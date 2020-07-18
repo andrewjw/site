@@ -3,11 +3,6 @@ layout: post
 title: Building Better Web Services With Django (Part 1)
 date: 2009-04-08T11:21:03.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - web development
 tags:
   - web development
   - content type
@@ -17,14 +12,6 @@ tags:
   - rest
   - restful
   - web services
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/04/08/building-better-web-services-with-django-part-1/
 ---
 Building a RESTful webservice is pretty straight-forward with Django, but in many cases you want to have both a human readable website and a machine readable api. A lot of websites solve this problem by using www.x.com as the human site, an api.x.com as the machine site. They also will typically have different structures to support the different usecases.n
@@ -38,23 +25,23 @@ I'm going to outline a decorator that will let write a webservice such as this, 
 First we'll create a decorator that parses any post data as JSON and passes it the view as the second parameter (after the request object). It will also JSON encode any return value that's not an HTTPResponse object.
 
     import simplejson as json
-    
+
     from django.http import HttpResponse
-    
+
     def json_view(func):
         def wrap(req, *args, **kwargs):
             try:
                 j = json.loads(req.raw_post_data)
             except ValueError:
                 j = None
-    
+
             resp = func(req, j, *args, **kwargs)
-    
+
             if isinstance(resp, HttpResponse):
                 return resp
-    
+
             return HttpResponse(json.dumps(resp), mimetype="application/json")
-    
+
         return wrap
 
 This decorator should be pretty easy follow, but here is an example to illustrate its use.n

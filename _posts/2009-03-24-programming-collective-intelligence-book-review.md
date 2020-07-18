@@ -3,22 +3,9 @@ layout: post
 title: '"Programming Collective Intelligence" Book Review'
 date: 2009-03-24T13:31:57.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - review
 tags:
   - book
   - review
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/03/24/programming-collective-intelligence-book-review/
 ---
 Toby Segaran's book is given the subtitle "Building Smart Web 2.0 Applications". It's clearly been assigned to the book by a marketing drone who felt that they needed to get the phrase "Web 2.0" in there somewhere. Unfortunately this left me feeling a bit disappointed when read this book because it's not really what the book is about. A far better subtitle would have been "An Introduction to Machine Learning", but I don't work in marketing.

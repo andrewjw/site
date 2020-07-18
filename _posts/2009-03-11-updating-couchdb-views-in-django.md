@@ -3,23 +3,10 @@ layout: post
 title: Updating CouchDB Views In Django
 date: 2009-03-11 13:24:36.000000000 +00:00
 type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories:
-- web development
 tags:
+- web development
 - couchdb
 - django
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: "/2009/03/11/updating-couchdb-views-in-django/"
 ---
 <a href="http://couchdb.apache.org/">CouchDB</a> views are a bit like stored procedures in a traditional database system. As with stored procedures it's difficult to keep them in sync with your code, and to keep them in your version control system. In this article I'll show you how you can use a <a href="http://andrewwilkinson.wordpress.com/2009/03/06/creating-django-management-commands/">django management command</a> to update your views from files in your code base.

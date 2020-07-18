@@ -3,24 +3,11 @@ layout: post
 title: Testing A Facebook Connect Site
 date: 2009-07-02T11:17:59.000Z
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - web development
 tags:
   - web development
   - development
   - facebook
   - social
-meta:
-  _edit_last: '364050'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
 permalink: /2009/07/02/testing-a-facebook-connect-site/
 ---
 I've been developing a <a href="http://www.tvutopia.net">website</a> in my spare time. Because I want to add plenty of social features it makes sense to let users login using Facebook Connect. The Facebook platform is by far the most successful social platform with many developers having created applications and websites that use it. I expected that the experience for developers would be a good one. Unfortunately, I was disappointed.
