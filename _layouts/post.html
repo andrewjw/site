@@ -11,18 +11,18 @@ published: true
      {% endfor %}
   </span>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  
+
   {% if page.flickr_image %}
-    <div style="float: right;">
+    <div style="float: right; margin-left: 5px;">
    	  <a data-flickr-embed="true" href="{{ page.flickr_imagelink }}" title="{{ flickr_imagename }}">
         <img src="{{ page.flickr_image }}" width="400" alt="{{ flickr_imagename }}">
       </a>
       <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </div>
   {% endif %}
-  
+
   {{ content }}
-  
+
   {% if page.flickr_image %}
   <p>Photo <a href="{{ page.flickr_imagelink }}">{{ page.flickr_imagename }}</a> by <a href="{{ page.flickr_user }}">{{ page.flickr_username }}</a>.</p>
   {% endif %}
