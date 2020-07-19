@@ -13,5 +13,5 @@ before_script:
  - sed -i "s/\\\$GA_ID/$GA_ID/g" _includes/head.html
 
 script:
- - bundle exec jekyll build && rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
+ - bundle exec mdl _posts/* _drafts/* && bundle exec jekyll build && rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
  
