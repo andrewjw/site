@@ -1,13 +1,8 @@
 ---
 layout: post
 title: Rsync backups to Amazon S3
-date: {}
+date: 2011-01-14 12:00:00.000000000 +01:00
 type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - unix
 tags:
   - amazon
   - backup
@@ -15,20 +10,7 @@ tags:
   - rsync
   - s3
   - trickle
-meta:
-  _edit_last: '364050'
-  _wpas_done_twitter: '1'
-  _oembed_96bbe51a4c27ad0d5e7dd8026beec5df: '{{unknown}}'
-  _oembed_e2f28713d5a36f5fbd3b0d2bd903a253: '{{unknown}}'
-  _oembed_b4f34d32ba2f47c96d1af40594885352: '{{unknown}}'
-  _oembed_c7d5899e7693e872c42d5f1447d49602: '{{unknown}}'
-  _oembed_f42248010fde74fb9ccf25b8c0fd99ef: '{{unknown}}'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
+  - unix
 permalink: /2011/01/14/rsync-backups-to-amazon-s3/
 ---
 Having recently got married I wanted to make sure all the photos taken at the event are safely stored for the posterity. I thought I'd take the opportunity of making sure that all the rest of my photos are safely backed up, and that any new ones are also backed up without me needing to do anything.

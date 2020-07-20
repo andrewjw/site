@@ -1,36 +1,12 @@
 ---
 layout: post
 title: Using Python Logging Effectively
-date: {}
-type: post
-parent_id: '0'
-published: true
-status: publish
-categories:
-  - python
+date: 2011-01-07 12:00:00.000000000 +01:00
 tags:
   - code
   - logging
   - programming
-meta:
-  _edit_last: '364050'
-  _wpas_done_twitter: '1'
-  _oembed_9901351c9189e43c8dfca4e71322f339: '{{unknown}}'
-  _oembed_12a1ae63c005ec9572550c758b01a910: '{{unknown}}'
-  _oembed_0ff2a3dcc5f4ec8657fd634560971516: '{{unknown}}'
-  _oembed_b664cf6de325b62d3f8247c047df5d9d: '{{unknown}}'
-  _oembed_a61af4d04452fabc1b9e254ab31f6104: '{{unknown}}'
-  _oembed_2e710c66dde610d2dad6ed6197be6b16: '{{unknown}}'
-  _oembed_f8f36f3d783004d0006d560584876e89: '{{unknown}}'
-  _oembed_f4c3a1a7f92dfaf3b1ded368bd0b60d1: '{{unknown}}'
-  _oembed_78b9e126c8edd189b9fe71bc628c3eb0: '{{unknown}}'
-  _oembed_e7e238c2b283f54017859cd5d56b9d3c: '{{unknown}}'
-author:
-  login: andrewjw
-  email: andrewjwilkinson@gmail.com
-  display_name: Andrew Wilkinson
-  first_name: Andrew
-  last_name: Wilkinson
+  - python
 permalink: /2011/01/07/using-python-logging-effectively/
 ---
 If you're writing a Python program that doesn't have a text-based user interface (either it's a GUI or runs as part of another program, e.g. a webserver) then you should avoid using the <tt>print</tt> statement. It's tempting to use <tt>print</tt> to fill the console with information about what your program is up to. For code of any size though, this quickly devolves into a hard to navigate mess.

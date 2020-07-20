@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deadlock On Exit With PySide And QFileSystemWatcher
-date: {}
+date: 2011-03-14 14:04:09.000000000 +01:00
 type: post
 parent_id: '0'
 published: true

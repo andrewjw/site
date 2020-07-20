@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unittesting QSyntaxHighlighter
-date: {}
+date: 2011-02-16 14:04:09.000000000 +01:00
 type: post
 parent_id: '0'
 published: true

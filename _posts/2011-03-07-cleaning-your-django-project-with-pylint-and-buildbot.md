@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cleaning Your Django Project With PyLint And Buildbot
-date: {}
+date: 2011-03-07 14:04:09.000000000 +01:00
 type: post
 parent_id: '0'
 published: true
