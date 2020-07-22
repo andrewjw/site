@@ -8,7 +8,7 @@ tags:
   - google code
   - open source
   - programming
-    - etiquette of programming
+  - etiquette of programming
 permalink: /2011/01/19/can-the-entrance-barrier-ever-be-too-low/
 flickr_user: 'https://www.flickr.com/photos/thecrazyfilmgirl/'
 flickr_username: "thecrazyfilmgirl"

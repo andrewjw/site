@@ -83,9 +83,9 @@ Now we can draw a tree a we need to be able to generate the children of tree, wh
 
 If we combine these functions with a simple TK-based interface, as shown below, we exactly the abilities described in The Blind Watchmaker book. Nine possible trees are displayed, when the user clicks on one nine new children are created and displayed.
 
-<img src="{{ site.baseurl }}/assets/trees1.png" alt="" title="Dawkin's Trees" width="326" height="345" class="alignleft size-full wp-image-279" />
+<img src="/assets/trees1.png" alt="" title="Dawkin's Trees" width="326" height="345" class="alignleft size-full wp-image-279" />
 
-<img src="{{ site.baseurl }}/assets/trees2.png" alt="" title="Dawkin's Trees" width="326" height="345" class="alignleft size-full wp-image-279" />
+<img src="/assets/trees2.png" alt="" title="Dawkin's Trees" width="326" height="345" class="alignleft size-full wp-image-279" />
 
 Without more details about the original program it's hard to recreate it exactly, but this program is a decent starting point. Happy evolving!
 
