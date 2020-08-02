@@ -30,25 +30,43 @@ href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>. The poi
 build a complete webcrawler, but to show you the basic building blocks. So, for simplicity's sake I'll use a
 regular expression.
 
-{% highlight python %} link_single_re = re.compile(r&quot;&lt;a[^&gt;]+href='([^']+)'&quot;) link_double_re =
-re.compile(r'&lt;a[^&gt;]+href=&quot;([^&quot;]+)&quot;') {% endhighlight %}
+{% highlight python %}
+link_single_re = re.compile(r&quot;&lt;a[^&gt;]+href='([^']+)'&quot;)
+link_double_re = re.compile(r'&lt;a[^&gt;]+href=&quot;([^&quot;]+)&quot;')
+{% endhighlight %}
 
 All we need to look for an <tt>href</tt> attribute in an <tt>a</tt> tag. We'll use two regular expressions to
 handle single and double quotes, and then build a list containing all the links in the document.
 
-{% highlight python %} @task<br /> def find_links(doc_id): doc = Page.load(settings.db, doc_id) raw_links = []
-for match in link_single_re.finditer(doc.content): raw_links.append(match.group(1)) for match in
-link_double_re.finditer(doc.content): raw_links.append(match.group(1)) {% endhighlight %}
+{% highlight python %}
+@task
+def find_links(doc_id):
+    doc = Page.load(settings.db, doc_id)
+    raw_links = []
+    for match in link_single_re.finditer(doc.content):
+        raw_links.append(match.group(1))
+        for match in link_double_re.finditer(doc.content):
+            raw_links.append(match.group(1))
+{% endhighlight %}
 
 Once we've got a list of the raw links we need to process them into absolute urls that we can send back to the
 <tt>retrieve_page</tt> task we wrote earlier. I'm cutting some corners with processing these urls, in
 particular I'm not dealing with <a href="http://www.w3.org/TR/html4/struct/links.html#h-12.4">base</a> tags.
 
-{% highlight python %} doc.links = [] for link in raw_links: if link.startswith(&quot;#&quot;): continue elif
-link.startswith(&quot;http://&quot;) or link.startswith(&quot;https://&quot;): pass elif
-link.startswith(&quot;/&quot;): parse = urlparse(doc[&quot;url&quot;]) link = parse.scheme + &quot;://&quot; +
-parse.netloc + link else: link = &quot;/&quot;.join(doc[&quot;url&quot;].split(&quot;/&quot;)[:-1]) +
-&quot;/&quot; + link doc.links.append(unescape(link.split(&quot;#&quot;)[0])) doc.store(settings.db) {%
+{% highlight python %}
+    doc.links = []
+    for link in raw_links:
+        if link.startswith(&quot;#&quot;):
+            continue
+        elif link.startswith(&quot;http://&quot;) or link.startswith(&quot;https://&quot;):
+            pass
+        elif link.startswith(&quot;/&quot;):
+            parse = urlparse(doc[&quot;url&quot;])
+            link = parse.scheme + &quot;://&quot; + parse.netloc + link
+        else:
+            link = &quot;/&quot;.join(doc[&quot;url&quot;].split(&quot;/&quot;)[:-1]) + &quot;/&quot; + link
+        doc.links.append(unescape(link.split(&quot;#&quot;)[0]))
+    doc.store(settings.db) {%
 endhighlight %}
 
 Once we've got our list of links and saved the modified document we then need to trigger the next series of
@@ -57,8 +75,15 @@ each page that we linked to. If we've already got a copy of the page then we wan
 take into account the rank of this page (more on this later) and if we don't have a copy then we queue it up
 to be retrieved.
 
-{% highlight python %} calculate_rank.delay(doc.id) for link in doc.links: p = Page.get_id_by_url(link,
-update=False) if p is not None: calculate_rank.delay(p) else: retrieve_page.delay(link) {% endhighlight %}
+{% highlight python %}
+    calculate_rank.delay(doc.id)
+    for link in doc.links:
+        p = Page.get_id_by_url(link, update=False)
+        if p is not None:
+            calculate_rank.delay(p)
+        else:
+            retrieve_page.delay(link)
+{% endhighlight %}
 
 We've now got a complete webcrawler. We can store webpages and <tt>robots.txt</tt> files. Given a starting URL
 our crawler will set about parsing pages to find out what they link to and retrieve those pages as well. Given
