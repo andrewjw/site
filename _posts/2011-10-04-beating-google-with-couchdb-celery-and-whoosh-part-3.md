@@ -62,7 +62,7 @@ href="http://docs.python.org/library/urlparse.html">urlparse</a>, that does the 
     robotstxt = RobotsTxt.get_by_domain(parse.scheme, parse.netloc)
     if not robotstxt.is_allowed(parse.netloc):
         return False
-{% endhightlight %}
+{% endhighlight %}
 
 In the previous post we discussed parsing the <tt>robots.txt</tt> file and here we make sure that if we're not
 allowed to index a page, then we don't
@@ -72,7 +72,7 @@ allowed to index a page, then we don't
         is not None:
             time.sleep(1)
             cache.set(parse.netloc, True, 10)
-{% endhightlight %}
+{% endhighlight %}
 
 As with the code to parse <tt>robots.txt</tt> files we need to make sure we don't access the same domain too
 often.
@@ -85,7 +85,7 @@ often.
     self.content = resp.read().decode(&quot;utf8&quot;)
     self.last_checked = datetime.now()
     self.store(settings.db)
-{% endhightlight %}
+{% endhighlight %}
 
 Finally, once we've checked we're allowed to access a page and haven't accessed another page on the same
 domain recently we use the standard Python tools to download the content of the page and store it in our
@@ -101,7 +101,7 @@ def retrieve_page(url):
     if page is None:
         return
     find_links.delay(page.id)
-{% endhightlight %}
+{% endhighlight %}
 
 You might be asking why the links aren't parsed immediately after retrieving the page. They certainly could
 be, but a key goal was to enable the crawling process to scale as much as possible. Each page crawled has,
@@ -146,7 +146,7 @@ class MyRouter(object):
             return { &quot;queue&quot;: &quot;process&quot; }
 
 CELERY_ROUTES = (MyRouter(), )
-{% endhightlight %}
+{% endhighlight %}
 
 The final step is to allow the crawler to be kicked off by seeding it with some URLs. I've previously posted
 about how to create a <a
@@ -158,7 +158,7 @@ to retrieve it.
 class Command(BaseCommand):
     def handle(self, url, **options):
         retrieve_page.delay(url)
-{% endhightlight %}
+{% endhighlight %}
 
 We've now got a web crawler that is almost complete. In the next post I'll discuss parsing links out of the
 HTML, and we'll look at calculating the rank of each page.

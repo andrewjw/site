@@ -26,6 +26,11 @@ published: true
   {% if page.flickr_image %}
   <p>Photo <a href="{{ page.flickr_imagelink }}">{{ page.flickr_imagename }}</a> by <a href="{{ page.flickr_user }}">{{ page.flickr_username }}</a>.</p>
   {% endif %}
+  {% if page.flickr %}
+   {% for image in page.flickr %}
+   <p>Photo <a href="{{ image.imagelink }}">{{ image.imagename }}</a> by <a href="{{ image.user }}">{{ image.username }}</a>.</p>
+   {% endfor %}
+  {% endif %}
 </div>
 
 {% if page.tags.size > 0 %}
