@@ -124,12 +124,12 @@ The template for the results page is below.
         &lt;input name=&quot;q&quot; type=&quot;text&quot; value=&quot;{{ q }}&quot;&gt;
         &lt;input type=&quot;submit&quot;&gt;
     &lt;/form&gt;
-    {% for result in results|slice:&quot;:20&quot; %}
+    {{"{% for result in results|slice:&quot;:20&quot; "}}%}
         &lt;p&gt;
             &lt;b&gt;&lt;a href=&quot;{{ result.url }}&quot;&gt;{{ result.title|safe }}&lt;/a&gt;&lt;/b&gt; ({{ result.score }}, {{ result.rank }}, {{ result.combined }})&lt;br&gt;
             {{ result.desc|safe }}
         &lt;/p&gt;
-    {% endfor %}
+    {{"{% endfor "}}%}
 {{"{% endblock "}}%}
 {% endhighlight %}
 
