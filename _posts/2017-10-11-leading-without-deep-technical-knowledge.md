@@ -11,7 +11,7 @@ permalink: "/2017/10/11/leading-without-deep-technical-knowledge/"
 flickr_user: 'https://www.flickr.com/photos/29233640@N07/'
 flickr_username: Robert Couse-Baker
 flickr_image: 'https://live.staticflickr.com/7186/6844568450_8b7d3ef8c8_w.jpg'
-flickr_imagelink: 'https://live.staticflickr.com/4307/35920157116_f83ca0852c_w.jpg'
+flickr_imagelink: 'https://www.flickr.com/photos/29233640@N07/35920157116'
 flickr_imagename: this way or that
 ---
 In my previous jobs, when I've been promoted to a leadership role it has been as a result of being the most
