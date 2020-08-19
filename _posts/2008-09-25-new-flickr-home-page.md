@@ -6,7 +6,7 @@ type: post
 tags: flickr redesign
 permalink: "/2008/09/25/new-flickr-home-page/"
 ---
-Flickr are in the process of testing a new style <a href="http://blog.flickr.net/en/2008/09/10/sneak-preview/">home page</a>
+Flickr are in the process of testing a new style [home page](http://blog.flickr.net/en/2008/09/10/sneak-preview/)
 for logged in users. The process of switching is pretty fancy, once you click ok the old page fades out and is replaced by
 the flickr throbber which floats down the screen like snow flakes.
 

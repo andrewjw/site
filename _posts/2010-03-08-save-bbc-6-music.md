@@ -11,7 +11,7 @@ tags:
 - bbc
 permalink: "/2010/03/08/save-bbc-6-music/"
 ---
-I've been a regular listener to <a href="http://www.bbc.co.uk/6music">6music</a> since about six months after
+I've been a regular listener to [6music](http://www.bbc.co.uk/6music) since about six months after
 it launched. Below is the email I've sent to the public consultation on the future of the station, as it has
 been proposed that the station be closed to save money which can be spent on making other programs.
 
@@ -46,4 +46,4 @@ been proposed that the station be closed to save money which can be spent on mak
     Yours Sincerely,
     Andrew Wilkinson
 
-Feel free to use my letter for inspiration, but please don't copy it wholesale. That will not help to save the station that we love. Find details on how to response <a href="http://www.bbc.co.uk/bbctrust/consultations/departments/bbc/bbc-strategy-review/consultation/consult_view">here</a>.
+Feel free to use my letter for inspiration, but please don't copy it wholesale. That will not help to save the station that we love. Find details on how to response [here](http://www.bbc.co.uk/bbctrust/consultations/departments/bbc/bbc-strategy-review/consultation/consult_view).

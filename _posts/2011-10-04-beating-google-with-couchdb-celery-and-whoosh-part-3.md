@@ -21,13 +21,13 @@ CouchDB. In this post we'll start crawling the web and filling our database with
 
 One of the rules we set down was to not request a page too often. If, by accident, we try to retrieve a page
 more than once a week then don't want that request to actually make it to the internet. To help prevent this
-we'll extend the <tt>Page</tt> class we created in the last post with a function called <tt>get_by_url</tt>.
+we'll extend the `Page` class we created in the last post with a function called `get_by_url`.
 This static method will take a url and return the Page object that represents it, retrieving the page if we
 don't already have a copy. You could create this as an independent function, but I prefer to use static
 methods to keep things tidy.
 
 We only actually want to retrieve the page from the internet in one of the three tasks the we're going to
-create so we'll give <tt>get_by_url</tt> a parameter, <tt>update</tt> that enables us to return <tt>None</tt>
+create so we'll give `get_by_url` a parameter, `update` that enables us to return `None`
 if we don't have a copy of the page.
 
 {% highlight python %}
@@ -46,8 +46,8 @@ def get_by_url(url, update=True):
         return doc
 {% endhighlight %}
 
-The key line in the static method is <tt>doc.update()</tt>. This calls the function to retrieves the page and
-makes sure we respect the <tt>robots.txt</tt> file. Let's look at what happens in that function
+The key line in the static method is `doc.update()`. This calls the function to retrieves the page and
+makes sure we respect the `robots.txt` file. Let's look at what happens in that function
 
 {% highlight python %}
 def update(self):
@@ -64,7 +64,7 @@ href="http://docs.python.org/library/urlparse.html">urlparse</a>, that does the 
         return False
 {% endhighlight %}
 
-In the previous post we discussed parsing the <tt>robots.txt</tt> file and here we make sure that if we're not
+In the previous post we discussed parsing the `robots.txt` file and here we make sure that if we're not
 allowed to index a page, then we don't
 
 {% highlight python %}
@@ -74,7 +74,7 @@ allowed to index a page, then we don't
             cache.set(parse.netloc, True, 10)
 {% endhighlight %}
 
-As with the code to parse <tt>robots.txt</tt> files we need to make sure we don't access the same domain too
+As with the code to parse `robots.txt` files we need to make sure we don't access the same domain too
 often.
 
 {% highlight python %}
@@ -90,8 +90,8 @@ often.
 Finally, once we've checked we're allowed to access a page and haven't accessed another page on the same
 domain recently we use the standard Python tools to download the content of the page and store it in our
 database.n Now we can retrieve a page we need to add it to the task processing system. To do this we'll create
-a <a href="http://celeryproject.org/">Celery</a> task to retrieve the page. The task just needs to call the
-<tt>get_by_url</tt> static method we created earlier and then, if the page is downloaded trigger a second task
+a [Celery](http://celeryproject.org/) task to retrieve the page. The task just needs to call the
+`get_by_url` static method we created earlier and then, if the page is downloaded trigger a second task
 to parse out all of the links.
 
 {% highlight python %}
@@ -105,17 +105,17 @@ def retrieve_page(url):
 
 You might be asking why the links aren't parsed immediately after retrieving the page. They certainly could
 be, but a key goal was to enable the crawling process to scale as much as possible. Each page crawled has,
-based on the pages I've crawled so far, around 100 links on it. As part of the <tt>find_links</tt> task a new
-<tt>retrieve_task</tt> is created. This quickly swamps the tasks to perform other tasks like calculating the
+based on the pages I've crawled so far, around 100 links on it. As part of the `find_links` task a new
+`retrieve_task` is created. This quickly swamps the tasks to perform other tasks like calculating the
 rank of a page and prevents them from being processed.
 
 Celery provides the tools to ensure that a subset of message are processed in a timely manner, called
-<tt>Queues</tt>. Tasks can be assigned to different queues and daemons can be made to watch a specific set of
+`Queues`. Tasks can be assigned to different queues and daemons can be made to watch a specific set of
 queues. If you have a Celery daemon that only watches the queue used by your high priority tasks then those
 tasks will always be processed quickly.
 
 We'll use two queues, one for retrieving the pages and another for processing them. First we need to tell
-Celery about the queues (we also need to include the default <tt>celery</tt> queue here) and then we create a
+Celery about the queues (we also need to include the default `celery` queue here) and then we create a
 router class. The router looks at the task name and decides which queue to put it into. Your routing code
 could be very complicated, but ours is very straightforward.
 
@@ -163,4 +163,4 @@ class Command(BaseCommand):
 We've now got a web crawler that is almost complete. In the next post I'll discuss parsing links out of the
 HTML, and we'll look at calculating the rank of each page.
 
-Read <a href="/2011/10/06/beating-google-with-couchdb-celery-and-whoosh-part-4/">part 4</a>.
+Read [part 4](/2011/10/06/beating-google-with-couchdb-celery-and-whoosh-part-4/).

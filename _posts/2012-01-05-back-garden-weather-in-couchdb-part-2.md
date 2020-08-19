@@ -15,14 +15,14 @@ flickr_image: 'https://live.staticflickr.com/2073/2226758824_a5df2b2629_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/scelera/2226758824/'
 flickr_imagename: 'its raining..its pouring'
 ---
-In my <a href="2011/12/02/back-garden-weather-in-couchdb-part-1/">last post</a> I described the new
-CouchDB-based <a href="http://www.welwynweather.co.uk">website</a> I have built to display the weather data
+In my [last post](2011/12/02/back-garden-weather-in-couchdb-part-1/) I described the new
+CouchDB-based [website](http://www.welwynweather.co.uk) I have built to display the weather data
 collected from the weather station in my back garden. In this post I'll describe to import the data into
-CouchDB and the basics of rendering a page with a <a href="http://couchapp.org">CouchApp</a>.
+CouchDB and the basics of rendering a page with a [CouchApp](http://couchapp.org).
 
-<a href="http://code.google.com/p/pywws/">PyWWS</a> writes out the raw data it collected into a series of CSV
+[PyWWS](http://code.google.com/p/pywws/) writes out the raw data it collected into a series of CSV
 files, one per day. These are stored in two nested directory, the first being the year, the second being
-<tt>year-month</tt>. To collect the data I use PyWWS's live logging mode, which consists of a process
+`year-month`. To collect the data I use PyWWS's live logging mode, which consists of a process
 constantly running, talking to the data collector. Every five minutes it writes a new row into today's CSV
 file. Another process then runs every five minutes to read the new row, and import it into the database.
 
@@ -30,7 +30,7 @@ Because CouchDB stores its data using an append only format you should aim to av
 simplest way to write the import script would be to import each day's data every five minutes. This would
 cause the database to balloon in size, so instead we query the database to find the last update time and
 import everything after than. Each update is stored as a separate document in the database, with the
-<tt>timestamp</tt> attribute containing the unix timestamp of the update.
+`timestamp` attribute containing the unix timestamp of the update.
 
 The map code to get the most recent update is quite simple, we just need to emit the timestamp for each
 update. The reason the timestamp is emitted as the key is so we can filter the range of updates. It is also
@@ -75,7 +75,7 @@ CouchApp doesn't come with a templating library, but a common one to use is <a
 href="http://mustache.github.com/">Mustache</a>. The syntax is superficially like Django templates, but in
 reality it is far less powerful. For a simple website like this, Mustache is perfect.
 
-In the <tt>show</tt> directory of your CouchApp create a new file, <tt>test.js</tt>. As with the map/reduce
+In the `show` directory of your CouchApp create a new file, `test.js`. As with the map/reduce
 functions this file contains an anonymous function. In this case the function takes two parameters, the
 document and the request obejct, and returns an object containing the response body and any headers.
 
@@ -90,14 +90,14 @@ function (doc, req) {
 The function begins with some magic comments. These are commands to CouchDB which includes the referenced code
 or data in the function. This allows you to keep shared data separate from the functions that uses it.
 
-The first <tt><a href="http://guide.couchdb.org/draft/show.html#json">!json</a></tt> command causes the
-compiler to load the file <tt>templates/records.*</tt> and add it to a <tt>templates</tt> objects, under the
-<tt>records</tt> attribute.
+The first `[!json](http://guide.couchdb.org/draft/show.html#json)` command causes the
+compiler to load the file `templates/records.*` and add it to a `templates` objects, under the
+`records` attribute.
 
-The <tt><a href="http://guide.couchdb.org/draft/show.html#code">!code</a></tt> command works similarly, but in
+The `[!code](http://guide.couchdb.org/draft/show.html#code)` command works similarly, but in
 loads the specified file and includes the code in your function. Here we load the Mustache library, but I have
-also used the function to load <a href="http://www.diveintojavascript.com/projects/javascript-sprintf">a
-javascript implementation of <tt>sprintf</tt></a>. You might want to load some of your own common code using
+also used the function to load [a
+javascript implementation of `sprintf`](http://www.diveintojavascript.com/projects/javascript-sprintf). You might want to load some of your own common code using
 this method.
 
 {% highlight javascript %}
@@ -112,9 +112,9 @@ this method.
 Firstly we build an object containing the data we want to use in our template. As Mustache doesn't allow you
 to extend templates we need to pass the header and footer HTML code in as data.
 
-As mentioned the return type of a <tt>show function</tt> is a object containing the HTML and any HTTP headers.
+As mentioned the return type of a `show function` is a object containing the HTML and any HTTP headers.
 We only want to include the content type of the page, but you could return any HTTP header in a similar
-fashion. To generate the HTML we call the <tt>to_html</tt> function provided by Mustache, passing the template
+fashion. To generate the HTML we call the `to_html` function provided by Mustache, passing the template
 and the data object we prepared earlier.
 
 Now we have data in our database and can create simple pages using a CouchApp we can move on to showing real

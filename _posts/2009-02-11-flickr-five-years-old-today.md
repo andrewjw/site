@@ -10,8 +10,8 @@ tags:
 permalink: "/2009/02/11/flickr-five-years-old-today/"
 ---
 
-Today is <a href="http://www.flickr.com">Flickr</a>'s <a href="http://code.flickr.com/blog/2009/02/10/birthday-kitten-tuesday/">fifth birthday</a>.
-I've had a <a href="http://www.flickr.com/andrew_j_w">Flickr account</a> for several years, and I use the site all the time. For sharing photos,
+Today is [Flickr](http://www.flickr.com)'s [fifth birthday](http://code.flickr.com/blog/2009/02/10/birthday-kitten-tuesday/).
+I've had a [Flickr account](http://www.flickr.com/andrew_j_w) for several years, and I use the site all the time. For sharing photos,
 finding photos to use on a website, or just to browse around it's really unmatched.
 
 Happy Birthday Flickr!

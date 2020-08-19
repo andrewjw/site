@@ -19,7 +19,7 @@ I recently had cause to create a form with two date time fields which had the de
 
 This works fine except that when a process has been running across more than one day the initial values are no longer correct as they refer to the day the process started. Fortunately it appears that there is an undocumented feature where the initial value can be a function rather than an absolute value. This function is called each time the unbound form is displayed, so they are always correct.
 
-Wrapping the code to create the value in a <tt>lambda</tt> works great here, as does passing a reference to a function.
+Wrapping the code to create the value in a `lambda` works great here, as does passing a reference to a function.
 
     from datetime import datetime, date, timedelta
 

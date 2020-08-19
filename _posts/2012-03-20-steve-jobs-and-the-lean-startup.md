@@ -55,7 +55,7 @@ were a start up.
 One Apple trait the Lean Startup methodolgy doesn't allow for is dramatic product launches. The Lean Startup
 is a way of working that relies on quick iteration and gradually building up your customer base. It's hard to
 quickly iterate when building hardware, but early in Apple's life they were struggling to find a market for
-their computers. The <a href="http://en.wikipedia.org/wiki/Apple_I">Apple I</a> follow the trend of the time
+their computers. The [Apple I](http://en.wikipedia.org/wiki/Apple_I) follow the trend of the time
 of build-it-yourself computers. Just a year later and Apple released the <a
 href="http://en.wikipedia.org/wiki/Apple_II_series">Apple ][</a> which came with a case and was much more
 suitable for the average consumer. This represents a pivot on the part of Apple. They could have continued to

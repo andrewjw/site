@@ -16,7 +16,7 @@ flickr_image: 'https://live.staticflickr.com/27/57665246_476f598ce2_w.jpg'
 flickr_imagelink: 'http://www.flickr.com/photos/jakescreations/57665246/'
 flickr_imagename: Soccer Ball
 ---
-I often pass some time while traveling playing a <a href="http://andrewwilkinson.wordpress.com/2009/06/01/flightcontrol-review/">game</a> or <a href="http://andrewwilkinson.wordpress.com/2009/04/02/wolfenstein-3d-iphone-review/">two</a> on my phone. Being a football fan I was interested to see that a version of Championship Manager was available for the iPhone.
+I often pass some time while traveling playing a [game](http://andrewwilkinson.wordpress.com/2009/06/01/flightcontrol-review/) or [two](http://andrewwilkinson.wordpress.com/2009/04/02/wolfenstein-3d-iphone-review/) on my phone. Being a football fan I was interested to see that a version of Championship Manager was available for the iPhone.
 
 Early impressions of the game are good. The interface is polished with plenty of options and buttons to press. The game also features a pretty complete set of teams and players with all the usual statistics that you would expect from a football management game.
 

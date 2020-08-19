@@ -17,7 +17,7 @@ grow up, in a normal house he'd be able to turn on the tv and watch his favourit
 do it for him, but with the overcomplicated setup that we had it would take him several years longer before he
 could learn the right sequence of buttons.
 
-I've been a <a href="http://www.mythtv.org">MythTV</a> user for well over ten years, and all our TV watching
+I've been a [MythTV](http://www.mythtv.org) user for well over ten years, and all our TV watching
 is done through it. At this stage with our history of recorded shows and a carefully curated list of recording
 rules switching would be a big pain, so I wanted to try and simplify the user experience, even if it means
 complicating the setup somewhat.
@@ -32,7 +32,7 @@ plug over. Lastly, because I was running a combined frontend and backend it wasn
 (otherwise it wouldn't be able to turn on to record.) If you turned the TV off the frontend would still be on,
 preventing the backend from shutting down for several hours, until it went into idle mode.
 
-I decided to solve these problems by using a <a href="http://amzn.to/2ld3GT8">Raspberry Pi 3</a> as a separate
+I decided to solve these problems by using a [Raspberry Pi 3](http://amzn.to/2ld3GT8) as a separate
 frontend, and switching the plugs around. As they run Linux, and have hardware decoding of MPEG2 and h264 they
 work great as MythTV frontends.
 
@@ -40,12 +40,12 @@ A common issue with Raspberry Pis is that if you don't shutdown them down correc
 corrupt. If I connected the Pi to the slave plug socket as planned then it would be uncleanly shut down every
 time the TV was switched off, risking regular corruption. Fortunately Raspberry Pis support network booting,
 which means you can have the root filesystem mounted from somewhere else, and you don't even need the SD card
-at all. I already had a <a href="http://www.synology.com">Synology NAS</a>, which I love, and is a perfect
+at all. I already had a [Synology NAS](http://www.synology.com), which I love, and is a perfect
 host for the filesystem.
 
 Sadly the network code that is built into the Pis ROM (and therefore isn't updatable) is very specific and
 buggy. My router's DNS server doesn't support the options required to make the Pi boot, so I switched to using
-a <a href="https://forum.synology.com/enu/viewtopic.php?t=129075">DNS server on the Synology</a>. While you
+a [DNS server on the Synology](https://forum.synology.com/enu/viewtopic.php?t=129075). While you
 can't set the right options in the web frontend you can edit the config files directly to make it work. The
 bugs in the Pis firmware are that the DNS responses must be received at the right time. Too quick or too slow
 and the Pi will fail to boot. One of the aspects I like the most about my Synology is that it has a very low

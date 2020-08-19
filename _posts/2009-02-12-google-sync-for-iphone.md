@@ -10,7 +10,7 @@ tags:
 permalink: "/2009/02/12/google-sync-for-iphone/"
 ---
 Google released an excellent new tool for automatically syncing your iPhone's contacts and calendars and
-<a href="http://mail.google.com">GMail</a> and <a href="http://www.google.com/calendar">Google Calendar</a>.
+[GMail](http://mail.google.com) and [Google Calendar](http://www.google.com/calendar).
 Although, as is usually the case with Google, the service is marketed as being in Beta it seems to be working
 very well. Add or edit a contact either on in GMail or on your iPhone and within seconds it's been synced across.
 Even contact photos are synchronized. The same is true of calendar entries.
@@ -24,4 +24,4 @@ there has been no change, changes are 'pushed' to you. This means that not only 
 much more quickly on your phone, and you don't waste battery life or network traffic checking unnecessarily. Unfortunately
 it doesn't support email syncing, but surely that's only a matter of time?
 
-Visit <a href="http://m.google.com/sync">http://m.google.com/sync</a> to get your iPhone set up.
+Visit [http://m.google.com/sync](http://m.google.com/sync) to get your iPhone set up.

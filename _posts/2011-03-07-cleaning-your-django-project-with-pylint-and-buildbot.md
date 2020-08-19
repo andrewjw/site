@@ -18,8 +18,8 @@ flickr_imagelink: 'https://www.flickr.com/photos/inf3ktion/4477642894/'
 flickr_imagename: 'Cleaning'
 ---
 There are a number of tools for checking whether your Python code meets a coding standard. These include <a
-href="http://pypi.python.org/pypi/pep8">pep8.py</a>, <a href="http://pychecker.sourceforge.net/">PyChecker</a>
-and <a href="http://www.logilab.org/857">PyLint</a>. Of these, PyLint is the most comprehensive and is the
+href="http://pypi.python.org/pypi/pep8">pep8.py</a>, [PyChecker](http://pychecker.sourceforge.net/)
+and [PyLint](http://www.logilab.org/857). Of these, PyLint is the most comprehensive and is the
 tool which I prefer to use as part of <a
 href="http://andrewwilkinson.wordpress.com/2010/06/30/continuous-integration-testing/">my buildbot checks</a>
 that run on every commit.
@@ -34,12 +34,12 @@ make it more compatible with Django.
 
     disable=W0403,W0232,E1101
 
-This line disables a few problems that are picked up entirely. <tt>W0403</tt> stops relative imports from
+This line disables a few problems that are picked up entirely. `W0403` stops relative imports from
 generating a warning, whether you want to disable these or not is really a matter of personal preference.
-Although I appreciate why there is a check for this, I think this is a bit too picky. <tt>W0232</tt> stops a
-warning appearing when a class has no <tt>__init__</tt> method. Django models will produce this warning, but
-because they're metaclasses there is nothing wrong with them. Finally, <tt>E1101</tt> is generated if you
-access a member variable that doesn't exist. Accessing members such as <tt>id</tt> or <tt>objects</tt> on a
+Although I appreciate why there is a check for this, I think this is a bit too picky. `W0232` stops a
+warning appearing when a class has no `__init__` method. Django models will produce this warning, but
+because they're metaclasses there is nothing wrong with them. Finally, `E1101` is generated if you
+access a member variable that doesn't exist. Accessing members such as `id` or `objects` on a
 model will trigger this, so it's simplest just to disable the check.
 
     output-format=parseable include-ids=yes
@@ -50,7 +50,7 @@ need to include these lines.
     good-names= ...,qs
 
 Apart from a limited number of names PyLint tries to enforce a minimum size of three characters in a variable
-name. As <tt>qs</tt> is such a useful variable name for a QuerySet I force this be allowed as a good name.
+name. As `qs` is such a useful variable name for a QuerySet I force this be allowed as a good name.
 
     max-line-length=160
 
@@ -61,7 +61,7 @@ side by side doesn't hold water in this age where multiple monitors for develope
 PyLint uses the exit code to indicate what errors occurred during the run. This confuses Buildbot which
 assumes that a non-zero return code means the program failed to run, even when using the <a
 href="http://buildbot.net/buildbot/docs/0.8.0/PyLint.html">PyLint buildstep</a>. To work around this I use a
-simple management command to duplicate the <tt>pylint</tt> program's functionality but that doesn't let the
+simple management command to duplicate the `pylint` program's functionality but that doesn't let the
 return code propagate back to Builtbot.
 
     from django.core.management.base import BaseCommandn from pylint import lintn class

@@ -22,9 +22,9 @@ href="https://github.com/andrewjw/celery-crawler">code up on GitHub</a>. All I a
 you give me a credit somewhere.
 
 When you've downloaded the code it should prove to be quite simple to get running. First you'll need to edit
-settings.py. It should work out of the box, but you should change the <tt>USER_AGENT</tt> setting to something
+settings.py. It should work out of the box, but you should change the `USER_AGENT` setting to something
 unique. You may also want to adjust some of the other settings, such as the database connection or CouchDB
-urls.n To set up the CouchDB views type <tt>python manage.py update_couchdb</tt>.
+urls.n To set up the CouchDB views type `python manage.py update_couchdb`.
 
 Next, to run the celery daemon you'll need to type the following two commands:
 {% highlight bash %}
@@ -35,12 +35,12 @@ python manage.py celeryd -Q process
  This sets up the daemons to monitor the two queues and process the tasks. As mentioned in a previous post
 two queues are needed to prevent one set of tasks from swamping the other.
 
-Next you'll need to run the full text indexer, which can be done with <tt>python manage.py index_update</tt>
-and then you'll want to run the server using <tt>python manage.py runserver</tt>.
+Next you'll need to run the full text indexer, which can be done with `python manage.py index_update`
+and then you'll want to run the server using `python manage.py runserver`.
 
 At this point you should have several process running not doing anything. To kick things off we need to inject
-one or more urls into the system. You can do this with another management command, <tt>python manage.py
-start_crawl http://url</tt>. You can run this command as many times as you like to seed your crawler with
+one or more urls into the system. You can do this with another management command, `python manage.py
+start_crawl http://url`. You can run this command as many times as you like to seed your crawler with
 different pages. It has been my experience that the average page has around 100 links on it so it shouldn't
 take long before your crawler is scampering off to crawl many more pages that you initially seeded it with.
 
@@ -50,7 +50,7 @@ drawback, and it's a real show stopper, is that the Celery daemon will poll the 
 tasks. This polling, as you scale up the number of daemons will quickly bring your server to its knees and
 prevent it from doing any useful work.
 
-The disappointing fact is that Celery could watch the <tt>_changes</tt> feed rather than polling. Hopefully
+The disappointing fact is that Celery could watch the `_changes` feed rather than polling. Hopefully
 this will get fixed in a future version. For now though, for anything other experimental scale installations
 RabbitMQ is a much better bet.
 

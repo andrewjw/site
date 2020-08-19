@@ -13,7 +13,7 @@ flickr_image: 'https://live.staticflickr.com/7150/6818597069_82ed80974b_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/shelley_dave/6818597069/'
 flickr_imagename: 'Snow falling'
 ---
-After a two week gap the recent <a href="http://www.bbc.co.uk/news/uk-16899453">snow in the UK</a> has
+After a two week gap the recent [snow in the UK](http://www.bbc.co.uk/news/uk-16899453) has
 inspired me to get back to my series of posts on my weather station website, <a
 href="http://www.welwynweather.co.uk">WelwynWeather.co.uk</a>. In this post I'll discuss the <a
 href="http://www.welwynweather.co.uk/records">records page</a>, which shows details such as the highest and
@@ -59,10 +59,10 @@ function(keys, values, rereduce) {
 }
 {% endhighlight %}
 
-The website <a href="http://www.welwynweather.co.uk">welwynweather.co.uk</a> actually points to the Couch <a
+The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch <a
 href="http://wiki.apache.org/couchdb/Rewriting_urls">rewrite document</a>. To make the view available we add a
 rewrite to expose it to the world. As we want to reduce all documents to a single point we just need to pass
-<tt>reduce=true</tt> as the query.
+`reduce=true` as the query.
 
 {% highlight javascript %}
 {
@@ -93,7 +93,7 @@ be. So, to calculate the heaviest periods of rain you would need to build a data
 hour or day and the amount of rain in that period. As the documents are processed the structure would need to
 be updated and the period with the highest rain found.
 
-Calculating a complicated structure as the result of your <tt>reduce</tt> function is disallowed by CouchDB,
+Calculating a complicated structure as the result of your `reduce` function is disallowed by CouchDB,
 for good reason. An alternative way to find the heaviest periods of rain would be to put the output of the
 aggregation function into a new database and run another map/reduce function over that to find the heaviest
 period. Unfortunately CouchDB doesn't support the chaining of views, so this is impossible without using an
@@ -127,6 +127,6 @@ CouchDB is a great document store that is at home the web. The ability to run si
 database is extremely useful and makes deployment a snap. As with all technology you need to be aware of the
 limitations of CouchDB and allow for them in your designs. In my case the inability to chain views together is
 really the only wart in the code. Don't forget you can replicate the database to get the data and use the
-<tt>couchapp</tt> command to clone a copy of site. See the first post in this series for instructions on how
+`couchapp` command to clone a copy of site. See the first post in this series for instructions on how
 to do this. Please let me know in the comment section below if you find the site useful or have any questions
 or comments on the code.

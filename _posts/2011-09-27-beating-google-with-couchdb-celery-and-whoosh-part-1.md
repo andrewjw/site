@@ -21,9 +21,9 @@ Ok, let's get this out of the way right at the start - the title is a huge overs
 will show you how to create a search engine using standard Python tools like Django, Celery and Whoosh with
 CouchDB as the backend.
 
-<a href="http://celeryproject.org/">Celery</a> is a message passing library that makes it really easy to run
+[Celery](http://celeryproject.org/) is a message passing library that makes it really easy to run
 background tasks and to spread them across a number of nodes. The most recent release added the NoSQL database
-<a href="http://couchdb.apache.org/">CouchDB</a> as a possible backend. I'm a huge fan of CouchDB, and the
+[CouchDB](http://couchdb.apache.org/) as a possible backend. I'm a huge fan of CouchDB, and the
 idea of running both my database and message passing backend on the same software really appealed to me.
 Unfortunately the documentation doesn't make it clear what you need to do to get CouchDB working, and what the
 downsides are. I decided to write this series partly to explain how Celery and CouchDB work, but also to
@@ -36,7 +36,7 @@ href="http://en.wikipedia.org/wiki/PageRank">PageRank</a>-like algorithm to help
 we'll attach a simple Django frontend to the search engine for querying it.
 
 Let's consider what we need to implement for our webcrawler to work, and be a good citizen of the internet.
-First and foremost is that we must be read and respect <a href="http://www.robotstxt.org/">robots.txt</a>.
+First and foremost is that we must be read and respect [robots.txt](http://www.robotstxt.org/).
 This is a file that specifies what areas of a site crawlers are banned from. We must also not hit a site too
 hard, or too often. It is very easy to write a crawler than repeatedly hits a site, and requests the same
 document over and over again. These are very big no-noes. Lastly we must make sure that we use a custom <a
@@ -55,10 +55,10 @@ the links from the page. To begin the process we'll need to use an external comm
 into the system, but after that it will continuously crawl until it runs out of links. A real search engine
 would want to monitor its index for stale pages and reload those, but I won't implement that in this example.
 
-I'm going to assume that you have a decent level of knowledge about <a href="http://www.python.org">Python</a>
-and <a href="http://www.djangoproject.com/">Django</a>, so you might want to read some tutorials on those
+I'm going to assume that you have a decent level of knowledge about [Python](http://www.python.org)
+and [Django](http://www.djangoproject.com/), so you might want to read some tutorials on those
 first. If you're following along at home, create yourself a blank Django project with a single app inside.
-You'll also need to install <tt>django-celery</tt>, the CouchDB Python library, and have a working install of
+You'll also need to install `django-celery`, the CouchDB Python library, and have a working install of
 CouchDB available.
 
-Read <a href="/2011/09/29/beating-google-with-couchdb-celery-and-whoosh-part-2/">part 2</a>.
+Read [part 2](/2011/09/29/beating-google-with-couchdb-celery-and-whoosh-part-2/).

@@ -18,7 +18,7 @@ flickr_imagename: 'Red Sofa encounter i'
 ---
 In this series I'm showing you how to build a webcrawler and search engine using standard Python based tools
 like Django, Celery and Whoosh with a CouchDB backend. In previous posts we created a data structure, parsed
-and stored <tt>robots.txt</tt> and stored a single webpage in our document. In this post I'll show you how to
+and stored `robots.txt` and stored a single webpage in our document. In this post I'll show you how to
 parse out the links from our stored HTML document so we can complete the crawler, and we'll start calculating
 the rank for the pages in our database.
 
@@ -35,7 +35,7 @@ link_single_re = re.compile(r&quot;&lt;a[^&gt;]+href='([^']+)'&quot;)
 link_double_re = re.compile(r'&lt;a[^&gt;]+href=&quot;([^&quot;]+)&quot;')
 {% endhighlight %}
 
-All we need to look for an <tt>href</tt> attribute in an <tt>a</tt> tag. We'll use two regular expressions to
+All we need to look for an `href` attribute in an `a` tag. We'll use two regular expressions to
 handle single and double quotes, and then build a list containing all the links in the document.
 
 {% highlight python %}
@@ -50,8 +50,8 @@ def find_links(doc_id):
 {% endhighlight %}
 
 Once we've got a list of the raw links we need to process them into absolute urls that we can send back to the
-<tt>retrieve_page</tt> task we wrote earlier. I'm cutting some corners with processing these urls, in
-particular I'm not dealing with <a href="http://www.w3.org/TR/html4/struct/links.html#h-12.4">base</a> tags.
+`retrieve_page` task we wrote earlier. I'm cutting some corners with processing these urls, in
+particular I'm not dealing with [base](http://www.w3.org/TR/html4/struct/links.html#h-12.4) tags.
 
 {% highlight python %}
     doc.links = []
@@ -85,7 +85,7 @@ to be retrieved.
             retrieve_page.delay(link)
 {% endhighlight %}
 
-We've now got a complete webcrawler. We can store webpages and <tt>robots.txt</tt> files. Given a starting URL
+We've now got a complete webcrawler. We can store webpages and `robots.txt` files. Given a starting URL
 our crawler will set about parsing pages to find out what they link to and retrieve those pages as well. Given
 enough time you'll end up with most of the internet on your harddisk!
 
@@ -95,10 +95,10 @@ ranks pages based on their importance. This is the same method used by Google, k
 href="http://en.wikipedia.org/wiki/Page_Rank">Page Rank</a>.
 
 Pank Rank is a measure of how likely you are to end up on a given page by clicking on a random link anywhere
-on the internet. The <a href="http://en.wikipedia.org/wiki/Page_Rank">Wikipedia article</a> goes into some
+on the internet. The [Wikipedia article](http://en.wikipedia.org/wiki/Page_Rank) goes into some
 detail on a number of ways to calculate it, but we'll use a very simple iterative algorithm.
 
-When created, a page is given a rank equal to <tt>1/number of pages</tt>. Each link that is found on a newly
+When created, a page is given a rank equal to `1/number of pages`. Each link that is found on a newly
 crawled page then causes the rank of the destination page to be calculated. In this case the rank of a page is
 the sum of the ranks of the pages that link to it, divided by the number of links on those pages, multiplied
 by a dampening factor (I use 0.85, but this could be adjusted.) If a page has a rank of 0.25 and has five
@@ -109,4 +109,4 @@ In this post we've completed the web crawler part of our search engine and discu
 importance. In the next post we'll implement this ranking and also create a full text index of the pages we
 have crawled.
 
-Read <a href="/2011/10/11/beating-google-with-couchdb-celery-and-whoosh-part-5/">part 5</a>.
+Read [part 5](/2011/10/11/beating-google-with-couchdb-celery-and-whoosh-part-5/).

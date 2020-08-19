@@ -16,7 +16,7 @@ flickr_image: 'https://live.staticflickr.com/3036/2917647893_e04eba796c_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/mythoto/2917647893/'
 flickr_imagename: "from whence the brick came"
 ---
-At work we recently set up <a href="http://buildbot.net/">Buildbot</a> to replace an in-house continuous
+At work we recently set up [Buildbot](http://buildbot.net/) to replace an in-house continuous
 integration tool that never really took off.  I've used Buildbot before, in a hobby capacity, but using it my
 day job has really brought home to me how important not only testing is, but testing continuously.
 
@@ -39,10 +39,10 @@ Because builtbot runs without user intervention you don't need to remember to do
 nag. If you introduce a bug with a change you quickly get an email letting you know that there is a problem,
 and if you set those emails up to go to your team then you also have peer pressure to get that problem fixed.
 
-I spend most of my time building <a href="http://www.djangoproject.com">Django</a> based sites. For these
+I spend most of my time building [Django](http://www.djangoproject.com) based sites. For these
 sites I set up six steps for Buildbot to follow. The first step is the checkout step, then a step to copy a settings file into place. Django stores settings in a Python file and these settings need to be configured
-for each server that the site is run on. I typically have a file <tt>settings_local.py.buildbot</tt> stored
-in the repository and this step copies this file to <tt>settings_local.py</tt> so the following commands will
+for each server that the site is run on. I typically have a file `settings_local.py.buildbot` stored
+in the repository and this step copies this file to `settings_local.py` so the following commands will
 run with the correct settings. The next step is to download and install the dependencies of the site. I'm
 going to go into more detail on how I manage settings and dependencies in a future post, but Buildbot just
 runs the correct commands.
@@ -51,7 +51,7 @@ The first three steps that Buildbot runs are just configuration steps. The first
 compilation step. It's rare that a change gets committed without it ever being run, but it's still worthwhile
 to check that the code compiles. It is possible that when merging changes from different branches errors can
 creep in. Fortunately Python makes it easy to check that all the files in a directory structure compile using
-the <tt>compileall</tt> module. This can be run using the command <tt>python -m compileall -q</tt> which
+the `compileall` module. This can be run using the command `python -m compileall -q` which
 return an exit code of zero if all the files compile, and nonzero if there is an error. This means that if
 there is an error Buildbot will detect it, and mark the build as failed.
 
@@ -60,7 +60,7 @@ details on how to write unit tests, but assuming you have them this assures you 
 every commit. Because Buildbot can be easily configured to build on several different machines on each commit
 you can easily test that a change you made on a Python 2.5 machine also works on a Python 2.4 machine.
 
-The final step I run is <a href="http://www.logilab.org/857">PyLint</a>. PyLint checks that your code complies
+The final step I run is [PyLint](http://www.logilab.org/857). PyLint checks that your code complies
 with a set of coding standards and simple checks. If your unit tests don't have a 100% coverage (and frankly,
 whose does?) then PyLint will hep detect that there are no obvious flaws in your code. PyLint takes a bit of
 time to configure, especially as it doesn't like some of the metaclass magic that Django uses, but once you

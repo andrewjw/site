@@ -30,11 +30,11 @@ flickr:
 {% include image.html image=0 %}I'm a huge science and engineering documentary geek. I prefer watching documentaries over all other forms of
 television. It doesn't really matter what the documentary is about, I'll usually watch it. After getting ready
 for my wedding I had a bit of time before I had to walk down the aisle so I watched a documentary about pilots
-learning to land <a href="http://en.wikipedia.org/wiki/Marine_One">Marine One</a> at the White House. There
+learning to land [Marine One](http://en.wikipedia.org/wiki/Marine_One) at the White House. There
 probably aren't many people who would choose to spend that time that way.
 
 Science documentaries have experienced a renaissance over the last few years, particularly on the BBC. The
-long running <a href="http://www.bbc.co.uk/programmes/b006mgxf">Horizon</a> series has been joined by a raft
+long running [Horizon](http://www.bbc.co.uk/programmes/b006mgxf) series has been joined by a raft
 of other mini-series presented by Brian Cox, Alice Roberts, Marcus Du Sutoy, Jim Al-Kalili and Michael Mosely.
 These cover a large part of the sciences, including Chemistry, Biology and Physics. Physics in particular is
 regularly on our screens. Whether it's talking about quantum mechanics or astronomy or something else it seems
@@ -46,9 +46,9 @@ their pocket.
 
 It wasn't always like this. Back in 1981 the BBC ran the <a
 href="http://www.mcmordie.co.uk/acornhistory/bbchist.shtml">BBC Computer Literacy project</a>, which attempted
-to teach the public to program using the <a href="http://en.wikipedia.org/wiki/BBC_Micro">BBC Micro</a>
-through a <a href="http://www.computinghistory.org.uk/det/7182/BBC-Computer-Literacy-Project/">ten part
-television series</a>.
+to teach the public to program using the [BBC Micro](http://en.wikipedia.org/wiki/BBC_Micro)
+through a [ten part
+television series](http://www.computinghistory.org.uk/det/7182/BBC-Computer-Literacy-Project/).
 
 Clearly if a project like this was to be attempted today there would be no need for the BBC to partner with
 hardware manufactures. People have access to many different programmable devices, they just don't know how to
@@ -61,7 +61,7 @@ were technical documentaries, instead they focused on business, cultural and soc
 and the internet.
 
 It's not that more technical aspects of computer don't appear as part of other documentaries, recently Marcus
-Du Sautoy <a href="https://twitter.com/#!/MarcusduSautoy/status/138678273323438080">announced</a> that he is
+Du Sautoy [announced](https://twitter.com/#!/MarcusduSautoy/status/138678273323438080) that he is
 filming a episode of Horizon on Artificial Intelligence. It won't air until next spring, so it's hard to
 comment, but I suspect it will focus on the outcome of the software rather than the process of how computers
 can be made to appear intelligent.
@@ -88,7 +88,7 @@ Facebook and show people the inside of a data centre. I suspect that most people
 Google search results are coming from.
 
 I doubt that there is much demand for the updated series as long as the 10 part original, but the soon to be
-released <a href="http://www.raspberrypi.org/">Raspberry Pi</a> machine would be an ideal way to recreate the
+released [Raspberry Pi](http://www.raspberrypi.org/) machine would be an ideal way to recreate the
 tinkering appeal of the original BBC Micro. There's something magical about seeing a program you've written
 appearing on the TV in your living room, rather than on the screen of your main PC. An alternative would be to
 provide an interpreter as part of a website so you can just type in a URL and start programming.
@@ -99,7 +99,7 @@ A documentary focussing on programming would have a difficulty that the original
 that computing power is common place means that people are used to software created by large teams with
 dedicated designers. An individual with no experience can't hope to come to close to something like that.
 Fortunately computers are so much more powerful today that much of the complexity that you needed to cope with
-can be abstracted away. Libraries like <a href="http://vpython.org/">VPython</a> make it very simple to
+can be abstracted away. Libraries like [VPython](http://vpython.org/) make it very simple to
 produce complicated and impressive 3D graphics.
 
 I'm certainly not the only person who wants to help teach the masses to program, but realistically you need an

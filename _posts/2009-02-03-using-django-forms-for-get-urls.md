@@ -16,7 +16,7 @@ A regular occurance in writing webapps is the user will submit a form, and on th
 
 While Django forms contain several functions for converting the form to HTML, it doesn't contain one to convert a bound form to url arguments.
 
-Fortunately Python's standard library module <tt>urllib</tt> contains a module which converts a dictionary to a properly formatted url argument string. We simply add a function, <tt>as_url_args</tt>, which passes the form's cleaned data to this function and we get back a nice string we can add to a link.
+Fortunately Python's standard library module `urllib` contains a module which converts a dictionary to a properly formatted url argument string. We simply add a function, `as_url_args`, which passes the form's cleaned data to this function and we get back a nice string we can add to a link.
 
     import urllib
     from django import forms
@@ -27,6 +27,6 @@ Fortunately Python's standard library module <tt>urllib</tt> contains a module w
         def as_url_args(self):
             return urllib.urlencode(self.cleaned_data)    
 
-To use this in a template, where <tt>form</tt> is the form object, we can add it to a link.
+To use this in a template, where `form` is the form object, we can add it to a link.
 
-    <a href="/form?{{ form.as_url_args }}&amp;format=csv">Download As CSV</a>
+    [Download As CSV](/form?{{ form.as_url_args }}&amp;format=csv)

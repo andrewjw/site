@@ -15,9 +15,9 @@ flickr_image: 'https://live.staticflickr.com/85/243295768_5f556ef303_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/13422316@N00/243295768/'
 flickr_imagename: 'Weather front'
 ---
-In this series of posts I'm describing how I created a <a href="http://www.couchdb.org">CouchDB</a> <a
-href="http://couchapp.org/page/index">CouchApp</a> to <a href="http://www.welwynweather.co.uk">display the
-weather data</a> collected by the weather station in my back garden. In the <a
+In this series of posts I'm describing how I created a [CouchDB](http://www.couchdb.org) <a
+href="http://couchapp.org/page/index">CouchApp</a> to [display the
+weather data](http://www.welwynweather.co.uk) collected by the weather station in my back garden. In the <a
 href="http://andrewwilkinson.wordpress.com/2012/01/12/back-garden-weather-in-couchdb-part-3/">previous
 post</a> I showed you how to display a single day's weather data. In this post we will look at processing the
 data to display it by month.
@@ -138,7 +138,7 @@ correct average for these values.
 }
 {% endhighlight %}
 
-Now we have averaged the weather data into hourly chunks we can use a <tt>list</tt>, like the one described in
+Now we have averaged the weather data into hourly chunks we can use a `list`, like the one described in
 the previous post, to display the data.
 
 In the next and final post in this series I'll discuss the <a

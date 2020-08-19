@@ -17,7 +17,7 @@ flickr_image: 'https://live.staticflickr.com/2022/2248163114_73723d627f_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/bitzcelt/2248163114/'
 flickr_imagename: 8 Forks
 ---
-While on my delayed train this morning I was listening to <a href="http://blog.stackoverflow.com/2010/01/podcast-80/">episode 80</a> of the excellent <a href="http://blog.stackoverflow.com/">Stack Overflow podcast</a>. In this episode Jeff Atwood was complaining to Joel Spolsky about his problems with <a href="http://www.github.com">GitHub</a>.
+While on my delayed train this morning I was listening to [episode 80](http://blog.stackoverflow.com/2010/01/podcast-80/) of the excellent [Stack Overflow podcast](http://blog.stackoverflow.com/). In this episode Jeff Atwood was complaining to Joel Spolsky about his problems with [GitHub](http://www.github.com).
 
 GitHub is a social coding site, along the same lines as Sourceforge or Google Code, but focused entirely on the distributed version control system Git. Where GitHub differs from the other project hosting sites, and where I think Jeff's confusion comes from is that with GitHub the primary structure on their site is that of the developer, not of the project. They treat every developer as a rock star, who is bigger than the projects that they work on.
 

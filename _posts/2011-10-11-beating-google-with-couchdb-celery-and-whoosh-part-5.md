@@ -19,11 +19,11 @@ flickr_imagename: 'order'
 ---
 In this post we'll continue building the backend for our search engine by implementing the algorithm we
 designed in the last post for ranking pages. We'll also build a index of our pages with
-<a href="https://bitbucket.org/mchaput/whoosh/wiki/Home">Whoosh</a>, a pure-Python full-text indexer and
+[Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home), a pure-Python full-text indexer and
 query engine.
 
 To calculate the rank of a page we need to know what other pages link to a given url, and how many links that
-page has. The code below is a CouchDB map called <tt>page/links_to_url</tt>. For each page this will output a
+page has. The code below is a CouchDB map called `page/links_to_url`. For each page this will output a
 row for each link on the page with the url linked to as the key and the page's rank and number of links as the
 value.
 
@@ -38,7 +38,7 @@ function (doc) {
 {% endhighlight %}
 
 As before we're using a Celery task to allow us to distribute our calculations. When we wrote the
-<tt>find_links</tt> task we called <tt>calculate_rank</tt> with the document id for our page as the parameter.
+`find_links` task we called `calculate_rank` with the document id for our page as the parameter.
 
 {% highlight python %}
 @task
@@ -47,7 +47,7 @@ def calculate_rank(doc_id):
 {% endhighlight %}
 
 Next we get a list of ranks for the page's that link to this page. This static method is a thin wrapper around
-the <tt>page/links_to_url</tt> map function given above.
+the `page/links_to_url` map function given above.
 
 {% highlight python %}
     links = Page.get_links_to_url(page.url)
@@ -62,7 +62,7 @@ by the number of links and summing this across all the linking pages.
         rank += link[0] / link[1]
 {% endhighlight %}
 
-To prevent cycles (where <tt>A</tt> links to <tt>B</tt> and <tt>B</tt> links to <tt>A</tt>) from causing an
+To prevent cycles (where `A` links to `B` and `B` links to `A`) from causing an
 infinite loop in our calculation we apply a damping factor. This causes the value of the link to decline by
 0.85 and combined with the limit later in the function will force any loops to settle on a value.
 
@@ -71,7 +71,7 @@ infinite loop in our calculation we apply a damping factor. This causes the valu
     page.rank = rank * 0.85
 {% endhighlight %}
 
-If we didn't find any links to this page then we give it a default rank of <tt>1/number_of_pages</tt>.
+If we didn't find any links to this page then we give it a default rank of `1/number_of_pages`.
 
 {% highlight python %}
     if page.rank == 0:
@@ -91,17 +91,17 @@ we save the new rank and cause all the pages linked to from our page to recalcul
 {% endhighlight %}
 
 This is a very simplistic implementation of a page rank algorithm. It does generate a useful ranking of pages,
-but the number of queued <tt>calculate_rank</tt> tasks explodes. In a later post I'll discuss how this could
+but the number of queued `calculate_rank` tasks explodes. In a later post I'll discuss how this could
 be made rewritten to be more efficient.
 
-<a href="https://bitbucket.org/mchaput/whoosh/wiki/Home">Whoosh</a> is a pure-Python full text search engine.
+[Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) is a pure-Python full text search engine.
 In the next post we'll look at querying it, but first we need to index the pages we've crawled.
 
 The first step with Whoosh is to specify your schema. To speed up the display of results we store the
 information we need to render the results page directly in the schema. For this we need the page title, url
 and description. We also store the score given to the page by our pagerank-like algorithm. Finally we add
 the page text to the index so we can query it. If you want more details, the
-<a href="http://packages.python.org/Whoosh/">Whoosh documentation</a> is pretty good.
+[Whoosh documentation](http://packages.python.org/Whoosh/) is pretty good.
 
 {% highlight python %}
 from whoosh.fields import *n
@@ -109,7 +109,7 @@ schema = Schema(title=TEXT(stored=True), url=ID(stored=True, unique=True), desc=
 {% endhighlight %}
 
 CouchDB provides an interface for being informed whenever a document in the database
-<a href="http://guide.couchdb.org/draft/notifications.html">changes</a>. This is perfect for building an
+[changes](http://guide.couchdb.org/draft/notifications.html). This is perfect for building an
 index.
 
 Our full-text indexing daemon is implemented as a Django management command so there is some boilerplate code
@@ -124,11 +124,11 @@ class Command(BaseCommand):
 
 CouchDB allows you to get all the changes that have occurred since a specific point in time (using a revision
 number). We store this number inside the Whoosh index directory, and accessing it using the
-<tt>get_last_change</tt> and <tt>set_last_change</tt> functions. Our access to the Whoosh index is through a
-<a href="http://packages.python.org/Whoosh/quickstart.html#the-indexwriter-object">IndexWriter</a> object,
+`get_last_change` and `set_last_change` functions. Our access to the Whoosh index is through a
+[IndexWriter](http://packages.python.org/Whoosh/quickstart.html#the-indexwriter-object) object,
 again accessed through an abstraction function.
 
-Now we enter an infinite loop and call the <tt>changes</tt> function on our CouchDB database object to get
+Now we enter an infinite loop and call the `changes` function on our CouchDB database object to get
 the changes.
 
 {% highlight python %}
@@ -143,9 +143,9 @@ the changes.
                         continue
 {% endhighlight %}
 
-In our database we store <tt>robots.txt</tt> files as well as pages, so we need to ignore them. We also need
+In our database we store `robots.txt` files as well as pages, so we need to ignore them. We also need
 to parse the document so we can pull out the text from the page. We do this with the
-<a href="http://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> library.
+[BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) library.
 
 {% highlight python %}
                     if &quot;type&quot; in doc and doc[&quot;type&quot;] == &quot;page&quot;:
@@ -162,7 +162,7 @@ On the results page we try to use the meta description if we can find it.
 
 Once we've got the parsed document we update our Whoosh index. The code is a little complicated because we
 need to handle the case where the page doesn't have a title or description, and that we search for the title
-as well as the body text of the page. The key element here is <tt>text=True</tt> which pulls out just the
+as well as the body text of the page. The key element here is `text=True` which pulls out just the
 text from a node and strips out all of the tags.
 
 {% highlight python %}
@@ -189,4 +189,4 @@ where we left off.
 In the next post I'll discuss how to query the index, sort the documents by our two rankings and build a
 simple web interface.
 
-Read <a href="/2011/10/13/beating-google-with-couchdb-celery-and-whoosh-part-6/">part 6</a>.
+Read [part 6](/2011/10/13/beating-google-with-couchdb-celery-and-whoosh-part-6/).

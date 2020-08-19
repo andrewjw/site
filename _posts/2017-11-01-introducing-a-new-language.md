@@ -16,9 +16,9 @@ flickr_image: 'https://live.staticflickr.com/3324/3260095534_d1f216fb8a_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/ruiwen/3260095534/'
 flickr_imagename: 'code.close()'
 ---
-<a href="https://ocadotechnology.com/">At work</a>, there is a discussion going on at the moment about
-introducing <a href="https://kotlinlang.org/">Kotlin</a> into our tech stack. We're a JVM based team, with the
-majority of our code written in Java and few apps in <a href="https://www.scala-lang.org/">Scala</a>. I don't
+[At work](https://ocadotechnology.com/), there is a discussion going on at the moment about
+introducing [Kotlin](https://kotlinlang.org/) into our tech stack. We're a JVM based team, with the
+majority of our code written in Java and few apps in [Scala](https://www.scala-lang.org/). I don't
 intend to discuss the pros and cons of any particular language in this post, as I don't have enough experience
 of them to decide yet (more on that to come as the discussion evolves). Instead, I wanted to talk about
 <em>how</em> you can decide when to introduce a new language.

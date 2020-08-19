@@ -16,7 +16,7 @@ permalink: "/2017/10/18/fitbit-ionic-review/"
  Since I received my Pebble Steel back in 2014 I knew I never wanted to go back to using a normal watch.
 Having notifications and apps on my wrist was just too useful to me. I skipped the Pebble Time, but when the
 Time 2 was announced I happily put in a preorder. Unfortunately it was not to be, and Pebble folded and was
-<a href="https://www.wired.com/2016/12/the-inside-story-behind-pebbles-demise/">sold to FitBit</a>. If Pebble
+[sold to FitBit](https://www.wired.com/2016/12/the-inside-story-behind-pebbles-demise/). If Pebble
 wasn't able to survive then as an existing FitBit user having them as a buyer is probably the the best
 option.
 
@@ -60,4 +60,4 @@ community will form soon.
 
 So, would I recommend the FitBit Ionic? Yes, but more on potential than current execution. The hardware
 appears to be there, it just needs a bit more time for the software to mature and apps to be developed.
-<a href="https://investor.fitbit.com/press/press-kit/">FitBit Ionic</a> photograph by <a href="http://www.fitbit.com">FitBit</a>.
+[FitBit Ionic](https://investor.fitbit.com/press/press-kit/) photograph by [FitBit](http://www.fitbit.com).

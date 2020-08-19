@@ -14,22 +14,22 @@ flickr_image: 'https://live.staticflickr.com/5301/5610614157_e69f61f829_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/adulau/5610614157/'
 flickr_imagename: 'delicious or del.icio.us?'
 ---
-I've been a long time user of <a href="http://www.delicious.com">delicious.com</a>, back from when it was had
-the hard-to-remember address of <a href="http://del.icio.us/">del.icio.us</a>. Even though bookmark syncing is
-built into both <a href="https://services.mozilla.com/">Firefox</a> and <a
+I've been a long time user of [delicious.com](http://www.delicious.com), back from when it was had
+the hard-to-remember address of [del.icio.us](http://del.icio.us/). Even though bookmark syncing is
+built into both [Firefox](https://services.mozilla.com/) and <a
 href="http://www.google.co.uk/support/chrome/bin/answer.py?answer=185277">Chrome</a> having your bookmarks
 available on a website that you can access from anywhere, and integrated into your browser using an extension
 is a big advantage for me.
 
 Recently the was some cause for concern as Yahoo decided they wanted to offload the site. As it had been a
 Yahoo property for a long time anyone taking it on would have a big job just to extricate it from Yahoo's
-infrastructure. <a href="http://avos.com/">AVOS</a>, a new venture from the founders of YouTube took the
+infrastructure. [AVOS](http://avos.com/), a new venture from the founders of YouTube took the
 plunge.n Several months on and the site suddenly relaunched. Superficially it looks very similar, but with a
 slight Web 2.0 sheen to it. The transition seems to have been handled very well given the scale of the rewrite
 that was required. Aside from a smattering of bugs which have been quickly squashed the biggest issue seems to
 have been with the people who ignored the warnings and didn't agree to allow Yahoo to send AVOS their details.
 
-The biggest change is the addition of <a href="http://delicious.com/help#stack">stacks</a>. These are curated
+The biggest change is the addition of [stacks](http://delicious.com/help#stack). These are curated
 sets of links on a single topic. While the old Delicious showed popular links on the frontpage the new site
 shows featured stacks. As you can associate an image with a stack this gives the frontpage a much more visual
 look. The old website was undeniably plain and the images really brighten it up.

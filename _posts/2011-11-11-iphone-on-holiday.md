@@ -18,7 +18,7 @@ flickr_image: 'https://live.staticflickr.com/3057/2402051626_0fbb1ab392_w.jpg'
 flickr_imagelink: 'http://www.flickr.com/photos/johnlembo/2402051626/'
 flickr_imagename: 'iPhone at the beach'
 ---
-Recently I <a href="http://andrewwilkinson.wordpress.com/2011/10/17/iphone-4s/">posted</a> about upgrading my
+Recently I [posted](http://andrewwilkinson.wordpress.com/2011/10/17/iphone-4s/) about upgrading my
 old iPhone 3G to a 64GB 4S. One of the things I was mostly looking forward to with the upgrade was the much
 improved camera and the ability to take video. Last week I spent some time at the <a
 href="http://www.giantscausewayireland.com/">Giant's Causeway</a> in Northern Ireland and I had plenty of
@@ -35,7 +35,7 @@ gets boring very quickly.
 
 The audio quality is quite poor, at least when you are in a windy location, and as I was on the coast it was
 nearly always windy. The white noise of the wind masked much of the voice that I was trying to record.
-Unfortunately I can't afford a <a href="http://en.wikipedia.org/wiki/Foley_(filmmaking)">Foley</a> artist so
+Unfortunately I can't afford a [Foley](http://en.wikipedia.org/wiki/Foley_(filmmaking)) artist so
 the wind noise remains on the final version.
 
 To edit my travelogue there was really only one option, <a
@@ -65,8 +65,8 @@ them off your phone. Part of the ease of use comes from the fact that it uses th
 stills camera so it's much quicker to take the pictures. This is much lower resolution though so the resulting
 images are disappointing small.
 
-The next app I tried was <a href="http://www.cloudburstresearch.com/autostitch/autostitch.html">Autostitch
-panorama</a>. Rather than the pictures being taken automatically you need to line up your photos and press a
+The next app I tried was [Autostitch
+panorama](http://www.cloudburstresearch.com/autostitch/autostitch.html). Rather than the pictures being taken automatically you need to line up your photos and press a
 button to take a picture. When you've captured enough click "finish" and the app will stitch them together
 very quickly, producing great looking full panoramas. It's not quite as simple to use as Dermandar, but it's
 far from difficult and the results are excellent.

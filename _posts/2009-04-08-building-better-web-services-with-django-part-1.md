@@ -15,9 +15,9 @@ tags:
 permalink: /2009/04/08/building-better-web-services-with-django-part-1/
 ---
 Building a RESTful webservice is pretty straight-forward with Django, but in many cases you want to have both a human readable website and a machine readable api. A lot of websites solve this problem by using www.x.com as the human site, an api.x.com as the machine site. They also will typically have different structures to support the different usecases.n
-Unless your documentation is really excellent and the person writing the client to your service actually reads it building a client for the service is an error prone process. In an ideal world the developer would be able to browse the website and use the same urls in their client program. Fortunately HTTP has two headers which make it possible to do just that, <tt>Content-Type</tt> and <tt>Accept</tt>.
+Unless your documentation is really excellent and the person writing the client to your service actually reads it building a client for the service is an error prone process. In an ideal world the developer would be able to browse the website and use the same urls in their client program. Fortunately HTTP has two headers which make it possible to do just that, `Content-Type` and `Accept`.
 
-The <tt>Content-Type</tt> header describes the type of data that is included in the body of the HTTP request. Typically this will be values such as <tt>text/html</tt>, <tt>application/json</tt> or <tt>application/x-www-form-urlencoded</tt>. A content type is sent by the client when POSTing or PUTing data, and whenever the webserver includes some data in its response. The <tt>Accept</tt> header is sent by a client to specify what content types it can accept in the response. This header has a more complicated format that <tt>Content-Type</tt> because it can used to specify a number of different content types and to give a weighting to each.
+The `Content-Type` header describes the type of data that is included in the body of the HTTP request. Typically this will be values such as `text/html`, `application/json` or `application/x-www-form-urlencoded`. A content type is sent by the client when POSTing or PUTing data, and whenever the webserver includes some data in its response. The `Accept` header is sent by a client to specify what content types it can accept in the response. This header has a more complicated format that `Content-Type` because it can used to specify a number of different content types and to give a weighting to each.
 
 When combined these two headers can be used to allow a normal user to browse the site and to allow a robot to make api calls on the same site, using the same urls. This makes it easier both for the creator of the programmer accessing your site and for you because you can easily share code between the site and your api.
 
@@ -55,6 +55,6 @@ This decorator should be pretty easy follow, but here is an example to illustrat
         else:
             return {"status": "failed"}
 
-This really cuts down on the code you need to write, but this view only handles JSON as its input and output. Next we need to parse the <tt>Accept</tt> headers and return an ordered list of content types so we can choose the preferred option. No need to reinvent the wheel, so we just pull some code from <a href="http://www.djangosnippets.org/snippets/1042/">djangosnippets.org</a>.
+This really cuts down on the code you need to write, but this view only handles JSON as its input and output. Next we need to parse the `Accept` headers and return an ordered list of content types so we can choose the preferred option. No need to reinvent the wheel, so we just pull some code from [djangosnippets.org](http://www.djangosnippets.org/snippets/1042/).
 
 All the parts are in place now, and in my next post we'll create a decorator which takes these parts ands puts them together.

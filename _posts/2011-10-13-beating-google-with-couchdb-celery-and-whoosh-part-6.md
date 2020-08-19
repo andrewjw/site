@@ -24,7 +24,7 @@ simple, just a text box on one page and a list of results on another.
 To begin with we just need a page with a query box. To make the page slightly more interesting we'll also
 include the number of pages in the index, and a list of the top documents as ordered by our ranking algorithm.
 
-In the templates on this page we reference <tt>base.html</tt> which provides the boiler plate code needed to
+In the templates on this page we reference `base.html` which provides the boiler plate code needed to
 make an HTML page.
 
 {% highlight python %}
@@ -47,9 +47,9 @@ make an HTML page.
 {% endhighlight %}
 
 To show the number of pages in the index we need to count them. We've already created an view to list
-<tt>Page</tt>s by their url and CouchDB can return the number of documents in a view without actually
+`Page`s by their url and CouchDB can return the number of documents in a view without actually
 returning any of them, so we can just get the count from that. We'll add the following function to the
-<tt>Page</tt> model class.
+`Page` model class.
 
 {% highlight python %}
     @staticmethod
@@ -136,4 +136,4 @@ The template for the results page is below.
 So, there we have it. A complete web crawler, indexer and query website. In the next post I'll discuss how to
 scale the search engine.
 
-Read <a href="/2011/10/19/beating-google-with-couchdb-celery-and-whoosh-part-7/">part 7</a>.
+Read [part 7](/2011/10/19/beating-google-with-couchdb-celery-and-whoosh-part-7/).

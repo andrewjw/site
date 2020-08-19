@@ -20,14 +20,14 @@ importing your settings for you.
 Unfortunately the <a href="http://docs.djangoproject.com/en/dev/howto/custom-management-commands/#howto-custom-management-commands">Django
   documentation</a> is quite lacking on how to add your own command, but it's really quite easy.
 
-If your app is in <tt>project/app</tt> then create the directories <tt>project/app/management/commands</tt>. Create an empty file called
-<tt>__init__.py</tt> in both the <tt>management</tt> and <tt>commands</tt> directories. Once you've done that every other python file in
-the commands directory can be executed via <tt>manage.py</tt>. If you create the file <tt>project/app/management/commands/x.py</tt> then
-it can be run as <tt>manage.py x</tt>.
+If your app is in `project/app` then create the directories `project/app/management/commands`. Create an empty file called
+`__init__.py` in both the `management` and `commands` directories. Once you've done that every other python file in
+the commands directory can be executed via `manage.py`. If you create the file `project/app/management/commands/x.py` then
+it can be run as `manage.py x`.
 
-Each file which contains a command must define a class called <tt>Command</tt> which derives from <tt>django.core.management.base.BaseCommand</tt>.
-Rather than derive directly from <tt>BaseCommand</tt> you'll most likely want to derive from <tt>NoArgsCommand</tt>, <tt>LabelCommand</tt> or
-<tt>AppCommand</tt>. First I'll explain how to make a command when deriving from <tt>BaseCommand</tt> and then we'll look at the helper classes.
+Each file which contains a command must define a class called `Command` which derives from `django.core.management.base.BaseCommand`.
+Rather than derive directly from `BaseCommand` you'll most likely want to derive from `NoArgsCommand`, `LabelCommand` or
+`AppCommand`. First I'll explain how to make a command when deriving from `BaseCommand` and then we'll look at the helper classes.
 
     from optparse import make_option
     from django.core.management.base import BaseCommand, CommandError

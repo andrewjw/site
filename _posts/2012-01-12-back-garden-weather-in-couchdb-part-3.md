@@ -15,28 +15,28 @@ flickr_image: 'https://live.staticflickr.com/5264/5653503758_e82a7437d2_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/dexxus/5653503758/'
 flickr_imagename: 'almost may'
 ---
-In this series I'm describing how I used a <a href="http://www.couchdb.org">CouchDB</a> <a
-href="http://couchapp.org/page/index">CouchApp</a> to <a href="http://www.welwynweather.co.uk">display the
-weather data</a> collected by a weather station in my back garden. In the <a
+In this series I'm describing how I used a [CouchDB](http://www.couchdb.org) <a
+href="http://couchapp.org/page/index">CouchApp</a> to [display the
+weather data](http://www.welwynweather.co.uk) collected by a weather station in my back garden. In the <a
 href="/2011/12/02/back-garden-weather-in-couchdb-part-1/">first post</a> I described CouchApps and how to get
-a copy of the site. In the <a href="/2012/01/05/back-garden-weather-in-couchdb-part-2/">next post</a> we
-looked at how to import the data collected by <a href="http://code.google.com/p/pywws/">PyWWS</a> and how to
+a copy of the site. In the [next post](/2012/01/05/back-garden-weather-in-couchdb-part-2/) we
+looked at how to import the data collected by [PyWWS](http://code.google.com/p/pywws/) and how to
 render a basic page in a CouchApp. In the post we'll extend the basic page to display real weather data.
 
 Each document in the database is a record of the weather data at a particular point in time. As we want to
 display the data over a whole day we need to use a <a
-href="http://wiki.apache.org/couchdb/Formatting_with_Show_and_List#Listing_Views_with_CouchDB_0.10_and_later"><tt>list</tt>
-function</a>. <tt>list</tt> functions work similarly to the <tt>show</tt> function we saw in the previous
-post. Unlike <tt>show</tt> functions <tt>list</tt> functions don't have the document passed in, they can call
-a <tt>getRow</tt> function which returns the next row to process. When there are no rows left it returns
-<tt>null</tt>.
+href="http://wiki.apache.org/couchdb/Formatting_with_Show_and_List#Listing_Views_with_CouchDB_0.10_and_later">`list`
+function</a>. `list` functions work similarly to the `show` function we saw in the previous
+post. Unlike `show` functions `list` functions don't have the document passed in, they can call
+a `getRow` function which returns the next row to process. When there are no rows left it returns
+`null`.
 
-<tt>show</tt> functions process an individual document and return a single object containing the processed data
-and any HTTP headers. Because a <tt>list</tt> function can process a potentially huge number of rows they
+`show` functions process an individual document and return a single object containing the processed data
+and any HTTP headers. Because a `list` function can process a potentially huge number of rows they
 return data in a different way. Rather than returning a single object containing the whole response
-<tt>list</tt> functions must return their response in chunks. First you need to call the <tt>start</tt>
-function, passing in any headers that you want to return. Then you call <tt>send</tt> one or more times to
-return parts of your response. A typical <tt>list</tt> function will look like the code below.
+`list` functions must return their response in chunks. First you need to call the `start`
+function, passing in any headers that you want to return. Then you call `send` one or more times to
+return parts of your response. A typical `list` function will look like the code below.
 
 {% highlight javascript %}
 function (head, req) {
@@ -56,7 +56,7 @@ code is a bit too long to include in a blog post so checkout the first post in t
 get a complete copy of the code.
 
 To start the function we load the templates and code that we need using the CouchApp macros. Next we return
-the appropriate <tt>Content-Type</tt> header, and then we create the object that we'll pass to Mustache when
+the appropriate `Content-Type` header, and then we create the object that we'll pass to Mustache when
 we've processed everything.
 
 {% highlight javascript %}
@@ -124,8 +124,8 @@ of arrays, one for each graph that we'll draw on the final page.
     }
 {% endhighlight %}
 
-Lastly we take the <tt>stash</tt>, which in a bit of code I've not included here has the data arrays added to
-it, and use it to render the <tt>day</tt> template.
+Lastly we take the `stash`, which in a bit of code I've not included here has the data arrays added to
+it, and use it to render the `day` template.
 
 {% highlight javascript %}
     send(Mustache.to_html(templates.day, stash));
@@ -133,7 +133,7 @@ it, and use it to render the <tt>day</tt> template.
 }
 {% endhighlight %}
 
-Let's look at a part of the <tt>day</tt> template. The page is a fairly standard use of the <a
+Let's look at a part of the `day` template. The page is a fairly standard use of the <a
 href="http://code.google.com/apis/chart/">Google Chart Tools</a> library. In this first snippet we render the
 maximum and minimum temperature values, and a blank div that we'll fill with the chart.
 
@@ -144,9 +144,9 @@ maximum and minimum temperature values, and a blank div that we'll fill with the
 &lt;div id=&quot;tempchart_div&quot;&gt;&lt;/div&gt;
 {% endhighlight %}
 
-In the following Javascript function we build a <tt>DataTable</tt> object that we pass to the library to draw
-a line chart. The <tt>{{ "{{#temps" }}}}</tt> and <tt>{{ "{{/temps" }}}}</tt> construction is the Mustache way
-of looping through the <tt>temps</tt> array. We use it to dynamically write out Javascript code containing the
+In the following Javascript function we build a `DataTable` object that we pass to the library to draw
+a line chart. The `{{ "{{#temps" }}}}` and `{{ "{{/temps" }}}}` construction is the Mustache way
+of looping through the `temps` array. We use it to dynamically write out Javascript code containing the
 data we want to render.
 
 {% highlight javascript %}

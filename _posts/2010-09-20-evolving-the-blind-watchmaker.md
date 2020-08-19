@@ -18,7 +18,7 @@ flickr_image: 'https://live.staticflickr.com/1291/1400175456_cea225bba2_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/joiseyshowaa/1400175456/'
 flickr_imagename: "my tree at dusk"
 ---
-Recently I've been reading the classic book by <a href="http://www.richarddawkins.net/">Richard Dawkins</a>, <a href="http://books.google.com/books?id=zHc9PgAACAAJ&amp;dq=blind+watchmaker">The Blind Watchmaker</a>. In it he begins by discussing how evolution can produce complex systems from only a few simple rules. He demonstrates this using a simple tree drawing algorithm in which a few 'genes' control aspects such as the number of branches and the branch angle. The trees are evolved solely through mutation of an initial tree, rather combing the 'genes' of two trees to produce a child, and introducing mutations in those children.
+Recently I've been reading the classic book by [Richard Dawkins](http://www.richarddawkins.net/), [The Blind Watchmaker](http://books.google.com/books?id=zHc9PgAACAAJ&amp;dq=blind+watchmaker). In it he begins by discussing how evolution can produce complex systems from only a few simple rules. He demonstrates this using a simple tree drawing algorithm in which a few 'genes' control aspects such as the number of branches and the branch angle. The trees are evolved solely through mutation of an initial tree, rather combing the 'genes' of two trees to produce a child, and introducing mutations in those children.
 
 In reality evolution is driven by pressures from the environment on the genes and those that produce the fittest host will survive. As this is early in the book though Dawkins uses himself as the environment and manually picks the most visually appealing trees.
 
@@ -48,7 +48,7 @@ The gene descriptions in bold are those that I deduced from the book, the others
     change_in_angle_between_branches = lambda dna: dna[7]/5.0
     max_levels = lambda dna: dna[8]
 
-These functions are used by the <tt>draw_branch</tt> function which renders a single line, and recursively calls itself to draw the next level of branches.
+These functions are used by the `draw_branch` function which renders a single line, and recursively calls itself to draw the next level of branches.
 
     def draw_branch(img, dna, level, start, angle, length, angle_between_all_branches):
         end = (start[0] + math.sin(angle) * length * horiz_scaling(dna),
@@ -65,7 +65,7 @@ These functions are used by the <tt>draw_branch</tt> function which renders a si
                     branch_angle + angle_between_branches*i, length*length_scaling(dna),
                     angle_between_all_branches + change_in_angle_between_branches(dna))
 
-To start the drawing process off we need a function, <tt>draw_tree</tt>, which calls the branch drawing function with the initial values for the length of branch and angle between the subbranches.
+To start the drawing process off we need a function, `draw_tree`, which calls the branch drawing function with the initial values for the length of branch and angle between the subbranches.
 
     def draw_tree(img, dna):
         draw_branch(img, dna, 0, (50, 70),
@@ -89,7 +89,7 @@ If we combine these functions with a simple TK-based interface, as shown below, 
 
 Without more details about the original program it's hard to recreate it exactly, but this program is a decent starting point. Happy evolving!
 
-To run this program yourself you'll need to download and install Python from <a href="http://www.python.org">python.org</a> and the <a href="http://www.pythonware.com/products/pil/">PIL image library</a>. Next code the sourcecode below into a file called "darwkins_trees.py" and double click on it.
+To run this program yourself you'll need to download and install Python from [python.org](http://www.python.org) and the [PIL image library](http://www.pythonware.com/products/pil/). Next code the sourcecode below into a file called "darwkins_trees.py" and double click on it.
 
 {% highlight python %}
 #!/usr/bin/env python

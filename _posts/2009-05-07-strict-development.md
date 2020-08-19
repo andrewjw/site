@@ -11,9 +11,9 @@ tags:
   - test driven development
 permalink: /2009/05/07/strict-development/
 ---
-While working on my new open source project, <a href="http://code.google.com/p/couchql/">CouchQL</a>, I'm being very strict with my development process and following both issue driven development, and test driven development.
+While working on my new open source project, [CouchQL](http://code.google.com/p/couchql/), I'm being very strict with my development process and following both issue driven development, and test driven development.
 
-Issue driven development requires that every commit refers to an issue that has been logged in the bug tracking software. This means that every change must be described, accepted and then logged. This works better if your repository is connected to your bug tracking software such that any commit message with a issue number is automatically logged. In subversion this can be achieved with a post commit hook, such as <a href="http://trac.edgewall.org/browser/trunk/contrib/trac-post-commit-hook">this script</a> for trac.
+Issue driven development requires that every commit refers to an issue that has been logged in the bug tracking software. This means that every change must be described, accepted and then logged. This works better if your repository is connected to your bug tracking software such that any commit message with a issue number is automatically logged. In subversion this can be achieved with a post commit hook, such as [this script](http://trac.edgewall.org/browser/trunk/contrib/trac-post-commit-hook) for trac.
 
 The connection between your commit messages and bug tracking software means that when changes are merged between branches new messages will be added to the issue, informing everyone what version of the software the issue has been fixed in. As well as just adding comments to issues it is also possible to mark bugs as fixed with commit messages such as "Fixes issue #43." which should speed up your work flow. While Google Code does add hyperlinks between commit messages and issues, it doesn't add automatically add comments, which is a pain.
 

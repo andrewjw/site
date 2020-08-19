@@ -5,8 +5,8 @@ date: 2008-09-19 12:17:31
 tags: couchdb performance
 permalink: "/2008/09/19/couchdb-performance/"
 ---
-I've been toying with <a href="http://couchdb.org/">CouchDB</a> for a short while, and I'm definitely
-impressed by what I've seen. Once I'd upgraded to <a href="http://www.erlang.org/">Erlang</a> R12B and
+I've been toying with [CouchDB](http://couchdb.org/) for a short while, and I'm definitely
+impressed by what I've seen. Once I'd upgraded to [Erlang](http://www.erlang.org/) R12B and
 trunk CouchDB any bugs I was seeing disappearing and importing all 1 million documents was straightforward.
 
 With 1 million documents the map/reduce takes a long time, as you would expect. What would be nice

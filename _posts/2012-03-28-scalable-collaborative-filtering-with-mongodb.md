@@ -74,7 +74,7 @@ function () {
 
 We'll build a javascript Object where the keys are the user id and the value is the number of time that user
 has viewed this item. In the map function we we build an object that represents a single view and
-<tt>emit</tt> it using the item id as the key. MongoDB will group all the objects emitted with the same key
+`emit` it using the item id as the key. MongoDB will group all the objects emitted with the same key
 and run the reduce function, shown below.
 
 {% highlight python %}
@@ -93,7 +93,7 @@ function (key, values) {
 {% endhighlight %}
 
 A reduce function takes two parameters, the key and a list of values. The values that are passed in can either
-be those <tt>emit</tt>ted by the map function, or values returned from the <tt>reduce</tt> function. To help
+be those `emit`ted by the map function, or values returned from the `reduce` function. To help
 it scale not all of the original values will be processed at once, and the reduce function must be able to
 handle input from the map function or its own output. Here we output a value in the same format as the input
 so we don't need to do anything special.

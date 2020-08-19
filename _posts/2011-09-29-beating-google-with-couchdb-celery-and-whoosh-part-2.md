@@ -23,7 +23,7 @@ I'll show you how to build a search engine using standard Python tools like Djan
 this post we'll begin by creating the data structure for storing the pages in the database, and write the
 first parts of the webcrawler.
 
-CouchDB's Python library has a simple <a href="http://packages.python.org/CouchDB/mapping.html">ORM system</a>
+CouchDB's Python library has a simple [ORM system](http://packages.python.org/CouchDB/mapping.html)
 that makes it easy to convert between the JSON objects stored in the database and a Python object.
 
 To create the class you just need to specify the names of the fields, and their type. So, what do a search
@@ -31,8 +31,8 @@ engine need to store? The url is an obvious one, as is the content of the page. 
 last accessed the page. To make things easier we'll also have a list of the urls that the page links to. One
 of the great advantages of a database like CouchDB is that we don't need to create a separate table to hold
 the links, we can just include them directly in the main document. To help return the best pages we'll use a
-<a href="http://en.wikipedia.org/wiki/PageRank">page rank</a> like algorithm to rank the page, so we also need
-to store that rank. Finally, as is good practice on CouchDB we'll give the document a <tt>type</tt> field so
+[page rank](http://en.wikipedia.org/wiki/PageRank) like algorithm to rank the page, so we also need
+to store that rank. Finally, as is good practice on CouchDB we'll give the document a `type` field so
 we can write views that only target this document type.
 
 {% highlight python %}
@@ -45,16 +45,16 @@ class Page(Document):
     last_checked = DateTimeField(default=datetime.now)
 {% endhighlight %}
 
-That's a lot of description for not a lot of code! Just add that class to your <tt>models.py</tt> file. It's
+That's a lot of description for not a lot of code! Just add that class to your `models.py` file. It's
 not a normal Django model, but we're not using Django models in this project so it's the right place to put
 it.
 
 We also need to keep track of the urls that we are and aren't allowed to access. Fortunately for us Python
-comes with a class, <a href="http://docs.python.org/library/robotparser.html">RobotFileParser</a> which
+comes with a class, [RobotFileParser](http://docs.python.org/library/robotparser.html) which
 handles the parsing of the file for us. So, this becomes a much simpler model. We just need the domain name,
-and a <a href="http://docs.python.org/library/pickle.html">pickled</a> RobotFileParser instance. We also need
-to know whether we're accessing an http or https and we'll give it <tt>type</tt> field to distinguish it from
-the <tt>Page</tt> model.
+and a [pickled](http://docs.python.org/library/pickle.html) RobotFileParser instance. We also need
+to know whether we're accessing an http or https and we'll give it `type` field to distinguish it from
+the `Page` model.
 
 {% highlight python %}
 class RobotsTxt(Document):
@@ -82,7 +82,7 @@ instead. If the object hasn't been set yet then we create a new one on the first
     robot_parser = property(_get_robot_parser, _set_robot_parser)
 {% endhighlight %}
 
-For both pages and <tt>robots.txt</tt> files we need to know whether we should reaccess the page. We'll do
+For both pages and `robots.txt` files we need to know whether we should reaccess the page. We'll do
 this by testing whether the we accessed the file in the last seven days of not. For Page models we do this by
 adding the following function which implements this check.
 
@@ -91,8 +91,8 @@ adding the following function which implements this check.
         return (datetime.now() - self.last_checked).days &lt; 7
 {% endhighlight %}
 
-For the <tt>RobotsTxt</tt> we can take advantage of the last modified value stored in the
-<tt>RobotFileParser</tt> that we're wrapping. This is a unix timestamp so the <tt>is_valid</tt> function needs
+For the `RobotsTxt` we can take advantage of the last modified value stored in the
+`RobotFileParser` that we're wrapping. This is a unix timestamp so the `is_valid` function needs
 to be a little bit different, but follows the same pattern.
 
 {% highlight python %}
@@ -100,9 +100,9 @@ to be a little bit different, but follows the same pattern.
         return (time.time() - self.robot_parser.mtime()) &lt; 7*24*60*60
 {% endhighlight %}
 
-To update the stored copy of a <tt>robots.txt</tt> we need to get the currently stored version, read a new
+To update the stored copy of a `robots.txt` we need to get the currently stored version, read a new
 one, set the last modified timestamp and then write it back to the database. To avoid hitting the same server
-too often we can use <a href="https://docs.djangoproject.com/en/dev/topics/cache/">Django's cache</a> to store
+too often we can use [Django's cache](https://docs.djangoproject.com/en/dev/topics/cache/) to store
 a value for ten seconds, and sleep if that value already exists.
 
 {% highlight python %}
@@ -124,7 +124,7 @@ def is_allowed(self, url):
     return self.robot_parser.can_fetch(settings.USER_AGENT, url)
 {% endhighlight %}
 
-The final piece in our <tt>robots.txt</tt> puzzle is a function to pull the write object out of the database.
+The final piece in our `robots.txt` puzzle is a function to pull the write object out of the database.
 We'll need a view that has the protocol and domain for each file as the key.
 
 {% highlight python %}
@@ -143,7 +143,7 @@ return right away, otherwise we need to update it.
         return doc
 {% endhighlight %}
 
-If we've never loaded this domain's <tt>robots.txt</tt> file before then we need to create a blank object. The
+If we've never loaded this domain's `robots.txt` file before then we need to create a blank object. The
 final step is to read the file and store it in the database.
 
 {% highlight python %}
@@ -163,10 +163,10 @@ For completeness, here is the map file required for this function.
 {% endhighlight %}
 
 In this post we've discussed how to represent a webpage in our database as well as keep track of what paths we
-are and aren't allowed to access. We've also seen how to retrieve the <tt>robots.txt</tt> files and update
+are and aren't allowed to access. We've also seen how to retrieve the `robots.txt` files and update
 them if they're too old.
 
 Now that we can test whether we're allowed to access a URL in the next post in this series I'll show you how
 to begin crawling the web and populating our database.
 
-Read <a href="/2012/01/12/back-garden-weather-in-couchdb-part-3/">part 3</a>.
+Read [part 3](/2012/01/12/back-garden-weather-in-couchdb-part-3/).

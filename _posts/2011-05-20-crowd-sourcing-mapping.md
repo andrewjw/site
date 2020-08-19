@@ -20,12 +20,12 @@ flickr_imagename: 'GPS Status app - HTC Desire'
 ---
 Recently Google <a
 href="http://googleblog.blogspot.com/2011/04/add-your-local-knowledge-to-map-with.html">announced</a> that
-they were making their <a href="http://www.google.com/mapmaker">crowd sourcing mapping tools</a> available to
+they were making their [crowd sourcing mapping tools](http://www.google.com/mapmaker) available to
 users in the United States. This tool lets uses edit Google Maps, adding businesses and even roads, railways
 and rivers. This raises interesting questions about whether wisdom of the crowd can be applied to data that
 requires a high degree of accuracy.
 
-<a href="https://www.openstreetmap.org">Open Street Map</a> has been doing this since 2004, and has put
+[Open Street Map](https://www.openstreetmap.org) has been doing this since 2004, and has put
 together an amazing resource of free map data, but only recently has Google begun to allow people to edit its
 maps for large parts of the world.
 

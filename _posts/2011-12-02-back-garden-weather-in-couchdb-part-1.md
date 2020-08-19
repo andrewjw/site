@@ -18,17 +18,17 @@ with a garden, which we've not had before. This gave me the opportunity to buy h
 href="http://smartweather.co.uk/product.php?productid=16144&amp;cat=249&amp;page=1">a weather station</a>. I
 didn't just choose any old station though, I wanted one that did wind and rain as well as the usual
 temperature, pressure and humidity. And, the deciding factor, a USB interface with Linux support. Fortunately
-the excellent <a href="http://code.google.com/p/pywws/">PyWWS</a> supports a range of weather stations,
+the excellent [PyWWS](http://code.google.com/p/pywws/) supports a range of weather stations,
 including the one I brought.
 
-I'm not going to go into how I <a href="http://www.flickr.com/photos/andrew_j_w/6246463884/">mounted the
-system</a>, or configured PyWWS. That's all covered in the documentation. PyWWS can produce a static website,
+I'm not going to go into how I [mounted the
+system](http://www.flickr.com/photos/andrew_j_w/6246463884/), or configured PyWWS. That's all covered in the documentation. PyWWS can produce a static website,
 but as someone who earns his living building websites I wanted something a bit better. <a
 href="http://wp.me/pkxET-6z">Continuing</a> my experiments with CouchDB I decided to build the website as a <a
 href="http://couchapp.org/">CouchApp</a>.
 
 As well as allowing you to query your data with Javascript, CouchDB lets you display webpages directly out of
-your database. If you visit <a href="http://www.welwynweather.co.uk">welwynweather.co.uk</a> you'll notice
+your database. If you visit [welwynweather.co.uk](http://www.welwynweather.co.uk) you'll notice
 that you're redirected to a url that contains url arguments that look a lot like those used to <a
 href="http://wiki.apache.org/couchdb/HTTP_view_API#Access.2BAC8-Query">query a view</a>. That's because that's
 exactly what's going on. Things become clearer when you discover that that <a
@@ -39,21 +39,21 @@ href="http://db.welwynweather.co.uk/">db.welwynweather.co.uk</a> points to an Ap
 requests through to CouchDB.
 
 Over the next few posts I'll detail how the CouchApp works, but to get started you can clone my app and poke
-it yourself. Once you've installed the <tt>couchapp</tt> command line client simply run <tt>couchapp clone
-http://db.welwynweather.co.uk/_design/weather</tt>. This will give you a directory, <tt>weather</tt>, that
-contains a number of subdirectories including <tt>templates</tt> and <tt>views</tt> which contain the complete
-website.n To deploy the site to your own server you need to create a database and then run <tt>couchapp push
-weather http://localhost:5984/welwynweather</tt>. Visiting
-<tt>http://localhost:5984/welwynweather/_design/weather/_rewrite/</tt> should show you the site. You'll need
+it yourself. Once you've installed the `couchapp` command line client simply run `couchapp clone
+http://db.welwynweather.co.uk/_design/weather`. This will give you a directory, `weather`, that
+contains a number of subdirectories including `templates` and `views` which contain the complete
+website.n To deploy the site to your own server you need to create a database and then run `couchapp push
+weather http://localhost:5984/welwynweather`. Visiting
+`http://localhost:5984/welwynweather/_design/weather/_rewrite/` should show you the site. You'll need
 some data though, and you can use CouchDB replication to pull my data to your server. Using Futon simply set
-<tt>http://db.welwynweather.co.uk/</tt> as the replication source and your database as the destination and
+`http://db.welwynweather.co.uk/` as the replication source and your database as the destination and
 you'll quickly get a complete copy of the database.
 
 When replicating my data you currently cannot use continuous replication. When it completes replication
-CouchDB calls <tt>POST /_ensure_full_commit</tt>, but obviously I've disabled <tt>POST</tt>, <tt>PUT</tt> and
-<tt>DELETE</tt> on my server. This causes replication to fail and to restart from the beginning. The data will
+CouchDB calls `POST /_ensure_full_commit`, but obviously I've disabled `POST`, `PUT` and
+`DELETE` on my server. This causes replication to fail and to restart from the beginning. The data will
 already have been copied, but CouchDB will copy it again. If you have any ideas on how to avoid this, please
-answer my <a href="http://stackoverflow.com/q/8309521/2990">StackOverflow question</a>.
+answer my [StackOverflow question](http://stackoverflow.com/q/8309521/2990).
 
 The website consists of four main pages. When you visit you are redirected to a page that shows the weather
 for the current day. Clicking on the date at the top of the page lets you also view the weather by month and

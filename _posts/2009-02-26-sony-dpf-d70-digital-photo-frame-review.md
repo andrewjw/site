@@ -11,7 +11,7 @@ tags:
 permalink: "/2009/02/26/sony-dpf-d70-digital-photo-frame-review/"
 ---
 Technology is finally catching up with the principle of a digital photo
-frame and <a href="http://www.amazon.co.uk/Sony-DPF-D70-Black-Digital-Photo/dp/B0013K533U/">this Sony DPF-D70</a>
+frame and [this Sony DPF-D70](http://www.amazon.co.uk/Sony-DPF-D70-Black-Digital-Photo/dp/B0013K533U/)
 is really good example. The screen is fantastic, really clear and bright
 which shows off your photos well. Getting your photos on is a snap.
 Simply plug in your camera's card and click "Add to Album". It features

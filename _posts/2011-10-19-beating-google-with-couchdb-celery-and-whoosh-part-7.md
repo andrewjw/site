@@ -17,9 +17,9 @@ flickr_imagelink: 'https://www.flickr.com/photos/small_realm/11189803153/'
 flickr_imagename: 'Data Center'
 ---
 The key ingredients of our search engine are now in place, but we face a problem. We can download webpages and
-store them in <a href="http://couchdb.apache.org/">CouchDB</a>. We can rank them in order of importance and
-query them using <a href="https://bitbucket.org/mchaput/whoosh/wiki/Home">Whoosh</a> but the internet is big,
-<a href="http://thenextweb.com/shareables/2011/01/11/infographic-how-big-is-the-internet/">really big!</a> A
+store them in [CouchDB](http://couchdb.apache.org/). We can rank them in order of importance and
+query them using [Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) but the internet is big,
+[really big!](http://thenextweb.com/shareables/2011/01/11/infographic-how-big-is-the-internet/) A
 single server doesn't even come close to being able to hold all the information that you would want it to -
 Google has an estimated <a
 href="http://www.datacenterknowledge.com/archives/2009/05/14/whos-got-the-most-web-servers/">900,000
@@ -27,8 +27,8 @@ servers</a>. So how do we scale this the software we've written so far effective
 
 The reason I started writing this series was to investigate how well Celery's integration with CouchDB works.
 This gives us an immediate win in terms of scaling as we don't need to worry about a different backend, such
-as <a href="http://www.rabbitmq.com/">RabbitMQ</a>. Celery itself is designed to scale so we can run
-<tt>celeryd</tt> daemons as many boxes as we like and the jobs will be divided amongst them. This means that
+as [RabbitMQ](http://www.rabbitmq.com/). Celery itself is designed to scale so we can run
+`celeryd` daemons as many boxes as we like and the jobs will be divided amongst them. This means that
 our indexing and ranking processes will scale easily.
 
 CouchDB is not designed to scale across multiple machines, but there is some mature software, <a
@@ -40,7 +40,7 @@ href="http://guide.couchdb.org/draft/clustering.html">on clustering</a> that is 
 
 Unfortunately while Woosh is easy to work with it's not designed to be used on a large scale. Indeed if
 someone was crazy enough to try to run the software we've developed in this series they might be advised to
-replace Whoosh with <a href="http://lucene.apache.org/solr/">Solr</a>. Solr is a lucene-based search server
+replace Whoosh with [Solr](http://lucene.apache.org/solr/). Solr is a lucene-based search server
 which provides an HTTP interface to the full-text index. Solr comes with a <a
 href="http://wiki.apache.org/solr/DistributedSearch">sharding system</a> to enable you to query an index that
 is too large for a single machine.
@@ -53,4 +53,4 @@ is guarenteed!n In the final post of this series I will discuss what I've learnt
 CouchDB, and with CouchDB in general. I'll also describe how to download and run the complete code so you can
 try these techniques for yourself.
 
-Read <a href="/2011/10/21/beating-google-with-couchdb-celery-and-whoosh-part-8/">part 8</a>.
+Read [part 8](/2011/10/21/beating-google-with-couchdb-celery-and-whoosh-part-8/).

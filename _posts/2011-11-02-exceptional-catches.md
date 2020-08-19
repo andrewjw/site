@@ -45,13 +45,13 @@ except Exception, e:
     cleanup()
 {% endhighlight %}
 
- This code has a bug, the missing <tt>e</tt> in the <tt>do_analysis</tt> call. This will raise a
-<tt>NameError</tt> that will be immediately captured and hidden. Other, more complicated errors could also
+ This code has a bug, the missing `e` in the `do_analysis` call. This will raise a
+`NameError` that will be immediately captured and hidden. Other, more complicated errors could also
 occur and be hidden in the same way. This sort of masking will make tracking down problems like this very
 difficult.
 
-To improve this code we need to consider what errors we expect the <tt>do_analysis</tt> function to raise and
-what we want to handle. In the ideal case it would raise an <tt>AnalysisError</tt> and then we would catch
+To improve this code we need to consider what errors we expect the `do_analysis` function to raise and
+what we want to handle. In the ideal case it would raise an `AnalysisError` and then we would catch
 that.
 {% highlight python %}
 analysis_type = 1
@@ -61,9 +61,9 @@ except AnalysisError, e:
     cleanup()
 {% endhighlight %}
 
- In the improved code the <tt>NameError</tt> will pass through and be picked up immediately. It is likely
-that the <tt>cleanup</tt> function needs to be run whether or not an error has occurred. To do that we can
-move the call into a <tt>finally</tt> block.
+ In the improved code the `NameError` will pass through and be picked up immediately. It is likely
+that the `cleanup` function needs to be run whether or not an error has occurred. To do that we can
+move the call into a `finally` block.
 
 {% highlight python %}
 analysis_type = 1
@@ -87,11 +87,11 @@ except KeyError:
     // display error message
 {% endhighlight %}
 
- We're looking up the parameter to <tt>do_analysis</tt> in a dictionary and catching the case where
-<tt>index</tt> doesn't exist. This code is also capturing too much. Not because the exception is too general,
-but because there is too much code in the <tt>try</tt> block.
+ We're looking up the parameter to `do_analysis` in a dictionary and catching the case where
+`index` doesn't exist. This code is also capturing too much. Not because the exception is too general,
+but because there is too much code in the `try` block.
 
-The issue with this code is what happens if <tt>do_analysis</tt> raises a <tt>KeyError</tt>? To capture the
+The issue with this code is what happens if `do_analysis` raises a `KeyError`? To capture the
 exceptions that we're expecting we need to only wrap the dictionary lookup in and not catch anything from the
 analysis call.
 {% highlight python %}

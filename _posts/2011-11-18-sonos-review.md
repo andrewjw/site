@@ -14,7 +14,7 @@ flickr_image: 'https://live.staticflickr.com/5461/13501205375_2c2ede67d9_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/karlnorling/13501205375/'
 flickr_imagename: 'Sonos Play:1'
 ---
-Recently I purchased a basic <a href="http://www.sonos.com/">Sonos system</a>, and after just a couple of
+Recently I purchased a basic [Sonos system](http://www.sonos.com/), and after just a couple of
 weeks I'm already in love with it and have more music playing in my house than ever before.
 
 For those of you who haven't come across Sonos before, Sonos produce a multi-room wireless music system. The

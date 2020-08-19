@@ -23,7 +23,7 @@ me, you are required to work a number of disparate departments then the people i
 know what work is currently on your plate before they ask you to do something. What's the best way to keep a
 status board up to date?
 
-Traditionally we have had a <a href="http://www.bugzilla.org/">Bugzilla installation</a> which was used to
+Traditionally we have had a [Bugzilla installation](http://www.bugzilla.org/) which was used to
 store a record of almost every change we made. A <a
 href="http://mikewest.org/2006/06/subversion-post-commit-hooks-101">subversion post commit hook</a> allows us
 to link every commit back to a piece of work in Bugzilla. This works well for coding in an
@@ -31,7 +31,7 @@ issue-driven-development style, but does result in Bugzilla sending a lot of ema
 completely irrelevant to people outside of IT. Indeed even people inside IT, but who aren't directly linked to
 that piece of work, don't need to be informed by email of every checkin.
 
-Recently we have begun to experiment with <a href="http://www.fogcreek.com/fogbugz/">FogBugz</a>. While
+Recently we have begun to experiment with [FogBugz](http://www.fogcreek.com/fogbugz/). While
 similar to Bugzilla it has a number of subtle differences. Firstly FogBugz is designed to be used in a
 helpdesk environment so it provides the ability to communicate both within the team and with external
 stakeholders from the same interface. This gives you the ability to communicate on two different levels, with

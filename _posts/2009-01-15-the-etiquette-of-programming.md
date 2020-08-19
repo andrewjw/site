@@ -5,7 +5,7 @@ date: 2009-01-15 12:57:46
 tags: programming
 permalink: "/2009/01/15/the-etiquette-of-programming/"
 ---
-You might be a smart developer. You might be someone who <a href="http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html">gets things done</a>.
+You might be a smart developer. You might be someone who [gets things done](http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html).
 Unless you're a lone programmer working in your bedroom though, that's not enough. Collaborating and cooperating with your teammates
 is vital to keeping your project moving forwards and to ensure it's extendable and maintainable.
 
@@ -14,7 +14,7 @@ to your working practices can make a huge difference to those you're working wit
 you'll already know, but hopefully some of them will make you think and might make your life easier.
 
 If you're fresh out of university and joining a team of programmers with 30 years experience then you will probably get there and think
-"<a href="http://thedailywtf.com">WTF!</a>" about some aspect of their working practices. Most of what you read about programming is of
+"[WTF!](http://thedailywtf.com)" about some aspect of their working practices. Most of what you read about programming is of
 the "here's a shiny new toy" variety. If you immediately started using everything you read about not only would you probably go insane
 but you'd also annoy your coworkers immensely.
 

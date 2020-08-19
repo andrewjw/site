@@ -55,7 +55,7 @@ Next up we need write out the RSS feed that iTunes will read. We start off by op
            &lt;/itunes:category&gt;
     """ % { "datetime": datetime.now().ctime() })
 
-Finally we need to write out a small bit of XML for each file that's in our directory waiting to be downloaded. We do this by looking at each mp3 file in the podcasts directory and looking for the appropriate entry in MythTV's <tt>recorded</tt> table. If an entry doesn't exist then recording has been deleted and we delete the mp3 file.
+Finally we need to write out a small bit of XML for each file that's in our directory waiting to be downloaded. We do this by looking at each mp3 file in the podcasts directory and looking for the appropriate entry in MythTV's `recorded` table. If an entry doesn't exist then recording has been deleted and we delete the mp3 file.
 
     db = MySQLdb.connect(user="mythtv", passwd="mythtv", db="mythconverg")
 
@@ -87,6 +87,6 @@ Finally we need to write out a small bit of XML for each file that's in our dire
     &lt;/rss&gt;
     """)
 
-To use this put all three bits of code into one file, save it somewhere and mark it as executable. Next set up Apache to serve the directory <tt>/var/www/localhost/htdocs/podcasts/</tt> as <tt>/podcasts</tt>. Finally you need to set up the script to run automatically after a program you want to create a podcast from has been recorded. To do this run <tt>mythtv-setup</tt> and select the 'general' menu option. Move through the screens until you reach 'Job Queue (Job Commands)'. Add a brief description of the script in the 'description' field then enter the <tt>&lt;path to script&gt; %s</tt>. Then use the normal MythTV frontend and edit the recording schedules to make the correct User Script run.
+To use this put all three bits of code into one file, save it somewhere and mark it as executable. Next set up Apache to serve the directory `/var/www/localhost/htdocs/podcasts/` as `/podcasts`. Finally you need to set up the script to run automatically after a program you want to create a podcast from has been recorded. To do this run `mythtv-setup` and select the 'general' menu option. Move through the screens until you reach 'Job Queue (Job Commands)'. Add a brief description of the script in the 'description' field then enter the `&lt;path to script&gt; %s`. Then use the normal MythTV frontend and edit the recording schedules to make the correct User Script run.
 
-Point iTunes at <tt>http://you.ip.address/podcasts/feed.rss</tt> and it'll automatically download any new recordings.
+Point iTunes at `http://you.ip.address/podcasts/feed.rss` and it'll automatically download any new recordings.
