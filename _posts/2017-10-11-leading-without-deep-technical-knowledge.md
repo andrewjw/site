@@ -19,7 +19,7 @@ experienced member on the team. Having a deep knowledge of the business, the cod
 we're using meant I was already an authority on most topics of the team needed to discuss, and could weigh in
 on a discussion with a well formed and considered option.
 
-When I changed companies at the end of last year I came to <a href="https://ocadotechnology.com/"
+When I changed companies at the end of last year I came to  href="https://ocadotechnology.com/"
 target="_blank" rel="noopener">Ocado Technology</a> as a team lead for an existing team, using a technology
 stack I wasn't familiar with. In fact Ocado are a Java based company, which I had never used before, so not
 only was I not familiar with the frameworks and libraries used, but I wasn't even familiar with language the
@@ -38,8 +38,8 @@ more about making sure the right people are talking and helping to avoid misunde
 and my developers are accidentally talking at cross-purposes.
 
 While this change has definitely pushed me out of my comfort zone, it has also given me space to focus a
-different area of my leadership skills. Ocado prides itself on its values, one of which is its <a
-href="https://en.wikipedia.org/wiki/Servant_leadership">servant leadership</a> philosophy. By not having the
+different area of my leadership skills. Ocado prides itself on its values, one of which is its 
+[servant leadership](https://en.wikipedia.org/wiki/Servant_leadership) philosophy. By not having the
 knowledge to make decisions myself I am forced to empower my team to make decisions on how they want solve
 problems.
 

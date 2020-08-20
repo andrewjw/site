@@ -39,7 +39,7 @@ pass the right options to forward the remote port, and expose the port.
 
 I was trying to expose port 61616 from a container called `activemq`, so I ran the following command:
 
-```$1
+```bash
 docker run -p 61616:61616 alpine/socat tcp-listen:61616,reuseaddr,fork tcp:activemq:61616
 ```
 
@@ -63,6 +63,6 @@ This specifies that when an incoming connection arrives it should be connected p
 
 So to summarise, you can run the following command and expose a port while a container is running.
 
-```$1
+```bash
 docker run -p cport:hostport alpine/socat tcp-listen:cport,reuseaddr,fork tcp:remotehost:remoteport
 ```

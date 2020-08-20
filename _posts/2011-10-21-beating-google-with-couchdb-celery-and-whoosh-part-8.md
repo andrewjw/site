@@ -17,8 +17,8 @@ flickr_imagelink: 'https://www.flickr.com/photos/othree/5228608281/'
 flickr_imagename: 'github 章魚貼紙'
 ---
 In the previous seven posts I've gone through all the stages in building a search engine. If you want to try
-and run it for yourself and tweak it to make it even better then you can. I've put the <a
-href="https://github.com/andrewjw/celery-crawler">code up on GitHub</a>. All I ask is that if you beat Google,
+and run it for yourself and tweak it to make it even better then you can. I've put the 
+[code up on GitHub](https://github.com/andrewjw/celery-crawler). All I ask is that if you beat Google,
 you give me a credit somewhere.
 
 When you've downloaded the code it should prove to be quite simple to get running. First you'll need to edit

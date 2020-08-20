@@ -24,8 +24,8 @@ know what work is currently on your plate before they ask you to do something. W
 status board up to date?
 
 Traditionally we have had a [Bugzilla installation](http://www.bugzilla.org/) which was used to
-store a record of almost every change we made. A <a
-href="http://mikewest.org/2006/06/subversion-post-commit-hooks-101">subversion post commit hook</a> allows us
+store a record of almost every change we made. A 
+[subversion post commit hook](http://mikewest.org/2006/06/subversion-post-commit-hooks-101) allows us
 to link every commit back to a piece of work in Bugzilla. This works well for coding in an
 issue-driven-development style, but does result in Bugzilla sending a lot of emails. Many of which are
 completely irrelevant to people outside of IT. Indeed even people inside IT, but who aren't directly linked to

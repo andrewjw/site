@@ -21,9 +21,9 @@ store them in [CouchDB](http://couchdb.apache.org/). We can rank them in order o
 query them using [Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) but the internet is big,
 [really big!](http://thenextweb.com/shareables/2011/01/11/infographic-how-big-is-the-internet/) A
 single server doesn't even come close to being able to hold all the information that you would want it to -
-Google has an estimated <a
-href="http://www.datacenterknowledge.com/archives/2009/05/14/whos-got-the-most-web-servers/">900,000
-servers</a>. So how do we scale this the software we've written so far effectively?
+Google has an estimated 
+[900,000
+servers](http://www.datacenterknowledge.com/archives/2009/05/14/whos-got-the-most-web-servers/). So how do we scale this the software we've written so far effectively?
 
 The reason I started writing this series was to investigate how well Celery's integration with CouchDB works.
 This gives us an immediate win in terms of scaling as we don't need to worry about a different backend, such
@@ -31,18 +31,18 @@ as [RabbitMQ](http://www.rabbitmq.com/). Celery itself is designed to scale so w
 `celeryd` daemons as many boxes as we like and the jobs will be divided amongst them. This means that
 our indexing and ranking processes will scale easily.
 
-CouchDB is not designed to scale across multiple machines, but there is some mature software, <a
-href="http://tilgovi.github.com/couchdb-lounge/">CouchDB-lounge</a> that does just that. I won't go into how
+CouchDB is not designed to scale across multiple machines, but there is some mature software, 
+[CouchDB-lounge](http://tilgovi.github.com/couchdb-lounge/) that does just that. I won't go into how
 to get set this up but fundamentally you set up a proxy that sits in front of your CouchDB cluster and shards
 the data across the nodes. It deals with the job of merging view results and managing where the data is
-actually stored so you don't have to. O'Reilly's CouchDB: The Definitive Guide has a chapter <a
-href="http://guide.couchdb.org/draft/clustering.html">on clustering</a> that is well worth a read.
+actually stored so you don't have to. O'Reilly's CouchDB: The Definitive Guide has a chapter 
+[on clustering](http://guide.couchdb.org/draft/clustering.html) that is well worth a read.
 
 Unfortunately while Woosh is easy to work with it's not designed to be used on a large scale. Indeed if
 someone was crazy enough to try to run the software we've developed in this series they might be advised to
 replace Whoosh with [Solr](http://lucene.apache.org/solr/). Solr is a lucene-based search server
-which provides an HTTP interface to the full-text index. Solr comes with a <a
-href="http://wiki.apache.org/solr/DistributedSearch">sharding system</a> to enable you to query an index that
+which provides an HTTP interface to the full-text index. Solr comes with a 
+[sharding system](http://wiki.apache.org/solr/DistributedSearch) to enable you to query an index that
 is too large for a single machine.
 
 So, with our two data storage tools providing HTTP interface and both having replication and sharding either

@@ -21,9 +21,9 @@ flickr:
       imagename: 'LA Noire Screenshot 4'
 ---
 I'm not a quick game player. I don't rush out a buy the latest games and complete them on the same weekend.
-Currently I'm most of the way through both <a
+Currently I'm most of the way through both 
 href="http://www.amazon.co.uk/gp/product/B0037W6M28/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B0037W6M28">Alan
-Wake</a> and <a
+Wake</a> and 
 href="http://www.amazon.co.uk/gp/product/B003NSBMBW/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B003NSBMBW">L.A.
 Noire</a>.
 
@@ -42,7 +42,7 @@ directly from actor's faces. This gives the faces a lifelike quality that has no
 
 Despite the extensive similarities between the game my opinion of the two could hardly be more different. Alan
 Wake is one of the best games I've ever played, while L.A. Noire is really quite boring. I was trying to work
-out why I felt so differently about them when I read the following quote in <a
+out why I felt so differently about them when I read the following quote in 
 href="http://www.amazon.co.uk/gp/product/1449304753/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1449304753">Making
 Isometric Social Real-Time Games with HTML5, CSS3, and JavaScript</a> by Mario Andres Pagella.
 

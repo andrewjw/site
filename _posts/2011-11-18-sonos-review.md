@@ -22,17 +22,17 @@ system consists of a number of devices that connect to each other using a propri
 buy Sonos devices that contain built in speakers, or ones that connect to your own as well as a device to link
 your iPhone and to join your existing network to the Sonos wireless network.
 
-I purchased a <a
-href="http://www.amazon.co.uk/gp/product/B005CI5H3U/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B005CI5H3U">Sonos
-Play:3</a>, a <a
-href="http://www.amazon.co.uk/gp/product/B0047ZFXTM/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B0047ZFXTM">Wireless
-Dock</a> and <a
-href="http://www.amazon.co.uk/gp/product/B000YGIJ62/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B000YGIJ62">ZoneBridge</a>
+I purchased a 
+[Sonos
+Play:3](http://www.amazon.co.uk/gp/product/B005CI5H3U/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B005CI5H3U), a 
+[Wireless
+Dock](http://www.amazon.co.uk/gp/product/B0047ZFXTM/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B0047ZFXTM) and 
+[ZoneBridge](http://www.amazon.co.uk/gp/product/B000YGIJ62/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B000YGIJ62)
 (all three links contain an affiliate id) so that's what I'm reviewing here.
 
 The Sonos Play:3 is as fairly small, unassuming, single speaker block. It contains three individual speakers
-while it's larger brother, the <a
-href="http://www.amazon.co.uk/gp/product/B002RL9KZG/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B002RL9KZG">Play:5</a>
+while it's larger brother, the 
+[Play:5](http://www.amazon.co.uk/gp/product/B002RL9KZG/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=B002RL9KZG)
 (affiliate link) contains five. The back has a power socket and a network port. The top has a mute button, as
 well as a volumn up and down rocker. The other devices are similarly spartan, yet stylish, in their design
 with minimal on device buttons.
@@ -46,9 +46,9 @@ device will be found and added the network.
 The setup is supposed to be quick and straightforward, and for the first two devices it was. When I tried to
 add my Play:3 to the network it would repeatedly not be found. The white light on the top of the device
 stopped flashing, indicating that it had connected but the PC software did not find it. It's not clear what
-happened, but I may have plugged it in before the previous device had finished configuring. Doing a <a
-href="http://sonos.custhelp.com/cgi-bin/sonos.cfg/php/enduser/std_adp.php?p_faqid=250&amp;p_created=1109033213&amp;p_sid=VIbVUpJk&amp;p_accessibility=0&amp;p_redirect=&amp;p_lva=&amp;p_sp=cF9zcmNoPTEmcF9zb3J0X2J5PSZwX2dyaWRzb3J0PSZwX3Jvd19jbnQ9OCw4JnBfcHJvZHM9JnBfY2F0cz0mcF9wdj0mcF9jdj0mcF9zZWFyY2hfdHlwZT1hbnN3ZXJzLnNlYXJjaF9mbmwmcF9wYWdlPTEmcF9zZWFyY2hfdGV4dD1yZXNldA**&amp;p_li=&amp;p_topview=1">factory
-reset</a> solved the issue.
+happened, but I may have plugged it in before the previous device had finished configuring. Doing a 
+[factory
+reset](http://sonos.custhelp.com/cgi-bin/sonos.cfg/php/enduser/std_adp.php?p_faqid=250&amp;p_created=1109033213&amp;p_sid=VIbVUpJk&amp;p_accessibility=0&amp;p_redirect=&amp;p_lva=&amp;p_sp=cF9zcmNoPTEmcF9zb3J0X2J5PSZwX2dyaWRzb3J0PSZwX3Jvd19jbnQ9OCw4JnBfcHJvZHM9JnBfY2F0cz0mcF9wdj0mcF9jdj0mcF9zZWFyY2hfdHlwZT1hbnN3ZXJzLnNlYXJjaF9mbmwmcF9wYWdlPTEmcF9zZWFyY2hfdGV4dD1yZXNldA**&amp;p_li=&amp;p_topview=1) solved the issue.
 
 The simplest thing to play on the Sonos system is internet radio. The controller comes preloaded with a huge
 range of radio stations. Just select the one you want and after a short pause it'll come out of your speaker,

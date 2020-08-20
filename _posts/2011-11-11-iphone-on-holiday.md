@@ -37,8 +37,8 @@ nearly always windy. The white noise of the wind masked much of the voice that I
 Unfortunately I can't afford a [Foley](http://en.wikipedia.org/wiki/Foley_(filmmaking)) artist so
 the wind noise remains on the final version.
 
-To edit my travelogue there was really only one option, <a
-href="http://itunes.apple.com/gb/app/imovie/id377298193?mt=8">iMovie</a>. As iMovie runs on the iPhone you
+To edit my travelogue there was really only one option, 
+[iMovie](http://itunes.apple.com/gb/app/imovie/id377298193?mt=8). As iMovie runs on the iPhone you
 don't need to move your video files and get start editing straightaway. Each evening in our hotel room I could
 review the footage and start the editing process.
 
@@ -56,8 +56,8 @@ important not to over use transitions, but having a few more options would be ni
 limited when adding text to the video, which is a key part of making a travelogue video.
 
 I took some panorama photos using my iPhone as they're a great way to show a scene that you just can't capture
-with an ordinary camera. The first app I tried was <a
-href="http://itunes.apple.com/gb/app/dermandar-panorama/id441183050?mt=8">Dermandar</a>. This app is
+with an ordinary camera. The first app I tried was 
+[Dermandar](http://itunes.apple.com/gb/app/dermandar-panorama/id441183050?mt=8). This app is
 incredibly easy to use. You hold the camera vertically and then rotate it and the app captures pictures
 automatically and then stitches them together. The resulting panorama's look great, until you try and take
 them off your phone. Part of the ease of use comes from the fact that it uses the video camera rather than

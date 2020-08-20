@@ -18,8 +18,8 @@ flickr_image: 'https://live.staticflickr.com/4125/4999120709_54f5378931_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/avlxyz/4999120709/'
 flickr_imagename: 'GPS Status app - HTC Desire'
 ---
-Recently Google <a
-href="http://googleblog.blogspot.com/2011/04/add-your-local-knowledge-to-map-with.html">announced</a> that
+Recently Google 
+[announced](http://googleblog.blogspot.com/2011/04/add-your-local-knowledge-to-map-with.html) that
 they were making their [crowd sourcing mapping tools](http://www.google.com/mapmaker) available to
 users in the United States. This tool lets uses edit Google Maps, adding businesses and even roads, railways
 and rivers. This raises interesting questions about whether wisdom of the crowd can be applied to data that
@@ -30,9 +30,9 @@ together an amazing resource of free map data, but only recently has Google begu
 maps for large parts of the world.
 
 Accurate mapping data is terribly important. While the majority of Google Maps queries are likely to be "how
-do I get from my house to my aunt's?" some are much more important. A war was almost caused when <a
-href="http://www.wired.com/dangerroom/2010/11/google-maps-error-blamed-for-nicaraguan-invasion/">the border
-between Nicaraguan and Costa Rica</a> was incorrectly placed. While a war is a little far-fetched, it's not
+do I get from my house to my aunt's?" some are much more important. A war was almost caused when 
+[the border
+between Nicaraguan and Costa Rica](http://www.wired.com/dangerroom/2010/11/google-maps-error-blamed-for-nicaraguan-invasion/) was incorrectly placed. While a war is a little far-fetched, it's not
 hard to imagine how a mistake on map could cost someone's life in a medical emergency.
 
 Originally Open Street Map required budding cartographers to get out with their GPS devices and manually
@@ -54,12 +54,12 @@ level of a walker and suddenly centimeters become important.
 What's more important, masses of mapping information or accurate maps? I'm not sure, but I think it's probably
 the latter.
 
-If you want to see the mass of data that is being created by the crowd, <a
-href="http://www.google.com/mapmaker/pulse">Map Maker Pulse</a> is a fascinating and hypnotic site to visit.
+If you want to see the mass of data that is being created by the crowd, 
+[Map Maker Pulse](http://www.google.com/mapmaker/pulse) is a fascinating and hypnotic site to visit.
 
 The final issue is that of licensing. Open Street Map is very clear that any time you spend improving their
-maps is rewarded by your work being released under an open source license. Google's <a
-href="http://www.google.com/mapmaker/mapfiles/s/terms_mapmaker.html">terms of service</a> require you to given
+maps is rewarded by your work being released under an open source license. Google's 
+[terms of service](http://www.google.com/mapmaker/mapfiles/s/terms_mapmaker.html) require you to given
 them a license to do whatever they like to your work. They do not need to make your changes available for
 others to use. Google is asking you to do high precision work for free and then taking that work and locking
 it inside in Google Maps, and that doesn't seem like a fair trade to me.

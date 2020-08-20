@@ -24,9 +24,9 @@ the rank for the pages in our database.
 
 There are several different ways of parsing out the links in a given HTML document. You can just use a regular
 expression to pull the urls out, or you can use a more complete but also more complicated (and slower) method
-of parsing the HTML using the standard Python <a
-href="http://docs.python.org/library/htmlparser.html">htmlparser</a> library, or the wonderful <a
-href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>. The point of this series isn't to
+of parsing the HTML using the standard Python 
+[htmlparser](http://docs.python.org/library/htmlparser.html) library, or the wonderful 
+[Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/). The point of this series isn't to
 build a complete webcrawler, but to show you the basic building blocks. So, for simplicity's sake I'll use a
 regular expression.
 
@@ -91,8 +91,8 @@ enough time you'll end up with most of the internet on your harddisk!
 
 When we come to write the website to query the information we've collected we'll use two numbers to rank
 pages. First we'll use the a value that ranks pages base on the query used, but we'll also use a value that
-ranks pages based on their importance. This is the same method used by Google, known as <a
-href="http://en.wikipedia.org/wiki/Page_Rank">Page Rank</a>.
+ranks pages based on their importance. This is the same method used by Google, known as 
+[Page Rank](http://en.wikipedia.org/wiki/Page_Rank).
 
 Pank Rank is a measure of how likely you are to end up on a given page by clicking on a random link anywhere
 on the internet. The [Wikipedia article](http://en.wikipedia.org/wiki/Page_Rank) goes into some

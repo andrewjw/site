@@ -17,17 +17,17 @@ flickr_imagename: 'Lasauvage History Vehicles - Ford GT40 V8 Engine'
 ---
 A hobby project of mine would be made much easier if I could run the same code on the server as I run in the
 web browser. Projects like [Node.js](http://nodejs.org/) have made Javascript on the server a more
-realistic prospect, but I don't want to give up on [Python](http://www.python.org/) and <a
-href="http://www.djangoproject.com/">Django</a>, my preferred web development tools.
+realistic prospect, but I don't want to give up on [Python](http://www.python.org/) and 
+[Django](http://www.djangoproject.com/), my preferred web development tools.
 
 The obvious solution to this problem is to embed Javascript in Python and to call the key bits of Javascript
-code from Python. There are two major Javascript interpreters, <a
-href="https://developer.mozilla.org/en/SpiderMonkey">Mozilla's SpiderMonkey</a> and <a
-href="http://code.google.com/p/v8/">Google's V8</a>.
+code from Python. There are two major Javascript interpreters, 
+[Mozilla's SpiderMonkey](https://developer.mozilla.org/en/SpiderMonkey) and 
+[Google's V8](http://code.google.com/p/v8/).
 
 Unfortunately the [python-spidermonkey](http://code.google.com/p/python-spidermonkey/) project is
-dead and there's no way of telling if it works with later version of SpiderMonkey. The <a
-href="http://code.google.com/p/pyv8/updates/list">PyV8</a> project by contrast is still undergoing active
+dead and there's no way of telling if it works with later version of SpiderMonkey. The 
+[PyV8](http://code.google.com/p/pyv8/updates/list) project by contrast is still undergoing active
 development.
 
 Although PyV8 has a wiki page entitled [How To
@@ -62,8 +62,8 @@ python setup.py build
 sudo python setup.py install
 ```
 
-In future I'll write more detailed posts about how to use PyV8, but let's start with a simple example. <a
-href="http://mustache.github.com/">Mustache</a> is a simple template language that is ideal when you want to
+In future I'll write more detailed posts about how to use PyV8, but let's start with a simple example. 
+[Mustache](http://mustache.github.com/) is a simple template language that is ideal when you want to
 create templates in Javascript. There's actually a [Python
 implementation](https://github.com/defunkt/pystache) of Mustache, but let's pretend that it doesn't exist.
 

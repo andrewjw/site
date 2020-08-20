@@ -34,8 +34,8 @@ music through Sonos before deciding to watch TV.
 
 To prevent this from happening I needed to determine whether the speakers were on or not. Fortunately,
 Raspberry Pi's come with some useful tools to determine information about what is supported by the HDMI device
-it's connected to. These tools are `tvservice`, which dumps the <a
-href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">EDID</a> information, and
+it's connected to. These tools are `tvservice`, which dumps the
+[EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data) information, and
 `edidparser` which turns the EDID into human-readable text.
 
 You can use them as follows:
@@ -50,6 +50,7 @@ This gives you a nice text file containing all of the resolutions and audio form
 HDMI device. I took one output when the speakers were on, and one when they were off, and by `diff`ing
 them I got this set of changes.
 
+```plain
     -HDMI:EDID found audio format 2 channels PCM, sample rate: 32|44|48 kHz, sample size: 16|20|24 bits
     +HDMI:EDID found audio format 2 channels PCM, sample rate: 32|44|48|88|96|176|192 kHz, sample size: 16|20|24 bits
     +HDMI:EDID found audio format 6 channels PCM, sample rate: 32|44|48|88|96|176|192 kHz, sample size: 16|20|24 bits
@@ -59,6 +60,7 @@ them I got this set of changes.
     +HDMI:EDID found audio format 8 channels Dobly Digital+, sample rate: 44|48 kHz, codec define: 0
     +HDMI:EDID found audio format 8 channels DTS-HD, sample rate: 44|48|88|96|176|192 kHz, codec define: 1
     +HDMI:EDID found audio format 8 channels MLP, sample rate: 48|96|192 kHz, codec define: 0
+```
 
 Pretty obvious really - when the speakers are on they support a much greater range of audio formats!
 

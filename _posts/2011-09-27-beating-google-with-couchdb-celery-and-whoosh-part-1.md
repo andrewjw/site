@@ -30,17 +30,17 @@ downsides are. I decided to write this series partly to explain how Celery and C
 experiment with using them together.
 
 In this series I'm going to talk about setting up Celery to work with Django, using CouchDB as a backend. I'm
-also going to show you how to use Celery to create a web-crawler. We'll then index the crawled pages using <a
-href="https://bitbucket.org/mchaput/whoosh/wiki/Home">Whoosh</a> and use a <a
-href="http://en.wikipedia.org/wiki/PageRank">PageRank</a>-like algorithm to help rank the results. Finally,
+also going to show you how to use Celery to create a web-crawler. We'll then index the crawled pages using 
+[Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) and use a 
+[PageRank](http://en.wikipedia.org/wiki/PageRank)-like algorithm to help rank the results. Finally,
 we'll attach a simple Django frontend to the search engine for querying it.
 
 Let's consider what we need to implement for our webcrawler to work, and be a good citizen of the internet.
 First and foremost is that we must be read and respect [robots.txt](http://www.robotstxt.org/).
 This is a file that specifies what areas of a site crawlers are banned from. We must also not hit a site too
 hard, or too often. It is very easy to write a crawler than repeatedly hits a site, and requests the same
-document over and over again. These are very big no-noes. Lastly we must make sure that we use a custom <a
-href="http://en.wikipedia.org/wiki/User_agent">User Agent</a> so our bot is identifiable.
+document over and over again. These are very big no-noes. Lastly we must make sure that we use a custom 
+[User Agent](http://en.wikipedia.org/wiki/User_agent) so our bot is identifiable.
 
 We'll divide the algorithm for our webcrawler into three parts. Firstly we'll need a set of urls. The crawler
 picks a url, retrieves the page then store it in the database. The second stage takes the page content, parses

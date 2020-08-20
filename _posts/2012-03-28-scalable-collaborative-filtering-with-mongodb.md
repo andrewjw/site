@@ -21,9 +21,9 @@ small amounts of data, how do you create a system that scales to huge amounts of
 
 How to actually calculate the similarity of two items is a complicated topic with many possible solutions.
 Which one if appropriate depends on your particularly application. If you want to find out more I suggest
-reading the excellent <a
-href="http://www.amazon.co.uk/gp/product/0596529325/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0596529325">Programming
-Collective Intelligence</a><img src="{{ site.baseurl
+reading the excellent 
+[Programming
+Collective Intelligence](http://www.amazon.co.uk/gp/product/0596529325/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0596529325)<img src="{{ site.baseurl
 }}/assets/ir?t=indiegicouk-21&amp;l=as2&amp;o=2&amp;a=0596529325" width="1" height="1" border="0" alt=""
 style="border:none!important;margin:0!important;" /> (Amazon affiliate link) by Toby Segaran.
 
@@ -58,8 +58,8 @@ for view in views:
 ```
 
  The first step is to process this list of view of events so we can take a single item and get a list of all
-the users that have viewed it. To make sure this scales over a large number of views we'll use <a
-href="http://www.mongodb.org/display/DOCS/MapReduce">MongoDB's map/reduce</a> functionality.
+the users that have viewed it. To make sure this scales over a large number of views we'll use 
+[MongoDB's map/reduce](http://www.mongodb.org/display/DOCS/MapReduce) functionality.
 
 ```python
 def article_user_view_count():

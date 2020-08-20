@@ -15,18 +15,18 @@ flickr_image: 'https://live.staticflickr.com/5264/5653503758_e82a7437d2_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/dexxus/5653503758/'
 flickr_imagename: 'almost may'
 ---
-In this series I'm describing how I used a [CouchDB](http://www.couchdb.org) <a
-href="http://couchapp.org/page/index">CouchApp</a> to [display the
-weather data](http://www.welwynweather.co.uk) collected by a weather station in my back garden. In the <a
-href="/2011/12/02/back-garden-weather-in-couchdb-part-1/">first post</a> I described CouchApps and how to get
+In this series I'm describing how I used a [CouchDB](http://www.couchdb.org) 
+[CouchApp](http://couchapp.org/page/index) to [display the
+weather data](http://www.welwynweather.co.uk) collected by a weather station in my back garden. In the 
+[first post](/2011/12/02/back-garden-weather-in-couchdb-part-1/) I described CouchApps and how to get
 a copy of the site. In the [next post](/2012/01/05/back-garden-weather-in-couchdb-part-2/) we
 looked at how to import the data collected by [PyWWS](http://code.google.com/p/pywws/) and how to
 render a basic page in a CouchApp. In the post we'll extend the basic page to display real weather data.
 
 Each document in the database is a record of the weather data at a particular point in time. As we want to
-display the data over a whole day we need to use a <a
-href="http://wiki.apache.org/couchdb/Formatting_with_Show_and_List#Listing_Views_with_CouchDB_0.10_and_later">`list`
-function</a>. `list` functions work similarly to the `show` function we saw in the previous
+display the data over a whole day we need to use a 
+[`list`
+function](http://wiki.apache.org/couchdb/Formatting_with_Show_and_List#Listing_Views_with_CouchDB_0.10_and_later). `list` functions work similarly to the `show` function we saw in the previous
 post. Unlike `show` functions `list` functions don't have the document passed in, they can call
 a `getRow` function which returns the next row to process. When there are no rows left it returns
 `null`.
@@ -133,8 +133,8 @@ it, and use it to render the `day` template.
 }
 ```
 
-Let's look at a part of the `day` template. The page is a fairly standard use of the <a
-href="http://code.google.com/apis/chart/">Google Chart Tools</a> library. In this first snippet we render the
+Let's look at a part of the `day` template. The page is a fairly standard use of the 
+[Google Chart Tools](http://code.google.com/apis/chart/) library. In this first snippet we render the
 maximum and minimum temperature values, and a blank div that we'll fill with the chart.
 
 ```javascript

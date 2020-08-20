@@ -22,12 +22,12 @@ is done through it. At this stage with our history of recorded shows and a caref
 rules switching would be a big pain, so I wanted to try and simplify the user experience, even if it means
 complicating the setup somewhat.
 
-I had previously tried to reduce the standby power consumption by using an <a
-href="https://www.amazon.co.uk/dp/B00VKU57D4/ref=cm_sw_r_cp_api_ezg7zb995ZDKJ">Eon Power Down Plug</a>, which
+I had previously tried to reduce the standby power consumption by using an
+[Eon Power Down Plug](https://www.amazon.co.uk/dp/B00VKU57D4/ref=cm_sw_r_cp_api_ezg7zb995ZDKJ), which
 monitors the master socket and switches off the slave sockets when the master enters standby mode. This works
 great as when the TV was off my Xbox and surround speakers would be switched off automatically. The downside
-is that if I want the use the speakers to listen to music (they are also connected to a <a
-href="http://amzn.to/2lbf162">Sonos Connect</a>) then either the TV needs to be on, or I need to change the
+is that if I want the use the speakers to listen to music (they are also connected to a
+[Sonos Connect](http://amzn.to/2lbf162)) then either the TV needs to be on, or I need to change the
 plug over. Lastly, because I was running a combined frontend and backend it wasn't connected to the smart plug
 (otherwise it wouldn't be able to turn on to record.) If you turned the TV off the frontend would still be on,
 preventing the backend from shutting down for several hours, until it went into idle mode.

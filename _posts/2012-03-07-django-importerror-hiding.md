@@ -58,8 +58,8 @@ they were referenced in the models of other apps. The strange exception that was
 probably an artefact of Python's garbage collection, although how exactly it occurred is still not clear to
 me.
 
-There are a number of tickets ([#6379](https://code.djangoproject.com/ticket/6379), <a
-href="https://code.djangoproject.com/ticket/14130">#14130</a> and probably others) on this topic. A common
+There are a number of tickets ([#6379](https://code.djangoproject.com/ticket/6379), 
+[#14130](https://code.djangoproject.com/ticket/14130) and probably others) on this topic. A common
 refrain in Python is that it's easier to ask for forgiveness than to ask for permission, and I certainly agree
 with Django and follow that most of the time.
 
@@ -117,8 +117,8 @@ else:
 whether the original import failed or whether an import inside that failed. Unlike with an
 `AttributeError` there is a no easy way to rewrite the code to only catch the error you're interested
 in. Python does provide some tools to divide the import process into steps, so you can tell whether the module
-exists before attempting to import it. In particular the `<a
-href="http://docs.python.org/library/imp.html#imp.find_module">imp.find_module</a>` function would be
+exists before attempting to import it. In particular the `
+[imp.find_module](http://docs.python.org/library/imp.html#imp.find_module)` function would be
 useful.
 
 Changing Django to avoid catching the wrong `ImportError`s will greatly complicate the code. It would

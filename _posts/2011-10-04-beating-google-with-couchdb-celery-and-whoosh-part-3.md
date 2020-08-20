@@ -55,8 +55,8 @@ def update(self):
 ```
 
 We need to split up the given URL so we know whether it's a secure connection or not, and we need to limit our
-connects to each domain so we need get that as well. Python has a module, <a
-href="http://docs.python.org/library/urlparse.html">urlparse</a>, that does the hard work for us.
+connects to each domain so we need get that as well. Python has a module, 
+[urlparse](http://docs.python.org/library/urlparse.html), that does the hard work for us.
 
 ```python
     robotstxt = RobotsTxt.get_by_domain(parse.scheme, parse.netloc)
@@ -149,9 +149,9 @@ CELERY_ROUTES = (MyRouter(), )
 ```
 
 The final step is to allow the crawler to be kicked off by seeding it with some URLs. I've previously posted
-about how to create a <a
-href="/2009/03/06/creating-django-management-commands/">Django management
-command</a> and they're a perfect fit here. The command takes one argument, the url, and creates a Celery task
+about how to create a 
+[Django management
+command](/2009/03/06/creating-django-management-commands/) and they're a perfect fit here. The command takes one argument, the url, and creates a Celery task
 to retrieve it.
 
 ```python

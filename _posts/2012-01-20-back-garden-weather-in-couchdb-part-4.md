@@ -36,8 +36,8 @@ data is uploaded.
 First we need to group the five minute weather records together into groups for each hour. We could do this by
 taking the unix timestamp of record and rounding to the nearest hour. The problem with this approach is that
 the keys are included in the urls. If you can calculate unix timestamps in your head then your maths is better
-than mine! To make the urls more friendly we'll use a <a
-href="http://www.diveintojavascript.com/projects/javascript-sprintf">Javascript implementation of sprintf</a>
+than mine! To make the urls more friendly we'll use a 
+[Javascript implementation of sprintf](http://www.diveintojavascript.com/projects/javascript-sprintf)
 to build a human-friendly representation of date and time, excluding the minute component.
 
 ```javascript
@@ -140,5 +140,5 @@ correct average for these values.
 Now we have averaged the weather data into hourly chunks we can use a `list`, like the one described in
 the previous post, to display the data.
 
-In the next and final post in this series I'll discuss the <a
-href="http://www.welwynweather.co.uk/records">records page</a> on the weather site.
+In the next and final post in this series I'll discuss the 
+[records page](http://www.welwynweather.co.uk/records) on the weather site.

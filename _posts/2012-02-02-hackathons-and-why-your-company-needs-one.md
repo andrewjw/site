@@ -16,15 +16,15 @@ flickr_imagelink: 'https://www.flickr.com/photos/mutednarayan/2280385549/'
 flickr_imagename: 'Code'
 ---
 I could wax lyrical about how programming is an art form and requires a great deal of creativity. However,
-it's easy to loose focus on this in the middle of creating project specs and servicing your <a
-href="http://en.wikipedia.org/wiki/Technical_debt">technical debt</a>. Like <a
-href="blog.facebook.com/blog.php?post=2234227130">many</a> companies we recently held a hackathon event where
+it's easy to loose focus on this in the middle of creating project specs and servicing your 
+[technical debt](http://en.wikipedia.org/wiki/Technical_debt). Like 
+[many](blog.facebook.com/blog.php?post=2234227130) companies we recently held a hackathon event where
 we split up into teams and worked on projects suggested by the team members.
 
 Different teams took different approaches to the challenge, one team set about integrating an open source code
 review site in our development environment, others investigated how some commercial technologies could be
-useful to us. My team built a <a href="http://en.wikipedia.org/wiki/Collaborative_filtering">collaborative
-filtering</a> system using MongoDB. I'll post about that project in the future, but in this post I wanted to
+useful to us. My team built a  [collaborative
+filtering](http://en.wikipedia.org/wiki/Collaborative_filtering) system using MongoDB. I'll post about that project in the future, but in this post I wanted to
 focus on what we learnt about running a company Hackathon event.
 
 If you're lucky you'll work in a company that's focused on technology and you'll always be creating new and

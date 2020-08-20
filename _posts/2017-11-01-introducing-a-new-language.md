@@ -21,7 +21,7 @@ introducing [Kotlin](https://kotlinlang.org/) into our tech stack. We're a JVM
 majority of our code written in Java and few apps in [Scala](https://www.scala-lang.org/). I don't
 intend to discuss the pros and cons of any particular language in this post, as I don't have enough experience
 of them to decide yet (more on that to come as the discussion evolves). Instead, I wanted to talk about
-<em>how</em> you can decide when to introduce a new language.
+_how_ you can decide when to introduce a new language.
 
 Programmers, myself included, have a habit of being attracted to anything new and shiny. That might be a new
 library, a new framework or a new language. Whatever it is, the hype will suggest that you can do more, with

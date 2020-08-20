@@ -14,15 +14,15 @@ flickr_imagelink: 'https://www.flickr.com/photos/shelley_dave/6818597069/'
 flickr_imagename: 'Snow falling'
 ---
 After a two week gap the recent [snow in the UK](http://www.bbc.co.uk/news/uk-16899453) has
-inspired me to get back to my series of posts on my weather station website, <a
-href="http://www.welwynweather.co.uk">WelwynWeather.co.uk</a>. In this post I'll discuss the <a
-href="http://www.welwynweather.co.uk/records">records page</a>, which shows details such as the highest and
+inspired me to get back to my series of posts on my weather station website, 
+[WelwynWeather.co.uk](http://www.welwynweather.co.uk). In this post I'll discuss the 
+[records page](http://www.welwynweather.co.uk/records), which shows details such as the highest and
 lowest temperatures, and the heaviest periods of rain.
 
-From a <a
-href="/2012/01/12/back-garden-weather-in-couchdb-part-3/">previous
-post</a> in this series you'll remember that the website is implemented as a <a
-href="http://couchapp.org/">CouchApp</a>. These are Javascript functions that run inside the CouchDB database,
+From a 
+[previous
+post](/2012/01/12/back-garden-weather-in-couchdb-part-3/) in this series you'll remember that the website is implemented as a 
+[CouchApp](http://couchapp.org/). These are Javascript functions that run inside the CouchDB database,
 and while they provide quite a lot of flexibility you do need to tailor your code to them.
 
 On previous pages we have use CouchDB's map/reduce framework to summarise data then used a list function to
@@ -59,8 +59,8 @@ function(keys, values, rereduce) {
 }
 ```
 
-The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch <a
-href="http://wiki.apache.org/couchdb/Rewriting_urls">rewrite document</a>. To make the view available we add a
+The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch 
+[rewrite document](http://wiki.apache.org/couchdb/Rewriting_urls). To make the view available we add a
 rewrite to expose it to the world. As we want to reduce all documents to a single point we just need to pass
 `reduce=true` as the query.
 

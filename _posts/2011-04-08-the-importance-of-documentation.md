@@ -19,8 +19,8 @@ flickr_imagename: 'Books in progress'
 ---
 Recently I've been working a couple of open source projects and as part of them I've been using some
 libraries. In order to use a library though, you need to understand how it is designed, what function calls
-are available and what those functions do. The two libraries I've been using are <a
-href="http://qt.nokia.com/">Qt</a> and [libavformat](http://www.ffmpeg.org/), which is part of
+are available and what those functions do. The two libraries I've been using are 
+[Qt](http://qt.nokia.com/) and [libavformat](http://www.ffmpeg.org/), which is part of
 FFmpeg and they show two ends of the documentation spectrum.
 
 Now, it's important to note that Qt is a massive framework owned by Nokia, with hundreds of people working on
@@ -40,8 +40,8 @@ library so you can narrow your focus that parts of the library you actually want
 Qt's document starts in a typical fashion, [with a
 tutorial](http://doc.qt.nokia.com/4.7/gettingstartedqt.html). This gives you a very short piece of code that gets you up and running quickly. It then proceeds
 to describe, line by line, how the code works and so introduces you to the fundamental concepts used in the
-library. FFmpeg takes a similar approach, and links to a <a
-href="http://www.inb.uni-luebeck.de/~boehme/using_libavcodec.html">tutorial</a>. However, the tutorial begins
+library. FFmpeg takes a similar approach, and links to a 
+[tutorial](http://www.inb.uni-luebeck.de/~boehme/using_libavcodec.html). However, the tutorial begins
 with a big message about it being out of date. How much do you trust the out of date tutorial?
 
 Once you've a grasp of the fundamental design decisions that were taken while building the library, you'll
@@ -49,8 +49,8 @@ need to find out what functions you need to call or objects you need to create t
 Right at the top of the menu the [QT documentation](http://doc.qt.nokia.com/4.7/) has links to
 class index, function index and modules. These let you easily browse the contents of the library and delve
 into deeper documentation. [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is often used to
-generate documentation for an API, and it seem to be the way <a
-href="http://ffmpeg.org/doxygen/trunk/index.html">FFmpeg is documented</a>. Their frontpage contains...
+generate documentation for an API, and it seem to be the way 
+[FFmpeg is documented](http://ffmpeg.org/doxygen/trunk/index.html). Their frontpage contains...
 nothing. It's empty.
 
 Finally, you'll need to know what arguments to pass to a function and what to expect in return. This is

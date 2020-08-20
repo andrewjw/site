@@ -16,8 +16,8 @@ flickr_imagename: 'delicious or del.icio.us?'
 ---
 I've been a long time user of [delicious.com](http://www.delicious.com), back from when it was had
 the hard-to-remember address of [del.icio.us](http://del.icio.us/). Even though bookmark syncing is
-built into both [Firefox](https://services.mozilla.com/) and <a
-href="http://www.google.co.uk/support/chrome/bin/answer.py?answer=185277">Chrome</a> having your bookmarks
+built into both [Firefox](https://services.mozilla.com/) and 
+[Chrome](http://www.google.co.uk/support/chrome/bin/answer.py?answer=185277) having your bookmarks
 available on a website that you can access from anywhere, and integrated into your browser using an extension
 is a big advantage for me.
 
@@ -35,8 +35,8 @@ shows featured stacks. As you can associate an image with a stack this gives the
 look. The old website was undeniably plain and the images really brighten it up.
 
 Like many people when the Delicious troubles surfaced I immediately looked for an alternative. The most
-obvious choice is <a>Google Bookmarks</a>. Very quickly they produced a <a
-href="https://www.google.com/bookmarks/deliciousimport">tool</a> that imported your bookmark from Delicious
+obvious choice is >Google Bookmarks</a>. Very quickly they produced a 
+[tool](https://www.google.com/bookmarks/deliciousimport) that imported your bookmark from Delicious
 making any potential switch very easy.
 
 Should you make the switch though?

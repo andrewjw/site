@@ -17,8 +17,8 @@ flickr_image: 'https://live.staticflickr.com/3956/14921715974_2d332ac18b_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/chasqui/14921715974'
 flickr_imagename: 'Carrots and Celery'
 ---
-In this <a
-href="/2011/09/27/beating-google-with-couchdb-celery-and-whoosh-part-1/">series</a>
+In this 
+[series](/2011/09/27/beating-google-with-couchdb-celery-and-whoosh-part-1/)
 I'll show you how to build a search engine using standard Python tools like Django, Whoosh and CouchDB. In
 this post we'll begin by creating the data structure for storing the pages in the database, and write the
 first parts of the webcrawler.

@@ -24,8 +24,8 @@ The idea of FitBit's scale and expertise in building hardware, combined with Peb
 platform was an enticing prospect. Rather than switch to an Apple Watch (or Android Wear, although that would
 have required a new phone) I decide to wait for the fruits of the combined company's labour to be released.
 
-I was getting a bit itchy, and my trusty Pebble Steel was showing it's age, but eventually the <a
-href="http://amzn.to/2kGNE3m">FitBit Ionic</a> was announced. A few days before the official release date my
+I was getting a bit itchy, and my trusty Pebble Steel was showing it's age, but eventually the 
+[FitBit Ionic](http://amzn.to/2kGNE3m) was announced. A few days before the official release date my
 preorder arrived. It's now been two weeks of wearing it nearly 24/7, so it seems like a reasonable time to
 post my thoughts.
 

@@ -17,7 +17,7 @@ You'll be very used to using manage.py to create your database and to run your w
 admin tools. Not only to get the benefit of sharing lots of you code but also Django will take care of parsing command line arguments and
 importing your settings for you.
 
-Unfortunately the <a href="http://docs.djangoproject.com/en/dev/howto/custom-management-commands/#howto-custom-management-commands">Django
+Unfortunately the  href="http://docs.djangoproject.com/en/dev/howto/custom-management-commands/#howto-custom-management-commands">Django
   documentation</a> is quite lacking on how to add your own command, but it's really quite easy.
 
 If your app is in `project/app` then create the directories `project/app/management/commands`. Create an empty file called
@@ -53,7 +53,7 @@ AppCommand checks that they are app names while LabelCommand passes them on unch
 handle_label rather than handle, and these functions will be called once for each commandline argument with the argument as
 the first parameter to the function.
 
-For more inspiration take a look at the <a href="http://code.djangoproject.com/svn/django/trunk/django/core/management/commands/">default
+For more inspiration take a look at the  href="http://code.djangoproject.com/svn/django/trunk/django/core/management/commands/">default
 management commands</a>.
 
 Next time I'll show how you can write a real command which will help you keep your views updated if you use couchdb as a datastore.
