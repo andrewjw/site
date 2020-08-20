@@ -40,7 +40,8 @@ nag. If you introduce a bug with a change you quickly get an email letting you k
 and if you set those emails up to go to your team then you also have peer pressure to get that problem fixed.
 
 I spend most of my time building [Django](http://www.djangoproject.com) based sites. For these
-sites I set up six steps for Buildbot to follow. The first step is the checkout step, then a step to copy a settings file into place. Django stores settings in a Python file and these settings need to be configured
+sites I set up six steps for Buildbot to follow. The first step is the checkout step, then a step to copy a
+settings file into place. Django stores settings in a Python file and these settings need to be configured
 for each server that the site is run on. I typically have a file `settings_local.py.buildbot` stored
 in the repository and this step copies this file to `settings_local.py` so the following commands will
 run with the correct settings. The next step is to download and install the dependencies of the site. I'm

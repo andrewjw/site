@@ -28,22 +28,24 @@ In the templates on this page we reference `base.html` which provides the boiler
 make an HTML page.
 
 ```python
-{{ "{% extends &quot;base.html&quot; " }}%}
-{{ "{% block body "}}%}
-    &lt;form action=&quot;/search&quot; method=&quot;get&quot;&gt;
-        &lt;input name=&quot;q&quot; type=&quot;text&quot;&gt;
-        &lt;input type=&quot;submit&quot;&gt;
-    &lt;/form&gt;
-    &lt;hr&gt;
-    &lt;p&gt;{{ doc_count }} pages in index.&lt;/p&gt;
-    &lt;hr&gt;
-    &lt;h2&gt;Top Pages&lt;/h2&gt;
-    &lt;ol&gt;
+{% raw %}
+{% extends "base.html" %}
+{% block body " %}
+    <form action="/search" method="get">
+        <input name="q" type="text">
+        <input type="submit">
+    </form>
+    <hr>
+    <p>{{ doc_count }} pages in index.</p>
+    <hr>
+    <h2>Top Pages</h2>
+    <ol>
     {% for page in top_docs %}
-        &lt;li&gt;&lt;a href=&quot;{{ page.url }}&quot;&gt;{{ page.url }}&lt;/a&gt; - {{ page.rank }}&lt;/li&gt;
+        <li><a href="{{ page.url }}">{{ page.url }}</a> - {{ page.rank }}</li>
     {% endfor %}
-    &lt;/ol&gt;
-{{"{% endblock "}}%}
+    </ol>
+{% endblock" %}
+{% endraw %}
 ```
 
 To show the number of pages in the index we need to count them. We've already created an view to list
@@ -54,7 +56,7 @@ returning any of them, so we can just get the count from that. We'll add the fol
 ```python
     @staticmethod
     def count():
-        r = settings.db.view(&quot;page/by_url&quot;, limit=0)
+        r = settings.db.view("page/by_url", limit=0)
         return r.total_rows
 ```
 
@@ -66,14 +68,14 @@ straightforward.
 
 ```python
 def index(req):
-    return render_to_response(&quot;index.html&quot;, { &quot;doc_count&quot;: Page.count(), &quot;top_docs&quot;: Page.get_top_by_rank(limit=20) })
+    return render_to_response("index.html", { "doc_count": Page.count(), "top_docs": Page.get_top_by_rank(limit=20) })
 ```
 
 Now we get to the meat of the experiment, the search results page. First we need to query the index.
 
 ```python
 def search(req):
-    q = QueryParser(&quot;content&quot;, schema=schema).parse(req.GET[&quot;q&quot;])
+    q = QueryParser("content", schema=schema).parse(req.GET["q"])
 ```
 
 This parses the user submitted query and prepares the query ready to be used by Whoosh. Next we need to pass
@@ -88,9 +90,9 @@ display them in. To do this we normalize the score returned by Whoosh and the ra
 them together.
 
 ```python
-    if len(results) &gt; 0:
+    if len(results) > 0:
         max_score = max([r.score for r in results])
-        max_rank = max([r.fields()[&quot;rank&quot;] for r in results])
+        max_rank = max([r.fields()["rank"] for r in results])
 ```
 
 To calculate our combined rank we normalize the score and the rank by setting the largest value of each to one
@@ -101,7 +103,7 @@ and scaling the rest appropriately.
         for r in results:
             fields = r.fields()
             r.score = r.score/max_score
-            r.rank = fields[&quot;rank&quot;]/max_rank
+            r.rank = fields["rank"]/max_rank
             r.combined = r.score + r.rank
             combined.append(r)
 ```
@@ -112,25 +114,27 @@ The final stage is to sort our list by the combined score and render the results
         combined.sort(key=lambda x: x.combined, reverse=True)
     else:
         combined = []
-    return render_to_response(&quot;results.html&quot;, { &quot;q&quot;: req.GET[&quot;q&quot;], &quot;results&quot;: combined })
+    return render_to_response("results.html", { "q": req.GET["q"], "results": combined })
 ```
 
 The template for the results page is below.
 
 ```html
-{{"{% extends &quot;base.html&quot; "}}%}
-{{"{% block body "}}%}
-    &lt;form action=&quot;/search&quot; method=&quot;get&quot;&gt;
-        &lt;input name=&quot;q&quot; type=&quot;text&quot; value=&quot;{{ q }}&quot;&gt;
-        &lt;input type=&quot;submit&quot;&gt;
-    &lt;/form&gt;
-    {{"{% for result in results|slice:&quot;:20&quot; "}}%}
-        &lt;p&gt;
-            &lt;b&gt;&lt;a href=&quot;{{ result.url }}&quot;&gt;{{ result.title|safe }}&lt;/a&gt;&lt;/b&gt; ({{ result.score }}, {{ result.rank }}, {{ result.combined }})&lt;br&gt;
+{% raw %}
+{% extends "base.html" %}
+{% block body %}
+    <form action="/search" method="get">
+        <input name="q" type="text" value="{{ q }}">
+        <input type="submit">
+    </form>
+    {% for result in results|slice:":20"%}
+        <p>
+            <b><a href="{{ result.url }}">{{ result.title|safe }}</a></b> ({{ result.score }}, {{ result.rank }}, {{ result.combined }})<br>
             {{ result.desc|safe }}
-        &lt;/p&gt;
-    {{"{% endfor "}}%}
-{{"{% endblock "}}%}
+        </p>
+    {% endfor %}
+{% endblock %}
+{% endraw %}
 ```
 
 So, there we have it. A complete web crawler, indexer and query website. In the next post I'll discuss how to

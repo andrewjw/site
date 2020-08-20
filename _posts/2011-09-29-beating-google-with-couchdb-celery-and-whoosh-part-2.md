@@ -17,7 +17,7 @@ flickr_image: 'https://live.staticflickr.com/3956/14921715974_2d332ac18b_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/chasqui/14921715974'
 flickr_imagename: 'Carrots and Celery'
 ---
-In this 
+In this
 [series](/2011/09/27/beating-google-with-couchdb-celery-and-whoosh-part-1/)
 I'll show you how to build a search engine using standard Python tools like Django, Whoosh and CouchDB. In
 this post we'll begin by creating the data structure for storing the pages in the database, and write the
@@ -37,7 +37,7 @@ we can write views that only target this document type.
 
 ```python
 class Page(Document):
-    type = TextField(default=&quot;page&quot;)
+    type = TextField(default="page")
     url = TextField()
     content = TextField()
     links = ListField(TextField())
@@ -58,7 +58,7 @@ the `Page` model.
 
 ```python
 class RobotsTxt(Document):
-    type = TextField(default=&quot;robotstxt&quot;)
+    type = TextField(default="robotstxt")
     domain = TextField()
     protocol = TextField()
     robot_parser_pickle = TextField()
@@ -74,7 +74,7 @@ instead. If the object hasn't been set yet then we create a new one on the first
             return pickle.loads(base64.b64decode(self.robot_parser_pickle))
         else:
             parser = RobotFileParser()
-            parser.set_url(self.protocol + &quot;://&quot; + self.domain + &quot;/robots.txt&quot;) self.robot_parser = parser
+            parser.set_url(self.protocol + "://" + self.domain + "/robots.txt") self.robot_parser = parser
             return parser
 
     def _set_robot_parser(self, parser):
@@ -88,7 +88,7 @@ adding the following function which implements this check.
 
 ```python
     def is_valid(self):
-        return (datetime.now() - self.last_checked).days &lt; 7
+        return (datetime.now() - self.last_checked).days < 7
 ```
 
 For the `RobotsTxt` we can take advantage of the last modified value stored in the
@@ -97,7 +97,7 @@ to be a little bit different, but follows the same pattern.
 
 ```python
     def is_valid(self):
-        return (time.time() - self.robot_parser.mtime()) &lt; 7*24*60*60
+        return (time.time() - self.robot_parser.mtime()) < 7*24*60*60
 ```
 
 To update the stored copy of a `robots.txt` we need to get the currently stored version, read a new
@@ -130,14 +130,14 @@ We'll need a view that has the protocol and domain for each file as the key.
 ```python
 @staticmethod
 def get_by_domain(protocol, domain):
-    r = settings.db.view(&quot;robotstxt/by_domain&quot;, key=[protocol, domain])
+    r = settings.db.view("robotstxt/by_domain", key=[protocol, domain])
 ```
 
 We query that mapping and if it returns a value then we load the object. If it's still valid then we can
 return right away, otherwise we need to update it.
 
 ```python
-    if len(r) &gt; 0:
+    if len(r) > 0:
         doc = RobotsTxt.load(settings.db, r.rows[0].value)
         if doc.is_valid():
         return doc
@@ -156,7 +156,7 @@ For completeness, here is the map file required for this function.
 
 ```javascript
     function (doc) {
-        if(doc.type == &quot;robotstxt&quot;) {
+        if(doc.type == "robotstxt") {
             emit([doc.protocol, doc.domain], doc._id);
         }
     }

@@ -33,7 +33,7 @@ if we don't have a copy of the page.
 ```python
 @staticmethod
 def get_by_url(url, update=True):
-    r = settings.db.view(&quot;page/by_url&quot;, key=url)
+    r = settings.db.view("page/by_url", key=url)
     if len(r.rows) == 1:
         doc = Page.load(settings.db, r.rows[0].value)
         if doc.is_valid():
@@ -55,7 +55,7 @@ def update(self):
 ```
 
 We need to split up the given URL so we know whether it's a secure connection or not, and we need to limit our
-connects to each domain so we need get that as well. Python has a module, 
+connects to each domain so we need get that as well. Python has a module,
 [urlparse](http://docs.python.org/library/urlparse.html), that does the hard work for us.
 
 ```python
@@ -78,11 +78,11 @@ As with the code to parse `robots.txt` files we need to make sure we don't acces
 often.
 
 ```python
-    req = Request(self.url, None, { &quot;User-Agent&quot;: settings.USER_AGENT })
+    req = Request(self.url, None, { "User-Agent": settings.USER_AGENT })
     resp = urlopen(req)
-    if not resp.info()[&quot;Content-Type&quot;].startswith(&quot;text/html&quot;):
+    if not resp.info()["Content-Type"].startswith("text/html"):
         return
-    self.content = resp.read().decode(&quot;utf8&quot;)
+    self.content = resp.read().decode("utf8")
     self.last_checked = datetime.now()
     self.store(settings.db)
 ```
@@ -121,35 +121,35 @@ could be very complicated, but ours is very straightforward.
 
 ```python
 CELERY_QUEUES = {
-    &quot;retrieve&quot;: {
-        &quot;exchange&quot;: &quot;default&quot;,
-        &quot;exchange_type&quot;: &quot;direct&quot;,
-        &quot;routing_key&quot;: &quot;retrieve&quot;
+    "retrieve": {
+        "exchange": "default",
+        "exchange_type": "direct",
+        "routing_key": "retrieve"
     },
-    &quot;process&quot;: {
-        &quot;exchange&quot;: &quot;default&quot;,
-        &quot;exchange_type&quot;: &quot;direct&quot;,
-        &quot;routing_key&quot;: &quot;process &quot;
+    "process": {
+        "exchange": "default",
+        "exchange_type": "direct",
+        "routing_key": "process "
     },
-    &quot;celery&quot;: {
-        &quot;exchange&quot;: &quot;default&quot;,
-        &quot;exchange_type&quot;: &quot;direct&quot;,
-        &quot;routing_key&quot;: &quot;celery&quot;
+    "celery": {
+        "exchange": "default",
+        "exchange_type": "direct",
+        "routing_key": "celery"
     }
 }
 
 class MyRouter(object):
     def route_for_task(self, task, args=None, kwargs=None):
-        if task == &quot;crawler.tasks.retrieve_page&quot;:
-            return { &quot;queue&quot;: &quot;retrieve&quot; }
+        if task == "crawler.tasks.retrieve_page":
+            return { "queue": "retrieve" }
         else:
-            return { &quot;queue&quot;: &quot;process&quot; }
+            return { "queue": "process" }
 
 CELERY_ROUTES = (MyRouter(), )
 ```
 
 The final step is to allow the crawler to be kicked off by seeding it with some URLs. I've previously posted
-about how to create a 
+about how to create a
 [Django management
 command](/2009/03/06/creating-django-management-commands/) and they're a perfect fit here. The command takes one argument, the url, and creates a Celery task
 to retrieve it.

@@ -21,11 +21,9 @@ small amounts of data, how do you create a system that scales to huge amounts of
 
 How to actually calculate the similarity of two items is a complicated topic with many possible solutions.
 Which one if appropriate depends on your particularly application. If you want to find out more I suggest
-reading the excellent 
-[Programming
-Collective Intelligence](http://www.amazon.co.uk/gp/product/0596529325/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0596529325)<img src="{{ site.baseurl
-}}/assets/ir?t=indiegicouk-21&amp;l=as2&amp;o=2&amp;a=0596529325" width="1" height="1" border="0" alt=""
-style="border:none!important;margin:0!important;" /> (Amazon affiliate link) by Toby Segaran.
+reading the excellent [Programming Collective Intelligence](http://www.amazon.co.uk/gp/product/0596529325/
+ref=as_li_ss_tl?ie=UTF8&tag=indiegicouk-21&linkCode=as2&camp=1634&creative=19450&creativeASIN=0596529325)
+(Amazon affiliate link) by Toby Segaran.
 
 We'll take the simplest method for calculating similarity and just calculate the percentage of users who have
 visited both pages compared to the total number who have visited either. If we have Page 1 that was visited by
@@ -42,34 +40,34 @@ is all that is required.
 
 ```python
 views = [
-        { &quot;user&quot;: &quot;0&quot;, &quot;item&quot;: &quot;0&quot; },
-        { &quot;user&quot;: &quot;1&quot;, &quot;item&quot;: &quot;0&quot; },
-        { &quot;user&quot;: &quot;1&quot;, &quot;item&quot;: &quot;0&quot; },
-        { &quot;user&quot;: &quot;1&quot;, &quot;item&quot;: &quot;1&quot; },
-        { &quot;user&quot;: &quot;2&quot;, &quot;item&quot;: &quot;0&quot; },
-        { &quot;user&quot;: &quot;2&quot;, &quot;item&quot;: &quot;1&quot; },
-        { &quot;user&quot;: &quot;2&quot;, &quot;item&quot;: &quot;1&quot; },
-        { &quot;user&quot;: &quot;3&quot;, &quot;item&quot;: &quot;1&quot; },
-        { &quot;user&quot;: &quot;3&quot;, &quot;item&quot;: &quot;2&quot; },
-        { &quot;user&quot;: &quot;4&quot;, &quot;item&quot;: &quot;2&quot; },
+        { "user": "0", "item": "0" },
+        { "user": "1", "item": "0" },
+        { "user": "1", "item": "0" },
+        { "user": "1", "item": "1" },
+        { "user": "2", "item": "0" },
+        { "user": "2", "item": "1" },
+        { "user": "2", "item": "1" },
+        { "user": "3", "item": "1" },
+        { "user": "3", "item": "2" },
+        { "user": "4", "item": "2" },
     ]
 for view in views:
     db.views.insert(view)
 ```
 
  The first step is to process this list of view of events so we can take a single item and get a list of all
-the users that have viewed it. To make sure this scales over a large number of views we'll use 
+the users that have viewed it. To make sure this scales over a large number of views we'll use
 [MongoDB's map/reduce](http://www.mongodb.org/display/DOCS/MapReduce) functionality.
 
 ```python
 def article_user_view_count():
-    map_func = &quot;&quot;&quot;
+    map_func = """
 function () {
     var view = {}
     view[this.user] = 1
     emit(this.item, view);
 }
-&quot;&quot;&quot;
+"""
 ```
 
 We'll build a javascript Object where the keys are the user id and the value is the number of time that user
@@ -78,10 +76,10 @@ has viewed this item. In the map function we we build an object that represents 
 and run the reduce function, shown below.
 
 ```python
-    reduce_func = &quot;&quot;&quot;
+    reduce_func = """
 function (key, values) {
     var view = values[0];
-    for (var i = 1; i &lt; values.length; i++) {
+    for (var i = 1; i < values.length; i++) {
         for(var item in values[i]) {
             if(!view.hasOwnProperty(item)) { view[item] = 0; }
             view[item] = view[item] + values[i][item];
@@ -89,7 +87,7 @@ function (key, values) {
     }
     return view;
 }
-&quot;&quot;&quot;
+"""
 ```
 
 A reduce function takes two parameters, the key and a list of values. The values that are passed in can either
@@ -99,7 +97,7 @@ handle input from the map function or its own output. Here we output a value in 
 so we don't need to do anything special.
 
 ```python
-    db.views.map_reduce(Code(map_func), Code(reduce_func), out=&quot;item_user_view_count&quot;)
+    db.views.map_reduce(Code(map_func), Code(reduce_func), out="item_user_view_count")
 ```
 
 The final step is to run the functions we've just created and output the data into a new collection. Here
@@ -114,9 +112,9 @@ document will be represented by a single output document.
 
 ```python
 def similarity(item):
-    map_func = &quot;&quot;&quot;
+    map_func = """
 function () {
-    if(this._id == &quot;%s&quot;) { return; }
+    if(this._id == "%s") { return; }
     var viewed_both = {};
     var viewed_any = %s;
     for (var user in this.views) {
@@ -125,9 +123,9 @@ function () {
         }n
         viewed_any[user] = 1;
      }n
-     emit(&quot;%s&quot;+&quot;_&quot;+this._id, viewed_both.length / viewed_any.length );
+     emit("%s"+"_"+this._id, viewed_both.length / viewed_any.length );
 }
-&quot;&quot;&quot; % (int(item[&quot;_id&quot;]), json.dumps(item[&quot;value&quot;]), json.dumps(item[&quot;value&quot;]) int(item[&quot;_id&quot;]), )
+""" % (int(item["_id"]), json.dumps(item["value"]), json.dumps(item["value"]) int(item["_id"]), )
 ```
 
 The input to our Python function is a document that was outputted by our previous map/reduce call. We build a
@@ -136,17 +134,17 @@ users who viewed the document we're comparing against and work out whether they 
 of the function we emit the percentage of users who viewed both.
 
 ```python
-    reduce_func = &quot;&quot;&quot;
+    reduce_func = """
 function (key, values) {
     return results[0];
 }
-&quot;&quot;&quot;
+"""
 ```
 
 Because we output unique ids in the map function this reduce function will only be called with a single value so we just return that.
 
 ```python
-    db.item_user_view_count.map_reduce(Code(map_func), Code(reduce_func), out=SON([(&quot;merge&quot;, &quot;item_similarity&quot;)]))
+    db.item_user_view_count.map_reduce(Code(map_func), Code(reduce_func), out=SON([("merge", "item_similarity")]))
 ```
 
 The last step in this function is to run the map reduce. Here as we're running the map/reduce multiple times

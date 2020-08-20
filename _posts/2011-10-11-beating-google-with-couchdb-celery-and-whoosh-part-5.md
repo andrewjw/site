@@ -29,8 +29,8 @@ value.
 
 ```python
 function (doc) {
-    if(doc.type == &quot;page&quot;) {
-        for(i = 0; i &lt; doc.links.length; i++) {
+    if(doc.type == "page") {
+        for(i = 0; i < doc.links.length; i++) {
             emit(doc.links[i], [doc.rank, doc.links.length]);
         }
     }
@@ -75,14 +75,14 @@ If we didn't find any links to this page then we give it a default rank of `1/nu
 
 ```python
     if page.rank == 0:
-        page.rank = 1.0/settings.db.view(&quot;page/by_url&quot;, limit=0).total_rows
+        page.rank = 1.0/settings.db.view("page/by_url", limit=0).total_rows
 ```
 
 Finally we compare the new rank to the previous rank in our system. If it has changed by more than 0.0001 then
 we save the new rank and cause all the pages linked to from our page to recalculate their rank.
 
 ```python
-    if abs(old_rank - page.rank) &gt; 0.0001:
+    if abs(old_rank - page.rank) > 0.0001:
         page.store(settings.db)
         for link in page.links:
             p = Page.get_id_by_url(link, update=False)
@@ -135,10 +135,10 @@ the changes.
         try:
             while True:
                 changes = settings.db.changes(since=since)
-                since = changes[&quot;last_seq&quot;]
-                for changeset in changes[&quot;results&quot;]:
+                since = changes["last_seq"]
+                for changeset in changes["results"]:
                     try:
-                        doc = settings.db[changeset[&quot;id&quot;]]
+                        doc = settings.db[changeset["id"]]
                     except couchdb.http.ResourceNotFound:
                         continue
 ```
@@ -148,8 +148,8 @@ to parse the document so we can pull out the text from the page. We do this with
 [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) library.
 
 ```python
-                    if &quot;type&quot; in doc and doc[&quot;type&quot;] == &quot;page&quot;:
-                        soup = BeautifulSoup(doc[&quot;content&quot;])
+                    if "type" in doc and doc["type"] == "page":
+                        soup = BeautifulSoup(doc["content"])
                         if soup.body is None:
                             continue
 ```
@@ -157,7 +157,7 @@ to parse the document so we can pull out the text from the page. We do this with
 On the results page we try to use the meta description if we can find it.
 
 ```python
-                        desc = soup.findAll('meta', attrs={ &quot;name&quot;: desc_re })
+                        desc = soup.findAll('meta', attrs={ "name": desc_re })
 ```
 
 Once we've got the parsed document we update our Whoosh index. The code is a little complicated because we
@@ -167,11 +167,11 @@ text from a node and strips out all of the tags.
 
 ```python
                         writer.update_document(
-                                title=unicode(soup.title(text=True)[0]) if soup.title is not None and len(soup.title(text=True)) &gt; 0 else doc[&quot;url&quot;],
-                                url=unicode(doc[&quot;url&quot;]),
-                                desc=unicode(desc[0][&quot;content&quot;]) if len(desc) &gt; 0 and desc[0][&quot;content&quot;] is not None else u&quot;&quot;,
-                                rank=doc[&quot;rank&quot;],
-                                content=unicode(soup.title(text=True)[0] + &quot;\n&quot; + doc[&quot;url&quot;] + &quot;\n&quot; + &quot;&quot;.join(soup.body(text=True)))
+                                title=unicode(soup.title(text=True)[0]) if soup.title is not None and len(soup.title(text=True)) > 0 else doc["url"],
+                                url=unicode(doc["url"]),
+                                desc=unicode(desc[0]["content"]) if len(desc) > 0 and desc[0]["content"] is not None else u"",
+                                rank=doc["rank"],
+                                content=unicode(soup.title(text=True)[0] + "\n" + doc["url"] + "\n" + "".join(soup.body(text=True)))
                             )
 ```
 

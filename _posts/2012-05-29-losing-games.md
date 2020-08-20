@@ -21,11 +21,11 @@ flickr:
       imagename: 'LA Noire Screenshot 4'
 ---
 I'm not a quick game player. I don't rush out a buy the latest games and complete them on the same weekend.
-Currently I'm most of the way through both 
-href="http://www.amazon.co.uk/gp/product/B0037W6M28/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B0037W6M28">Alan
-Wake</a> and 
-href="http://www.amazon.co.uk/gp/product/B003NSBMBW/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=B003NSBMBW">L.A.
-Noire</a>.
+Currently I'm most of the way through both
+[Alan Wake](http://www.amazon.co.uk/gp/product/B0037W6M28/ref=as_li_tf_tl?ie=UTF8&tag=indiegicouk-21
+&linkCode=as2&camp=1634&creative=6738&creativeASIN=B0037W6M28) and [L.A. Noire](http://www.amazon.co.uk/gp/
+product/B003NSBMBW/ref=as_li_tf_tl?ie=UTF8&tag=indiegicouk-21&linkCode=as2&camp=1634
+&creative=6738&creativeASIN=B003NSBMBW).
 
 Alan Wake is a survival horror game where you're fighting off hordes of people possessed by darkness. L.A.
 Noire is a detective story that has you solving crimes in 1940s Los Angeles. Both feature an over the shoulder
@@ -42,14 +42,15 @@ directly from actor's faces. This gives the faces a lifelike quality that has no
 
 Despite the extensive similarities between the game my opinion of the two could hardly be more different. Alan
 Wake is one of the best games I've ever played, while L.A. Noire is really quite boring. I was trying to work
-out why I felt so differently about them when I read the following quote in 
-href="http://www.amazon.co.uk/gp/product/1449304753/ref=as_li_tf_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1449304753">Making
-Isometric Social Real-Time Games with HTML5, CSS3, and JavaScript</a> by Mario Andres Pagella.
+out why I felt so differently about them when I read the following quote in
+[Making Isometric Social Real-Time Games with HTML5, CSS3, and JavaScript](http://www.amazon.co.uk/gp/product/
+1449304753/ref=as_li_tf_tl?ie=UTF8&tag=indiegicouk21&linkCode=as2&camp=1634&creative=6738
+&creativeASIN=1449304753) by Mario Andres Pagella.
 
-    This recent surge in isometric real-time games was caused partly by Zynga's incredible ability to "keep
-    the positive things and get rid of the negative things" in this particular genre of games, and partly by a
-    shift in consumer interests. They took away the frustration of figuring out why no one was "moving to your
-    city" (in the case of SimCity) and replaced it with adding friends to be your growing neighbours.
+> This recent surge in isometric real-time games was caused partly by Zynga's incredible ability to "keep the
+> positive things and get rid of the negative things" in this particular genre of games, and partly by a shift
+> in consumer interests. They took away the frustration of figuring out why no one was "moving to your city"
+> (in the case of SimCity) and replaced it with adding friends to be your growing neighbours.
 
 The need for the face of characters in L. A. Noire to be recorded from real actors limits one of the best
 things about games: their dynamic nature. Even if you get every question wrong you still solve the case and

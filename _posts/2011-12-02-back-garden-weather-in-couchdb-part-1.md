@@ -14,8 +14,8 @@ flickr_imagelink: 'https://www.flickr.com/photos/allthestarsthatshine/1013268682
 flickr_imagename: 'Rain'
 ---
 When she was younger my wife wanted to be a meteorologist. That didn't pan out, but our recent move found us
-with a garden, which we've not had before. This gave me the opportunity to buy her 
-[a weather station](http://smartweather.co.uk/product.php?productid=16144&amp;cat=249&amp;page=1). I
+with a garden, which we've not had before. This gave me the opportunity to buy her
+[a weather station](http://smartweather.co.uk/product.php?productid=16144&cat=249&page=1). I
 didn't just choose any old station though, I wanted one that did wind and rain as well as the usual
 temperature, pressure and humidity. And, the deciding factor, a USB interface with Linux support. Fortunately
 the excellent [PyWWS](http://code.google.com/p/pywws/) supports a range of weather stations,
@@ -23,18 +23,18 @@ including the one I brought.
 
 I'm not going to go into how I [mounted the
 system](http://www.flickr.com/photos/andrew_j_w/6246463884/), or configured PyWWS. That's all covered in the documentation. PyWWS can produce a static website,
-but as someone who earns his living building websites I wanted something a bit better. 
-[Continuing](http://wp.me/pkxET-6z) my experiments with CouchDB I decided to build the website as a 
+but as someone who earns his living building websites I wanted something a bit better.
+[Continuing](http://wp.me/pkxET-6z) my experiments with CouchDB I decided to build the website as a
 [CouchApp](http://couchapp.org/).
 
 As well as allowing you to query your data with Javascript, CouchDB lets you display webpages directly out of
 your database. If you visit [welwynweather.co.uk](http://www.welwynweather.co.uk) you'll notice
-that you're redirected to a url that contains url arguments that look a lot like those used to 
+that you're redirected to a url that contains url arguments that look a lot like those used to
 [query a view](http://wiki.apache.org/couchdb/HTTP_view_API#Access.2BAC8-Query). That's because that's
-exactly what's going on. Things become clearer when you discover that that 
-[http://www.welwynweather.co.uk](http://www.welwynweather.co.uk) is an alias for 
+exactly what's going on. Things become clearer when you discover that that
+[http://www.welwynweather.co.uk](http://www.welwynweather.co.uk) is an alias for
 [http://db.welwynweather.co.uk/_design/weather/_rewrite/](http://db.welwynweather.co.uk/_design/weather/_rewrite/).
-Now you can see a more complete CouchDB URL, albeit without the database name. 
+Now you can see a more complete CouchDB URL, albeit without the database name.
 [db.welwynweather.co.uk](http://db.welwynweather.co.uk/) points to an Apache reverse proxy that routes
 requests through to CouchDB.
 
@@ -70,8 +70,8 @@ keeping the code simple.
 
 In the next post I'll discuss how I import data into CouchDB and the basics of rendering a page in a CouchApp.
 
-<hr />
+---
 
-If you visit the site you may find that there is no recent weather data. This is because I run PyWWS on my 
+If you visit the site you may find that there is no recent weather data. This is because I run PyWWS on my
 [MythTV](http://www.mythtv.org) box. Rather than running the PC all the time the weather data only
 updates when a programme is being recorded, or I'm watching TV.

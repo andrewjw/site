@@ -36,7 +36,7 @@ data is uploaded.
 First we need to group the five minute weather records together into groups for each hour. We could do this by
 taking the unix timestamp of record and rounding to the nearest hour. The problem with this approach is that
 the keys are included in the urls. If you can calculate unix timestamps in your head then your maths is better
-than mine! To make the urls more friendly we'll use a 
+than mine! To make the urls more friendly we'll use a
 [Javascript implementation of sprintf](http://www.diveintojavascript.com/projects/javascript-sprintf)
 to build a human-friendly representation of date and time, excluding the minute component.
 
@@ -61,7 +61,7 @@ function(keys, values, rereduce) {
     var abs_pressure = 0;
     var rain = 0;n
     var wind_dir = [];
-    for(var i=0; i&lt;8; i++) { wind_dir.push({ value: 0}); }
+    for(var i=0; i<8; i++) { wind_dir.push({ value: 0}); }
 ```
 
 To combine the multiple records it makes sense to average most of the values. The exceptions to this are the
@@ -76,7 +76,7 @@ then average the multiplied value.
 In the previous, simplified, code snippet we set up the variables that will hold the averages.n
 
 ```javascript
-    for(var i=0; i&lt;values.length; i++) {
+    for(var i=0; i<values.length; i++) {
         var vcount;
         if(rereduce) { vcount = values[i].count } else { vcount = 1 }
 ```
@@ -96,7 +96,7 @@ records to get the average. The next section adds the rain count up and selects 
 ```javascript
         rain = rain + values[i].rain;
         wind_ave = wind_ave + values[i].wind_ave * vcount;
-        if(values[i].wind_gust &gt; wind_gust) { wind_gust = values[i].wind_gust; }
+        if(values[i].wind_gust > wind_gust) { wind_gust = values[i].wind_gust; }
 ```
 
 So far we've not really had to worry about the possibility of a rereduce, but for wind direction we need to
@@ -106,13 +106,13 @@ through all the directions and combine them.
 
 ```javascript
         if(rereduce) {
-            for(var j=0; j&lt;8; j++) {
+            for(var j=0; j<8; j++) {
                 wind_dir[j]["value"] += values[i].wind_dir[j]["value"];
             }
-        } else if(values[i].wind_ave &gt; 0 &amp;&amp; values[i].wind_dir &gt;= 0 &amp;&amp; values[i].wind_dir &lt; 16) {
+        } else if(values[i].wind_ave > 0 && values[i].wind_dir >= 0 && values[i].wind_dir < 16) {
             wind_dir[Math.floor(values[i].wind_dir/2)]["value"] += 1;
         }
-        if(values[i].timestamp &lt; timestamp) { timestamp = values[i].timestamp; }
+        if(values[i].timestamp < timestamp) { timestamp = values[i].timestamp; }
         count = count + vcount;
     }
 ```
@@ -140,5 +140,5 @@ correct average for these values.
 Now we have averaged the weather data into hourly chunks we can use a `list`, like the one described in
 the previous post, to display the data.
 
-In the next and final post in this series I'll discuss the 
+In the next and final post in this series I'll discuss the
 [records page](http://www.welwynweather.co.uk/records) on the weather site.

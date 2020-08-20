@@ -17,7 +17,7 @@ flickr_imagelink: 'https://www.flickr.com/photos/othree/5228608281/'
 flickr_imagename: 'github 章魚貼紙'
 ---
 In the previous seven posts I've gone through all the stages in building a search engine. If you want to try
-and run it for yourself and tweak it to make it even better then you can. I've put the 
+and run it for yourself and tweak it to make it even better then you can. I've put the
 [code up on GitHub](https://github.com/andrewjw/celery-crawler). All I ask is that if you beat Google,
 you give me a credit somewhere.
 
@@ -27,6 +27,7 @@ unique. You may also want to adjust some of the other settings, such as the data
 urls.n To set up the CouchDB views type `python manage.py update_couchdb`.
 
 Next, to run the celery daemon you'll need to type the following two commands:
+
 ```bash
 python manage.py celeryd -Q retrieve
 python manage.py celeryd -Q process

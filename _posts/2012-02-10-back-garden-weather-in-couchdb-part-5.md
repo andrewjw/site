@@ -14,16 +14,15 @@ flickr_imagelink: 'https://www.flickr.com/photos/shelley_dave/6818597069/'
 flickr_imagename: 'Snow falling'
 ---
 After a two week gap the recent [snow in the UK](http://www.bbc.co.uk/news/uk-16899453) has
-inspired me to get back to my series of posts on my weather station website, 
-[WelwynWeather.co.uk](http://www.welwynweather.co.uk). In this post I'll discuss the 
+inspired me to get back to my series of posts on my weather station website,
+[WelwynWeather.co.uk](http://www.welwynweather.co.uk). In this post I'll discuss the
 [records page](http://www.welwynweather.co.uk/records), which shows details such as the highest and
 lowest temperatures, and the heaviest periods of rain.
 
-From a 
-[previous
-post](/2012/01/12/back-garden-weather-in-couchdb-part-3/) in this series you'll remember that the website is implemented as a 
-[CouchApp](http://couchapp.org/). These are Javascript functions that run inside the CouchDB database,
-and while they provide quite a lot of flexibility you do need to tailor your code to them.
+From a [previous post](/2012/01/12/back-garden-weather-in-couchdb-part-3/) in this series you'll remember that
+the website is implemented as a [CouchApp](http://couchapp.org/). These are Javascript functions that run
+inside the CouchDB database, and while they provide quite a lot of flexibility you do need to tailor your
+code to them.
 
 On previous pages we have use CouchDB's map/reduce framework to summarise data then used a list function to
 display the results. The records page could take a similar approach, but there are some drawbacks to that.
@@ -38,7 +37,7 @@ in.
 
 ```javascript
 function(doc) {
-    emit(doc._id, { &quot;temp_in&quot;: doc.temp_in, &quot;timestamp&quot;: doc.timestamp });
+    emit(doc._id, { "temp_in": doc.temp_in, "timestamp": doc.timestamp });
 }
 ```
 
@@ -49,26 +48,26 @@ values and select the smallest temperature, recording the timestamp that tempera
 function(keys, values, rereduce) {
     var min = values[0].temp_in;
     var min_on = values[0].timestamp;n
-    for(var i=0; i&lt;values.length; i++) {
-        if(values[i].temp_in &lt; min) {
+    for(var i=0; i<values.length; i++) {
+        if(values[i].temp_in < min) {
             min = values[i].temp_in;
             min_on = values[i].timestamp;
         }
     }n
-    return { &quot;temp_in&quot;: min, &quot;timestamp&quot;: min_on }
+    return { "temp_in": min, "timestamp": min_on }
 }
 ```
 
-The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch 
+The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch
 [rewrite document](http://wiki.apache.org/couchdb/Rewriting_urls). To make the view available we add a
 rewrite to expose it to the world. As we want to reduce all documents to a single point we just need to pass
 `reduce=true` as the query.
 
 ```javascript
 {
-    &quot;from&quot;: &quot;/records/temperature/in/min&quot;,
-    &quot;to&quot;: &quot;/_view/records_temp_in_min&quot;,
-    &quot;query&quot;: { &quot;reduce&quot;: &quot;true&quot; }
+    "from": "/records/temperature/in/min",
+    "to": "/_view/records_temp_in_min",
+    "query": { "reduce": "true" }
 },
 ```
 
@@ -77,11 +76,11 @@ CouchDB automatically sends the correct mime type jQuery will automatically deco
 function very straightforward.
 
 ```javascript
-$.getJSON(&quot;records/temperature/in/min&quot;, function (data, textStatus, jqXHR) {
+$.getJSON("records/temperature/in/min", function (data, textStatus, jqXHR) {
     var row = data.rows[0].value;
     var date = new Date(row.timestamp*1000);
-    $(&quot;#min_temp_in&quot;).html(row.temp_in);
-    $(&quot;#min_temp_in_date&quot;).html(date.toUTCString());
+    $("#min_temp_in").html(row.temp_in);
+    $("#min_temp_in_date").html(date.toUTCString());
   });
 ```
 
@@ -104,18 +103,18 @@ calculate the heaviest period in Javascript. The code to do this is given below.
 given above, but includes a loop to cycle over the results and pick the largest value.
 
 ```javascript
-$.getJSON(&quot;records/rain/wettest&quot;, function (data, textStatus, jqXHR) {
+$.getJSON("records/rain/wettest", function (data, textStatus, jqXHR) {
         var max_on = data.rows[0].key;
         var max_rain = data.rows[0].value;
-        for(var i=0; i&lt;data.rows.length; i++) {
-            if(data.rows[i].value &gt; max_rain) {
+        for(var i=0; i<data.rows.length; i++) {
+            if(data.rows[i].value > max_rain) {
                 max_on = data.rows[i].key;
                 max_rain = data.rows[i].value;
             }
         }
         var date = new Date(max_on*1000);
-    $(&quot;#wettest_day&quot;).html(max_rain);
-        $(&quot;#wettest_day_date&quot;).html(date.toDateString());
+    $("#wettest_day").html(max_rain);
+        $("#wettest_day_date").html(date.toDateString());
     });
 ```
 

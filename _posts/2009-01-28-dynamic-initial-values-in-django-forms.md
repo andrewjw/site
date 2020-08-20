@@ -8,22 +8,31 @@ tags:
 - web development
 permalink: "/2009/01/28/dynamic-initial-values-in-django-forms/"
 ---
-I recently had cause to create a form with two date time fields which had the default values of midnight seven days ago, and midnight this morning. Initially I thought this would be easy and created the following form.
+I recently had cause to create a form with two date time fields which had the default values of midnight seven
+days ago, and midnight this morning. Initially I thought this would be easy and created the following form.
 
-    from datetime import datetime, date, timedelta
-    
-    class MyForm(forms.Form):
-        date_from = forms.DateTimeField(label="From",
-                                   initial=(date.today() - timedelta(days=7)))
-        date_to = forms.DateTimeField(label="To", initial=date.today())
+```python
+from datetime import datetime, date, timedelta
 
-This works fine except that when a process has been running across more than one day the initial values are no longer correct as they refer to the day the process started. Fortunately it appears that there is an undocumented feature where the initial value can be a function rather than an absolute value. This function is called each time the unbound form is displayed, so they are always correct.
+class MyForm(forms.Form):
+    date_from = forms.DateTimeField(label="From",
+                               initial=(date.today() - timedelta(days=7)))
+    date_to = forms.DateTimeField(label="To", initial=date.today())
+```
 
-Wrapping the code to create the value in a `lambda` works great here, as does passing a reference to a function.
+This works fine except that when a process has been running across more than one day the initial values are no
+longer correct as they refer to the day the process started. Fortunately it appears that there is an
+undocumented feature where the initial value can be a function rather than an absolute value. This function is
+called each time the unbound form is displayed, so they are always correct.
 
-    from datetime import datetime, date, timedelta
+Wrapping the code to create the value in a `lambda` works great here, as does passing a reference to a
+function.
 
-    class MyForm(forms.Form):
-        date_from = forms.DateTimeField(label="From",
-                     initial=lambda: (date.today() - timedelta(days=7)))
-        date_to = forms.DateTimeField(label="To", initial=date.today)
+```python
+from datetime import datetime, date, timedelta
+
+class MyForm(forms.Form):
+    date_from = forms.DateTimeField(label="From",
+                 initial=lambda: (date.today() - timedelta(days=7)))
+    date_to = forms.DateTimeField(label="To", initial=date.today)
+```

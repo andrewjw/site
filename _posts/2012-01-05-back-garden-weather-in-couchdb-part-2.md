@@ -51,8 +51,8 @@ function(keys, values, rereduce) {
         return 0;
     }
     var m = values[0];
-    for(var i=0; i&lt;values.length; i++) {
-        if(values[i] &gt; m) { m = values[i]; }
+    for(var i=0; i<values.length; i++) {
+        if(values[i] > m) { m = values[i]; }
     }
     return m;
 }
@@ -64,14 +64,14 @@ of the website.
 So, we've got some data in our database. How do we display it on a webpage? First, let's consider the basics
 of rendering a webpage.
 
-CouchDB has two ways to display formatted data, 
+CouchDB has two ways to display formatted data,
 [show and list](http://wiki.apache.org/couchdb/Formatting_with_Show_and_List) functions. Show
 functions allow you to format a single documents, for example a blog post. List functions allow you to format
 a group of documents, such as a the comments on a post. Because viewing a single piece of weather data is not
 interesting the weather site only uses list functions. To get started let's create a simple Show function, as
 these are simpler.
 
-CouchApp doesn't come with a templating library, but a common one to use is 
+CouchApp doesn't come with a templating library, but a common one to use is
 [Mustache](http://mustache.github.com/). The syntax is superficially like Django templates, but in
 reality it is far less powerful. For a simple website like this, Mustache is perfect.
 
@@ -105,7 +105,7 @@ this method.
         head: templates.head,
         foot: templates.foot
     };
-    return { body: Mustache.to_html(templates.records, stash), headers: { &quot;Content-Type&quot;: &quot;text/html&quot; } };
+    return { body: Mustache.to_html(templates.records, stash), headers: { "Content-Type": "text/html" } };
 }
 ```
 

@@ -16,7 +16,7 @@ The rest of the book is take up with classifying objects in a set, predicting th
 
 This is a great addition to the O'Reilly stable of programming book, it's just a shame they tried to shoehorn Web 2.0 in when that really gives the wrong impression of the book.
 
- target="_blank" href="http://www.amazon.co.uk/dp/0596529325?tag=indiegicouk-21&amp;camp=2902&amp;creative=19466&amp;linkCode=as4&amp;creativeASIN=0596529325&amp;adid=0V1XPRRVPPKW0FXTBQNB&amp;">
+ target="_blank" href="http://www.amazon.co.uk/dp/0596529325?tag=indiegicouk-21&camp=2902&creative=19466&linkCode=as4&creativeASIN=0596529325&adid=0V1XPRRVPPKW0FXTBQNB&">
 <img src="{{ site.baseurl }}/assets/511EpRYq8gL._SL110_.jpg" alt="Programming Collective Intelligence" />
 Buy from Amazon (contains affiliate link)<br />
 </a>

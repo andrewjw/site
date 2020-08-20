@@ -24,15 +24,15 @@ the rank for the pages in our database.
 
 There are several different ways of parsing out the links in a given HTML document. You can just use a regular
 expression to pull the urls out, or you can use a more complete but also more complicated (and slower) method
-of parsing the HTML using the standard Python 
-[htmlparser](http://docs.python.org/library/htmlparser.html) library, or the wonderful 
+of parsing the HTML using the standard Python
+[htmlparser](http://docs.python.org/library/htmlparser.html) library, or the wonderful
 [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/). The point of this series isn't to
 build a complete webcrawler, but to show you the basic building blocks. So, for simplicity's sake I'll use a
 regular expression.
 
 ```python
-link_single_re = re.compile(r&quot;&lt;a[^&gt;]+href='([^']+)'&quot;)
-link_double_re = re.compile(r'&lt;a[^&gt;]+href=&quot;([^&quot;]+)&quot;')
+link_single_re = re.compile(r"<a[^>]+href='([^']+)'")
+link_double_re = re.compile(r'<a[^>]+href="([^"]+)"')
 ```
 
 All we need to look for an `href` attribute in an `a` tag. We'll use two regular expressions to
@@ -56,16 +56,16 @@ particular I'm not dealing with [base](http://www.w3.org/TR/html4/struct/links.h
 ```python
     doc.links = []
     for link in raw_links:
-        if link.startswith(&quot;#&quot;):
+        if link.startswith("#"):
             continue
-        elif link.startswith(&quot;http://&quot;) or link.startswith(&quot;https://&quot;):
+        elif link.startswith("http://") or link.startswith("https://"):
             pass
-        elif link.startswith(&quot;/&quot;):
-            parse = urlparse(doc[&quot;url&quot;])
-            link = parse.scheme + &quot;://&quot; + parse.netloc + link
+        elif link.startswith("/"):
+            parse = urlparse(doc["url"])
+            link = parse.scheme + "://" + parse.netloc + link
         else:
-            link = &quot;/&quot;.join(doc[&quot;url&quot;].split(&quot;/&quot;)[:-1]) + &quot;/&quot; + link
-        doc.links.append(unescape(link.split(&quot;#&quot;)[0]))
+            link = "/".join(doc["url"].split("/")[:-1]) + "/" + link
+        doc.links.append(unescape(link.split("#")[0]))
     doc.store(settings.db)
 ```
 
@@ -91,7 +91,7 @@ enough time you'll end up with most of the internet on your harddisk!
 
 When we come to write the website to query the information we've collected we'll use two numbers to rank
 pages. First we'll use the a value that ranks pages base on the query used, but we'll also use a value that
-ranks pages based on their importance. This is the same method used by Google, known as 
+ranks pages based on their importance. This is the same method used by Google, known as
 [Page Rank](http://en.wikipedia.org/wiki/Page_Rank).
 
 Pank Rank is a measure of how likely you are to end up on a given page by clicking on a random link anywhere

@@ -76,8 +76,8 @@ Next up is making the MythTV frontend start up automatically. This is was done b
 ```bash
 modprobe rc_rc6_mce
 /usr/bin/ir-keytable -c -p RC-5,RC-6 -w /etc/rc_keymaps/rc6_mce
-echo "performance" &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-su -c "/home/andrew/autostart.sh" andrew &amp;
+echo "performance" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+su -c "/home/andrew/autostart.sh" andrew &
 ```
 
 The first two lines are required to set up my MCE IR receiver. The third line is needed to ensure that the
@@ -88,8 +88,8 @@ not root.
 ```bash
 #!/bin/bash
 
-/home/andrew/wake_speakers &amp;
-startx /home/andrew/start_myth 2&gt;&amp;1 &gt; ~/mythtv.log
+/home/andrew/wake_speakers &
+startx /home/andrew/start_myth 2>&1 > ~/mythtv.log
 ```
 
 I'll cover the first line in another post, but it just turns on the surround speakers and makes sure they in

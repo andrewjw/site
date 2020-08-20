@@ -44,7 +44,7 @@ As someone who writes computer programmes for a living this makes me worry that 
 may end up with a better understanding of quantum mechanics than they do of the computer on their desk, or in
 their pocket.
 
-It wasn't always like this. Back in 1981 the BBC ran the 
+It wasn't always like this. Back in 1981 the BBC ran the
 [BBC Computer Literacy project](http://www.mcmordie.co.uk/acornhistory/bbchist.shtml), which attempted
 to teach the public to program using the [BBC Micro](http://en.wikipedia.org/wiki/BBC_Micro)
 through a [ten part
@@ -54,8 +54,8 @@ Clearly if a project like this was to be attempted today there would be no need 
 hardware manufactures. People have access to many different programmable devices, they just don't know how to
 program them.
 
-Recent programs that have focused on computers were Rory Cellan Jones' 
-[Secret History of Social Networking](http://www.bbc.co.uk/podcasts/series/shsn) and 
+Recent programs that have focused on computers were Rory Cellan Jones'
+[Secret History of Social Networking](http://www.bbc.co.uk/podcasts/series/shsn) and
 [Virtual Revolution](http://www.bbc.co.uk/programmes/b00n4j0r) by Aleks Krotoski. Neither of these
 were technical documentaries, instead they focused on business, cultural and sociological impacts of computers
 and the internet.
@@ -66,12 +66,12 @@ filming a episode of Horizon on Artificial Intelligence. It won't air until next
 comment, but I suspect it will focus on the outcome of the software rather than the process of how computers
 can be made to appear intelligent.
 
-Jim Al-Kalili's recent series on the history of electricity, 
+Jim Al-Kalili's recent series on the history of electricity,
 [Shock and Awe](http://www.bbc.co.uk/programmes/p00kjq6h), ends with a section on the development of
 the transistor. During it, and over a picture of the LHC, he says something rather interesting.
 
-    Our computer's have become so powerful that they are helping us to understand the universe in all its
-    complexity.
+> Our computer's have become so powerful that they are helping us to understand the universe in all its
+> complexity.
 
 {% include image.html image=1 float="left" %}
 

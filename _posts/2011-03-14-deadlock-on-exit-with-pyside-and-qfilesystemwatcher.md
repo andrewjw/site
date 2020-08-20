@@ -23,11 +23,12 @@ developing [DjangoDE](http://www.djangode.com) I made the choice of which librar
 configurable. When running under PyQt everything worked fine, but when using PySide the program hung on exit.
 
 Using gdb to see where it was hanging points to
-[QFileSystemWatcher](http://doc.qt.nokia.com/4.7/qfilesystemwatcher.html), which has the following comment in the destructor.
+[QFileSystemWatcher](http://doc.qt.nokia.com/4.7/qfilesystemwatcher.html), which has the following comment in
+the destructor.
 
-    Note: To avoid deadlocks on shutdown, all instances of QFileSystemWatcher need to be destroyed
-    before QCoreApplication. Note that passing QCoreApplication::instance() as the parent object
-    when creating QFileSystemWatcher is not sufficient.
+> Note: To avoid deadlocks on shutdown, all instances of QFileSystemWatcher need to be destroyed
+> before QCoreApplication. Note that passing QCoreApplication::instance() as the parent object
+> when creating QFileSystemWatcher is not sufficient.
 
 The following code will demonstrate the issue.
 
@@ -38,7 +39,7 @@ from PySide import QtGui
 app = QtGui.QApplication(sys.argv)
 file_browser = QtGui.QTreeView()
 file_model = QtGui.QFileSystemModel()
-file_model.setRootPath(&quot;/&quot;)
+file_model.setRootPath("/")
 file_browser.setModel(file_model)
 file_browser.show()
 sys.exit(app.exec_())

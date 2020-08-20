@@ -16,8 +16,8 @@ flickr_imagelink: 'https://www.flickr.com/photos/mutednarayan/2280385549/'
 flickr_imagename: 'Code'
 ---
 I could wax lyrical about how programming is an art form and requires a great deal of creativity. However,
-it's easy to loose focus on this in the middle of creating project specs and servicing your 
-[technical debt](http://en.wikipedia.org/wiki/Technical_debt). Like 
+it's easy to loose focus on this in the middle of creating project specs and servicing your
+[technical debt](http://en.wikipedia.org/wiki/Technical_debt). Like
 [many](blog.facebook.com/blog.php?post=2234227130) companies we recently held a hackathon event where
 we split up into teams and worked on projects suggested by the team members.
 

@@ -23,19 +23,21 @@ flickr:
       imagename: 'Eric Ries - The Lean Startup, London Edition'
 ---
 {% include image.html image=0 %}On my 25 minute train journey to work each morning I like to pass the time by
-reading. The two most recent books I've read are 
-[The
-Lean Startup: How Constant Innovation Creates Radically Successful Businesses by Eric Ries](http://www.amazon.co.uk/gp/product/0670921602/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=0670921602) and 
-[Steve
-Jobs by Walter Isaacson](http://www.amazon.co.uk/gp/product/1408703742/ref=as_li_ss_tl?ie=UTF8&amp;tag=indiegicouk-21&amp;linkCode=as2&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1408703742) (both links contain an affiliate id). Although one is a biography and the other is
-a book on project management they actually cover similar ground, and both are books that people working in
-technology should read.n Walter Isaacson's book has been extensively reviewed and dissected so I'm not going
-to go into detail on it. The book is roughly divided into two halves. The first section is on the founding of
-Apple, Pixar and NeXT. This section serves an inspirational guide to setting up your own company. The joy of
-building a great product and defying the odds against a company succeeding comes across very strongly. The
-later section following Job's return to Apple is a much more about the nuts and bolts of running a huge
-corporation. While it's an interesting guide to how Apple got to where it is today, it lacks the excitement of
-the earlier chapters.
+reading. The two most recent books I've read are
+[The Lean Startup: How Constant Innovation Creates Radically Successful Businesses by Eric Ries](http://
+www.amazon.co.uk/gp/product/0670921602/ref=as_li_ss_tl?ie=UTF8&tag=indiegicouk-21&linkCode=as2&camp=1634
+&creative=19450&creativeASIN=0670921602) and [Steve Jobs by Walter Isaacson](http://www.amazon.co.uk/gp/
+product/1408703742/ref=as_li_ss_tl?ie=UTF8&tag=indiegicouk-21&linkCode=as2
+&camp=1634&creative=19450&creativeASIN=1408703742) (both links contain an affiliate id). Although one is a
+biography and the other is a book on project management they actually cover similar ground, and both are books
+that people working in technology should read.
+
+Walter Isaacson's book has been extensively reviewed and dissected so I'm not going to go into detail on it.
+The book is roughly divided into two halves. The first section is on the founding of Apple, Pixar and NeXT.
+This section serves an inspirational guide to setting up your own company. The joy of building a great product
+and defying the odds against a company succeeding comes across very strongly. The later section following
+Job's return to Apple is a much more about the nuts and bolts of running a huge corporation. While it's an
+interesting guide to how Apple got to where it is today, it lacks the excitement of the earlier chapters.
 
 {% include image.html image=1 %}The Lean Startup could, rather unkindly, be described as a managerial
 technique book. It's much more than that though as it's more of a philosophy for how to run company or a
@@ -56,7 +58,7 @@ One Apple trait the Lean Startup methodolgy doesn't allow for is dramatic produc
 is a way of working that relies on quick iteration and gradually building up your customer base. It's hard to
 quickly iterate when building hardware, but early in Apple's life they were struggling to find a market for
 their computers. The [Apple I](http://en.wikipedia.org/wiki/Apple_I) follow the trend of the time
-of build-it-yourself computers. Just a year later and Apple released the 
+of build-it-yourself computers. Just a year later and Apple released the
 [Apple ][](http://en.wikipedia.org/wiki/Apple_II_series) which came with a case and was much more
 suitable for the average consumer. This represents a pivot on the part of Apple. They could have continued to
 focus on hobbyists but instead they decided to change and aim for a bigger, but less technical, market.

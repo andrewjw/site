@@ -15,19 +15,19 @@ flickr_image: 'https://live.staticflickr.com/5264/5653503758_e82a7437d2_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/dexxus/5653503758/'
 flickr_imagename: 'almost may'
 ---
-In this series I'm describing how I used a [CouchDB](http://www.couchdb.org) 
+In this series I'm describing how I used a [CouchDB](http://www.couchdb.org)
 [CouchApp](http://couchapp.org/page/index) to [display the
-weather data](http://www.welwynweather.co.uk) collected by a weather station in my back garden. In the 
+weather data](http://www.welwynweather.co.uk) collected by a weather station in my back garden. In the
 [first post](/2011/12/02/back-garden-weather-in-couchdb-part-1/) I described CouchApps and how to get
 a copy of the site. In the [next post](/2012/01/05/back-garden-weather-in-couchdb-part-2/) we
 looked at how to import the data collected by [PyWWS](http://code.google.com/p/pywws/) and how to
 render a basic page in a CouchApp. In the post we'll extend the basic page to display real weather data.
 
 Each document in the database is a record of the weather data at a particular point in time. As we want to
-display the data over a whole day we need to use a 
-[`list`
-function](http://wiki.apache.org/couchdb/Formatting_with_Show_and_List#Listing_Views_with_CouchDB_0.10_and_later). `list` functions work similarly to the `show` function we saw in the previous
-post. Unlike `show` functions `list` functions don't have the document passed in, they can call
+display the data over a whole day we need to use a
+[`list` function](http://wiki.apache.org/couchdb/Formatting_with_Show_and_List
+#Listing_Views_with_CouchDB_0.10_and_later). `list` functions work similarly to the `show` function we saw in
+the previous post. Unlike `show` functions `list` functions don't have the document passed in, they can call
 a `getRow` function which returns the next row to process. When there are no rows left it returns
 `null`.
 
@@ -40,7 +40,7 @@ return parts of your response. A typical `list` function will look like the code
 
 ```javascript
 function (head, req) {
-    start({ &quot;headers&quot;: { &quot;Content-Type&quot;: &quot;text/html&quot; }});n
+    start({ "headers": { "Content-Type": "text/html" }});n
     send(header);
     while(row = getRow()) {
         data = /* process row */;
@@ -67,7 +67,7 @@ function(head, req) {
     // !code vendor/couchapp/lib/mustache.js
     // !code vendor/sprintf-0.6.js
     // !code vendor/date_utils.jsn
-    start({ &quot;headers&quot;: { &quot;Content-Type&quot;: &quot;text/html&quot; }});
+    start({ "headers": { "Content-Type": "text/html" }});
     var stash = {
         head: templates.head,
         foot: templates.foot,
@@ -91,9 +91,9 @@ just pick the value in the first document as our starting value, instead we must
 where the connection with the outside sensors was made.
 
 ```javascript
-    if(rows.length &amp;gt; 0) {
-        for(var i=0; i&lt;rows.length; i++) {
-            if((rows[i].status &amp;amp; 64) == 0) {
+    if(rows.length > 0) {
+        for(var i=0; i<rows.length; i++) {
+            if((rows[i].status &amp; 64) == 0) {
                 max_temp_out = rows[i].temp_out;
                 min_temp_out = rows[i].temp_out;
                 max_hum_out = rows[i].hum_out;
@@ -107,19 +107,19 @@ Now we come to the meat of the function. We loop through all of the documents an
 of arrays, one for each graph that we'll draw on the final page.
 
 ```javascript
-        for(var i=0; i&lt;rows.length; i++) {
+        for(var i=0; i<rows.length; i++) {
             var temp_out = null;
             var hum_out = null;
-            if((rows[i].status &amp; 64) == 0) {
+            if((rows[i].status & 64) == 0) {
                 temp_out = rows[i].temp_out;
                 hum_out = rows[i].hum_out;
                 total_rain = total_rain + rows[i].rain;
-                rainfall.push({ &quot;time&quot;: time_text, &quot;rain&quot;: rows[i].rain });
-                wind.push({ &quot;time&quot;: time_text, &quot;wind_ave&quot;: rows[i].wind_ave, &quot;wind_gust&quot;: rows[i].wind_gust });
+                rainfall.push({ "time": time_text, "rain": rows[i].rain });
+                wind.push({ "time": time_text, "wind_ave": rows[i].wind_ave, "wind_gust": rows[i].wind_gust });
             }n
-            pressure.push({ &quot;time&quot;: time_text, &quot;pressure&quot;: rows[i].abs_pressure });
-            temps.push({ &quot;time&quot;: time_text, &quot;temp_out&quot;: temp_out, &quot;temp_in&quot;: rows[i].temp_in });
-            humidity.push({ &quot;time&quot;: time_text, &quot;hum_in&quot;: rows[i].hum_in, &quot;;hum_out&quot;: hum_out });
+            pressure.push({ "time": time_text, "pressure": rows[i].abs_pressure });
+            temps.push({ "time": time_text, "temp_out": temp_out, "temp_in": rows[i].temp_in });
+            humidity.push({ "time": time_text, "hum_in": rows[i].hum_in, ";hum_out": hum_out });
         }
     }
 ```
@@ -129,19 +129,19 @@ it, and use it to render the `day` template.
 
 ```javascript
     send(Mustache.to_html(templates.day, stash));
-    return &amp;quot;&amp;quot;
+    return ""
 }
 ```
 
-Let's look at a part of the `day` template. The page is a fairly standard use of the 
+Let's look at a part of the `day` template. The page is a fairly standard use of the
 [Google Chart Tools](http://code.google.com/apis/chart/) library. In this first snippet we render the
 maximum and minimum temperature values, and a blank div that we'll fill with the chart.
 
 ```javascript
-&lt;h3&gt;Temperature&lt;/h3&gt;
-&lt;p&gt;Outside: &lt;b&gt;Maximum:&lt;/b&gt; {{ max_temp_out }}&lt;sup&gt;o&lt;/sup&gt;C &lt;b&gt;Minimum:&lt;/b&gt; {{ min_temp_out }}&lt;sup&gt;o&lt;/sup&gt;C&lt;/p&gt;
-&lt;p&gt;Inside: &lt;b&gt;Maximum:&lt;/b&gt; {{ max_temp_in }}&lt;sup&gt;o&lt;/sup&gt;C &lt;b&gt;Minimum:&lt;/b&gt; {{ min_temp_in }}&lt;sup&gt;o&lt;/sup&gt;C&lt;/p&gt;
-&lt;div id=&quot;tempchart_div&quot;&gt;&lt;/div&gt;
+<h3>Temperature</h3>
+<p>Outside: <b>Maximum:</b> {{ max_temp_out }}<sup>o</sup>C <b>Minimum:</b> {{ min_temp_out }}<sup>o</sup>C</p>
+<p>Inside: <b>Maximum:</b> {{ max_temp_in }}<sup>o</sup>C <b>Minimum:</b> {{ min_temp_in }}<sup>o</sup>C</p>
+<div id="tempchart_div"></div>
 ```
 
 In the following Javascript function we build a `DataTable` object that we pass to the library to draw

@@ -28,11 +28,14 @@ when the site is deployed under `mod_wsgi`.
 To make things easier you can add the appropriate directory from the virtual environment to Python's path as
 part of `manage.py`, or the appropriate `fcgi` or `wsgi` control script.
 
-    import os
-    import sys
-    import siten
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    site.addsitedir(os.path.join(root_dir, 've/lib/python%i.%i/site-packages' % (sys.version_info[0], sys.version_info[1])))
+```python
+import os
+import sys
+import siten
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+site.addsitedir(os.path.join(root_dir, 've/lib/python%i.%i/site-packages'
+                % (sys.version_info[0], sys.version_info[1])))
+```
 
 Just add the code above to the top of your `manage.py` file and the `ve` virtual environment
 will always be activated when you run the script.

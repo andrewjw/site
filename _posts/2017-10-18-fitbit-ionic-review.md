@@ -9,11 +9,9 @@ tags:
 - review
 permalink: "/2017/10/18/fitbit-ionic-review/"
 ---
-<div style="float: right; margin-left: 5px;">
-    <img src="/assets/fitbit_ionic.jpg" width="400" alt="FitBit Ionic">
-</div>
+{% include local_image.html image="fitbit_ionic.jpg" imagename="FitBit Ionic" float="right" %}
 
- Since I received my Pebble Steel back in 2014 I knew I never wanted to go back to using a normal watch.
+Since I received my Pebble Steel back in 2014 I knew I never wanted to go back to using a normal watch.
 Having notifications and apps on my wrist was just too useful to me. I skipped the Pebble Time, but when the
 Time 2 was announced I happily put in a preorder. Unfortunately it was not to be, and Pebble folded and was
 [sold to FitBit](https://www.wired.com/2016/12/the-inside-story-behind-pebbles-demise/). If Pebble
@@ -24,7 +22,7 @@ The idea of FitBit's scale and expertise in building hardware, combined with Peb
 platform was an enticing prospect. Rather than switch to an Apple Watch (or Android Wear, although that would
 have required a new phone) I decide to wait for the fruits of the combined company's labour to be released.
 
-I was getting a bit itchy, and my trusty Pebble Steel was showing it's age, but eventually the 
+I was getting a bit itchy, and my trusty Pebble Steel was showing it's age, but eventually the
 [FitBit Ionic](http://amzn.to/2kGNE3m) was announced. A few days before the official release date my
 preorder arrived. It's now been two weeks of wearing it nearly 24/7, so it seems like a reasonable time to
 post my thoughts.

@@ -58,7 +58,7 @@ they were referenced in the models of other apps. The strange exception that was
 probably an artefact of Python's garbage collection, although how exactly it occurred is still not clear to
 me.
 
-There are a number of tickets ([#6379](https://code.djangoproject.com/ticket/6379), 
+There are a number of tickets ([#6379](https://code.djangoproject.com/ticket/6379),
 [#14130](https://code.djangoproject.com/ticket/14130) and probably others) on this topic. A common
 refrain in Python is that it's easier to ask for forgiveness than to ask for permission, and I certainly agree
 with Django and follow that most of the time.

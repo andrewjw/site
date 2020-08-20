@@ -43,7 +43,7 @@ You can use them as follows:
 ```bash
 tvservice -d /tmp/edid.dump
 
-edidparser /tmp/edid.dump &gt; /tmp/edid.txt
+edidparser /tmp/edid.dump > /tmp/edid.txt
 ```
 
 This gives you a nice text file containing all of the resolutions and audio formats supported by the connected
@@ -66,10 +66,11 @@ Pretty obvious really - when the speakers are on they support a much greater ran
 
 Putting all this together I ended up with the following script. It grabs the EDID data, converts it into text,
 and if it doesn't contain DTS-HD then turn the speakers on.
+
 ```bash
 tvservice -d /tmp/edid.dump
 
-edidparser /tmp/edid.dump &gt; /tmp/edid.txt
+edidparser /tmp/edid.dump > /tmp/edid.txt
 
 if ! grep DTS-HD /tmp/edid.txt; then
  irsend SEND_ONCE speaker KEY_POWER

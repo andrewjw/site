@@ -20,6 +20,7 @@ maintainability of the code.
 The code in general was quite good, but a code snippet similar to that given below jumped right to the top of
 my list of things to be fixed. Why is this so bad? Let us first consider what exceptions are and why you might
 use them in Python.
+
 ```python
 try:
     // code
@@ -53,6 +54,7 @@ difficult.
 To improve this code we need to consider what errors we expect the `do_analysis` function to raise and
 what we want to handle. In the ideal case it would raise an `AnalysisError` and then we would catch
 that.
+
 ```python
 analysis_type = 1
 try:
@@ -80,6 +82,7 @@ cleaning up whatever the exception (or in the event of no exception) is required
 finally block, which is always run, is the right place for this code.
 
 Let's now consider a different piece of code.
+
 ```python
 try:
     do_analysis(analysis_types[index])
@@ -94,6 +97,7 @@ but because there is too much code in the `try` block.
 The issue with this code is what happens if `do_analysis` raises a `KeyError`? To capture the
 exceptions that we're expecting we need to only wrap the dictionary lookup in and not catch anything from the
 analysis call.
+
 ```python
 try:
     analysis_type = analysis_types[index]
