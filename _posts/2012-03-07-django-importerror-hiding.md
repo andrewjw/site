@@ -21,7 +21,7 @@ Yesterday though, I encountered an error that made me wish I thought of it at th
 
 The code that produced the error looked like this:
 
-{% highlight python %}
+```python
 from django.db import models
 class MyModel(model.Model):
     ...
@@ -29,7 +29,7 @@ class MyModel(model.Model):
         models.Model.save(self)
         ...
     ...
-{% endhighlight %}
+```
 
 The error that was raised was `AttributeError: 'NoneType' object has no attribute 'Model'`. This means
 that rather than containing a module object, `models` was None. Clearly this is impossible as the class
@@ -42,13 +42,13 @@ something that should also be impossible.
 After a wild goose chase investigating reasons why the module might be imported twice I tracked it down to the
 `load_app` method in `django/db/models/loading.py`. The code there looks something like this:
 
-{% highlight python %}
+```python
     def load_app(self, app_name, can_postpone=False):
         try:
             models = import_module('.models', app_name)
         except ImportError:
             # Ignore exception
-{% endhighlight %}
+```
 
 Now I'm being a harsh here, and the exception handler does contain a comment about working out if it should
 reraise the exception. The issue here is that it wasn't raising the exception, and it's really not clear why.
@@ -66,20 +66,20 @@ with Django and follow that most of the time.
 I always follow the rule that try/except clauses should cover as little code as possible. Consider the
 following piece of code.
 
-{% highlight python %}
+```python
 try:
     var.method1()n
     var.member.method2()
 except AttributeError:
     # handle error
-{% endhighlight %}
+```
 
 Which of the three attribute accesses are we actually trying to catch here? Handling exceptions like this
 are a useful way of implementing Duck Typing while following the easier to ask forgiveness principle. What
 this code doesn't make clear is which member or method is actually optional. A better way to write this would
 be:
 
-{% highlight python %}
+```python
 var.method1()
 try:
     member = var.member
@@ -87,31 +87,31 @@ except AttributeError:
     # handle error
 else:
     member.method2()
-{% endhighlight %}
+```
 
 Now the code is very clear that the `var` variable may or may not have a `member` member
 variable. If `method1` or `method2` do not exist then the exception is not masked and is passed
 on. Now lets consider that we want to allow the `method1` attribute to be optional.
 
-{% highlight python %}
+```python
 try:
     var.method1()
 except AttributeError:
     # handle error
-{% endhighlight %}
+```
 
 At first glance it's obvious that `method1` is optional, but actually we're catching too much here. If
 there is a bug in `method1` that causes an `AttributeError` to raised then this will be masked
 and the code will treat it as if `method1` didn't exist. A better piece of code would be:
 
-{% highlight python %}
+```python
 try:
     method = var.method1
 except AttributeError:
     # handle error
 else:
     method()
-{% endhighlight %}
+```
 
 `ImportError`s are similar because code can be executed, but then when an error occurs you can't tell
 whether the original import failed or whether an import inside that failed. Unlike with an

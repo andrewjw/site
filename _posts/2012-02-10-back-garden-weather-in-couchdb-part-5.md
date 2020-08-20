@@ -20,7 +20,7 @@ href="http://www.welwynweather.co.uk/records">records page</a>, which shows deta
 lowest temperatures, and the heaviest periods of rain.
 
 From a <a
-href="http://andrewwilkinson.wordpress.com/2012/01/12/back-garden-weather-in-couchdb-part-3/">previous
+href="/2012/01/12/back-garden-weather-in-couchdb-part-3/">previous
 post</a> in this series you'll remember that the website is implemented as a <a
 href="http://couchapp.org/">CouchApp</a>. These are Javascript functions that run inside the CouchDB database,
 and while they provide quite a lot of flexibility you do need to tailor your code to them.
@@ -36,16 +36,16 @@ To calculate the minimum indoor temperature we first need to create a simple vie
 with all CouchDB views this starts with map function that outputs the parts of the document we are interested
 in.
 
-{% highlight javascript %}
+```javascript
 function(doc) {
     emit(doc._id, { &quot;temp_in&quot;: doc.temp_in, &quot;timestamp&quot;: doc.timestamp });
 }
-{% endhighlight %}
+```
 
 Next we create a reduce function to find the lowest temperature. To do this we simply loop through all the
 values and select the smallest temperature, recording the timestamp that temperature occurred.
 
-{% highlight javascript %}
+```javascript
 function(keys, values, rereduce) {
     var min = values[0].temp_in;
     var min_on = values[0].timestamp;n
@@ -57,33 +57,33 @@ function(keys, values, rereduce) {
     }n
     return { &quot;temp_in&quot;: min, &quot;timestamp&quot;: min_on }
 }
-{% endhighlight %}
+```
 
 The website [welwynweather.co.uk](http://www.welwynweather.co.uk) actually points to the Couch <a
 href="http://wiki.apache.org/couchdb/Rewriting_urls">rewrite document</a>. To make the view available we add a
 rewrite to expose it to the world. As we want to reduce all documents to a single point we just need to pass
 `reduce=true` as the query.
 
-{% highlight javascript %}
+```javascript
 {
     &quot;from&quot;: &quot;/records/temperature/in/min&quot;,
     &quot;to&quot;: &quot;/_view/records_temp_in_min&quot;,
     &quot;query&quot;: { &quot;reduce&quot;: &quot;true&quot; }
 },
-{% endhighlight %}
+```
 
 Lastly we can use jQuery to load the data and place the values into the DOM at the appropriate place. As
 CouchDB automatically sends the correct mime type jQuery will automatically decode the JSON data making this
 function very straightforward.
 
-{% highlight javascript %}
+```javascript
 $.getJSON(&quot;records/temperature/in/min&quot;, function (data, textStatus, jqXHR) {
     var row = data.rows[0].value;
     var date = new Date(row.timestamp*1000);
     $(&quot;#min_temp_in&quot;).html(row.temp_in);
     $(&quot;#min_temp_in_date&quot;).html(date.toUTCString());
   });
-{% endhighlight %}
+```
 
 This approach works well for most of the records that I want to calculate. Where it falls down is when
 calculating the wettest days and heaviest rain as the data needs to be aggregated before being reduced to a
@@ -103,7 +103,7 @@ To solve this problem I do the aggregation in CouchDB and the transfer the whole
 calculate the heaviest period in Javascript. The code to do this is given below. It's very similar to that
 given above, but includes a loop to cycle over the results and pick the largest value.
 
-{% highlight javascript %}
+```javascript
 $.getJSON(&quot;records/rain/wettest&quot;, function (data, textStatus, jqXHR) {
         var max_on = data.rows[0].key;
         var max_rain = data.rows[0].value;
@@ -117,7 +117,7 @@ $.getJSON(&quot;records/rain/wettest&quot;, function (data, textStatus, jqXHR) {
     $(&quot;#wettest_day&quot;).html(max_rain);
         $(&quot;#wettest_day_date&quot;).html(date.toDateString());
     });
-{% endhighlight %}
+```
 
 This solution works ok, but as time goes on the dataset gets bigger and bigger and the amount of data that is
 transferred to the browser will grow and grow. Hopefully in future I'll be able to write another post about

@@ -31,7 +31,7 @@ Using gdb to see where it was hanging points to
 
 The following code will demonstrate the issue.
 
-{% highlight python %}
+```python
 import sys
 #from PyQt4 import QtGui
 from PySide import QtGui
@@ -42,20 +42,20 @@ file_model.setRootPath(&quot;/&quot;)
 file_browser.setModel(file_model)
 file_browser.show()
 sys.exit(app.exec_())
-{% endhighlight %}
+```
 
 As the comment says, we need to ensure that the `QFileSystemWatcher` object, which is created by
 `QFileSystemModel`, is destroyed before `QApplication`. To do this we can connect to the
 `lastWindowClosed` and ensure that the `QFileSystemModel` is fully destroyed.
 
-{% highlight python %}
+```python
 import gcn
 def app_quit():
      global file_browser
      file_browser = None
      gc.collect()
 app.lastWindowClosed.connect(app_quit)
-{% endhighlight %}
+```
 
 It's not clear why this code would work on PyQt and not PySide, but it is clearly related to the order the
 objects are deleted. Given the comment in the Qt documentation though you should probably not rely on it

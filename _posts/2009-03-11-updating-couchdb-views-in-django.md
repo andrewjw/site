@@ -9,7 +9,7 @@ tags:
 - django
 permalink: "/2009/03/11/updating-couchdb-views-in-django/"
 ---
-[CouchDB](http://couchdb.apache.org/) views are a bit like stored procedures in a traditional database system. As with stored procedures it's difficult to keep them in sync with your code, and to keep them in your version control system. In this article I'll show you how you can use a [django management command](http://andrewwilkinson.wordpress.com/2009/03/06/creating-django-management-commands/) to update your views from files in your code base.
+[CouchDB](http://couchdb.apache.org/) views are a bit like stored procedures in a traditional database system. As with stored procedures it's difficult to keep them in sync with your code, and to keep them in your version control system. In this article I'll show you how you can use a [django management command](/2009/03/06/creating-django-management-commands/) to update your views from files in your code base.
 
 CouchDB uses a map/reduce system where each view is made of a filter program (the map) and an optional post processor that runs over the output of the map (the reduce). These pairs are grouped into design documents which are stored as a single unit in the couchdb database.
 

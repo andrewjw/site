@@ -36,16 +36,16 @@ The map code to get the most recent update is quite simple, we just need to emit
 update. The reason the timestamp is emitted as the key is so we can filter the range of updates. It is also
 emitted as the value so we can use the timestamp in the reduce function.
 
-{% highlight javascript %}
+```javascript
 function(doc) {
     emit(doc.timestamp, doc.timestamp);
 }
-{% endhighlight %}
+```
 
 The reduce function is a fairly simple way to calculate the maximum value of the keys. I've mostly included it
 here for completeness.
 
-{% highlight javascript %}
+```javascript
 function(keys, values, rereduce) {
     if(values.length == 0) {
         return 0;
@@ -56,7 +56,7 @@ function(keys, values, rereduce) {
     }
     return m;
 }
-{% endhighlight %}
+```
 
 You'll find the import script that I use in the directory you cloned in the previous post, when you got a copy
 of the website.
@@ -79,13 +79,13 @@ In the `show` directory of your CouchApp create a new file, `test.js`. As with t
 functions this file contains an anonymous function. In this case the function takes two parameters, the
 document and the request obejct, and returns an object containing the response body and any headers.
 
-{% highlight javascript %}
+```javascript
 function (doc, req) {
     // !json templates.records
     // !json templates.head
     // !json templates.foot
     // !code vendor/couchapp/lib/mustache.js
-{% endhighlight %}
+```
 
 The function begins with some magic comments. These are commands to CouchDB which includes the referenced code
 or data in the function. This allows you to keep shared data separate from the functions that uses it.
@@ -100,14 +100,14 @@ also used the function to load [a
 javascript implementation of `sprintf`](http://www.diveintojavascript.com/projects/javascript-sprintf). You might want to load some of your own common code using
 this method.
 
-{% highlight javascript %}
+```javascript
     var stash = {
         head: templates.head,
         foot: templates.foot
     };
     return { body: Mustache.to_html(templates.records, stash), headers: { &quot;Content-Type&quot;: &quot;text/html&quot; } };
 }
-{% endhighlight %}
+```
 
 Firstly we build an object containing the data we want to use in our template. As Mustache doesn't allow you
 to extend templates we need to pass the header and footer HTML code in as data.

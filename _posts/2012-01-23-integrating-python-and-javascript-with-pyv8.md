@@ -38,29 +38,29 @@ example of it in action.
 The first step is make sure you have the appropriate packages. There may be others that are required and not
 part of the default install, but there are what I had to install.
 
-{% highlight bash %}
+```bash
 sudo aptitude install scons libboost-python-dev
-{% endhighlight %}
+```
 
 Next you need to checkout both the V8 and PyV8 projects using the commands below.
 
-{% highlight bash %}
+```bash
 svn checkout http://v8.googlecode.com/svn/trunk/ v8
 svn checkout http://pyv8.googlecode.com/svn/trunk/ pyv8
-{% endhighlight %}
+```
 
 The key step before building PyV8 is to set the `V8_HOME` environment variable to the directory where
 you checked out the V8 code. This allows PyV8 to patch V8 and build it as a static library rather than the
 default dynamic library. Once you've set that you can use the standard Python `setup.py` commands to
 build and install the library.
 
-{% highlight bash %}
+```bash
 cd v8
 export PyV8=`pwd`
 cd ../pyv8
 python setup.py build
 sudo python setup.py install
-{% endhighlight %}
+```
 
 In future I'll write more detailed posts about how to use PyV8, but let's start with a simple example. <a
 href="http://mustache.github.com/">Mustache</a> is a simple template language that is ideal when you want to
@@ -70,10 +70,10 @@ implementation](https://github.com/defunkt/pystache) of Mustache, but let's pret
 To start import the `PyV8` library and create a `JSContext` object. These are equivalent to
 sub-interpreters so you have several instance of your Javascript code running at once.
 
-{% highlight python %}
+```python
 >>> import PyV8
 >>> ctxt = PyV8.JSContext()
-{% endhighlight %}
+```
 
 Before you can run any Javascript code you need `enter()` the context. You should also `exit()`
 it when you are complete. `JSContext` objects can be used with `with` statements to automate
@@ -81,22 +81,22 @@ this, but for a console session it's simplest to call the method explicitly. Nex
 run our Javascript code, first by reading in the Mustache library and then to set up our template as a
 variable.
 
-{% highlight python %}
+```python
 >>> ctxt.enter()
 >>> ctxt.eval(open("mustache.js").read())
 >>> ctxt.eval("var template = 'Javascript in Python is {{ opinion }}';")
-{% endhighlight %}
+```
 
 The final stage is to render the template by dynamically created some Javascript code. The results of the
 expressions are returned as Python objects, so here `rendered` contains a Python string.
 
-{% highlight python %}
+```python
 >>> import random
 >>> opinion = random.choice(["cool", "great", "nice", "insane"])
 >>> rendered = ctxt.eval("Mustache.to_html(template, { opinion: '%s' })" % (opinion, ))
 >>> print rendered
 Javascript in Python is nice
-{% endhighlight %}
+```
 
 There's much more to PyV8 than I've described in this post, including calling Python code from Javascript but
 unfortunately the V8 and PyV8 documentation is a bit lacking. I will post some more of my discoveries in

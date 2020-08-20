@@ -64,41 +64,41 @@ not had a single corruption of the SD card so far.
 Setting this up is pretty straightforward, I just extracted a Minibian tarball to my NAS and shared it via
 NFS. Next I copied the contents of /boot to my SD card, and modified cmdline.txt to include the following:
 
-{% highlight bash %}
+```bash
 root=/dev/nfs nfsroot=192.168.1.72:/volume1/pi/minibian rw ip=dhcp
-{% endhighlight %}
+```
 
 With this added it boots up reliably and can be shut down uncleanly with little or no risk of corruption.
 
 Next up is making the MythTV frontend start up automatically. This is was done by adding the following to
 `/etc/rc.local`
 
-{% highlight bash %}
+```bash
 modprobe rc_rc6_mce
 /usr/bin/ir-keytable -c -p RC-5,RC-6 -w /etc/rc_keymaps/rc6_mce
 echo "performance" &gt; /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 su -c "/home/andrew/autostart.sh" andrew &amp;
-{% endhighlight %}
+```
 
 The first two lines are required to set up my MCE IR receiver. The third line is needed to ensure that the
 Pi's performance remains consistent and the CPU isn't throttled down while you're in the middle of an episode
 of Strictly. The final line just triggers another script that actually runs the frontend, but run as me, and
 not root.
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 /home/andrew/wake_speakers &amp;
 startx /home/andrew/start_myth 2&gt;&amp;1 &gt; ~/mythtv.log
-{% endhighlight %}
+```
 
 I'll cover the first line in another post, but it just turns on the surround speakers and makes sure they in
 the right mode. The second line starts X, and runs my custom start script. This final script looks like this:
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 QT_QPA_PLATFORM=xcb /usr/bin/mythfrontend -O libCECEnabled=0
-{% endhighlight %}
+```
 
 While I managed to solve my key issues of making it easier to switch the open and off, and I can listen to
 music without the TV being on and still have most devices switched fully off, I still have a few issues still

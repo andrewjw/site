@@ -91,7 +91,7 @@ Without more details about the original program it's hard to recreate it exactly
 
 To run this program yourself you'll need to download and install Python from [python.org](http://www.python.org) and the [PIL image library](http://www.pythonware.com/products/pil/). Next code the sourcecode below into a file called "darwkins_trees.py" and double click on it.
 
-{% highlight python %}
+```python
 #!/usr/bin/env python
 # Copyright &lt;year&gt; &lt;copyright holder&gt;. All rights reserved.
 #
@@ -181,4 +181,4 @@ if __name__ == &quot;__main__&quot;:
     app = Application(master=root)
     app.mainloop()
     root.destroy()
-{% endhighlight %}
+```

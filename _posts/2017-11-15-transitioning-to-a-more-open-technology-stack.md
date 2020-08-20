@@ -45,7 +45,7 @@ how to build the bridge. I've chosen a simple REST API.
 
 The first step is to enable web sockets on the right URL.
 
-{% highlight java %}
+```java
 @Configuration
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
@@ -57,12 +57,16 @@ public class WebSocketConfig implements WebSocketConfigurer {
             .setAllowedOrigins("*");
     }
 }
-{% endhighlight %}
+```
 
-Next up we set up the normal HTTP end points. Here I'm using two objects to manage the ActiveMQ connections and JSON serialisation/deserialisation. If like us you have shared libraries to do your messaging for you then you can just plug those in, and there are some many JSON serialisers you can just pick your favourite.n
-A key thing with this class is to specify the method of the requests so we can use the same URL as we registered for the web sockets without clashing.
+Next up we set up the normal HTTP end points. Here I'm using two objects to manage the ActiveMQ connections
+and JSON serialisation/deserialisation. If like us you have shared libraries to do your messaging for you then
+you can just plug those in, and there are some many JSON serialisers you can just pick your favourite.
 
-{% highlight java %}
+A key thing with this class is to specify the method of the requests so we can use the same URL as we
+registered for the web sockets without clashing.
+
+```java
 @Controller
 @RequestMapping("/topic")
 public class TopicHandler {
@@ -84,14 +88,14 @@ public class TopicHandler {
         return jsonSerialiser.serialise(controller.getMessage(), BaseMessage.class);
     }
 }
-{% endhighlight %}
+```
 
 Lastly, we handle the web socket connections. There are three methods of TextWebSocketHandler that we need to
 override. handleTextMessage is called when a message is received from the client, while
 afterConnectionEstablished and afterConnectionClosed are called at the start and end of the connection. When
 the connection is established you need to connect to the JMS topic, and start streaming events.
 
-{% highlight java %}
+```java
 @Component
 public class SocketHandler extends TextWebSocketHandler {
     @Autowired
@@ -132,7 +136,7 @@ public class SocketHandler extends TextWebSocketHandler {
         return components[components.length - 1];
     }
 }
-{% endhighlight %}
+```
 
 With this fairly simple code in place, it's dead easy to start integrating other languages, or single page
 apps running in a web browser into your previously closed messaged based system.

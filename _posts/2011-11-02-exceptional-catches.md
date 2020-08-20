@@ -20,12 +20,12 @@ maintainability of the code.
 The code in general was quite good, but a code snippet similar to that given below jumped right to the top of
 my list of things to be fixed. Why is this so bad? Let us first consider what exceptions are and why you might
 use them in Python.
-{% highlight python %}
+```python
 try:
     // code
 except Exception, e:
     // error handling code
-{% endhighlight %}
+```
 
  Exceptions are a way of breaking out the normal program flow when an 'exceptional' condition arises.
 Typically this is used when errors occur, but exceptions can also be used as an easy way to break out of
@@ -37,13 +37,13 @@ nothing has happened. In all probability it's only one or two errors that are ex
 Any other errors should be passed on a cause the program to actually crash so it can be debugged properly.
 Let's consider the following code:
 
-{% highlight python %}
+```python
 analysis_type = 1
 try:
     do_analysis(analysis_typ)
 except Exception, e:
     cleanup()
-{% endhighlight %}
+```
 
  This code has a bug, the missing `e` in the `do_analysis` call. This will raise a
 `NameError` that will be immediately captured and hidden. Other, more complicated errors could also
@@ -53,19 +53,19 @@ difficult.
 To improve this code we need to consider what errors we expect the `do_analysis` function to raise and
 what we want to handle. In the ideal case it would raise an `AnalysisError` and then we would catch
 that.
-{% highlight python %}
+```python
 analysis_type = 1
 try:
     do_analysis(analysis_typ)
 except AnalysisError, e:
     cleanup()
-{% endhighlight %}
+```
 
  In the improved code the `NameError` will pass through and be picked up immediately. It is likely
 that the `cleanup` function needs to be run whether or not an error has occurred. To do that we can
 move the call into a `finally` block.
 
-{% highlight python %}
+```python
 analysis_type = 1
 try:
     do_analysis(analysis_typ)
@@ -73,19 +73,19 @@ except AnalysisError, e:
     // display error message
 finally:
     cleanup()
-{% endhighlight %}
+```
 
  This allows us to handle a very specific error and ensure that we clean up whatever error happens. Sometimes
 cleaning up whatever the exception (or in the event of no exception) is required, and in this case the
 finally block, which is always run, is the right place for this code.
 
 Let's now consider a different piece of code.
-{% highlight python %}
+```python
 try:
     do_analysis(analysis_types[index])
 except KeyError:
     // display error message
-{% endhighlight %}
+```
 
  We're looking up the parameter to `do_analysis` in a dictionary and catching the case where
 `index` doesn't exist. This code is also capturing too much. Not because the exception is too general,
@@ -94,14 +94,14 @@ but because there is too much code in the `try` block.
 The issue with this code is what happens if `do_analysis` raises a `KeyError`? To capture the
 exceptions that we're expecting we need to only wrap the dictionary lookup in and not catch anything from the
 analysis call.
-{% highlight python %}
+```python
 try:
     analysis_type = analysis_types[index]
 except KeyError:
     // display error message
 finally:
     do_analysis(analysis_type)
-{% endhighlight %}
+```
 
  So, if I'm reviewing your code don't be afraid to write a few extra lines in order to catch the smallest,
 but correct, set of exceptions.

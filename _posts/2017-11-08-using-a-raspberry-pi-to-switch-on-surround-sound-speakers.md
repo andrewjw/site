@@ -16,9 +16,8 @@ flickr_image: 'https://live.staticflickr.com/3840/15082864407_aa13b040d3_w.jpg'
 flickr_imagelink: 'https://www.flickr.com/photos/116606332@N02/15082864407/'
 flickr_imagename: 'Speaker'
 ---
-In a <a
-href="https://andrewwilkinson.wordpress.com/2017/10/25/network-booting-a-raspberry-pi-mythtv-frontend/">previous
-post</a>, I talked about network booting a Raspberry Pi MythTV frontend. One issue that I had to solve was how
+In a [previous post](/2017/10/25/network-booting-a-raspberry-pi-mythtv-frontend/")
+, I talked about network booting a Raspberry Pi MythTV frontend. One issue that I had to solve was how
 to turn on my [Onkyo surround sound speakers](http://amzn.to/2hIejJl), but only if they are not
 already turned on.
 
@@ -41,11 +40,11 @@ href="https://en.wikipedia.org/wiki/Extended_Display_Identification_Data">EDID</
 
 You can use them as follows:
 
-{% highlight bash %}
+```bash
 tvservice -d /tmp/edid.dump
 
 edidparser /tmp/edid.dump &gt; /tmp/edid.txt
-{% endhighlight %}
+```
 
 This gives you a nice text file containing all of the resolutions and audio formats supported by the connected
 HDMI device. I took one output when the speakers were on, and one when they were off, and by `diff`ing
@@ -65,7 +64,7 @@ Pretty obvious really - when the speakers are on they support a much greater ran
 
 Putting all this together I ended up with the following script. It grabs the EDID data, converts it into text,
 and if it doesn't contain DTS-HD then turn the speakers on.
-{% highlight bash %}
+```bash
 tvservice -d /tmp/edid.dump
 
 edidparser /tmp/edid.dump &gt; /tmp/edid.txt
@@ -73,4 +72,4 @@ edidparser /tmp/edid.dump &gt; /tmp/edid.txt
 if ! grep DTS-HD /tmp/edid.txt; then
  irsend SEND_ONCE speaker KEY_POWER
 fi
-{% endhighlight %}
+```

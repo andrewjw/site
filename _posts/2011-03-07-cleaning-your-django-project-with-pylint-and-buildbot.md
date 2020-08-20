@@ -21,7 +21,7 @@ There are a number of tools for checking whether your Python code meets a coding
 href="http://pypi.python.org/pypi/pep8">pep8.py</a>, [PyChecker](http://pychecker.sourceforge.net/)
 and [PyLint](http://www.logilab.org/857). Of these, PyLint is the most comprehensive and is the
 tool which I prefer to use as part of <a
-href="http://andrewwilkinson.wordpress.com/2010/06/30/continuous-integration-testing/">my buildbot checks</a>
+href="/2010/06/30/continuous-integration-testing/">my buildbot checks</a>
 that run on every commit.
 
 PyLint works by parsing the Python source code itself and checking things like using variables that aren't

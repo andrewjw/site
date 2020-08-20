@@ -27,7 +27,7 @@ include the number of pages in the index, and a list of the top documents as ord
 In the templates on this page we reference `base.html` which provides the boiler plate code needed to
 make an HTML page.
 
-{% highlight python %}
+```python
 {{ "{% extends &quot;base.html&quot; " }}%}
 {{ "{% block body "}}%}
     &lt;form action=&quot;/search&quot; method=&quot;get&quot;&gt;
@@ -44,19 +44,19 @@ make an HTML page.
     {% endfor %}
     &lt;/ol&gt;
 {{"{% endblock "}}%}
-{% endhighlight %}
+```
 
 To show the number of pages in the index we need to count them. We've already created an view to list
 `Page`s by their url and CouchDB can return the number of documents in a view without actually
 returning any of them, so we can just get the count from that. We'll add the following function to the
 `Page` model class.
 
-{% highlight python %}
+```python
     @staticmethod
     def count():
         r = settings.db.view(&quot;page/by_url&quot;, limit=0)
         return r.total_rows
-{% endhighlight %}
+```
 
 We also need to be able to get a list of the top pages, by rank. We just need to create view that has the
 rank as the key and CouchDB will sort it for us automatically.
@@ -64,39 +64,39 @@ rank as the key and CouchDB will sort it for us automatically.
 With all the background pieces in place the Django view function to render the index is really very
 straightforward.
 
-{% highlight python %}
+```python
 def index(req):
     return render_to_response(&quot;index.html&quot;, { &quot;doc_count&quot;: Page.count(), &quot;top_docs&quot;: Page.get_top_by_rank(limit=20) })
-{% endhighlight %}
+```
 
 Now we get to the meat of the experiment, the search results page. First we need to query the index.
 
-{% highlight python %}
+```python
 def search(req):
     q = QueryParser(&quot;content&quot;, schema=schema).parse(req.GET[&quot;q&quot;])
-{% endhighlight %}
+```
 
 This parses the user submitted query and prepares the query ready to be used by Whoosh. Next we need to pass
 the parsed query to the index.
 
-{% highlight python %}
+```python
     results = get_searcher().search(q, limit=100)
-{% endhighlight %}
+```
 
 Hurrah! Now we have list of results that match our search query. All that remains is to decide what order to
 display them in. To do this we normalize the score returned by Whoosh and the rank that we calculated, and add
 them together.
 
-{% highlight python %}
+```python
     if len(results) &gt; 0:
         max_score = max([r.score for r in results])
         max_rank = max([r.fields()[&quot;rank&quot;] for r in results])
-{% endhighlight %}
+```
 
 To calculate our combined rank we normalize the score and the rank by setting the largest value of each to one
 and scaling the rest appropriately.
 
-{% highlight python %}
+```python
         combined = []
         for r in results:
             fields = r.fields()
@@ -104,20 +104,20 @@ and scaling the rest appropriately.
             r.rank = fields[&quot;rank&quot;]/max_rank
             r.combined = r.score + r.rank
             combined.append(r)
-{% endhighlight %}
+```
 
 The final stage is to sort our list by the combined score and render the results page.
 
-{% highlight python %}
+```python
         combined.sort(key=lambda x: x.combined, reverse=True)
     else:
         combined = []
     return render_to_response(&quot;results.html&quot;, { &quot;q&quot;: req.GET[&quot;q&quot;], &quot;results&quot;: combined })
-{% endhighlight %}
+```
 
 The template for the results page is below.
 
-{% highlight html %}
+```html
 {{"{% extends &quot;base.html&quot; "}}%}
 {{"{% block body "}}%}
     &lt;form action=&quot;/search&quot; method=&quot;get&quot;&gt;
@@ -131,7 +131,7 @@ The template for the results page is below.
         &lt;/p&gt;
     {{"{% endfor "}}%}
 {{"{% endblock "}}%}
-{% endhighlight %}
+```
 
 So, there we have it. A complete web crawler, indexer and query website. In the next post I'll discuss how to
 scale the search engine.

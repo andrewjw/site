@@ -40,7 +40,7 @@ First let's create a set of views across a number of items. A view is stored as 
 You would probably want to include extra information such as the time of the view, but for our purposes this
 is all that is required.
 
-{% highlight python %}
+```python
 views = [
         { &quot;user&quot;: &quot;0&quot;, &quot;item&quot;: &quot;0&quot; },
         { &quot;user&quot;: &quot;1&quot;, &quot;item&quot;: &quot;0&quot; },
@@ -55,13 +55,13 @@ views = [
     ]
 for view in views:
     db.views.insert(view)
-{% endhighlight %}
+```
 
  The first step is to process this list of view of events so we can take a single item and get a list of all
 the users that have viewed it. To make sure this scales over a large number of views we'll use <a
 href="http://www.mongodb.org/display/DOCS/MapReduce">MongoDB's map/reduce</a> functionality.
 
-{% highlight python %}
+```python
 def article_user_view_count():
     map_func = &quot;&quot;&quot;
 function () {
@@ -70,14 +70,14 @@ function () {
     emit(this.item, view);
 }
 &quot;&quot;&quot;
-{% endhighlight %}
+```
 
 We'll build a javascript Object where the keys are the user id and the value is the number of time that user
 has viewed this item. In the map function we we build an object that represents a single view and
 `emit` it using the item id as the key. MongoDB will group all the objects emitted with the same key
 and run the reduce function, shown below.
 
-{% highlight python %}
+```python
     reduce_func = &quot;&quot;&quot;
 function (key, values) {
     var view = values[0];
@@ -90,7 +90,7 @@ function (key, values) {
     return view;
 }
 &quot;&quot;&quot;
-{% endhighlight %}
+```
 
 A reduce function takes two parameters, the key and a list of values. The values that are passed in can either
 be those `emit`ted by the map function, or values returned from the `reduce` function. To help
@@ -98,9 +98,9 @@ it scale not all of the original values will be processed at once, and the reduc
 handle input from the map function or its own output. Here we output a value in the same format as the input
 so we don't need to do anything special.
 
-{% highlight python %}
+```python
     db.views.map_reduce(Code(map_func), Code(reduce_func), out=&quot;item_user_view_count&quot;)
-{% endhighlight %}
+```
 
 The final step is to run the functions we've just created and output the data into a new collection. Here
 we're recalculating all the data each time this function is run. To scale properly you should filter the input
@@ -112,7 +112,7 @@ how we can calculate the similarity of all items to one single item. Again we'll
 the load of running this calculation. Here we'll just use the map part of map/reduce because each input
 document will be represented by a single output document.
 
-{% highlight python %}
+```python
 def similarity(item):
     map_func = &quot;&quot;&quot;
 function () {
@@ -128,26 +128,26 @@ function () {
      emit(&quot;%s&quot;+&quot;_&quot;+this._id, viewed_both.length / viewed_any.length );
 }
 &quot;&quot;&quot; % (int(item[&quot;_id&quot;]), json.dumps(item[&quot;value&quot;]), json.dumps(item[&quot;value&quot;]) int(item[&quot;_id&quot;]), )
-{% endhighlight %}
+```
 
 The input to our Python function is a document that was outputted by our previous map/reduce call. We build a
 new Javascript by interpolating some data from this document into a template function. We loop through all the
 users who viewed the document we're comparing against and work out whether they have viewed both. At the end
 of the function we emit the percentage of users who viewed both.
 
-{% highlight python %}
+```python
     reduce_func = &quot;&quot;&quot;
 function (key, values) {
     return results[0];
 }
 &quot;&quot;&quot;
-{% endhighlight %}
+```
 
 Because we output unique ids in the map function this reduce function will only be called with a single value so we just return that.
 
-{% highlight python %}
+```python
     db.item_user_view_count.map_reduce(Code(map_func), Code(reduce_func), out=SON([(&quot;merge&quot;, &quot;item_similarity&quot;)]))
-{% endhighlight %}
+```
 
 The last step in this function is to run the map reduce. Here as we're running the map/reduce multiple times
 we need to merge the output rather than replacing it as we did before.
@@ -155,10 +155,10 @@ we need to merge the output rather than replacing it as we did before.
 The final step is to loop through the output from our first map/reduce and call our second function for each
 item.
 
-{% highlight python %}
+```python
 for doc in db.item_user_view_count.find():
     similarity(doc)
-{% endhighlight %}
+```
 
  A key thing to realise is that you don't need to calculate live similarity data. Once you have even a few
 hundred views per item then the similarity will remain fairly consistent. In this example we step through

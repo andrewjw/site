@@ -38,7 +38,7 @@ return data in a different way. Rather than returning a single object containing
 function, passing in any headers that you want to return. Then you call `send` one or more times to
 return parts of your response. A typical `list` function will look like the code below.
 
-{% highlight javascript %}
+```javascript
 function (head, req) {
     start({ &quot;headers&quot;: { &quot;Content-Type&quot;: &quot;text/html&quot; }});n
     send(header);
@@ -48,7 +48,7 @@ function (head, req) {
     }
     send(footer);
 }
-{% endhighlight %}
+```
 
 To process the weather data we can't follow this simple format because we need to split each document up and
 display the different measurements separately. Let's look at the code for creating the day page. The complete
@@ -59,7 +59,7 @@ To start the function we load the templates and code that we need using the Couc
 the appropriate `Content-Type` header, and then we create the object that we'll pass to Mustache when
 we've processed everything.
 
-{% highlight javascript %}
+```javascript
 function(head, req) {
     // !json templates.day
     // !json templates.head
@@ -73,16 +73,16 @@ function(head, req) {
         foot: templates.foot,
         date: req.query.startkey,
     };
-{% endhighlight %}
+```
 
 Next we build a list of the documents that we're processing so we can loop over the documents multiple times.
 
-{% highlight javascript %}
+```javascript
     var rows = [];
     while (row = getRow()) {
         rows.push(row.doc);
     }
-{% endhighlight %}
+```
 
 To calculate maximum and minimum values we need to choose the first value and then run through each piece of
 data and see whether it is higher or lower than the current record. As the data collector of the weather
@@ -90,7 +90,7 @@ station is separate to the outside sensors occasionally they lose their connecti
 just pick the value in the first document as our starting value, instead we must choose the first document
 where the connection with the outside sensors was made.
 
-{% highlight javascript %}
+```javascript
     if(rows.length &amp;gt; 0) {
         for(var i=0; i&lt;rows.length; i++) {
             if((rows[i].status &amp;amp; 64) == 0) {
@@ -101,12 +101,12 @@ where the connection with the outside sensors was made.
                 break;
             }
         }
-{% endhighlight %}
+```
 
 Now we come to the meat of the function. We loop through all of the documents and process them into a series
 of arrays, one for each graph that we'll draw on the final page.
 
-{% highlight javascript %}
+```javascript
         for(var i=0; i&lt;rows.length; i++) {
             var temp_out = null;
             var hum_out = null;
@@ -122,34 +122,34 @@ of arrays, one for each graph that we'll draw on the final page.
             humidity.push({ &quot;time&quot;: time_text, &quot;hum_in&quot;: rows[i].hum_in, &quot;;hum_out&quot;: hum_out });
         }
     }
-{% endhighlight %}
+```
 
 Lastly we take the `stash`, which in a bit of code I've not included here has the data arrays added to
 it, and use it to render the `day` template.
 
-{% highlight javascript %}
+```javascript
     send(Mustache.to_html(templates.day, stash));
     return &amp;quot;&amp;quot;
 }
-{% endhighlight %}
+```
 
 Let's look at a part of the `day` template. The page is a fairly standard use of the <a
 href="http://code.google.com/apis/chart/">Google Chart Tools</a> library. In this first snippet we render the
 maximum and minimum temperature values, and a blank div that we'll fill with the chart.
 
-{% highlight javascript %}
+```javascript
 &lt;h3&gt;Temperature&lt;/h3&gt;
 &lt;p&gt;Outside: &lt;b&gt;Maximum:&lt;/b&gt; {{ max_temp_out }}&lt;sup&gt;o&lt;/sup&gt;C &lt;b&gt;Minimum:&lt;/b&gt; {{ min_temp_out }}&lt;sup&gt;o&lt;/sup&gt;C&lt;/p&gt;
 &lt;p&gt;Inside: &lt;b&gt;Maximum:&lt;/b&gt; {{ max_temp_in }}&lt;sup&gt;o&lt;/sup&gt;C &lt;b&gt;Minimum:&lt;/b&gt; {{ min_temp_in }}&lt;sup&gt;o&lt;/sup&gt;C&lt;/p&gt;
 &lt;div id=&quot;tempchart_div&quot;&gt;&lt;/div&gt;
-{% endhighlight %}
+```
 
 In the following Javascript function we build a `DataTable` object that we pass to the library to draw
 a line chart. The `{{ "{{#temps" }}}}` and `{{ "{{/temps" }}}}` construction is the Mustache way
 of looping through the `temps` array. We use it to dynamically write out Javascript code containing the
 data we want to render.
 
-{% highlight javascript %}
+```javascript
 function drawTempChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Time');
@@ -164,7 +164,7 @@ function drawTempChart() {
     chart.draw(data, {width: 950, height: 240, title: 'Temperature'});
 }
 google.setOnLoadCallback(drawTempChart);
-{% endhighlight %}
+```
 
 We now have a page that displays all the collected weather data for a single day. In the next post in this
 series we'll look at how to use CouchDB's map/reduce functions to process the data so we can display it by
