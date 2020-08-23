@@ -17,7 +17,7 @@ flickr_imagelink: 'https://www.flickr.com/photos/stuckincustoms/2675676767/'
 flickr_imagename: "The Atomic Explosion and Mushroom Fallout at Sunset"
 ---
 Rock star turned physicist Brian Cox and Jeff Forshaw have written a book with a deceptively simple title,
-[Why Does e=mc<sup>2</sup>?](http://www.amazon.co.uk/Why-Does-mc2-Should-Care/dp/0306817586/
+[Why Does e=mc{% include sup.html text="2" %}?](http://www.amazon.co.uk/Why-Does-mc2-Should-Care/dp/0306817586/
 ref=sr_1_1?ie=UTF8&s=books&qid=1277294480&sr=8-1").
 With a title like that you might expect that the book will be along the same lines as the New Scientist books
 [How To Make A Tornado](http://www.amazon.co.uk/How-Make-Tornado-wonderful-scientists/dp/1846682878/
@@ -34,7 +34,8 @@ accessible because it is both of those things. The jovial nature of the writing 
 really help you to follow the progress of the book, especially when four dimensional space-time is being
 discussed.
 
-This book is well written, informative and entertaining. If you've ever wanted to know why e=mc<sup>2</sup>
-and you've got a basic understanding of maths then "Why Does e=mc2?" will answer all your questions and more.
+This book is well written, informative and entertaining. If you've ever wanted to know why e=mc{% include
+sup.html text="2" %} and you've got a basic understanding of maths then "Why Does e=mc{% include
+sup.html text="2" %}?" will answer all your questions and more.
 
 * Well, from an fairly basic set of set of assumptions.
