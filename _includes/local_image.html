@@ -1,0 +1,4 @@
+{% assign image=include.image %}
+<div style="float: {% if include.float == "left" %}left{% else %}right{% endif %}; margin-{% if include.float == "left"%}right{% else %}left{% endif %}: 5px;">
+    <img src="/assets/{{ include.image }}" width="400" alt="{{ include.imagename }}">
+</div>
