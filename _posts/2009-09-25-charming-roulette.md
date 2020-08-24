@@ -58,11 +58,11 @@ def flat_bet(stake):
 ```
 
 The graph below shows how likely you are to win when following this strategy for the given target. As you can
-see if you only want to increase you money from $100 to $101 then you've a 90% chance of doing this betting $1
+see if you only want to increase your money from $100 to $101 then you've a 90% chance of doing this betting $1
 each go. However, if you set your sights higher then your chances quickly diminish and you've almost no chance
 of making even a $40 profit.
 
-<img src="{{ site.baseurl }}/assets/chart?cht=lc&chs=400x250&chd=e:5u0ywUoYkah6eRawYxWVThSDR7OFNsKXKsI5IMHPFxGNF1FEFIEWEWDZCYCgB3CYBaB7CLBSBWBCA5BCAdA5AdAdApAtAZAZAUAh&chco=0000FF&chxt=y,x&chxl=0:||20%25|40%25|60%25|80%25|100%25|1:|101|111|121|131|141|151&chg=0,25,5,5" alt="Constant $1 bet with an increasing target" />
+![Constant $1 bet with an increasing target](/assets/roulette_flat.png)
 
 The strategy I used was to double my bet every time I lost and reset to a $1 bet when I won. This means that
 on average you only stand to win $1 per round, but because your bet is doubled each win wipes out any previous
@@ -87,23 +87,21 @@ class scale_bet:
 The probably of winning is much better with the doubling strategy, and if you're aiming for increasing your
 cash pile to $250 then you have a 25% chance of doing that.
 
-<img src="{{ site.baseurl }}/assets/chart?cht=lc&chs=400x250&chd=e:kvf3h2iPmNgtf3crc.ehWVUeSfRaRyPrQAN9OqMaNsLtKHJuJaIlKLIEGmIdG-GNHnGVGeGRFUF1F9FoFg&chco=0000FF&chxt=y,x&chxl=0:||20%25|40%25|60%25|80%25|100%25|1:|101|201|301|401|501&chg=0,25,5,5" alt="Doubling bet with a $1 reset and an increasing target" />
+![Doubling bet with a $1 reset and an increasing target](/assets/roulette_double.png)
 
 The chances of winning are much better if you double your bet, but why stop at doubling? In the next test I
 aimed for a target of $200 and increased the scaling factor of the bet from 0.1 to 50. You can see from the
 graph below that increasing the scaling factor doesn't change your chances of winning, instead it remains at
 about 47%.
 
-<img src="{{ site.baseurl }}/assets/chart?cht=lc&chs=400x250&chd=e:AAc7eVfXfCdwdLfOfndDdgcadoe-dDfjfzgAd0eqfSdPdscKbtd8e2eVe2gYeZd8dHczfCeqeJfKc3dweyfGhFc.ffffeRdoedeB&chco=0000FF&chxt=y,x&chxl=0:||20%25|40%25|60%25|80%25|100%25|1:|0|10|20|30|40|50&chg=0,25,5,5" alt="Chances of reaching $200 with an increasing scaled bet and a $1 reset" />
+![Chances of reaching $200 with an increasing scaled bet and a $1 reset](/assets/roulette_scale.png)
 
 The final chart shows the chance of reaching $200 with a bet which doubles when you lose. In this test the
-starting bet is set so that you have at least <i>x</i> goes remaining. We begin with having only one possible
+starting bet is set so that you have at least _x_ goes remaining. We begin with having only one possible
 other bet, and go up to twenty. Despite what you might think, the chances of winning do not really change
 much.
 
-<img src="{{ site.baseurl }}/assets/chart?cht=lc&chs=400x250&chd=e:fPemdjd6dWeFd.eddpbkd-eud8d8eTeqeFeKdief&chco=0000FF&chxt=y,x&chxl=0:||20%25|40%25|60%25|80%25|100%25|1:|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20&chg=0,25,5,5" alt="Chances of reaching $200 with an doubling bet and an increasing reset" />
+![Chances of reaching $200 with an doubling bet and an decreasing reset](/assets/roulette_reset.png)
 
 So, what's the outcome of all this? What ever you do, you've got a less than 50/50 chance of winning, but
 doubling your bet each time you lose will give a longer run before your lose your house.
-
-Charts generated with Google Charts.
