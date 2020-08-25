@@ -8,6 +8,7 @@ before_install:
 install:
  - source ~/virtualenv/python3.8/bin/activate
  - pip install -r requirements.txt
+ - bundle install
 
 before_script:
  - mkdir -p ~/.ssh
