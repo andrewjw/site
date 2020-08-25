@@ -6,7 +6,7 @@ before_install:
  - sudo tar xjf python-3.8.tar.bz2 --directory /
 
 install:
- - sudo pip3 install -r requirements.txt
+ - sudo pip install -r requirements.txt
 
 before_script:
  - mkdir -p ~/.ssh
