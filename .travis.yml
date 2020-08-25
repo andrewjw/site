@@ -7,7 +7,7 @@ before_install:
 
 install:
  - source ~/virtualenv/python3.8/bin/activate
- - sudo pip install -r requirements.txt
+ - pip install -r requirements.txt
 
 before_script:
  - mkdir -p ~/.ssh
