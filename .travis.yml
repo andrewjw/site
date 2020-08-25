@@ -2,6 +2,11 @@ language: ruby
 
 before_install:
  - gem install bundler
+ - sudo apt-get update
+ - sudo apt-get install python3
+
+install:
+ - sudo pip install -r requirements.txt
 
 before_script:
  - mkdir -p ~/.ssh
