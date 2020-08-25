@@ -2,7 +2,6 @@
 layout: post
 title: Wolfenstein 3d iPhone Review
 date: 2009-04-02T11:27:33.000Z
-type: post
 tags:
   - iphone
   - review

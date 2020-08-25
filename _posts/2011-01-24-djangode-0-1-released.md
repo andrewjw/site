@@ -2,7 +2,6 @@
 layout: post
 title: DjangoDE 0.1 Released
 date: 2011-01-24 14:04:09.000000000 +01:00
-type: post
 tags:
   - django
   - djangode

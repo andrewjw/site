@@ -2,7 +2,6 @@
 layout: post
 title: '"Programming Collective Intelligence" Book Review'
 date: 2009-03-24T13:31:57.000Z
-type: post
 tags:
   - book
   - review

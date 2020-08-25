@@ -2,7 +2,6 @@
 layout: post
 title: Cleaning Your Django Project With PyLint And Buildbot
 date: 2011-03-07 14:04:09.000000000 +01:00
-type: post
 tags:
   - python
   - buildbot

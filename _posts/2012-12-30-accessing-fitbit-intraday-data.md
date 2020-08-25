@@ -8,7 +8,6 @@ tags:
 - github
 - library
 - programming
-slug: "accessing-fitbit-intraday-data"
 permalink: "/2012/12/30/accessing-fitbit-intraday-data/"
 flickr_user: 'http://www.flickr.com/photos/eulothg/'
 flickr_username: Glenn Euloth

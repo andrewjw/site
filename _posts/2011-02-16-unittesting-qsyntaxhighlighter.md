@@ -2,7 +2,6 @@
 layout: post
 title: Unittesting QSyntaxHighlighter
 date: 2011-02-16 14:04:09.000000000 +01:00
-type: post
 tags:
   - programming
   - qt

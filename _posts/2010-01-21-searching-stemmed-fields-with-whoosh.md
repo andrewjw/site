@@ -2,7 +2,6 @@
 layout: post
 title: Searching Stemmed Fields With Whoosh
 date: 2010-01-21 13:28:16.000000000 +00:00
-type: post
 tags:
 - whoosh
 - free text

@@ -2,7 +2,6 @@
 layout: post
 title: Testing A Facebook Connect Site
 date: 2009-07-02T11:17:59.000Z
-type: post
 tags:
   - web development
   - development

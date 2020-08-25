@@ -2,7 +2,6 @@
 layout: post
 title: XBox 360 USB Hard Disks
 date: 2010-03-19 13:24:12.000000000 +00:00
-type: post
 tags:
 - hardware
 - microsoft

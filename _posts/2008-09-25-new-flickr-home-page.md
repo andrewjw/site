@@ -2,7 +2,6 @@
 layout: post
 title: New Flickr Home Page
 date: 2008-09-25 12:13:18
-type: post
 tags: flickr redesign
 permalink: "/2008/09/25/new-flickr-home-page/"
 ---

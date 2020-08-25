@@ -2,7 +2,6 @@
 layout: post
 title: Crowd Sourcing Mapping
 date: 2011-05-20 13:59:15.000000000 +01:00
-type: post
 tags:
 - other websites
 - google

@@ -2,7 +2,6 @@
 layout: post
 title: Why Does e=mc2? Book Review
 date: 2010-06-24 13:20:19.000000000 +01:00
-type: post
 tags:
 - book
 - briancox

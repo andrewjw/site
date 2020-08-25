@@ -2,7 +2,6 @@
 layout: post
 title: Rsync backups to Amazon S3
 date: 2011-01-14 12:00:00.000000000 +01:00
-type: post
 tags:
   - amazon
   - backup

@@ -2,7 +2,6 @@
 layout: post
 title: Perfect Deployment Of Websites
 date: 2010-04-15 13:17:32.000000000 +01:00
-type: post
 tags:
 - deployment
 - django

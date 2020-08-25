@@ -2,7 +2,6 @@
 layout: post
 title: CouchDB Document Cache
 date: 2009-09-29 12:28:41.000000000 +01:00
-type: post
 tags:
 - couchdb
 - database

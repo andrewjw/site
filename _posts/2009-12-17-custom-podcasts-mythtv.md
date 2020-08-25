@@ -2,7 +2,6 @@
 layout: post
 title: Custom Podcasts With MythTV
 date: 2009-12-17 13:31:03.000000000 +00:00
-type: post
 tags:
 - bbc
 - itunes

@@ -2,9 +2,6 @@
 layout: post
 title: Using Django Forms For GET Urls
 date: 2009-02-03 13:25:04
-type: post
-categories:
-- web development
 tags:
 - django
 - forms

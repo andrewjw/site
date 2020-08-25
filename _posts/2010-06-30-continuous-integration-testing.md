@@ -2,7 +2,6 @@
 layout: post
 title: Continuous Integration Testing
 date: 2010-06-30 14:16:27.000000000 +01:00
-type: post
 tags:
 - deployment
 - buildbot

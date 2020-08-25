@@ -1,5 +1,4 @@
 ---
-published: false
 title: Router Stats To Prometheus
 ---
 ZyXEL VMG1312-B10D

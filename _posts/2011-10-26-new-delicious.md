@@ -2,7 +2,6 @@
 layout: post
 title: New Delicious
 date: 2011-10-26 12:00:59.000000000 +01:00
-type: post
 tags:
 - other websites
 - bookmarks

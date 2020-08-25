@@ -2,7 +2,6 @@
 layout: post
 title: Programming Documentary
 date: 2011-11-25 13:00:18.000000000 +00:00
-type: post
 tags:
 - bbc
 - documentary

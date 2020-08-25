@@ -2,7 +2,6 @@
 layout: post
 title: Where GitHub (Possibly) Went Wrong
 date: 2010-01-27 13:21:33.000000000 +00:00
-type: post
 tags:
 - git
 - github

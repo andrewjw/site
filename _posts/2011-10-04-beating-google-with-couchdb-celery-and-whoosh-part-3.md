@@ -2,7 +2,6 @@
 layout: post
 title: Beating Google With CouchDB, Celery and Whoosh (Part 3)
 date: 2011-10-04 12:00:18.000000000 +01:00
-type: post
 tags:
 - web development
 - celery

@@ -2,7 +2,6 @@
 layout: post
 title: Simplifying Django dependencies with virtualenv
 date: 2010-08-24 13:23:49.000000000 +01:00
-type: post
 tags:
 - dependency
 - django

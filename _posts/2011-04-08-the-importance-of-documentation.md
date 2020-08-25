@@ -2,7 +2,6 @@
 layout: post
 title: The Importance Of Documentation
 date: 2011-04-08 14:04:09.000000000 +01:00
-type: post
 tags:
     - code
     - documentation

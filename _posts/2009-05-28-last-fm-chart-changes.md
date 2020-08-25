@@ -2,7 +2,6 @@
 layout: post
 title: Last.fm Chart Changes
 date: 2009-05-28T11:16:08.000Z
-type: post
 tags:
   - chart changes
   - firefox

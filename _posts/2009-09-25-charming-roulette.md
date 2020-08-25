@@ -2,7 +2,6 @@
 layout: post
 title: Charming Roulette
 date: 2009-09-25T11:28:25.000Z
-type: post
 tags:
   - gambling
   - roulette

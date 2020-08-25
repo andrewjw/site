@@ -2,7 +2,6 @@
 layout: post
 title: iPhone podcast gripes
 date: 2008-11-24 13:31:13
-type: post
 tags: podcasts iphone apple
 permalink: "/2008/11/24/iphone-podcast-gripes/"
 ---
@@ -12,7 +11,7 @@ before I'd need to be at my computer for.
 
 Despite this though, there are a few things that Apple should fix.
 
-1. **There's no character count when typing a text message**.  
+1. **There's no character count when typing a text message**.
  This might be a small issue and given I get 500 free texts a month (which is way more than I use) it doesn't
  matter that I might sometimes send people two messages. However, it would be nice to be able tailor my
  messages to the limit of 160 characters.

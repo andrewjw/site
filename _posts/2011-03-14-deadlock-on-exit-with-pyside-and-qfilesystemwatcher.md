@@ -2,7 +2,6 @@
 layout: post
 title: Deadlock On Exit With PySide And QFileSystemWatcher
 date: 2011-03-14 14:04:09.000000000 +01:00
-type: post
 tags:
   - pyqt
   - pyside

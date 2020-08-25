@@ -2,7 +2,6 @@
 layout: post
 title: iPhone 3.0 Thoughts
 date: 2009-03-18T13:34:28.000Z
-type: post
 tags:
   - iphone
   - apple

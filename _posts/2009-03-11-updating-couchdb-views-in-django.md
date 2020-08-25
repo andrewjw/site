@@ -2,7 +2,6 @@
 layout: post
 title: Updating CouchDB Views In Django
 date: 2009-03-11 13:24:36.000000000 +00:00
-type: post
 tags:
 - web development
 - couchdb

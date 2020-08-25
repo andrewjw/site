@@ -2,7 +2,6 @@
 layout: post
 title: Government And Website Launches
 date: 2011-02-03 14:04:09.000000000 +01:00
-type: post
 tags:
   - cloud
   - launch

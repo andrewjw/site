@@ -2,7 +2,6 @@
 layout: post
 title: Championship Manager 2010 for the iPhone Review
 date: 2010-03-17 13:20:07.000000000 +00:00
-type: post
 tags:
 - championship manager
 - football

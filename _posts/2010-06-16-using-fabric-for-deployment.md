@@ -2,7 +2,6 @@
 layout: post
 title: Using Fabric For Deployment
 date: 2010-06-16 13:18:02.000000000 +01:00
-type: post
 tags:
 - deployment
 - automatic deployment

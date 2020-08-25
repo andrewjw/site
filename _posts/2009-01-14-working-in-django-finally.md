@@ -2,7 +2,6 @@
 layout: post
 title: Working in Django, finally!
 date: 2009-01-14 14:08:22
-type: post
 tags:
 - aggregation
 - django

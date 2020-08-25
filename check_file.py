@@ -10,14 +10,14 @@ front_matter_re = re.compile("---\n(.*?)---\n", re.M | re.DOTALL)
 
 allowed_keys = set([
     "layout", "title", "date", "tags", "permalink",
-    "flickr_user", "flickr_username", "flickr_image", "flickr_imagelink", "flickr_imagename"
+    "flickr_user", "flickr_username", "flickr_image", "flickr_imagelink", "flickr_imagename",
     "flickr"
 ])
 
 def check_file(fn):
     front_matter_raw = front_matter_re.match(open(fn).read()).group(1)
 
-    front_matter = yaml.load(front_matter_raw)
+    front_matter = yaml.load(front_matter_raw, Loader=yaml.BaseLoader)
 
     exit_code = 0
 

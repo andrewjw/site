@@ -2,7 +2,6 @@
 layout: post
 title: Interestingness
 date: 2009-06-18T11:13:53.000Z
-type: post
 tags:
   - other websites
   - flickr

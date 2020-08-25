@@ -2,7 +2,6 @@
 layout: post
 title: Strict Development
 date: 2009-05-07T11:28:34.000Z
-type: post
 tags:
   - etiquette of programming
   - best practice

@@ -2,7 +2,6 @@
 layout: post
 title: Sony DPF-D70 Digital Photo Frame Review
 date: 2009-02-26 13:31:40
-type: post
 tags:
 - digital photo frame
 - photography

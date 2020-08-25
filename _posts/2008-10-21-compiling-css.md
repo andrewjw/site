@@ -2,7 +2,6 @@
 layout: post
 title: Compiling CSS
 date: 2008-10-21 12:30:35
-type: post
 tags: css web
 permalink: "/2008/10/21/compiling-css/"
 ---

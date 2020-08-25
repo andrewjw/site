@@ -2,7 +2,6 @@
 layout: post
 title: Flickr Five Years Old Today!
 date: 2009-02-11 13:20:39
-type: post
 tags:
 - birthday
 - flickr

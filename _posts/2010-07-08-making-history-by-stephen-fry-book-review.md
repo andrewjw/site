@@ -2,7 +2,6 @@
 layout: post
 title: Making History by Stephen Fry Book Review
 date: 2010-07-08 13:35:10.000000000 +01:00
-type: post
 tags:
 - book
 - makinghistory

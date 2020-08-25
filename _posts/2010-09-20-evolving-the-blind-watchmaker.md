@@ -2,8 +2,6 @@
 layout: post
 title: Evolving The Blind Watchmaker
 date: 2010-09-20 12:00:00.000000000 +01:00
-categories:
-  - python
 tags:
   - evolution
   - genetics

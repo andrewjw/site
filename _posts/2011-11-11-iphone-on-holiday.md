@@ -2,7 +2,6 @@
 layout: post
 title: iPhone on Holiday
 date: 2011-11-11 12:00:51.000000000 +00:00
-type: post
 tags:
 - autostitch
 - camera

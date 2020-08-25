@@ -2,7 +2,6 @@
 layout: post
 title: "Creating Django Management Commands"
 date: 2009-03-06 13:32:51.000000000 +00:00
-type: post
 tags:
 - admin
 - django

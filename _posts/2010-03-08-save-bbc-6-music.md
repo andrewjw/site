@@ -2,7 +2,6 @@
 layout: post
 title: Save BBC 6 Music
 date: 2010-03-08 13:28:10.000000000 +00:00
-type: post
 tags:
 - 6music
 - music

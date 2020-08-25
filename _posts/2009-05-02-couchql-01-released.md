@@ -2,7 +2,6 @@
 layout: post
 title: CouchQL 0.1 released
 date: 2009-05-02 10:22:51.000000000 +01:00
-type: post
 tags:
 - couchdb
 - couchql

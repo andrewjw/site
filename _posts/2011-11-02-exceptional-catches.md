@@ -2,7 +2,6 @@
 layout: post
 title: Exceptional Catches
 date: 2011-11-02 12:00:18.000000000 +00:00
-type: post
 tags:
 - exceptions
 - python

@@ -2,7 +2,6 @@
 layout: post
 title: Building Better Web Services With Django (Part 2)
 date: 2009-04-23T11:28:00.000Z
-type: post
 tags:
   - web development
   - content type

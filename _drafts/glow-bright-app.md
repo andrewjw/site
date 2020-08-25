@@ -1,5 +1,4 @@
 ---
-published: false
 title: Glow Bright
 ---
 [Glow Brigh](glowmarkt.com)

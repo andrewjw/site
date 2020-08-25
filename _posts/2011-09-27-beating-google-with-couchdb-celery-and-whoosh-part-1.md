@@ -2,7 +2,6 @@
 layout: post
 title: Beating Google With CouchDB, Celery and Whoosh (Part 1)
 date: 2011-09-27 12:00:44.000000000 +01:00
-type: post
 tags:
     - celery
     - celerycrawler

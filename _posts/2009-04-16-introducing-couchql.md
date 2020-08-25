@@ -2,7 +2,6 @@
 layout: post
 title: Introducing CouchQL
 date: 2009-04-16T11:49:40.000Z
-type: post
 tags:
   - couchdb
   - couchql

@@ -2,7 +2,6 @@
 layout: post
 title: Communicating With Stakeholders
 date: 2011-02-25 14:04:09.000000000 +01:00
-type: post
 tags:
   - bugzilla
   - communication

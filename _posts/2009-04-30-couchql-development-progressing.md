@@ -2,7 +2,6 @@
 layout: post
 title: CouchQL development progressing
 date: 2009-04-30T11:14:54.000Z
-type: post
 tags:
   - couchdb
   - couchql

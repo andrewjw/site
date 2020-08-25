@@ -2,7 +2,6 @@
 layout: post
 title: FlightControl Review
 date: 2009-06-01T11:33:07.000Z
-type: post
 tags:
   - iphone
   - review
