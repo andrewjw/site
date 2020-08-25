@@ -50,7 +50,8 @@ def roulette(stake, bet_func, go_limit=None, walk_away=None):
     return stake
 ```
 
-So, with the simulation in place let's start working out some odds. The simplest betting strategy is to bet $1 each round. To do this we used this simple betting function.
+So, with the simulation in place let's start working out some odds. The simplest betting strategy is to bet $1
+each round. To do this we used this simple betting function.
 
 ```python
 def flat_bet(stake):
