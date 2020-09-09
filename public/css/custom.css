@@ -16,3 +16,7 @@ div.footer p {
 div.footer .nowrap {
     white-space: nowrap;
 }
+
+div.post-date {
+    margin-bottom: 0.5 rem;
+}
