@@ -4,6 +4,10 @@
    }
 }
 
+div.post {
+    margin-bottom: 1em;
+}
+
 div.footer {
     color: grey;
     font-size: 0.9em;
@@ -19,4 +23,28 @@ div.footer .nowrap {
 
 div.post-date {
     margin-bottom: 0.5 rem;
+}
+
+div.comment {
+    border: lightgray 1px solid;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+div.comment p {
+    margin: 0;
+}
+
+p.comment-author {
+    color: gray;
+    font-size: small;
+}
+
+p.comment-date {
+    color: gray;
+    font-size: small;
+}
+
+div.related {
+    padding-top: 1em;
 }
