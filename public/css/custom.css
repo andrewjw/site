@@ -48,3 +48,28 @@ p.comment-date {
 div.related {
     padding-top: 1em;
 }
+
+div.comment label {
+    color: gray;
+    font-size: 0.7em;
+}
+
+div.comment textarea {
+    width: 100%
+}
+
+div.comment input[type="submit"] {
+    display: block;
+    float: right;
+    color: gray;
+    margin-top: 5px;
+}
+
+div.comment div {
+    margin-top: -10px
+}
+
+label.small-block {
+    display: block;
+    font-size: small;
+}

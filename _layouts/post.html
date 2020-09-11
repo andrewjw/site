@@ -49,6 +49,18 @@ published: true
         <p class="comment-date">{{ comment.date | date_to_string }}</p>
     </div>
   {% endfor %}
+
+  <div class="comment">
+    <form method="POST" action="/comment"></form>
+      <label for="text" class="small-block">Submit a comment</label>
+      <textarea name="text" placeholder="Comment" rows="5"></textarea>
+      <div>
+        <label for="name">Your name:</label> <input name="name" placeholder="Your name" type="text" />
+        <label for="url">URL:</label> <input name="url" placeholder="http://example.com" type="url" />
+        <input type="submit" value="Submit Comment" />
+      </div>
+    </form>
+  </div>
 </div>
 
 {% if page.tags.size > 0 %}
