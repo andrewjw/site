@@ -4,7 +4,7 @@ layout: post
 ---
 I've previously written about my plan to collect much more data about my house. In the current work-from-home
 environment the quality of our internet connection is paramount, and I wanted to be able to monitor it and
-potentially be alerted to any degredation before it becomes an issue. 
+potentially be alerted to any degradation before it becomes an issue.
 
 Although I've replaced my wifi with a [UniFi](https://unifi-network.ui.com/) based system, I still use the router
 that was supplied by my [ISP](https://www.zen.co.uk/broadband) - which is a [ZyXEL VMG1312-B10D](
@@ -43,10 +43,10 @@ https://github.com/andrewjw/zyxelprometheus) and got to work cranking out some c
 Attainable Net Data Rate:      7.853 Mbps       47.093 Mbps
 ============================================================================
       VDSL Band Status    U0      U1      U2      U3      D1      D2      D3
-  Line Attenuation(dB):  7.2    40.1     N/A     N/A    18.1    50.3    77.6   
-Signal Attenuation(dB):  7.2    39.9     N/A     N/A    20.0    50.1     N/A   
-        SNR Margin(dB):  5.5     5.7     N/A     N/A     7.3     7.3     N/A   
-   Transmit Power(dBm):-13.7   - 3.0     N/A     N/A     8.9     7.8     N/A   
+  Line Attenuation(dB):  7.2    40.1     N/A     N/A    18.1    50.3    77.6
+Signal Attenuation(dB):  7.2    39.9     N/A     N/A    20.0    50.1     N/A
+        SNR Margin(dB):  5.5     5.7     N/A     N/A     7.3     7.3     N/A
+   Transmit Power(dBm):-13.7   - 3.0     N/A     N/A     8.9     7.8     N/A
 ============================================================================
 ```
 
