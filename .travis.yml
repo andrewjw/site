@@ -24,6 +24,7 @@ script:
  - ./run_checks.sh && bundle exec jekyll build
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
   on:
