@@ -52,8 +52,9 @@ published: true
 
   <div class="comment">
     <form method="POST" action="/comment"></form>
+      <input type="hidden" name="slug" value="{{ page.slug }}" />
       <label for="text" class="small-block">Submit a comment</label>
-      <textarea name="text" placeholder="Comment" rows="5"></textarea>
+      <textarea name="message" placeholder="Comment" rows="5"></textarea>
       <div>
         <label for="name">Your name:</label> <input name="name" placeholder="Your name" type="text" />
         <label for="url">URL:</label> <input name="url" placeholder="http://example.com" type="url" />
