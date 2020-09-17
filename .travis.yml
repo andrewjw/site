@@ -26,6 +26,6 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
+  script: rsync -avc --delete _site/ $SSH_USER@$SSH_HOST:site/
   on:
     branch: master
