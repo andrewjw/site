@@ -1,0 +1,5 @@
+name: {name}
+date: '{datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")}'
+url: '{url}'
+message: >-
+  {message}
