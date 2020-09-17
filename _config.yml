@@ -10,6 +10,9 @@ description:      "I'm an Engineering Manager at <a href='https://www.ocadotechn
 url:              http://www.theandrewwilkinson.com
 baseurl:          /
 
+exclude:          ["*.py","*.md","*.json","*.sh","*.txt","*.rb","*.lock","Gemfile"]
+include:          ["comment.py"]
+
 author:
   name:           'Andrew Wilkinson'
   url:            https://twitter.com/andrewjw
