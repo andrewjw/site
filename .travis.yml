@@ -21,4 +21,10 @@ before_script:
 
 script:
  - source ~/virtualenv/python3.8/bin/activate
- - ./run_checks.sh && bundle exec jekyll build && rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
+ - ./run_checks.sh && bundle exec jekyll build
+
+deploy:
+  provider: script
+  script: rsync -avc _site/ $SSH_USER@$SSH_HOST:site/
+  on:
+    branch: master
