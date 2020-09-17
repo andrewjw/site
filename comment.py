@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import cgi
 from datetime import datetime
 import os
@@ -15,6 +17,12 @@ slug = form.getfirst("slug")
 name = form.getfirst("name")
 url = form.getfirst("url")
 message = form.getfirst("message")
+
+if slug is None or name is None or message is None:
+    print("Content-Type: text/text")
+    print()
+    print("Missing details")
+    sys.exit(0)
 
 comment_time = str(int(time.time()))
 
