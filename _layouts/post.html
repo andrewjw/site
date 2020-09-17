@@ -51,7 +51,7 @@ published: true
   {% endfor %}
 
   <div class="comment">
-    <form method="POST" action="/comment"></form>
+    <form method="POST" action="/comment">
       <input type="hidden" name="slug" value="{{ page.slug }}" />
       <label for="text" class="small-block">Submit a comment</label>
       <textarea name="message" placeholder="Comment" rows="5"></textarea>
