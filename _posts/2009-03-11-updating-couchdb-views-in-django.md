@@ -37,6 +37,7 @@ project/
                      mapreduce4/
                          map.js reduce.js
 ```
+
 <!--more-->
 
 Inside your app directory create a folder called `couchviews`. Inside that create one for each of your CouchDB

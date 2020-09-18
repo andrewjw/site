@@ -35,6 +35,7 @@ function (doc) {
     }
 }
 ```
+
 <!--more-->
 
 As before we're using a Celery task to allow us to distribute our calculations. When we wrote the

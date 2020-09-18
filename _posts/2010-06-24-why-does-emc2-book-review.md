@@ -38,4 +38,5 @@ sup.html text="2" %} and you've got a basic understanding of maths then "Why Doe
 sup.html text="2" %}?" will answer all your questions and more.
 
 * Well, from an fairly basic set of set of assumptions.
+
 <!--more-->
