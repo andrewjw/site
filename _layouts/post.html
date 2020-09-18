@@ -38,7 +38,7 @@ published: true
   {% for comment_name in site.data.comments[page.slug] %}
     {% assign comment = comment_name[1] %}
     <div class="comment">
-        <p>{{ comment.message }}</p>
+        <p>{{ comment.message | newline_to_br }}</p>
         <p class="comment-author">
           {% if comment.url != "" %}
             <a href="{{comment.url}}">{{comment.name}}</a>

@@ -16,7 +16,7 @@ form = cgi.FieldStorage()
 slug = form.getfirst("slug")
 name = form.getfirst("name")
 url = form.getfirst("url")
-message = form.getfirst("message")
+message = form.getfirst("message").replace(r"\n", r"\n  ")
 
 if slug is None or name is None or message is None:
     print("Content-Type: text/text")
@@ -28,7 +28,7 @@ comment_time = str(int(time.time()))
 
 target_branch = f"comment_{comment_time}"
 
-file_name = f"_data/{slug}/comment-{comment_time}.yml"
+file_name = f"_data/comments/{slug}/comment-{comment_time}.yml"
 
 contents = f"""name: {name}
 date: '{datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")}'
