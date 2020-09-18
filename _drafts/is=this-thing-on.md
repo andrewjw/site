@@ -33,11 +33,11 @@ links and images, etc, but fairly quickly my new blog was full of my old content
 
 One advantage of Wordpress is that you can hit the big `Publish` button and your post is live on your site. Fortunately,
 in the 12 years since I started this blog many things have come along to make automating publishing a static site easier.
-Obviously the first step was to set up a [GitHub repository](https://github.com/andrewjw/site). I have had good success 
+Obviously the first step was to set up a [GitHub repository](https://github.com/andrewjw/site). I have had good success
 with [Travis CI](https://travis-ci.com/) in the past, and it worked well here too. They provide a prebuilt Ruby image,
 which includes `rsync`. Running the Jekyll builder and then `rsync`ing the generated content over to my Linode server on
 success was really quite simple to get running.
 
 So far everything had gone a lot more smoothly than I'd expected. Converting my old posts to tidy Markdown had taken longer
-than expected, but it was more labourious than difficult. The final thing I wanted to tackle before going live was 
+than expected, but it was more labourious than difficult. The final thing I wanted to tackle before going live was
 comments.
