@@ -28,6 +28,7 @@ function (doc) {
 The SQL above and the Javascript view function are directly equivalent, which is why I've started working on
 an extension to the [Python CouchDB](http://code.google.com/p/couchdb-python/) library, which I've decided to
 call [CouchQL](http://code.google.com/p/couchql/).
+<!--more-->
 
 The basic strategy is going to be this. The library adds a method to the `Database` object, `cursor` which
 returns an object which is compatible with the standard Python database API. When executing a CouchQL query a

@@ -30,6 +30,7 @@ avoid the possibility that changes get lost you should pass the retrieved docume
 return the document you passed in or the document that's waiting to be saved if it exists in the cache.
 Because there is a gap between when you ask for document to be saved and when it actually is saved any views
 you use may be out of date, but that's the cost of faster updates with CouchDB.
+<!--more-->
 
 One complicating factor in the code is that the updating process updates the documents you passed in with
 `_id` and `_rev` from the newly saved documents. This means you can cache documents in a your own

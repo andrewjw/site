@@ -26,6 +26,7 @@ I was getting a bit itchy, and my trusty Pebble Steel was showing it's age, but 
 [FitBit Ionic](http://amzn.to/2kGNE3m) was announced. A few days before the official release date my
 preorder arrived. It's now been two weeks of wearing it nearly 24/7, so it seems like a reasonable time to
 post my thoughts.
+<!--more-->
 
 First impressions of the hardware are excellent. Most reviews have criticised the looks, but I'm actually a
 fan. I like the way the bands transition into the watch itself, and sure it does just look like a black square

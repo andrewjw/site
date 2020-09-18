@@ -27,3 +27,4 @@ your charts are available for longer and longer.
 You can download the updated script [here](http://lastfm.indiegigs.co.uk/chartchanges).
 
 Enjoy!
+<!--more-->

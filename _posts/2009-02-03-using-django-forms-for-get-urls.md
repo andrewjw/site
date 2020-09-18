@@ -19,6 +19,7 @@ convert a bound form to url arguments.
 Fortunately Python's standard library module `urllib` contains a module which converts a dictionary to a
 properly formatted url argument string. We simply add a function, `as_url_args`, which passes the form's
 cleaned data to this function and we get back a nice string we can add to a link.
+<!--more-->
 
 ```python
 import urllib

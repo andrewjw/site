@@ -30,6 +30,7 @@ solution, and vague estimate or a timeline I need to defer to my team, and let t
 estimate it, and then I could fit it into our schedule. I might challenge them on some points, but it was
 their plan. I quickly needed to learn who knew the most about which systems, so I could get the right people
 involved in discussions early.
+<!--more-->
 
 Previously although I was able give initial feedback on a potential project, I would still allow the team to
 discuss them, to propose alternate solutions and to estimate. The change is that now my contribution is much

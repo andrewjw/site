@@ -37,6 +37,7 @@ while it's larger brother, the
 &linkCode=as2&camp=1634&creative=19450&creativeASIN=B002RL9KZG) (affiliate link) contains five. The back has a
 power socket and a network port. The top has a mute button, as well as a volumn up and down rocker. The other
 devices are similarly spartan, yet stylish, in their design with minimal on device buttons.
+<!--more-->
 
 First you need to plug the bridge into your network using the supplied ethernet cable. Then, after installing
 the PC software, or their iPhone app, you can create a Sonos network. Just follow the on screen prompts and

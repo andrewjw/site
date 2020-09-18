@@ -31,6 +31,7 @@ number of different content types and to give a weighting to each.
 When combined these two headers can be used to allow a normal user to browse the site and to allow a robot to
 make api calls on the same site, using the same urls. This makes it easier both for the creator of the
 programmer accessing your site and for you because you can easily share code between the site and your api.
+<!--more-->
 
 I'm going to outline a decorator that will let write a webservice such as this, that will support HTML and
 JSON output, and JSON and form encoded data as inputs.n First we'll create a decorator that parses any post

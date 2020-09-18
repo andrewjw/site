@@ -42,6 +42,7 @@ that Physics has never been more popular.
 As someone who writes computer programmes for a living this makes me worry that your average man on the street
 may end up with a better understanding of quantum mechanics than they do of the computer on their desk, or in
 their pocket.
+<!--more-->
 
 It wasn't always like this. Back in 1981 the BBC ran the
 [BBC Computer Literacy project](http://www.mcmordie.co.uk/acornhistory/bbchist.shtml), which attempted

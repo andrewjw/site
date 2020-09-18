@@ -38,6 +38,7 @@ all the communication still being tracked. The second difference is that FogBugz
 people outside of IT. Not all stakeholder know about Bugzilla, but some do, and some can even search and reply
 using the webinterface. With FogBugz we'll take this ability away as, at least initially, only a limited
 number of IT people will have access to the cases.
+<!--more-->
 
 FogBugz had other project management advantages to Bugzilla. It allows you to create subcases to break down a
 piece of work into more easily implemented chucks. It also has advanced estimation capabilities to allow you

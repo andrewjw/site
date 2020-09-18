@@ -33,6 +33,7 @@ third person camera, and both have excellent graphics. They also both have a fil
 In Alan Wake the action is divided up in six tv style "episodes", with a title sequence between each one. It
 also has a number of cut scenes and narration by the title character sprinkled throughout the game which help
 to drive the story forward.
+<!--more-->
 
 {% include image.html image=1 %}In L.A. Noire you are detective try to solve crimes and rise up the ranks of
 the police force. The game features cut scenes to introduce and close each case. During each case you head

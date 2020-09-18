@@ -28,6 +28,7 @@ a change you record the issue in your bug tracking software, then write a test t
 your code. Once you've done that you can start actually making the change that you wanted to make in the first
 place.  By writing down the issue you're forced into thinking about the change that you want to make, and
 creating the test ensures that you know when it's complete.
+<!--more-->
 
 TDD and IDD are useful things to aim for, but in reality you'll probably fall short sometimes. Not everything
 can be unit tested easily, or you might be under significant time pressures that force you to cut corners.

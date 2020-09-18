@@ -36,6 +36,7 @@ to get set this up but fundamentally you set up a proxy that sits in front of yo
 the data across the nodes. It deals with the job of merging view results and managing where the data is
 actually stored so you don't have to. O'Reilly's CouchDB: The Definitive Guide has a chapter
 [on clustering](http://guide.couchdb.org/draft/clustering.html) that is well worth a read.
+<!--more-->
 
 Unfortunately while Woosh is easy to work with it's not designed to be used on a large scale. Indeed if
 someone was crazy enough to try to run the software we've developed in this series they might be advised to

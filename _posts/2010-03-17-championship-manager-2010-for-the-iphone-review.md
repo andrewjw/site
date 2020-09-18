@@ -33,6 +33,7 @@ You then pick an answer from a number of options, trying to balance the happines
 and the media. Different answers will improve your standing with some and reduce it with others. Oddly along
 with the text of each answer the game shows you the exact effect the answer will have. A really manager has to
 guess at how their answer will be interpreted, they don't have a help set of red and green numbers.
+<!--more-->
 
 I was quite surprised to see a football management game on the iPhone. Both Championship and Football Manager
 are well known for needing substantial amounts of CPU power and memory to run well even on a desktop PC. The

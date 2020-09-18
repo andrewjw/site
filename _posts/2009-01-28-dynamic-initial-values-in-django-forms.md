@@ -24,6 +24,7 @@ This works fine except that when a process has been running across more than one
 longer correct as they refer to the day the process started. Fortunately it appears that there is an
 undocumented feature where the initial value can be a function rather than an absolute value. This function is
 called each time the unbound form is displayed, so they are always correct.
+<!--more-->
 
 Wrapping the code to create the value in a `lambda` works great here, as does passing a reference to a
 function.

@@ -39,6 +39,7 @@ objects. These store the text as well as the formatting information used to disp
 you can just call `QTextBlock::charFormat` to get the colour of the text. Unfortunately it's not that
 simple as the format returned by that call is the colour that you've explicitly set, not the syntax highlight
 colour.
+<!--more-->
 
 Each QTextBlock is associated with a [QTextLayout](http://doc.qt.nokia.com/qtextlayout.html) object
 that controls how the block is rendered. Each layout has a list of

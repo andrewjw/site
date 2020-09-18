@@ -31,6 +31,7 @@ their own itches, and producing something that is useful to themselves. Google's
 is clearly to allow someone to think "Project X" has a bug, I'll just modified the code and send the
 developers a patch. The edit feature is very easy to find, with a prominent "Edit File" link at the top of the
 screen when you're browsing the source code so Google have clearly succeeded in that respect.
+<!--more-->
 
 ![Google Code's Edit File Feature](/assets/googlecodeedit.png)
 

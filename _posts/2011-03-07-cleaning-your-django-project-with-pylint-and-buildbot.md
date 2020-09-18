@@ -40,6 +40,7 @@ warning appearing when a class has no `__init__` method. Django models will prod
 because they're metaclasses there is nothing wrong with them. Finally, `E1101` is generated if you
 access a member variable that doesn't exist. Accessing members such as `id` or `objects` on a
 model will trigger this, so it's simplest just to disable the check.
+<!--more-->
 
 > output-format=parseable include-ids=yes
 

@@ -31,6 +31,7 @@ is that if I want the use the speakers to listen to music (they are also connect
 plug over. Lastly, because I was running a combined frontend and backend it wasn't connected to the smart plug
 (otherwise it wouldn't be able to turn on to record.) If you turned the TV off the frontend would still be on,
 preventing the backend from shutting down for several hours, until it went into idle mode.
+<!--more-->
 
 I decided to solve these problems by using a [Raspberry Pi 3](http://amzn.to/2ld3GT8) as a separate
 frontend, and switching the plugs around. As they run Linux, and have hardware decoding of MPEG2 and h264 they

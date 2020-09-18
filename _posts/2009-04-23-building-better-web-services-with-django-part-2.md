@@ -52,6 +52,7 @@ def content_type(func, common=None, json_in=None, json_out=None, form_in=None):
          return func(req, args, kwargs)
     return wrapper
 ```
+<!--more-->
 
 So, how can we use this decorator? Let's imagine we're creating a blog and we have a view which displays a
 post on that blog. If they user posts it should create a new comment. Firstly we create a function, `common`,

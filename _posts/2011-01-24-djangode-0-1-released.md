@@ -30,6 +30,7 @@ want to have to pay for the editor, which limits my choice even more.
 Having decided that none of the existing IDEs quite fit my requirements I did what any self respecting open
 source programmer with an itch would do, I headed to [Google Code](http://code.google.com/p), created a new
 project and then got coding.
+<!--more-->
 
 ![DjangoDE Main Editor Window](/assets/djangode_main_window.png)
 

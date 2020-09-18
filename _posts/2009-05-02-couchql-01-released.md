@@ -12,3 +12,4 @@ I've just uploaded the first release of CouchQL. It can be installed from PyPI b
 or you can download a tarball from [Google Code](http://code.google.com/p/couchql/downloads/list).
 
 It's a very early release, but please play with it, break it and email me your results!
+<!--more-->

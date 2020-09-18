@@ -30,6 +30,7 @@ Unlike the rest of the pages the information on the records page consists of a n
 While we could create a single map/reduce function to process all of them at once. That function will quickly
 grow and become unmanageable, so instead we'll calculate the statistics individually and use AJAX to load them
 dynamically into the page.
+<!--more-->
 
 To calculate the minimum indoor temperature we first need to create a simple view to calculate the value. As
 with all CouchDB views this starts with map function that outputs the parts of the document we are interested

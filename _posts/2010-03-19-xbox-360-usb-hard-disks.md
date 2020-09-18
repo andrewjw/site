@@ -19,3 +19,4 @@ that more and more games feature DLC, and Microsoft is pushing the movie watchin
 the amount of data you can store can easily bite even moderate users, let alone hard core gamers.
 
 I do love my XBox, but it's the artificial limitations like this that really annoy me.
+<!--more-->

@@ -28,6 +28,7 @@ This will publish port 80 from inside the container as port 8080 on the host.
 
 This works great if you know want ports you want to expose before you run the container. Once it's running,
 if you decide you need access to a port, you can't expose it. Unless that is, you cheat.
+<!--more-->
 
 [socat](https://linux.die.net/man/1/socat) is a very useful command line tool which lets
 you create tunnels to forward ports. It has many other features, such as forwarding unix sockets to tcp

@@ -34,3 +34,4 @@ the book fits into historical fiction as well. Is historical science fiction a g
 
 This book was first published in 1996, and if you haven't read in the last fifteen years then you should
 definitely go and hunt down copy. You'll read it and imagine that it was written yesterday.
+<!--more-->

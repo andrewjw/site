@@ -23,6 +23,7 @@ how you determine how important the message is. The levels range from `debug` as
 `info`, `warning`, `error`, `critical` to `exception`, the most important. Secondly there is the logger. This
 allows you divide your messages into groups depending on the part of your code they relate to. For example,
 you might have a `gui` logger and a `data` logger.
+<!--more-->
 
 The `logging` comes with a series of module level functions by each of the names of the logging levels. These
 make it quick and easy to log a message using the default logger.

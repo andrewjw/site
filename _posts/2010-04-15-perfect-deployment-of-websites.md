@@ -24,6 +24,7 @@ The first requirement is repeatability. You might be able to follow a list of te
 mistake normally, when your site is broken and you need to get a fix deployment as soon as possible following
 that list will suddenly become a whole lot harder. For this reason, and to avoid the temptation to cut corners
 when deploying a change automation of as much as possible is key.
+<!--more-->
 
 The second requirement is scalability. As your website grows you deployment process needs to be able grow with
 it. As you add a new server to your cluster you don't want to have to spend a long time updating your

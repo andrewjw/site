@@ -29,6 +29,7 @@ We'll take the simplest method for calculating similarity and just calculate the
 visited both pages compared to the total number who have visited either. If we have Page 1 that was visited by
 user A, B and C and Page 2 that was visited by A, C and D then the A and C visited both, but A, B, C and D
 visited either one so the similarity is 50%.
+<!--more-->
 
 With thousands or millions of items and millions or billions of views calculating the similarity between items
 becomes a difficult problem. Fortunately MongoDB's sharding and replication allow us to scale the calculations

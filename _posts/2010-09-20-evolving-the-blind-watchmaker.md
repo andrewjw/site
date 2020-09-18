@@ -32,6 +32,7 @@ evolution, the general thrust remains true. The passages where he talks about hi
 dated horribly (which is not surprising given it was first published in 1986!). In this post I'll describe how
 to recreate the section where he describes evolving trees in Python so you can create your own trees on your
 pc.
+<!--more-->
 
 As with the book our trees will be controlled by nine genes, each of which is an integer. Dawkins doesn't
 state what the nine genes do as for his purposes that would confuse matters, but for us it's vital.

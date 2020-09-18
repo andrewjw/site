@@ -25,6 +25,7 @@ On the downside the frame must be plugged into the mains as there is no
 battery option. Also Sony have skimped on the packing as despite having a
 mini USB connector no cable is included in the pack. Come on Sony, can't
 you stretch to a simple cable?
+<!--more-->
 
 Disappointingly the firmware seems to have few bugs. The menu system
 gives you the option to rotate a photo but when you turn the frame off

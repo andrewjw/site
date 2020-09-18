@@ -26,3 +26,4 @@ It's simple, slick and just works. If you're a Flickr user with a iPhone then it
 Download [Darkslide free](http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284919489&mt=8).
 
 Download [Darkslide Premium ($3.99)](http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284920890&mt=8).
+<!--more-->

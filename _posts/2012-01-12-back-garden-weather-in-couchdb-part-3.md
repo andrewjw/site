@@ -30,6 +30,7 @@ display the data over a whole day we need to use a
 the previous post. Unlike `show` functions `list` functions don't have the document passed in, they can call
 a `getRow` function which returns the next row to process. When there are no rows left it returns
 `null`.
+<!--more-->
 
 `show` functions process an individual document and return a single object containing the processed data
 and any HTTP headers. Because a `list` function can process a potentially huge number of rows they

@@ -36,6 +36,7 @@ link_double_re = re.compile(r'<a[^>]+href="([^"]+)"')
 
 All we need to look for an `href` attribute in an `a` tag. We'll use two regular expressions to
 handle single and double quotes, and then build a list containing all the links in the document.
+<!--more-->
 
 ```python
 @task

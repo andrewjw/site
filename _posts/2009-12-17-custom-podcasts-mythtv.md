@@ -21,6 +21,7 @@ automatically?
 Recording a radio show with MythTV is no different to recording a TV show so that's not a problem. MythTV also
 provides the ability to run a script after certain shows have been recorded. All that is required is a script
 that converts the recording into an mp3 file and to build an RSS feed which can be read by iTunes.
+<!--more-->
 
 First we need to convert the recorded file into an mp3, which is easy to do with the ffmpeg program.
 

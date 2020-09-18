@@ -38,6 +38,7 @@ This section serves an inspirational guide to setting up your own company. The j
 and defying the odds against a company succeeding comes across very strongly. The later section following
 Job's return to Apple is a much more about the nuts and bolts of running a huge corporation. While it's an
 interesting guide to how Apple got to where it is today, it lacks the excitement of the earlier chapters.
+<!--more-->
 
 {% include image.html image=1 %}The Lean Startup could, rather unkindly, be described as a managerial
 technique book. It's much more than that though as it's more of a philosophy for how to run company or a

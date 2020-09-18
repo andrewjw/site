@@ -17,6 +17,7 @@ If you're fresh out of university and joining a team of programmers with 30 year
 "[WTF!](http://thedailywtf.com)" about some aspect of their working practices. Most of what you read about programming is of
 the "here's a shiny new toy" variety. If you immediately started using everything you read about not only would you probably go insane
 but you'd also annoy your coworkers immensely.
+<!--more-->
 
 In a project with a reasonably sized team, especially one with people of different abilities, consistency is key. If you're starting a
 project in a new company which has never written software before then you'll have the opportunity to do things right.  If you're

@@ -29,6 +29,7 @@ Enforcing a development practice like this requires you to think about the chang
 software, and focuses your mind one a particular goal. Bug tracking software will have the ability to assign
 priorities to changes as well to group them into milestones. This helps you to build up a feature list for
 each version of the software, and to know when you've achieved your goals and it's time to release!
+<!--more-->
 
 Test driven development is related in that before any changes to code are made a test must be written. This
 test must be designed to check the result of the change as closely and completely as possible. When the test

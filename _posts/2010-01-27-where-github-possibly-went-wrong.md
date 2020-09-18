@@ -40,6 +40,7 @@ GitHub fails to do is to encourage people to collaborate together to push one co
 suggestion is that branching is a bad idea. Branching code is a useful coding technique which can be used to
 separate in-development features from other changes until the code has stabilised again. What GitHub focuses
 on is the changes that an individual developer makes, not the changes required for a particular feature.
+<!--more-->
 
 {% include image.html image=1 float="left" %}
 

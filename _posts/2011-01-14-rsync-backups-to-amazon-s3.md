@@ -25,6 +25,7 @@ perfect. So, how do we use rsync to transfer data to S3?
 
 I won't go through setting up an Amazon S3 or creating a bucket, the [Amazon
 documentation](http://docs.amazonwebservices.com/AmazonS3/latest/gsg/) does that just fine.
+<!--more-->
 
 The first thing to do is [download and install](http://code.google.com/p/s3fs/wiki/InstallationNotes)
 [s3fs](http://code.google.com/p/s3fs/). This is a tool that uses [FUSE](http://fuse.sourceforge.net/) to mount

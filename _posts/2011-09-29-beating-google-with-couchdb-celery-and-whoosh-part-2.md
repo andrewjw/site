@@ -34,6 +34,7 @@ the links, we can just include them directly in the main document. To help retur
 [page rank](http://en.wikipedia.org/wiki/PageRank) like algorithm to rank the page, so we also need
 to store that rank. Finally, as is good practice on CouchDB we'll give the document a `type` field so
 we can write views that only target this document type.
+<!--more-->
 
 ```python
 class Page(Document):

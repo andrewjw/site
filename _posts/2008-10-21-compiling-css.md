@@ -39,3 +39,4 @@ Unfortunately the tool is written in the little known language [Neko](http://nek
 created by the author of HSS) and is not hosted on any of the of many open source project hosting sites which would help
 ensure the tool lives on even if the author moves on. Indeed, it's not even clear from the website what license the tool
 is released on. These are problems that might need to be solved before it's worth basing a project around HSS.
+<!--more-->

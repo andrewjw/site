@@ -37,6 +37,7 @@ member](http://www.fitbit.com/premium/export) which allows you do to a CSV expor
 data, collected by a user hostage is deeply suspect and FitBit should be ashamed of themselves for making this
 a paid for feature. I have no problem with the rest of the features in the Premium subscription being paid
 for, but your own raw data should be freely available.
+<!--more-->
 
 The FitBit API does have the ability to give you the intraday data, but this is not part of the open API and
 instead is part of the 'Partner API'. This does not require payment, but you do need to explain to FitBit why

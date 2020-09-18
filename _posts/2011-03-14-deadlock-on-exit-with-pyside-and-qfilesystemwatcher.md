@@ -28,6 +28,7 @@ the destructor.
 > Note: To avoid deadlocks on shutdown, all instances of QFileSystemWatcher need to be destroyed
 > before QCoreApplication. Note that passing QCoreApplication::instance() as the parent object
 > when creating QFileSystemWatcher is not sufficient.
+<!--more-->
 
 The following code will demonstrate the issue.
 

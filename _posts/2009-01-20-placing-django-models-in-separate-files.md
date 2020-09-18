@@ -15,6 +15,7 @@ with a directory. It won't take you long before you've written enough views that
 The same is true of models.py. If you have ten or more models then the file can quickly become a thousand line
 behemoth. I'd tried to split the file into a directory before, but it never worked, and the error messages
 were never helpful.
+<!--more-->
 
 The solution is simple, you add a Meta class to your model with an app_label parameter.
 

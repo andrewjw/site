@@ -24,6 +24,7 @@ Plenty has been written about search engine optimisation for blogs, but not much
 for Flickr. The majority of my photos have five or so tags, a title and are geotagged. Flickr does allow you
 to write a description and this would increase the about of text thereby giving search engines much more to go
 on. The key to gaining exposure on Flickr though, is to appear on [Explore](http://www.flickr.com/explore/).
+<!--more-->
 
 Flickr are not explicit about whether photos that appear in Explore are influenced by humans or not. They
 certainly imply that it's chosen algorithmically though. If it's chosen by computer then it should be possible

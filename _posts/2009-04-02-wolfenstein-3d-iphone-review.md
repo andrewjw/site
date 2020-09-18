@@ -25,6 +25,7 @@ really well and it is very easy to pick up and to start running around the Nazi 
 in. The controls do rather feel like driving a fork lift truck. You regularly find your self reversing
 backwards around a corner, which is not how a person would move, but it's easy to forgive and hard to see how
 else it could be done.
+<!--more-->
 
 The game might seem a little expensive at £2.99 but you get all six episodes of the game which will last you
 many hours. It's available in the App Store now, and for such an old game still shows its class amongst the

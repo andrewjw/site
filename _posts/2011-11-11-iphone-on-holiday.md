@@ -30,6 +30,7 @@ The video camera is also excellent. The pictures are bright, crisp and clear and
 recording. The small size of the iPhone makes it very easy to move the camera around. Movement is not
 something I'd had to think about before have previously only used a stills camera, but a static video shot
 gets boring very quickly.
+<!--more-->
 
 The audio quality is quite poor, at least when you are in a windy location, and as I was on the coast it was
 nearly always windy. The white noise of the wind masked much of the voice that I was trying to record.

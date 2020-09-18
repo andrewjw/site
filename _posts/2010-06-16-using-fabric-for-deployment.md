@@ -30,6 +30,7 @@ To get started with Fabric you'll need to install it, but a simple `sudo easy_in
 to get you up and running. The Fabric website has excellent documentation, including a
 [tutorial](http://docs.fabfile.org/0.9.1/tutorial.html), but before I discuss how to integrate Fabric with
 your Django deployment process, lets go over the basics.
+<!--more-->
 
 A Fabric control file is a Python file named `fabfile.py`. In it, you define a series functions, one for each
 command that you want to run on the remote servers.

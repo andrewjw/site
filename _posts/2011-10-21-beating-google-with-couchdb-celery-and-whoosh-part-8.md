@@ -32,8 +32,9 @@ python manage.py celeryd -Q retrieve
 python manage.py celeryd -Q process
 ```
 
- This sets up the daemons to monitor the two queues and process the tasks. As mentioned in a previous post
+This sets up the daemons to monitor the two queues and process the tasks. As mentioned in a previous post
 two queues are needed to prevent one set of tasks from swamping the other.
+<!--more-->
 
 Next you'll need to run the full text indexer, which can be done with `python manage.py index_update`
 and then you'll want to run the server using `python manage.py runserver`.

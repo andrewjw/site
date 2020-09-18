@@ -32,6 +32,7 @@ The biggest change is the addition of [stacks](http://delicious.com/help#stack).
 sets of links on a single topic. While the old Delicious showed popular links on the frontpage the new site
 shows featured stacks. As you can associate an image with a stack this gives the frontpage a much more visual
 look. The old website was undeniably plain and the images really brighten it up.
+<!--more-->
 
 Like many people when the Delicious troubles surfaced I immediately looked for an alternative. The most
 obvious choice is >Google Bookmarks</a>. Very quickly they produced a

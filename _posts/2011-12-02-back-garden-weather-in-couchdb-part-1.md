@@ -37,6 +37,7 @@ exactly what's going on. Things become clearer when you discover that that
 Now you can see a more complete CouchDB URL, albeit without the database name.
 [db.welwynweather.co.uk](http://db.welwynweather.co.uk/) points to an Apache reverse proxy that routes
 requests through to CouchDB.
+<!--more-->
 
 Over the next few posts I'll detail how the CouchApp works, but to get started you can clone my app and poke
 it yourself. Once you've installed the `couchapp` command line client simply run `couchapp clone

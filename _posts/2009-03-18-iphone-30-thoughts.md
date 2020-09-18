@@ -26,6 +26,7 @@ information developers can 'push' updates out to your phone automatically. This 
 battery power and giving some applications a fake running in the background mode. The facebook app could keep
 you logged into facebook chat all the time and alert you whenever someone sends you a message. The same is
 true for email and other chat applications.
+<!--more-->
 
 Apple are also opening up the iPhone's mapping capabilities to give developers the possibility of creating
 sat-nav beating turn-by-turn navigation systems. There are some caveats, such as that developers will need to

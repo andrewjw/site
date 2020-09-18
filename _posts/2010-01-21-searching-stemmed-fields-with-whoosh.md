@@ -31,6 +31,7 @@ from whoosh.fields import Schema, TEXT, ID
 schema = Schema(id=ID(stored=True, unique=True),
                        text=TEXT(analyzer=StemmingAnalyzer()))
 ```
+<!--more-->
 
 Using the `StemmingAnalyzer` will cause Whoosh to stem every word before it is added to the index. If you use
 the shortcut [`search`](http://packages.python.org/Whoosh/api/searching.html#whoosh.searching.Searcher.search)

@@ -31,6 +31,7 @@ simplest way to write the import script would be to import each day's data every
 cause the database to balloon in size, so instead we query the database to find the last update time and
 import everything after than. Each update is stored as a separate document in the database, with the
 `timestamp` attribute containing the unix timestamp of the update.
+<!--more-->
 
 The map code to get the most recent update is quite simple, we just need to emit the timestamp for each
 update. The reason the timestamp is emitted as the key is so we can filter the range of updates. It is also

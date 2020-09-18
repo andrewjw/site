@@ -39,6 +39,7 @@ need to start writing code in a radically different environment then you'll need
 like us, you mostly write Java server applications and you want to start writing modern web-based frontends to
 your applications then you need to choose to add Javascript, or one of the many Javascript based languages,
 into your tech stack.
+<!--more-->
 
 The discussion that we're having about Java, Scala and Kotlin is nowhere near as clear-cut however.
 Fundamentally choosing one over the other wouldn't let us write a new type of app that we couldn't write

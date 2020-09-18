@@ -35,6 +35,7 @@ Running a hackathon event should be divided into three stages, preparation, the 
 Before the event you need to take some time to collect ideas and do some preliminary research. The event
 itself should be a whirlwind of pumping out code and building something exciting. Afterwards you need to take
 some time to demonstrate what you've built, and share what you've learnt.
+<!--more-->
 
 Typical IT departments will been given a set of requirements and will need work out how to achieve them. What
 a hackathon event should allow is for the department to produce their own set of requirements, free from any

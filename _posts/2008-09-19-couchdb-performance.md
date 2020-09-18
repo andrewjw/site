@@ -17,3 +17,4 @@ be quite slow, taking a few seconds for a few tens of thousands of results. This
 Is there any way to speed up CouchDB? Well aggressive use of memcache will probably help, but too
 me it seems that CouchDB is not suited to large datasets. I do hope I'm wrong though, and I'm going
 to investigate further because I really want to find a use for CouchDB in my work.
+<!--more-->

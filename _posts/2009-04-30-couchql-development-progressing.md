@@ -16,6 +16,7 @@ now. The development is currently at a very early stage, but the fundamentals ar
 
 Code such that given below will work. In this example it will return all the documents with a member 'x' whoes
 value is greater than one.
+<!--more-->
 
 ```python
 c = db.cursor()

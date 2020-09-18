@@ -32,6 +32,7 @@ How do we use CouchDB to reduce the data to one point per hour? Fortunately Couc
 is perfect for this type of processing. CouchDB will also cache the results of the processing automatically so
 it only needs to be run once rather than requiring an expensive denormalisation process each time some new
 data is uploaded.
+<!--more-->
 
 First we need to group the five minute weather records together into groups for each hour. We could do this by
 taking the unix timestamp of record and rounding to the nearest hour. The problem with this approach is that

@@ -27,10 +27,11 @@ except Exception, e:
     // error handling code
 ```
 
- Exceptions are a way of breaking out the normal program flow when an 'exceptional' condition arises.
+Exceptions are a way of breaking out the normal program flow when an 'exceptional' condition arises.
 Typically this is used when errors occur, but exceptions can also be used as an easy way to break out of
 normal flow during normal but unusual conditions. In a limited set of situations it can make program flow
 clearer.
+<!--more-->
 
 What does this code do though? It catches all exceptions, runs the error handling code and continues like
 nothing has happened. In all probability it's only one or two errors that are expected and should be handled.

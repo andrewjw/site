@@ -46,7 +46,8 @@ def get_by_url(url, update=True):
 ```
 
 The key line in the static method is `doc.update()`. This calls the function to retrieves the page and
-makes sure we respect the `robots.txt` file. Let's look at what happens in that function
+makes sure we respect the `robots.txt` file. Let's look at what happens in that function.
+<!--more-->
 
 ```python
 def update(self):

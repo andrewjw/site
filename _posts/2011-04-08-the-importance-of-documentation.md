@@ -35,6 +35,7 @@ When you start using some code that you've not interacted with before the first 
 a grasp on the concepts underlying the library. Some libraries are functional, some object orientated. Some
 use callbacks, others signals and slots. You also need to know the top level groupings of the elements in the
 library so you can narrow your focus that parts of the library you actually want to use.
+<!--more-->
 
 Qt's document starts in a typical fashion, [with a
 tutorial](http://doc.qt.nokia.com/4.7/gettingstartedqt.html). This gives you a very short piece of code that gets you up and running quickly. It then proceeds

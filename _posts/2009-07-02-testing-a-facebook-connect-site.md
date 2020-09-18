@@ -29,3 +29,4 @@ away!
 
 The Facebook API is pretty simple to get started with, and with in a couple of minutes you'll have the code
 written to log a user in. Checking that it all works though, is a much tougher challenge...
+<!--more-->

@@ -25,3 +25,4 @@ much more quickly on your phone, and you don't waste battery life or network tra
 it doesn't support email syncing, but surely that's only a matter of time?
 
 Visit [http://m.google.com/sync](http://m.google.com/sync) to get your iPhone set up.
+<!--more-->

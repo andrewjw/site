@@ -34,6 +34,7 @@ Although PyV8 has a wiki page entitled [How To
 Build](http://code.google.com/p/pyv8/wiki/HowToBuild) it's not simple to get the project built. They recommend using prebuilt packages, but there are none
 for recent version of Ubuntu. In this post I'll describe how to build it on Ubuntu 11.11 and give a simple
 example of it in action.
+<!--more-->
 
 The first step is make sure you have the appropriate packages. There may be others that are required and not
 part of the default install, but there are what I had to install.

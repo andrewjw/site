@@ -33,6 +33,7 @@ also going to show you how to use Celery to create a web-crawler. We'll then ind
 [Whoosh](https://bitbucket.org/mchaput/whoosh/wiki/Home) and use a
 [PageRank](http://en.wikipedia.org/wiki/PageRank)-like algorithm to help rank the results. Finally,
 we'll attach a simple Django frontend to the search engine for querying it.
+<!--more-->
 
 Let's consider what we need to implement for our webcrawler to work, and be a good citizen of the internet.
 First and foremost is that we must be read and respect [robots.txt](http://www.robotstxt.org/).

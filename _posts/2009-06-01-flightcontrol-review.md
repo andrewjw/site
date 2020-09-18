@@ -24,6 +24,7 @@ and there are plans to add more airports to the game which I hope will be done t
 The game starts off very easy to let you get the feel for the controls but the difficulty level ramps up
 pretty quickly and you'll soon have to deal with five or more planes at once. When you've got two planes
 flying at different speeds trying to land on the same runway your brain will start to melt, but in a good way.
+<!--more-->
 
 The game features online leaderboards which is a nice touch, but like with most online stats the leaders are
 way out of most users reach. The current all-time top score is [almost

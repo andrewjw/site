@@ -34,6 +34,7 @@ class MyModel(model.Model):
 The error that was raised was `AttributeError: 'NoneType' object has no attribute 'Model'`. This means
 that rather than containing a module object, `models` was None. Clearly this is impossible as the class
 could not have been created if that was the case. Impossible or not, it was clearly happening.
+<!--more-->
 
 Adding a print statement to the module showed that when it was imported the `models` variable did
 contain the expected module object. What that also showed was that module was being imported more than once,

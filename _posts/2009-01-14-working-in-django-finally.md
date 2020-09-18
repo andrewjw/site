@@ -16,3 +16,4 @@ It's so easy, it makes me sad that I have to go back to C++ this afternoon.
 
 I've also discovered that aggregation, the main feature I want from django, [will be committed to trunk
 tomorrow](http://groups.google.com/group/django-developers/t/2167b4b877027317?hl=en). Hurrah!
+<!--more-->

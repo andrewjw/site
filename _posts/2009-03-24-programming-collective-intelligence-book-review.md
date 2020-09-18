@@ -25,6 +25,7 @@ The rest of the book is take up with classifying objects in a set, predicting th
 given similar objects or filtering items such as email into spam and ham. These are staples of machine
 learning textbooks, but here are introduced in a very accessible and easy to read way. These chapters are
 interesting and informative but perhaps not that useful if you're building a web 2.0 site.
+<!--more-->
 
 This is a great addition to the O'Reilly stable of programming book, it's just a shame they tried to shoehorn
 Web 2.0 in when that really gives the wrong impression of the book.

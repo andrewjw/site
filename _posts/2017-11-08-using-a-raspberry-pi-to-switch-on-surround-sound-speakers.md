@@ -31,6 +31,7 @@ you can use `irsend` to repeat them.
 Initially, I had it set up to always send the power button signal on boot. This had the unfortunate
 side-effect of switching the speakers off if they were already on, for example, if I had been listening to
 music through Sonos before deciding to watch TV.
+<!--more-->
 
 To prevent this from happening I needed to determine whether the speakers were on or not. Fortunately,
 Raspberry Pi's come with some useful tools to determine information about what is supported by the HDMI device

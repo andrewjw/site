@@ -34,6 +34,7 @@ do I get from my house to my aunt's?" some are much more important. A war was al
 between Nicaraguan and Costa Rica](http://www.wired.com/dangerroom/2010/11/google-maps-error-blamed-for-
 nicaraguan-invasion/) was incorrectly placed. While a war is a little far-fetched, it's not
 hard to imagine how a mistake on map could cost someone's life in a medical emergency.
+<!--more-->
 
 Originally Open Street Map required budding cartographers to get out with their GPS devices and manually
 record their position. With the explosion of satellite* mapping information creating maps just involves

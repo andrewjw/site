@@ -25,6 +25,7 @@ include the number of pages in the index, and a list of the top documents as ord
 
 In the templates on this page we reference `base.html` which provides the boiler plate code needed to
 make an HTML page.
+<!--more-->
 
 ```python
 {% raw %}

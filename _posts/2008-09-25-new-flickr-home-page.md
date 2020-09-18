@@ -14,3 +14,4 @@ sure what the point of the redesign was - it was nowhere near as dramatic as Fac
 
 Flickr's website has changed little over the past year so it's nice to see that the website won't stagnate, and that
 new features are being added.
+<!--more-->

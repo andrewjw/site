@@ -21,6 +21,7 @@ Rather than listen to my music on a loop while I travel I listen to a number of 
 and Steve Lamacq's 6music show. MythTV on my PC records his show every afternoon. A script
 then converts the recording into a 300MB MP3 file and updates the xml document that describes
 it as a podcast. This is served by Apache on my local machine.
+<!--more-->
 
 Specifying `http://192.168.0.8/podcasts/feed.rss` works fine for iTunes on my PC. When I sync my
 iPhone new episodes of Lamacq's show get copied automatically across.

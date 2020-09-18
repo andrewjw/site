@@ -38,3 +38,4 @@ site.addsitedir(os.path.join(root_dir, 've/lib/python%i.%i/site-packages'
 
 Just add the code above to the top of your `manage.py` file and the `ve` virtual environment
 will always be activated when you run the script.
+<!--more-->

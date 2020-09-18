@@ -30,6 +30,7 @@ In our case the messages being exchanged are binary encoded, so you can't decod
 Java and have the same library used to send the messages. By building an application to act as a bridge you
 get much more control over the Web Socket API than if you use the native ActiveMQ implementation, so you can
 tidy up the JSON representations you use and easily make any other improvements to the API that you want.
+<!--more-->
 
 Spring is our current Java Framework of choice, which conveniently has a built-in HTTP server which supports
 Web Sockets. Combining that with our shared library for connecting to ActiveMQ results in a Web Socket server

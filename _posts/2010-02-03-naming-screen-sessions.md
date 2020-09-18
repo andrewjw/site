@@ -32,3 +32,4 @@ sessionname name`.
 
 There are plenty of other useful things that `screen` can do, but named sessions is by far and away the most
 common one that I use.
+<!--more-->

@@ -24,6 +24,7 @@ If your app is in `project/app` then create the directories `project/app/managem
 file called `__init__.py` in both the `management` and `commands` directories. Once you've done that every
 other python file in the commands directory can be executed via `manage.py`. If you create the file
 `project/app/management/commands/x.py` then it can be run as `manage.py x`.
+<!--more-->
 
 Each file which contains a command must define a class called `Command` which derives from
 `django.core.management.base.BaseCommand`. Rather than derive directly from `BaseCommand` you'll most likely

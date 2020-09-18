@@ -26,6 +26,7 @@ strategies. The Roulette wheel that was used at the Wedding was an American whee
 to 36 as well as 0 and 00. Betting on odd or even will win if a number 1 to 36 comes up and it is odd or even.
 0 or 00 will lose you your money. If you win your stake is doubled. This means that by betting on odd or even
 you stand a 47% chance of winning.
+<!--more-->
 
 To help work out the best strategy we need to build a roulette wheel simulator. To do this we use the Python
 function given below. It takes four parameters and returns the amount money left at the end of the run. The
