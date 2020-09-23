@@ -1,7 +1,7 @@
 {% assign image=include.image %}
 <div style="float: {% if include.float == "left" %}left{% else %}right{% endif %}; margin-{% if include.float == "left"%}right{% else %}left{% endif %}: 5px;">
     <a data-flickr-embed="true" href="{{ page.flickr[image].imagelink }}" title="{{ page.flickr[image].imagename }}">
-      <img src="{{ page.flickr[image].image }}" width="400" alt="{{ page.flickr[image].imagename }}">
+      <img src="{{ page.flickr[image].image }}" width="400" alt="{{ page.flickr[image].imagename }}" class="{% if image == 0 %}webfeedsFeaturedVisual{% endif %}">
     </a>
     <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </div>

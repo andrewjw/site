@@ -7,7 +7,7 @@ permalink:        pretty
 title:            'Andrew Wilkinson'
 tagline:          'Meaningless Musings'
 description:      "I'm an Engineering Manager at <a href='https://www.ocadotechnology.com/'>Ocado Technology</a> and these are my thoughts on work, technology, music and anything else that piques my interest."
-url:              http://www.theandrewwilkinson.com
+url:              https://www.theandrewwilkinson.com
 baseurl:          /
 
 exclude:          ["*.py","*.json","*.sh","*.txt","*.rb","*.lock","Gemfile","README.md","LICENSE.md"]
@@ -15,7 +15,8 @@ include:          ["comment.py"]
 
 author:
   name:           'Andrew Wilkinson'
-  url:            https://twitter.com/andrewjw
+  email:          'andrewjwilkinson@gmail.com'
+  url:            https://twitter.com/andrew_j_w
 
 paginate:         5
 
