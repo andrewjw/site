@@ -38,6 +38,26 @@ with [Travis CI](https://travis-ci.com/) in the past, and it worked well here to
 which includes `rsync`. Running the Jekyll builder and then `rsync`ing the generated content over to my Linode server on
 success was really quite simple to get running.
 
-So far everything had gone a lot more smoothly than I'd expected. Converting my old posts to tidy Markdown had taken longer
+A key part of being a successful blogger (so I'm told) is to keep posting content regularly. Wordpress helps support this
+by letting you schedule posts for the future. This way you can have a queue of completed posts, removing the panic of
+needing to complete a post by a certain date. Jekyll supports [future dated posts](
+http://sangsoonam.github.io/2018/12/27/writing-upcoming-posts-in-github-pages.html), so we just need to be able to trigger
+the deployment pipeline automatically to cause them to deployed. Travis CI makes this easy thanks to its support of cron jobs.
+Just click `More Options` then `Settings` for the site's build pipeline, then towards the bottom is a Cron Jobs section where
+you can schedule the pipeline to be run daily.
+
+So far everything had gone a lot more smoothly than I'd expected. Converting my old posts to tidy Markdown took longer
 than expected, but it was more labourious than difficult. The final thing I wanted to tackle before going live was
 comments.
+
+Initially I was quite taken by [StaticMan](https://staticman.net/). This service works by providing an end point you
+can point a form to, and it will create a branch in your GitHub repo where it'll add the comment in the right format
+for Jekyll. Clicking a button in GitHub to merge the branch will then trigger the deployment pipeline, making the
+comment visible. Sadly it seems that StaticMan no longer works quite as advertised on their site. The bot has been
+blocked by GitHub for exceeding API rate limits. They still offer a self hosted version, but given I'm running 1GB
+Linode server memory is quite tight, and I can't afford a permanently running Node server.
+
+I still liked the idea of StaticMan, so a [quick Python script](https://github.com/andrewjw/site/blob/master/comment.py)
+later and I had it integrated with the GitHub API, and Akismet for spam filtering. It runs as a CGI script, so is only
+spawned when necessary. The script is in the same repository as the rest of my site, but if anyone is interested in
+reusing I could separate it out and release it. Please let me know in the comments below.
