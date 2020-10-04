@@ -79,11 +79,11 @@ the number of bytes sent and received.
 ZySH> xdslctl info
 xdslctl: ADSL driver and PHY status
 Status: Showtime
-Last Retrain Reason:	1
-Last initialization procedure status:	0
-Max:	Upstream rate = 7987 Kbps, Downstream rate = 46854 Kbps
-Bearer:	0, Upstream rate = 7987 Kbps, Downstream rate = 40000 Kbps
-Bearer:	1, Upstream rate = 0 Kbps, Downstream rate = 0 Kbps
+Last Retrain Reason:  1
+Last initialization procedure status:  0
+Max: Upstream rate = 7987 Kbps, Downstream rate = 46854 Kbps
+Bearer: 0, Upstream rate = 7987 Kbps, Downstream rate = 40000 Kbps
+Bearer: 1, Upstream rate = 0 Kbps, Downstream rate = 0 Kbps
 ```
 
 The excellent [Paramiko](http://www.paramiko.org/) library makes it easy to connect to an `SSH` server, and despite
