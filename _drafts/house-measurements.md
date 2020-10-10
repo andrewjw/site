@@ -1,13 +1,13 @@
 ---
 title: House Measurements
 layout: post
-date: 2020-10-07
+date: 2020-10-14
 tags:
 - prometheus
 - grafana
 - docker
 - tesla
-permalink: "/2020/10/07/house-measurements/"
+permalink: "/2020/10/14/house-measurements/"
 flickr_user: 'https://www.flickr.com/photos/vletter/'
 flickr_username: Mark Vletter
 flickr_image: 'https://live.staticflickr.com/65535/49867898781_8d1252a0b2_w.jpg'

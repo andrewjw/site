@@ -1,7 +1,7 @@
 ---
 title: Router Stats To Prometheus
 layout: post
-date: 2020-10-14
+date: 2020-10-21
 tags:
 - prometheus
 - grafana
@@ -9,7 +9,7 @@ tags:
 - zyxel
 - github
 - programming
-permalink: "/2020/10/12/router-stats-to-prometheus/"
+permalink: "/2020/10/21/router-stats-to-prometheus/"
 ---
 I've previously written about my plan to collect much more data about my house. In the current work-from-home
 environment the quality of our internet connection is paramount, and I wanted to be able to monitor it and
