@@ -1,7 +1,31 @@
 ---
 title: Glow Bright
+layout: post
 ---
-[Glow Brigh](glowmarkt.com)
+When my electricity provider, nPower, upgraded me to a smart meter I was excited about getting access to more
+data about my electricity and gas usage. Unfortunately, it turned out that the extra data provided by the
+connected meters was only available to the power supplier, and not to me as a consumer. They provided a little
+device with a screen (known as an IHD, or in-home device) which displayed the current and daily/weekly/monthly
+usage, but little else. No mobile app, no ability to dig into your historical usage, and definitely no API access.
+
+While I was disappointed, and frustrated about not having access to what I consider be my data, I left it as I
+had more important things to worry about (i.e. kids). With my recent project to look at collecting more data from
+my house I wanted to revisit this, and collect the data.
+
+There are two meter standards in the UK, SMETS1 and SMETS2. SMETS1 is the older standard, which is no longer being
+rolled out. SMETS2 is the current standard, which operattes quite differently to SMETS1. The main benefit being that
+if you switch provider your smart meter will continue to work, something that wasn't true with the earlier standard.
+If you're unlucky enough to have a SMETS1 meter you can ask for it to be upgraded. Fortunately, I had a SMETS2 meter.
+
+The way these meters work is that both the electricity and gas meters broadcast their readings locally over a ZigBee
+network. This is picked up by your IHD, and displayed live. The electricity meter also listens to the gas readings,
+and every so often uploads them over a mobile phone connection to a central data broker. This is then forwarded on
+your supplier. (smartme.co.uk)[https://www.smartme.co.uk/technical.html] has much more detail on this process.
+
+The key point is that your data can not only be forwarded on to your supplier, but you can grant access to other
+companies too. Enter [Glow](https://shop.glowmarkt.com/) who act as what is known as `DCC Other User` and use
+smart meter data to help companies do research and development. They also provide more tools for consumers to use
+their data.
 
 After installing the app you need to go through a security verification process. This involves uploading
 details of your electricity meter and address (by taking photos of your bill), a photo of some photo id, and a

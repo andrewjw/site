@@ -28,6 +28,7 @@ and extract the data myself.
 Fortunately the router UI contains some plain text data which looks easy to scrape. So, filled with confidence that
 this would be an easier approach that learning SNMP I spun up a [GitHub project](
 https://github.com/andrewjw/zyxelprometheus) and got to work cranking out some code.
+<!--more-->
 
 ```plain
 
