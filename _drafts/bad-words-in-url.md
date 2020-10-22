@@ -42,7 +42,7 @@ I don't remember how we discovered the cause, but it was due to the company's pr
 URLs that contained a "bad word". We weren't intentionally sending naughty words, but what we
 were doing is base 64 encoded essentially random data. Because base 64 encoded uses all the normal
 alpha-numeric characters, if you generate enough strings eventually you'll get some English words included
-in the output (see the (infinite monkey theorem)[https://en.wikipedia.org/wiki/Infinite_monkey_theorem]).
+in the output (see the [infinite monkey theorem](https://en.wikipedia.org/wiki/Infinite_monkey_theorem)).
 
 The solution was to add a random number to the beginning of our encoded data and then test the output against
 a list of bad words. If it matched we tried a different number, until we got a "clean" output. Once this

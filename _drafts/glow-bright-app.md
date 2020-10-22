@@ -20,7 +20,7 @@ If you're unlucky enough to have a SMETS1 meter you can ask for it to be upgrade
 The way these meters work is that both the electricity and gas meters broadcast their readings locally over a ZigBee
 network. This is picked up by your IHD, and displayed live. The electricity meter also listens to the gas readings,
 and every so often uploads them over a mobile phone connection to a central data broker. This is then forwarded on
-your supplier. (smartme.co.uk)[https://www.smartme.co.uk/technical.html] has much more detail on this process.
+your supplier. [smartme.co.uk](https://www.smartme.co.uk/technical.html) has much more detail on this process.
 
 The key point is that your data can not only be forwarded on to your supplier, but you can grant access to other
 companies too. Enter [Glow](https://shop.glowmarkt.com/) who act as what is known as `DCC Other User` and use
