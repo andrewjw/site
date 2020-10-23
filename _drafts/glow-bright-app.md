@@ -1,6 +1,12 @@
 ---
 title: Glow Bright
 layout: post
+date: 2020-11-04
+tags:
+- electricity
+- gas
+- glow
+permalink: "/2020/11/04/glow-bright/"
 ---
 When my electricity provider, nPower, upgraded me to a smart meter I was excited about getting access to more
 data about my electricity and gas usage. Unfortunately, it turned out that the extra data provided by the
@@ -32,4 +38,14 @@ details of your electricity meter and address (by taking photos of your bill), a
 selfie video of yourself saying "I'm My Name, and I accept the terms and conditions". After that your details
 are sent away for a manual verification process, which in my case took two days. I also received an email
 asking whether I was planning to buy their
-[display](https://shop.glowmarkt.com/products/display-and-cad-combined-for-smart-meter-customers).
+[display](https://shop.glowmarkt.com/products/display-and-cad-combined-for-smart-meter-customers). When I said yes
+they said they wouldn't process my application until it arrived. This was a bit frustrating as it meant I couldn't
+use the app in the meantime. Once the device arrived the application was processed quickly.
+
+![Unboxing The Glow IHD](/assets/glow_unboxing.jpg)
+
+![The Glow IHD Welcome Screen](/assets/glow_welcome.jpg)
+
+![The Glow IHD Wifi Password](/assets/glow_wifipassword.jpg)
+
+![The Glow IHD Meters Display](/assets/glow_meters.jpg)
