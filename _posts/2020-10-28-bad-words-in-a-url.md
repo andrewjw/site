@@ -5,7 +5,7 @@ date: 2020-10-28
 tags:
 - debugging
 - base64
-permalink: "/2020/10/21/bad-words-in-a-url/"
+permalink: "/2020/10/28/bad-words-in-a-url/"
 flickr_user: 'https://www.flickr.com/photos/tadsonbussey/'
 flickr_username: Tadson Bussey
 flickr_image: 'https://live.staticflickr.com/64/160251864_5093ae131f_w.jpg'
