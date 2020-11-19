@@ -1,7 +1,7 @@
 ---
 title: Meter Readings Over MQTT
 layout: post
-date: 2020-11-11
+date: 2020-11-25
 tags:
 - electricity
 - gas
@@ -9,9 +9,9 @@ tags:
 - mqtt
 - prometheus
 - grafana
-permalink: "/2020/11/11/meter-readings-over-mqtt/"
+permalink: "/2020/11/25/meter-readings-over-mqtt/"
 ---
-In my [previous post](/2020/11/04/glow-bright/) I talked about swapping the in-home device (IHD)
+In a [previous post](/2020/11/04/glow-bright/) I talked about swapping the in-home device (IHD)
 supplied by my electricty and gas company for one produced by [Glow](https://shop.glowmarkt.com/).
 This connects over wifi and gives access to the raw data coming from your smart meters over [MQTT](https://mqtt.org/).
 In order to collect this data an integrate it into my
@@ -39,3 +39,25 @@ def connect(args, on_message):
 
     client.loop_forever()
 ```
+
+As you can probably guess, the `on_message` callback is called every time you receive a message on your MQTT topic. In our
+case this will be the raw ZigBee data encoded as a JSON object. [This GIST](
+https://gist.github.com/ndfred/b373eeafc4f5b0870c1b8857041289a9) has a good summary of the values that are available, so I
+won't repeat them here. The details for the electricity meter are included under `elecMtr` then `0702`. There are a series
+of values for daily, weekly and monthly usage, but the most useful is the raw meter reading. We can extract this like so:
+
+```python
+elec_multiplier = int(elecMtr["03"]["01"], 16)
+elec_divisor = float(int(elecMtr["03"]["02"], 16))
+elec_meter = int(elecMtr["00"]["00"], 16)
+
+electricity_meter = elec_meter * elec_multiplier / elec_divisor
+```
+
+The raw meter reading sent a hex encoded integer, which is scaled by the given multiplier and divisor. Why it's like that
+I'm not really sure, but I do appreciate Glow providing as low level data as they can, even if it requires us to deal with
+some oddities like this. Once you've decoded and scaled the meter reading we can expose the 
+
+![Electricity Usage](/assets/electricity_usage.png)
+
+![Gas Usage](/assets/gas_usage.png)
