@@ -24,6 +24,7 @@ Technically Clockwise is a browser plugin which integrates with Google Calendar.
 meetings occurring over the next week and rearranges them to resolve conflicts, and to try and create blocks of
 "focus time". Focus time is a chunk of meeting-free time, two hours or longer, in which you can get stuck into
 work, rather than having a series of 30-minute gaps where it's hard to achieve anything.
+<!--more-->
 
 Clockwise will only move meetings that you've enabled it for, so you don't have to worry about it completely
 messing up your schedule. You also don't need all participants in a meeting to have Clockwise installed. It can
