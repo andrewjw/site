@@ -56,7 +56,7 @@ electricity_meter = elec_meter * elec_multiplier / elec_divisor
 
 The raw meter reading sent a hex encoded integer, which is scaled by the given multiplier and divisor. Why it's like that
 I'm not really sure, but I do appreciate Glow providing as low level data as they can, even if it requires us to deal with
-some oddities like this. Once you've decoded and scaled the meter reading we can expose the 
+some oddities like this. Once you've decoded and scaled the meter reading we can expose the
 
 ![Electricity Usage](/assets/electricity_usage.png)
 
