@@ -10,6 +10,11 @@ tags:
 - prometheus
 - grafana
 permalink: "/2020/11/25/meter-readings-over-mqtt/"
+flickr_user: 'https://www.flickr.com/photos/richietheg/'
+flickr_username: Richard Graham
+flickr_image: 'https://live.staticflickr.com/6104/6281350520_8637092377.jpg'
+flickr_imagelink: 'https://www.flickr.com/photos/richietheg/6281350520/'
+flickr_imagename: 'Electricity'
 ---
 In a [previous post](/2020/11/04/glow-bright/) I talked about swapping the in-home device (IHD)
 supplied by my electricity and gas company for one produced by [Glow](https://shop.glowmarkt.com/).
@@ -20,7 +25,7 @@ topic and expose the data to Prometheus.
 
 This was quite similar to my previous project to expose [statistics from my router](
 https://www.theandrewwilkinson.com/2020/10/21/router-stats-to-prometheus/), but as this was processing
-JSON data being exposed over MQTT it was a lot simpler than parsing raw text over SSH. As before I created
+JSON data being exposed over MQTT it was a lot simpler than parsing raw text over SSH. As before I created a
 [GitHub repo](https://github.com/andrewjw/glowprom) with my usual Python linting, testing and build scripts set up.
 
 Connecting to MQTT is straightforward, using the [Paho MQTT library](https://pypi.org/project/paho-mqtt/). When they've
@@ -61,11 +66,11 @@ usual way.
 
 The queries I'm using in Grafana are as follows:
 
-```
+```prometheus
 rate(meter{type="electricity"}[5m])*1000*3600
 ```
 
-```
+```prometheus
 increase(meter{type="gas"}[30m])*10
 ```
 
