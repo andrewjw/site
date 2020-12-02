@@ -1,7 +1,7 @@
 ---
 title: Meter Readings Over MQTT
 layout: post
-date: 2020-11-25
+date: 2020-12-02
 tags:
 - electricity
 - gas
@@ -9,7 +9,7 @@ tags:
 - mqtt
 - prometheus
 - grafana
-permalink: "/2020/11/25/meter-readings-over-mqtt/"
+permalink: "/2020/12/02/meter-readings-over-mqtt/"
 flickr_user: 'https://www.flickr.com/photos/richietheg/'
 flickr_username: Richard Graham
 flickr_image: 'https://live.staticflickr.com/6104/6281350520_8637092377.jpg'
@@ -83,8 +83,8 @@ The raw data appears to be in tens of cubic meters, so we multiply by 10 to get 
 
 ![Gas Usage](/assets/gas_usage.png)
 
-The graphs above show my usage over the course of a day. In the electricity graph, you can clearly see when the oven was on (2 pm-6 pm)
-and when I was charging my car (3 pm-5 pm). Other spikes during the day are the kettle or toaster being used. The peak right at the end
-is our dishwasher starting. Even in the middle of the night, our fridge running is clearly visible as a series of regular peaks. The gas
-data is much noisier, although you can see when we get up and go to bed. I think a longer analysis of gas usage will probably be more
-interesting.
+The graphs above show my usage electricity over the course of a day, and gas over a week. In the electricity graph, you can clearly
+see when the oven was on (2 pm-6 pm) and when I was charging my car (3 pm-5 pm). Other spikes during the day are the kettle or toaster
+being used. The peak right at the end is our dishwasher starting. Even in the middle of the night, our fridge running is clearly visible
+as a series of regular peaks. The gas data is much noisier, although you can see when we get up and go to bed. I think a longer analysis
+of gas usage will probably be more interesting.
