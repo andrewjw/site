@@ -1,0 +1,43 @@
+title: Scheduled SMART Checks
+layout: post
+date: 2020-12-18
+tags:
+- management
+permalink: "/2020/12/30/scheduled-smart-checks/"
+---
+`/Users/andrew/Library/LaunchAgents/smartctl.plist`
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>smartctl</string>
+        <key>Program</key>
+        <string>/Users/andrew/bin/smartctl</string>
+        <key>StartCalendarInterval</key>
+        <dict>
+            <key>Hour</key>
+            <integer>0</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+            <key>Weekday</key>
+            <integer>1</integer>
+       </dict>
+       <key>AbandonProcessGroup</key>
+       <true/>
+    </dict>
+</plist>
+```
+
+```bash
+#!/bin/bash
+
+/opt/local/sbin/smartctl --all /dev/disk1 -s on
+
+/opt/local/sbin/smartctl --all /dev/disk1 -t short 2>&1 > /dev/null
+
+sleep 600
+
+/opt/local/sbin/smartctl --all /dev/disk1 | /usr/bin/mail -s 'MacBook SMART' andrewjwilkinson@gmail.com
+```
