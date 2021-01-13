@@ -15,6 +15,15 @@ allowed_keys = set([
 ])
 
 def check_file(fn):
+    if not fn.endswith(".md"):
+        print(f"{fn}: Filename incorrect - should end in .md.")
+        exit_code = 1
+
+    first_line = open(fn).readline()
+    if first_line != "---\n":
+        print(f"{fn}: First line should be --- but was '{first_line}''")
+        exit_code = 1
+
     front_matter_raw = front_matter_re.match(open(fn).read()).group(1)
 
     front_matter = yaml.load(front_matter_raw, Loader=yaml.BaseLoader)
@@ -29,7 +38,7 @@ def check_file(fn):
     return exit_code
 
 def main():
-    files = glob.glob("_drafts/*.md") + glob.glob("_posts/*.md")
+    files = glob.glob("_drafts/*") + glob.glob("_posts/*")
 
     exit_code = 0
 
