@@ -8,4 +8,4 @@ bundle install
 ./run_checks.sh
 bundle exec jekyll build
 
-#rsync -avc --delete _site/ $SSH_USER@$SSH_HOST:site/
+rsync -avc --delete _site/ $SSH_USER@$SSH_HOST:site/
