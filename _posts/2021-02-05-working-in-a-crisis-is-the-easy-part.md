@@ -26,6 +26,7 @@ Calming people down, and protecting your team are important skills for a team le
 to make pragmatic technical decisions is something all developers should know. And recognising when
 your stakeholders are crying wolf and you can push back on fixing their fire is important. For us,
 back in March, it was pretty clear that this was a real crisis and we needed to do all we can to help.
+<!--more-->
 
 Things have moved on since then, and although the world is still suffering, from the perspective of
 us writing software to help keep people fed, things are pretty normal. The challenge for my new team
