@@ -1,10 +1,10 @@
 ---
 title: Working In A Crisis Is The Easy Part
 layout: post
-date: 2021-01-13
+date: 2021-02-05
 tags:
 - management
-permalink: "/2021/01/13/working-in-a-crisis-is-the-easy-part/"
+permalink: "/2021/02/05/working-in-a-crisis-is-the-easy-part/"
 flickr_user: 'https://www.flickr.com/photos/zrfraileyphotography/'
 flickr_username: Zach Frailey
 flickr_image: 'https://live.staticflickr.com/8706/17015337294_377f13e105.jpg'
@@ -13,7 +13,7 @@ flickr_imagename: 'Fire Fight, 2015'
 ---
 Recently one of my team asked me how they were doing, and to be fair I think they've been doing
 great. The challenge though is that they started as team leader right about the time that
-COVID-19 hit. Working for an online supermarket, particularly around March 2020 was certainly challenging,
+COVID-19 hit. Working for an online supermarket, around March 2020 was definitely challenging,
 but in some ways it actually made things easier. When there is a fire to put out, it's easy to know
 what to do next - you put the fire out! And after that? You put the next fire out!
 
@@ -28,7 +28,7 @@ your stakeholders are crying wolf and you can push back on fixing their fire is 
 back in March, it was pretty clear that this was a real crisis and we needed to do all we can to help.
 
 Things have moved on since then, and although the world is still suffering, from the perspective of
-us writing software to help keep people fed things are pretty normal. The challenge for my new team
+us writing software to help keep people fed, things are pretty normal. The challenge for my new team
 leader starts now.
 
 With a quieter backlog things become much more uncertain. What is the right thing to work on next?
