@@ -1,10 +1,16 @@
 ---
 title: Scheduled SMART Checks
 layout: post
-date: 2020-12-18
+date: 2021-03-10
 tags:
 - mac
-permalink: "/2020/12/30/scheduled-smart-checks/"
+- smart
+permalink: "/2021/03/10/scheduled-smart-checks/"
+flickr_user: 'https://www.flickr.com/photos/philipus/'
+flickr_username: Philip Dygeus
+flickr_image: 'https://live.staticflickr.com/5822/29711988683_96e4c16c23.jpg'
+flickr_imagelink: 'https://www.flickr.com/photos/philipus/29711988683'
+flickr_imagename: 'Maxtor hard drive'
 ---
 For years hard disks (both spinning rust and SSDs) have had a built in monitoring system that tracks
 various metrics about the health of your disk, called [SMART](https://en.wikipedia.org/wiki/S.M.A.R.T.).
@@ -19,6 +25,7 @@ strategy, but in most home situations people don't have spare laptops or hard dr
 It would be relatively easy for operating system vendors to automatically detect SMART capabable drives
 and automatically run a check every so often. If it fails, they could pop up a warning about a potential
 imminent failure. As far as I know though, no-one does this.
+<!--more-->
 
 There is a simple command line tool that lets you interrogate SMART attributes yourself,
 [`smartctl`](https://www.smartmontools.org/). It is available in all Linux distribution package repositories,
@@ -70,3 +77,9 @@ your laptop on.
 </plist>
 ```
 
+On my work laptop `smartctl` is reporting `PASSED`, but one attribute is failing. I guess we just need
+to wait and see what happens. Fingers crossed it holds out until I can get Apple-silicon-powered MacBook Pro.
+
+```
+173 Wear_Leveling_Count     0x0032   096   096   100    Old_age   Always   FAILING_NOW 12309581794157
+```
