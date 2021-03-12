@@ -80,6 +80,6 @@ your laptop on.
 On my work laptop `smartctl` is reporting `PASSED`, but one attribute is failing. I guess we just need
 to wait and see what happens. Fingers crossed it holds out until I can get Apple-silicon-powered MacBook Pro.
 
-```
+```plain
 173 Wear_Leveling_Count     0x0032   096   096   100    Old_age   Always   FAILING_NOW 12309581794157
 ```
