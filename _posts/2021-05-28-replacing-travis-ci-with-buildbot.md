@@ -7,7 +7,7 @@ tags:
 - buildbot
 - blog
 - open source
-permalink: "/2021/05/28/replacing-travis-ci-with-buildot/"
+permalink: "/2021/05/28/replacing-travis-ci-with-buildbot/"
 flickr_user: 'https://www.flickr.com/photos/99781513@N04/'
 flickr_username: Scott Lewis
 flickr_image: 'https://live.staticflickr.com/7577/16086839412_099ea08f05.jpg'
