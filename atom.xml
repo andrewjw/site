@@ -25,7 +25,10 @@ layout: null
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <content type="html">
+        {{ post.content | xml_escape }}
+        <img src="https://www.google-analytics.com/collect?v=1&amp;tid=UA-172404424-1&amp;cid=rss&amp;dt={{ post.title | uri_escape }}&amp;dp={{ post.url | uri_escape }}" />
+    </content>
  </entry>
  {% endfor %}
 
