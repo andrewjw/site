@@ -27,7 +27,7 @@ layout: null
    <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">
         {{ post.content | xml_escape }}
-        <img src="https://www.google-analytics.com/collect?v=1&amp;tid=UA-172404424-1&amp;cid=rss&amp;dt={{ post.title | uri_escape }}&amp;dp={{ post.url | uri_escape }}" />
+        <img src="https://www.google-analytics.com/collect?v=1&amp;tid=UA-172404424-1&amp;cs=rss&amp;dt={{ post.title | uri_escape }}&amp;dp={{ post.url | uri_escape }}" />
     </content>
  </entry>
  {% endfor %}
