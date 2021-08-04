@@ -32,7 +32,16 @@ across your codebase (particularly if you use something like
 well-defined project to address that debt.
 
 Let's now consider the case where people say that code is as not as easy to test as it should be.
-This is much harder to define a rule for, than outdated versions. What you can do though it
+This is much harder to define a rule for, compared to outdated versions. What you can do though it
 defined coding standards to enforce testability. Perhaps you always want to use dependency
 injection to make it easy to mock dependencies out. Maybe instead you're worried about your
-tests being too high-level and therefore too fragile.
+tests being too high-level and therefore too fragile. Your coding standard should define acceptable
+patterns which can then be compared to your code to provide a list of targets for refactoring.
+Providing your obtained enough buy in and agreement when defining the standards there should be
+little argument about what code to tackle. This is likely to highlight a large number of targets
+so prioritising based on a measure of flakiness is probably worthwhile.
+
+The final case I want to consider is the more general case where people suggest that your code
+contains "anti-patterns" that need to be refactored. 
+
+
