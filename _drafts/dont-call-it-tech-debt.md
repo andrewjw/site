@@ -12,7 +12,7 @@ directed projects then you're still unlikely to be successful with a tech debt p
 because getting agreement for what actually is tech debt is nigh-on impossible. Everyone
 has their own pet peeve that they will want to tackle as part of that project.
 
-My solution to this problem is to avoid using the word tech debt. Sometimes tech debt is clear - 
+My solution to this problem is to avoid using the word tech debt. Sometimes tech debt is clear -
 it might be a database that is outside of its support lifecycle or a library that is many versions
 behind the current release. More common is that when people say "tech debt" they mean things like
 code that is not as testable as they would like, or which follows some patterns that they declare
