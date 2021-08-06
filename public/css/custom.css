@@ -73,3 +73,7 @@ label.small-block {
     display: block;
     font-size: small;
 }
+
+code {
+    padding: .25em 0em;
+}
