@@ -1,5 +1,5 @@
 ---
-layout: _post
+layout: post
 title: Deriving From Untypable Classes
 date: 2021-08-06
 tags: python
@@ -16,7 +16,7 @@ going to be getting deep into the weeds of Python typing.
 One of the biggest recent changes to Python has been the introduction of type annotations. Back in the dim and
 distant past I did my third-year university project on type inference in Python, around the time of Python
 2.3. Now though, it's a much more mainstream part of the Python ecosystem. Alongside tools like
-[black](https://black.readthedocs.io/en/stable/), [pylint](http://pylint.pycqa.org/en/latest/) the type
+[black](https://black.readthedocs.io/en/stable/) and [pylint](http://pylint.pycqa.org/en/latest/), the type
 checker [mypy](https://mypy.readthedocs.io/en/stable/) is a core part of my standard Python set-up.
 
 Adding type annotations to your code, and integrating a type checker into your CI pipeline gives you many
@@ -78,7 +78,7 @@ def query(sql: str) -> QueryJob
     return job
 ```
 
-The new function call `get_job` returns a union of all different job types there are, but the original `query`
+The new function call `get_job` returns a union of all of the different job types, but the original `query`
 function only returns a `QueryJob`. Because the job id refers to the query we're executing `get_job` can only
 ever return a `QueryJob`, but there's no way for any static analyser to know that. `pylint` relies on type
 inference, and as far as I know doesn't use the type annotations to calculate return types. `pylint` infers
