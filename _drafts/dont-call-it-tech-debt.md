@@ -42,6 +42,4 @@ little argument about what code to tackle. This is likely to highlight a large n
 so prioritising based on a measure of flakiness is probably worthwhile.
 
 The final case I want to consider is the more general case where people suggest that your code
-contains "anti-patterns" that need to be refactored. 
-
-
+contains "anti-patterns" that need to be refactored.
