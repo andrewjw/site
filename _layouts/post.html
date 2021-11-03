@@ -20,6 +20,11 @@ published: true
       <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
     </div>
   {% endif %}
+  {% if page.unsplash_image %}
+    <div style="float: right; margin-left: 5px;">
+        <img src="/assets/unsplash/{{ page.unsplash_image }}" width="400" alt="{{ page.unsplash_title }}">
+    </div>
+  {% endif %}
 
   {{ content }}
 
@@ -30,6 +35,9 @@ published: true
    {% for image in page.flickr %}
    <p>Photo <a href="{{ image.imagelink }}">{{ image.imagename }}</a> by <a href="{{ image.user }}">{{ image.username }}</a>.</p>
    {% endfor %}
+  {% endif %}
+  {% if page.unsplash_image %}
+  <p>Photo {{ page.unsplash_title }}</a> by {{ page.unsplash_user }} from <a href="{{ page.unsplash_url }}">Unsplash</a>.</p>
   {% endif %}
 </div>
 
