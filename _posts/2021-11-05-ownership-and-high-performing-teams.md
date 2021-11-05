@@ -50,14 +50,14 @@ feels like they are making progress they will start to feel a sense of ownership
 Another aspect of feeling ownership is a connection to your clients. How easy this depends strongly
 on what type of business you're in, but it's worth fostering this connection if you can. Maybe people
 can spend a day shadowing a client? If you run user experience research then developers sitting in on
-a few sessions will help build that connection. Developers don't need to build a complete picture as a
+a few sessions will help build that connection. Developers don't need to build as complete a picture as a
 product manager or UX researcher needs to, but if you're building something that it's not possible to
 dog food then gaining some first-hand connection with a subset of users will help people to think about
 them in less abstract terms.
 
 To try and build an understanding of your clients you might be able to get one to attend a town hall
 or other meeting and talk about what impact your changes have had on them, what their priorities are,
-or a recent success that your software has enabled? Hearing directly from a client, and putting a face
+or a recent success that your software has enabled. Hearing directly from a client, and putting a face
 and a voice to them is hard to beat as a way to build empathy and understanding of your users.
 
 If you've been successful you should start to notice a change in the behaviour of the team. They might be more proactive
