@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Ownership and High Performing Teams
-date: 2021-11-04
+date: 2021-11-05
 tags: management
-permalink: "/2021/11/04/ownership-and-high-performing-teams/"
+permalink: "/2021/11/05/ownership-and-high-performing-teams/"
 unsplash_image: hands.jpg
 unsplash_title: jewish memorial berlin - human reconnection between love and hate
 unsplash_url: https://unsplash.com/photos/_UIVmIBB3JU
