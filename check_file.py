@@ -11,7 +11,7 @@ front_matter_re = re.compile("---\n(.*?)---\n", re.M | re.DOTALL)
 allowed_keys = set([
     "layout", "title", "date", "tags", "permalink",
     "flickr_user", "flickr_username", "flickr_image", "flickr_imagelink", "flickr_imagename",
-    "flickr"
+    "flickr", "unsplash_image", "unsplash_title", "unsplash_url", "unsplash_user"
 ])
 
 def check_file(fn):
