@@ -33,7 +33,23 @@ In the office, you might have a network of people that you bump into and then go
 are goldmines of unintentional knowledge transfer. When working remote, whether that's full time or even part-time, these
 networks take more effort to maintain and build, but it's effort that's well worth spending.
 
-Schedule regular catch ups with people, just half an hour is plenty of time to keep the relationship alive and gain a
+Schedule regular catch-ups with people, just half an hour is plenty of time to keep the relationship alive and gain a
 nugget of useful information. As well as catching up with people you already know, ask them explicitly who else they
 think you should talk to? You're not going to bump into people randomly in a Zoom call, so be more intentional about
 expanding your network.
+
+If you have information that might be useful to others, then share it. Similar to what I was talking about above,
+look for others that you can catch up with and give them information. Also in a world full of cross-continent collaboration
+and multiple timezones written sharing of information is more valuable than ever. If you're feeling fancy then putting
+together a newsletter for your department is a great way to spread the word about what you're working on.
+
+I'm a big fan of the [5/15 update](https://lethain.com/weekly-updates/), which is probably a topic for a future post.
+The summary however is that each week you spend 15 minutes writing a summary of what you've been working on, aiming for it to take
+five minutes for someone to read. I post mine in a slack channel, but you could share it over email or wherever fits with your
+company culture. This has benefits to me as it lets me look back over what I've achieved in the last year, it helps me organise
+my thoughts on what's happened in the last week, and I try to commit myself to goals for the following week. It is also useful to
+others because they can see what I'm working on, what I'm thinking about and generally what is going on in my world - exactly
+what you might get from a chat over coffee or sitting near me in an office.
+
+Of course, you could argue that intentionality comes with a cost (usually time), and if the pandemic is over why don't we all just
+go back to the office where we get this for free?
