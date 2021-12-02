@@ -1,6 +1,14 @@
 ---
 layout: post
 title: Office Based Osmosis
+date: 2021-12-03
+tags: management office
+permalink: "/2021/12/03/office-based-osmosis/"
+flickr_user: 'https://www.flickr.com/photos/andrew_j_w/'
+flickr_username: Andrew Wilkinson
+flickr_image: 'https://live.staticflickr.com/65535/50258474061_fb5c33c494.jpg'
+flickr_imagelink: 'https://www.flickr.com/photos/andrew_j_w/50258474061/'
+flickr_imagename: 'Water drops on leaves'
 ---
 Recently my collegue Chris Sheldon [posted an article](https://medium.com/@chris.sheldon/under-pressure-3d64147e110e) titled
 "[Under Pressure](https://medium.com/@chris.sheldon/under-pressure-3d64147e110e)". It's excellent so please take a few minutes
@@ -53,3 +61,19 @@ what you might get from a chat over coffee or sitting near me in an office.
 
 Of course, you could argue that intentionality comes with a cost (usually time), and if the pandemic is over why don't we all just
 go back to the office where we get this for free?
+
+At the time of writing the pandemic is very much not over, and the Omicron variant is rearing its ugly head, so returning to
+the office is not desirable for everyone. But probably more importantly, it's pretty clear that hybrid, or even fully remote
+teams are going to the default in the future, rather than the exception. Whether it's just someone who works in another country,
+or the whole team who are remote there is likely to some degree of remote working, and for a hybrid team the lack of office
+based osmosis is more of a risk than for fully remote teams.
+
+With a fully remote team everyone is in the same boat. No-one is getting the in-person benefits, so everyone needs to make an
+effort to compensate. With a hybrid team some people will be benefiting so and it's easy for them to forget that remote workers
+are missing out. In a hybrid team it's cructial that everyone makes an effort to include all team members in discussions and
+knowledge sharing. While the team lead can share information, that should be a last resort and it's the whole team's
+responsibility to ensure that everyone is included.
+
+Despite some of the challenges of remote working, and remote leadership, this is now my preferred way of working. It's certainly
+been a steep learning curve, but with some focus and effort feel it's possible to get the best of both worlds. Do you have any
+tips for sharing knowledge while working remotely? Let me know in the comments below.
