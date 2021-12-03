@@ -34,11 +34,11 @@ If you miss out on this knowledge then it can result in duplicated work or confl
 So, what can you do to improve things?
 
 If you aren't going to acquire knowledge spontaneously, then you need to be more intentional about both obtaining and
-sharing knowledge. The key point here is that you be more deliberate about acquiring knowledge, but it's also important
+sharing knowledge. The key point here is that you must be more deliberate about acquiring knowledge, but it's also important
 to be deliberate about sharing knowledge so others can benefit too.
 
-In the office, you might have a network of people that you bump into and then go for coffee or a lunch. These conversations
-are goldmines of unintentional knowledge transfer. When working remote, whether that's full time or even part-time, these
+In the office, you might have a network of people that you bump into and then go for coffee or a lunch with. These conversations
+are goldmines of unintentional knowledge transfer. When working remotely, whether that's full time or even part-time, these
 networks take more effort to maintain and build, but it's effort that's well worth spending.
 
 Schedule regular catch-ups with people, just half an hour is plenty of time to keep the relationship alive and gain a
@@ -63,17 +63,17 @@ Of course, you could argue that intentionality comes with a cost (usually time),
 go back to the office where we get this for free?
 
 At the time of writing the pandemic is very much not over, and the Omicron variant is rearing its ugly head, so returning to
-the office is not desirable for everyone. But probably more importantly, it's pretty clear that hybrid, or even fully remote
-teams are going to the default in the future, rather than the exception. Whether it's just someone who works in another country,
-or the whole team who are remote there is likely to some degree of remote working, and for a hybrid team the lack of office
-based osmosis is more of a risk than for fully remote teams.
+the office is not desirable for everyone. But probably more importantly, it's pretty clear that hybrid or even fully remote,
+teams are going to the default in the future, rather than the exception. Whether it's just someone who works in another country
+or the whole team who are remote there is likely to be some degree of remote working, and for a hybrid team, the lack of
+office-based osmosis is more of a risk than for fully remote teams.
 
-With a fully remote team everyone is in the same boat. No-one is getting the in-person benefits, so everyone needs to make an
-effort to compensate. With a hybrid team some people will be benefiting so and it's easy for them to forget that remote workers
-are missing out. In a hybrid team it's cructial that everyone makes an effort to include all team members in discussions and
+With a fully remote team, everyone is in the same boat. No one is getting the in-person benefits, so everyone needs to make an
+effort to compensate. With a hybrid team, some people will be benefiting so it's easy for them to forget that remote workers
+are missing out. In a hybrid team, it's crucial that everyone makes an effort to include all team members in discussions and
 knowledge sharing. While the team lead can share information, that should be a last resort and it's the whole team's
 responsibility to ensure that everyone is included.
 
 Despite some of the challenges of remote working, and remote leadership, this is now my preferred way of working. It's certainly
-been a steep learning curve, but with some focus and effort feel it's possible to get the best of both worlds. Do you have any
+been a steep learning curve, but with some focus and effort I feel it's possible to get the best of both worlds. Do you have any
 tips for sharing knowledge while working remotely? Let me know in the comments below.
