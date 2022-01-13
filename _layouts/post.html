@@ -28,6 +28,10 @@ published: true
 
   {{ content }}
 
+  {% if page.youtube %}
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {% endif %}
+
   {% if page.flickr_image %}
   <p>Photo <a href="{{ page.flickr_imagelink }}">{{ page.flickr_imagename }}</a> by <a href="{{ page.flickr_user }}">{{ page.flickr_username }}</a>.</p>
   {% endif %}
