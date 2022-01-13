@@ -22,6 +22,7 @@ the car was to Northern Ireland and back, which necessitated a single stop in ea
 Supercharger and was quick and easy, exactly what you'd hope for. While we were there we were able to charge
 using a three-pin plug where we were staying, so charge was not an issue. Unfortunately, the rented accommodation
 we were staying in on Jersey didn't have a plug near the car park, so charging overnight was not an option.
+<!--more-->
 
 On our first day we happened to park in a car park with some 7kw chargers. We thought why not get a top-up while
 we buy some food, so we plugged in and tried to work out how to start a charge. Most chargers on

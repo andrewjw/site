@@ -19,6 +19,7 @@ Ok, are you back? Great. Chris talks in part about feeling like he misses absorb
 Osmosis, in case you've forgotten your biology lessons, is the spontaneous passage of something through a semipermeable
 membrane. In this case, we're talking about knowledge entering your head without you needing to consciously do anything
 about it.
+<!--more-->
 
 Working from home can indeed be an isolating time. In my experience, short term productivity
 and intra-team relationships are (in general) not affected by working from home. The biggest impact is on inter-team

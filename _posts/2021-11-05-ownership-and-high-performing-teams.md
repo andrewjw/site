@@ -22,6 +22,7 @@ off a project to refactor the code base and make testing easier.
 Maybe you can reduce failed deployments, but at what cost? Slower development caused by extra
 bureaucracy and more policies to follow is going increase friction, delay releases and
 eventually lead to an unhappier team.
+<!--more-->
 
 The underlying problem is that the team feels disconnected from their software. They might own it
 according to your org chart, but they don't _feel_ ownership of it. This lack of ownership can
