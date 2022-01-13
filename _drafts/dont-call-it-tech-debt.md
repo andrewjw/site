@@ -42,4 +42,22 @@ little argument about what code to tackle. This is likely to highlight a large n
 so prioritising based on a measure of flakiness is probably worthwhile.
 
 The final case I want to consider is the more general case where people suggest that your code
-contains "anti-patterns" that need to be refactored.
+contains "anti-patterns" that need to be refactored. As with "untestable" code "anti-patterns"
+is not a well defined word. To create a project to tackle this type of technical debt first try
+to agree what is meant by the term "anti-pattern". It's easier to start from the positive side of
+this debate - set up a group of developers to discuss and agree on what libraries, patterns and
+other code style guidelines you want encourage. The group should write this up and get agreement
+from the whole team that they buy into the recommendations.
+
+Depending on the scale of your "anti-pattern" challenges you might want to tackle only a small
+portion of your issues initally, to avoid doing too much work up front before you start to see
+the benefit. The working group could tackle just one or two issues initaillly, and expand the
+guidance later on.
+
+Once the guidelines have been published you should then compare them to your existing codebase.
+Keep track of all the places that your code deviates from the recommendations, and then prioritise
+the areas you want to fix first. Depending on the scale of your challenges you might want do the
+analysis at a higher or lower level, or even better is if you can use automated tools to find and
+track deviations.
+
+
