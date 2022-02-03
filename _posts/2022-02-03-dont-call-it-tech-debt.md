@@ -17,7 +17,7 @@ a vague "tackle tech debt" project and expect to get sponsorship from the busine
 
 If you're lucky enough to have a portion of your time available to be used for engineering
 directed projects then you're still unlikely to be successful with a vague tech debt project.
-Getting agreement for what tech debt actually is nigh-on impossible. Everyone
+Getting agreement for what tech debt actually is is nigh-on impossible. Everyone
 has their own pet peeve that they will want to tackle as part of that project.
 
 My solution to this problem is to avoid using the phrase tech debt. Sometimes tech debt is clear -
@@ -26,6 +26,7 @@ behind the current release. More common is that when people say "tech debt" they
 code that is not as testable as they would like, or which follows some patterns that they declare
 to be an anti-pattern. While there is broad agreement about what constitutes good code, the more
 detailed you get the more it becomes about personal opinions.
+<!--more-->
 
 The key to a good technical project is the same as with a good business-driven project - you need
 clear aims, a well-defined definition of done and a coherent set of steps to get you there. Let's
