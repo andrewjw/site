@@ -16,13 +16,13 @@ to bring to the table will not function as well as a group that can benefit from
 brought to bear on problems.
 
 When you start a leadership position your calendar suddenly fills up with meetings, so the idea of adding
-a daily meeting might seem crazy, and it probably is. But leadership is a different role to a developer, and 
+a daily meeting might seem crazy, and it probably is. But leadership is a different role to a developer, and
 you can use different processes to achieve the same goals.
 
 As a developer, simplifying greatly, you might work on one ticket, then move on to the next, all working towards
 completing a small number of projects. Leadership positions usually involve much longer running pieces of work,
 with many more running in parallel. I typically might touch on four or five of my current agenda items, progressing
-each one a little bit each time. There's not much use in giving a daily update, a weekly cadence shows a 
+each one a little bit each time. There's not much use in giving a daily update, a weekly cadence shows a
 better view of my progress.
 
 As a leadership team you probably already have a weekly meeting, so why not spend the first 15 minutes of that
