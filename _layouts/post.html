@@ -25,6 +25,11 @@ published: true
         <img src="/assets/unsplash/{{ page.unsplash_image }}" width="400" alt="{{ page.unsplash_title }}">
     </div>
   {% endif %}
+  {% if page.image %}
+    <div style="float: right; margin-left: 5px;">
+        <img src="/assets/{{ page.image }}" width="400" alt="{{ page.image_title }}">
+    </div>
+  {% endif %}
 
   {{ content }}
 
