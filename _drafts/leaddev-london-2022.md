@@ -101,7 +101,7 @@ As a senior leader you should ask people to support each other, and cascade this
 to your reports. You can scale empathy!
 
 ## What Dashboards Don't Tell You
-_[Laura Tacho](http://lauratacho.com/)
+_[Laura Tacho](http://lauratacho.com/)_
 
 As someone who is passionate about dashboards and trying to be data driven in management, this was my
 favourite talk of the conference.
@@ -127,5 +127,80 @@ She also recommended [GetDX.com](https://getdx.com/) as a tool to help you measu
 experience. Unfortunately it has a truly terrible website, with no information about the tool,
 or any hint of pricing, just a "request a demo" button. I really liked the sound of this tool,
 but it's going to be hard to for me to justify investing time in it.
+
+# Building The Perfect Asynchronous Meeting
+_[Alexandra Sunderland](https://twitter.com/alexandras_dev)
+
+How is an asynchronous different from Slack thread or an email? It's still scheduled like a meeting,
+but instead you just put deadlines into people's calendars about when they should have responded to
+the meeting. It requires all the usual good practices for meetings, but they're even more important.
+You should share timelines for the meeting, expections about what people should do, logistics of how
+to contribute (Google Docs, Miro, etc), and what you expect from people.
+
+Meetings don't need to be 100% async, but the preparation can be done before a shorter synchronous
+catch up. For a retro you could fill in the retro board ahead of time, and then have a meeting to
+discuss the board.
+
+This that can be asynchronous are information pushing or brainstorming. Relationship building should
+be synchronous.
+
+The benefits are that you get more time for thought, the context is more accessible (although more
+effort is required to set the agenda and keeping notes). The downsides are that it requires more
+coordination, and you don't get real time answers or fast paced discussion.
+
+This was a really interesting idea, and I intend to try it out for the next retrospective I run.
+
+# Skiller Whale Coding Competition
+
+During the conference [Skiller Whale](http://skillerwhale.com) were running a coding competition
+where the top three entries would win an Oculus Quest 2. The challenge was two fold. Firstly you
+needed to write an SQL query processing some customer data. The second part was to automate the
+submission so you could submit it quickly enough.
+
+The first part was pretty fiddly to get right. There was a customer table, and an orders table. The
+problem was to calculate the average rank of customers over a period, where customers are ranked
+daily based on the amount spend, including on days when they didn't spend anything. Ranking customers
+is easy enough using the [rank function](https://www.postgresql.org/docs/current/tutorial-window.html).
+The challenge comes from including customers on days they didn't order anything. This requires a `full
+outer join` between a table of dates and the customers, and then left joining onto the orders table.
+
+Each time you submitted an entry you were given a different date range and target rank to return. The
+second part of the challenge is to automate the submission so you can submit in less than one second.
+Luckily for me only two people completed this part, leaving the third spot open to the person with the
+most efficient query. I managed to sneak into third place by replacing the date table, which initially
+I was doing by running a distinct over the dates in the order table (requiring a full scan of the table),
+with the [`generate_series` function](https://www.postgresql.org/docs/current/functions-srf.html) which
+is much more efficent.
+
+I'll write a review of the Quest 2 after it arrives, thanks Skiller Whale!
+
+I've included the SQL I submitted below, just in case anyone is interested.
+
+{% highlight sql %}
+with sales_by_day as
+    (select dates.date, customers.id as customer_id, name,
+            rank () over
+                (partition by dates.date
+                    order by coalesce(sum(amount), 0) desc)
+                as pos
+        from customers
+             full outer join
+                (select @start_date
+                        + (n || ' day')::interval as date
+                    from generate_series(0, 30) n) as dates
+                on 1=1
+             left join orders on
+                orders.date >= @start_date
+                and orders.date <= @end_date
+                and orders.date=dates.date
+                and orders.customer_id=customers.id
+        group by dates.date, customers.id, name)
+select name, avg_pos from (
+    select name, avg(pos) as avg_pos,
+           rank () over (order by avg(pos) asc) as avg_rank
+        from sales_by_day group by customer_id, name
+) as avg_rank
+    where avg_rank=@rank limit 1
+{% endhighlight %}
 
 ![LeadDev London 2022](/assets/leaddev2022_room.jpeg)
