@@ -57,7 +57,7 @@ What does chaos look like? It can look like managing 20 people and still being o
 (depressingly this applies to me!) or doing five or more interviews a week because there aren't
 enough people available to do interviews.
 
-Try to recognise when you're doing poor work, or are wrong by being self-aware. Also, ask your manager
+Try to recognise when you're doing poor work, or are wrong, by being self-aware. Also, ask your manager
 what they think it would great looks like in your position, and compare it to your current performance.
 
 Your aim is to be replaceable. If there's a process you run can you automate it? Can you delegate it?
@@ -94,7 +94,7 @@ levels up it's easy to burn out worrying about the problems of all the people wh
 A technique that Phil has borrowed from therapy is
 [Solutions Focused Brief Theraphy](https://en.wikipedia.org/wiki/Solution-focused_brief_therapy). This
 works in a similar way to how we work in product and engineering teams, so is familiar to people. To follow it
-you ask the question "Imagine the problem you're facing as gone away. What do you notice?" Work with them
+you ask the question "Imagine the problem you're facing has gone away. What do you notice?" Work with them
 to define the steps to get there, and help them to execute those steps.
 
 As a senior leader, you should ask people to support each other, and cascade this to the people who report
@@ -131,8 +131,8 @@ but it's going to be hard for me to justify investing time in it.
 ## Building The Perfect Asynchronous Meeting
 _[Alexandra Sunderland](https://twitter.com/alexandras_dev)_
 
-How is an asynchronous different from a Slack thread or an email? It's still scheduled like a meeting,
-but instead, you just put deadlines into people's calendars about when they should have responded to
+How is an asynchronous meeting different from a Slack thread or an email? It's still scheduled like a meeting,
+but instead you just put deadlines into people's calendars about when they should have responded to
 the meeting. It requires all the usual good practices for meetings, but they're even more important.
 You should share timelines for the meeting, expectations about what people should do, logistics of how
 to contribute (Google Docs, Miro, etc), and what you expect from people.
@@ -181,7 +181,7 @@ Daniel's method of career planning. He asks people three questions.
 Aligning on performance with your manager is essential to moving forward on career building. You can only
 be successful if you're on the page as your manager about what success looks like.
 
-Don't wait for the role to up to begin preparing for it.
+Don't wait for the role to open up to begin preparing for it.
 
 As a manager, it's important not to project your motivation onto others. Although it's a dirty word, money
 is a valid motivation for going for a promotion!
