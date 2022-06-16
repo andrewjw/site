@@ -7,13 +7,15 @@ permalink: "/2022/06/23/leadev-london-2022-day-2/"
 image: leaddev2022_welcome.jpeg
 image_title: Welcome To LeadDev London 2022
 ---
-_Intro_
+Add Intro.
 
 The following is a summary of my notes from each talk. Any mistakes, errors or things that don't
 make sense are entirely my fault. Hopefully this will provide a flavour of each talk and inspire
 you to watch the ones that interest you the most to get the full story.
+<!-- more -->
 
 ## Navigating The Chaos of Scaling
+
 _[Vitor Reis](https://leaddev.com/community/vitor-reis)_
 
 xxx

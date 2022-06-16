@@ -28,7 +28,7 @@ Enough about the practicalities though, what about the content? No one goes to a
 food, but instead for what you can learn and take back to your job. LeadDev is a single-track
 conference, so you have no choice over what to see, but fortunately, most of the content was general
 enough to be useful to everyone. Both days were hosted by
-(Meri Williams)[http://blog.geekmanager.co.uk/] who did a great job keeping things moving swiftly,
+[Meri Williams](http://blog.geekmanager.co.uk/) who did a great job keeping things moving swiftly,
 and setting the scene for each talk.
 
 The one talk I did skip was about scaling a mobile app deployment process because I don't work in
@@ -48,6 +48,7 @@ things that don't make sense are entirely my fault. Hopefully, this will provide
 each talk and inspire you to watch the ones that interest you the most to get the full story.
 
 ## Navigating The Chaos of Scaling
+
 _[Vitor Reis](https://leaddev.com/community/vitor-reis)_
 
 This talk was about how to tell what a high-performing team look likes, but also about how to make the
@@ -73,6 +74,7 @@ As a leader, you should be writing all the time. Writing is thinking, and it hel
 thought process.
 
 ## Keeping Your Code Base Fun At Scale
+
 _[Raul Chedrese](https://twitter.com/raulchedrese)_
 
 This was a short talk looking at the question of how we ensure every developer has a fun experience?
@@ -86,6 +88,7 @@ Focus on building strong tools. Pick one thing and focus on that, rather than tr
 things at once.
 
 ## CSS: Cascading Support Systems
+
 _[Phil Bennett](https://twitter.com/phil_bennett)_
 
 Empathy in senior leadership is a superpower. It increases creativity and productivity. When you are several
@@ -101,6 +104,7 @@ As a senior leader, you should ask people to support each other, and cascade thi
 to your reports. You can scale empathy!
 
 ## What Dashboards Don't Tell You
+
 _[Laura Tacho](http://lauratacho.com/)_
 
 As someone who is passionate about dashboards and trying to be data-driven in management, this was my
@@ -129,6 +133,7 @@ or any hint of pricing, just a "request a demo" button. I really liked the sound
 but it's going to be hard for me to justify investing time in it.
 
 ## Building The Perfect Asynchronous Meeting
+
 _[Alexandra Sunderland](https://twitter.com/alexandras_dev)_
 
 How is an asynchronous meeting different from a Slack thread or an email? It's still scheduled like a meeting,
@@ -151,6 +156,7 @@ coordination, and you don't get real-time answers or fast-paced discussions.
 This was a really interesting idea, and I intend to try it out for the next retrospective I run.
 
 ## How to build trust as a new manager in a fully remote team
+
 _[Sadhana Gopal](https://sadhanagopal.medium.com/)_
 
 Being remote means you must be more intentional about building relationships. You are only represented
@@ -166,6 +172,7 @@ Use asynchronous meetings for productivity, but synchronous meetings for engagem
 Don't be always on - acknowledge FOMO, and take time to switch off.
 
 ## People Building: Career planning for your direct reports
+
 _[Daniel Burke](https://twitter.com/d2burke)_
 
 On a practical level, this was a really great talk. Daniel Burke was a really engaging, enthusiastic speaker
@@ -189,6 +196,7 @@ is a valid motivation for going for a promotion!
 It's not about the next level, it's about the next step.
 
 ## Taking the 737 to the MAX!
+
 _[Nickolas Means](https://twitter.com/nmeans)_
 
 This was a really great talk about the two Boeing 737MAX plane crashes, the failures that lead to the plane
