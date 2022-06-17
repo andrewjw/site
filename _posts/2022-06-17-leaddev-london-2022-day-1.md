@@ -1,9 +1,9 @@
 ---
 layout: post
 title: LeadDev London 2022 (Day 1)
-date: 2022-06-16
+date: 2022-06-17
 tags: conference leaddev
-permalink: "/2022/06/16/leadev-london-2022-day-1/"
+permalink: "/2022/06/17/leadev-london-2022-day-1/"
 image: leaddev2022_welcome.jpeg
 image_title: Welcome To LeadDev London 2022
 ---
