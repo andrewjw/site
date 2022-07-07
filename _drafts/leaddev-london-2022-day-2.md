@@ -7,16 +7,48 @@ permalink: "/2022/06/23/leadev-london-2022-day-2/"
 image: leaddev2022_welcome.jpeg
 image_title: Welcome To LeadDev London 2022
 ---
-Add Intro.
+Recently I was lucky enough to go to LeadDev London. You can read about my general thoughts, and the first
+day of talks, [here](https://www.theandrewwilkinson.com/2022/06/17/leadev-london-2022-day-1/). This
+post covers the second day.
 
 The following is a summary of my notes from each talk. Any mistakes, errors or things that don't
 make sense are entirely my fault. Hopefully this will provide a flavour of each talk and inspire
 you to watch the ones that interest you the most to get the full story.
 <!-- more -->
 
-## Navigating The Chaos of Scaling
+## Why we are writing a monolith, not a microservice
 
-_[Vitor Reis](https://leaddev.com/community/vitor-reis)_
+_[Supriya Srivatsa](https://supriyasrivatsa.com/)_
+
+xxx
+
+## A Commune in the Ivory Tower? - A new approach to architecture decisions
+
+_[Andrew Harmel-Law](https://twitter.com/al94781)_
+
+xxx
+
+## Sorry... you go ahead. The art of making space and claiming space in meetings
+
+_[Jemma Bolland](https://twitter.com/jemolova)_
+
+xxx
+
+## Using incidents to level-up your teams
+
+_[Lisa Karlin Curtis](https://twitter.com/paprikati_eng)_
+
+xxx
+
+## Be the catalyst in a junior engineer's career
+
+_[Amber Shand](https://twitter.com/amberleetech) and [Jessie Auguste](https://twitter.com/_jessie_belle)_ 
+
+xxx
+
+## Compassionate Refactoring
+
+_[Clare Sudbery](https://twitter.com/claresudbery)_
 
 xxx
 
