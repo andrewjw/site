@@ -20,29 +20,84 @@ you to watch the ones that interest you the most to get the full story.
 
 _[Supriya Srivatsa](https://supriyasrivatsa.com/)_
 
-xxx
+This talk was particularly relevant to me as we have a lot of monolith applications, and we constantly talk
+about the best way to split them into microservices... but maybe we don't need to?
+
+A key part of good architecture is abstraction, but it doesn't need to be over a network.
+
+At Atlassian they are building a _modular monolith_. Boundaries are hard to define, but you can use
+domain driven modules to split the code base.
 
 ## A Commune in the Ivory Tower? - A new approach to architecture decisions
 
 _[Andrew Harmel-Law](https://twitter.com/al94781)_
 
-xxx
+The typical way of making architectural decision is that a team requests a decision. The architects
+go and have a think, then the decision is recieved by the team, and they try to implement it. The
+problem is that this doesn't scale and can significantly delay the team.
+
+In this talk Andrew Harmel-Law proposes a decentralised way of making decision - The Advice Process.
+
+Anyone can make a decision, but before doing so they must seek advice. There are two parts to this
+process - a lightweight ADR (architectural decision record) and the Architecture Advice Forum.
+
+The ADR is a document that describes a decision that was made (or is in the process of being made).
+It should contain:
+
+* The title
+* Context - you should put real effort in so people can understand why you're making this decision.
+* Consequences of the decision
+* Advice - who gave what and when.
+
+The Architecture Advice Forum is a weekly meeting to discuss in progress ADRs and for people to give
+and receive advice.
+
+### How To Fail
+
+1. "Bad" decisions - how do people deal with decisions they disagree with? Give advice, but let the team do what they want.
+1. Old guard is the new guard - you don't get new people writing ADRs
+1. Off the grid decisions
+
+The last of these is quite serious as people are not following the process. You should ask them to
+write an ADR and find out why they didn't in the first place. Did they not realise it was a decision?
 
 ## Sorry... you go ahead. The art of making space and claiming space in meetings
 
 _[Jemma Bolland](https://twitter.com/jemolova)_
 
-xxx
+Only 35% of people say they are able to contribute in meetings, when they have a contribution to make.
+
+Some people think to talk and others talk to think. Don't let your meeting be dominated by the latter
+category of people.
+
+Make sure every knows how you would like them to contribute, and before you attend a meeting, if you're
+not confident, find out what areas you can best contribute too.
+
+Leave space before moving onto the next point - ask "is there anything I haven't considered?"
 
 ## Using incidents to level-up your teams
 
 _[Lisa Karlin Curtis](https://twitter.com/paprikati_eng)_
 
-xxx
+Incidents...
+
+* broaden your horizons.
+* teach you to fail gracefully.
+* teach you to make systems easier to debug.
+* are a chance to spend time with, and learn from, the best.
+
+To help people learn make incidents more accessible. You can lower the bar so you declare an
+incident more frequently. This will help you to practice for the big incidents when they do
+come.
+
+Encourage everyone to participate by announcing incidents sharing a public slack channel.
+
+While resolving the incident show your working - share as much as you can, including what you
+tried that didn't work so people can follow along after the incident.
 
 ## Be the catalyst in a junior engineer's career
 
-_[Amber Shand](https://twitter.com/amberleetech) and [Jessie Auguste](https://twitter.com/_jessie_belle)_ 
+_[Amber Shand](https://twitter.com/amberleetech) and [Jessie Auguste](https://twitter.com/_jessie_belle)_
 
 xxx
 
@@ -74,7 +129,7 @@ I was doing by running a distinct over the dates in the order table (requiring a
 with the [`generate_series` function](https://www.postgresql.org/docs/current/functions-srf.html) which
 is much more efficent.
 
-I'll write a review of the Quest 2 after it arrives, thanks Skiller Whale!
+I'll write a review of the Quest 2 when I've played with it a bit, thanks [Skiller Whale](http://skillerwhale.com)!
 
 I've included the SQL I submitted below, just in case anyone is interested.
 
