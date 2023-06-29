@@ -31,7 +31,7 @@ jobs:
           bundle install
       - name: Code Style
         run: |
-          ./code_style.sh
+          ./run_checks.sh
       - name: Build
         run: |
           bundle exec jekyll build
