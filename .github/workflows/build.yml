@@ -49,8 +49,9 @@ jobs:
       - name: Set up SSH Key
         run: |
           mkdir -p ~/.ssh/
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_key
-          sudo chmod 600 ~/.ssh/id_key
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PUBLIC_KEY }}" > ~/.ssh/id_rsa.pub
+          sudo chmod 600 ~/.ssh/id_rsa
           ssh-keyscan ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
