@@ -49,9 +49,9 @@ jobs:
       - name: Set up SSH Key
         run: |
           mkdir -p ~/.ssh/
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_key
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_key
           sudo chmod 600 ~/.ssh/id_key
-          ssh-keyscan $SSH_HOST > ~/.ssh/known_hosts
+          ssh-keyscan ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
@@ -73,4 +73,4 @@ jobs:
           bundle exec jekyll build
       - name: Deploy
         run: |
-          rsync -avc --delete _site/ $SSH_USER@$SSH_HOST:site/
+          rsync -avc --delete _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
