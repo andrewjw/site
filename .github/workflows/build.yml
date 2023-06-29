@@ -1,0 +1,29 @@
+name: Build And Test
+
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        bundle install
+    - name: Code Style
+      run: |
+        ./code_style.sh
+    - name: Build
+      run: |
+        bundle exec jekyll build
