@@ -158,3 +158,58 @@ Choose tasks that will build confidence in the codebase - tasks that require lea
 Tech debt reduction can be a good first task. Upgrades need little knowledge.
 
 Learn about the frameworks used, as well as the implementation.
+
+## Making the move to manager: Common pitfalls for new engineering leaders
+
+_[Jacqueline Pan](https://leaddev.com/community/jacqueline-pan)_ and _[Marlena Lui](https://leaddev.com/community/marlena-lui)_
+
+It's ok to say "I'd don't know" - be yourself!
+
+Know where your time is best spent, and at what level you need to know the details.
+
+## "I'm happy where I am" - Supporting team members that aren't seeking progression
+
+_[Ryan MacGillivray](https://twitter.com/RyanMacG)_
+
+There is a myth of constant promotion.
+
+> The practice of an art isn't to make a living, it's to make your soul grow
+>
+> -- Kurt Vonnegut
+
+Recognise cycles of ambition in your reports, and try to support when they are
+ambitious and when they aren't. Try to create a sense of development - grow in their
+role, not just move up.
+
+Don't deprioritise these people.
+
+## How to drive pace in your team
+
+_[Alicia Collymore](https://leaddev.com/community/alicia-collymore)_
+
+Pace is value delivered at speed.
+
+Some some defaults:
+
+* what are you willing to compromise on?
+* what are you not willing to risk?
+
+Give lots of room for autonomy, and be transparent by default.
+
+Create some hype! Get people excited about the value they will bring. Keep projects very short,
+and keep them simple - use tried and tested technology. Aim to do the hard bits first, and remember
+that work done is more important than work started.
+
+Be lazer focused on value. We're not here for fun, we're here to make money!
+
+Aim to beat deadlines - where can you get the best value for the time left
+over?
+
+Pain is expected, and that's ok - but try to give people on-call a break!
+
+The are risks with being this focused on value:
+
+* too much pressure
+* poor code quality (so aim to make active tradeoffs)
+* unhealthy competition
+  * not everyone is fast in the same way
