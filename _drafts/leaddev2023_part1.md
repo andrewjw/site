@@ -7,7 +7,7 @@ permalink: "/2023/07/06/leadev-london-2023-day-1/"
 image: leaddev2023_welcome.jpeg
 image_title: Welcome To LeadDev London 2023
 ---
-Recently I was lucky enough to attend Lead Dev London for a second time (see my review of 2022 
+Recently I was lucky enough to attend Lead Dev London for a second time (see my review of 2022
 [day 1](/2022/06/17/leadev-london-2022-day-1/) and [day 2](/2022/07/29/leadev-london-2022-day-2/)).
 As with last year this is a one track conference focused on leadership and engineering management.
 Unlike last year LeadDev were also running a separate one track conference at the same time, StaffPlus,
@@ -53,7 +53,7 @@ for a few months, and a few years later in 2009 Google published
 what they had learned about engineering management.
 
 For years it was accepted that that most senior engineer in the room would be your manager, but engineering
-management in a skill in its own right. 
+management in a skill in its own right.
 
 After COVID-19 there was a period of change known as "The Great Resignation", which was people taking controls
 of their careers.
@@ -72,15 +72,19 @@ Stay true to those.
 _[Lisa Karlin Curtis](https://twitter.com/tangentialism)_
 
 ### Flexibility
+
 You shouldn't have to stop to go on call.
 
 ### Autonomy
+
 Anyone on call has to be able to fix their own pain.
 
 ### Support
+
 Anyone on call must have support they can use.
 
 ### Pager Load
+
 The foundation of sustainable on call.
 
 ## Red 2.0: Transforming a game company
@@ -100,14 +104,13 @@ This talk might have been interesting if it was after the release of the Cyberpu
 is coming later this year, so they could compare the development process and reception to both, but
 since it's not been released yet there is not much to compare yet.
 
-
 ## What do you mean there’s no onboarding plan for engineering managers?
 
 _[Daniel Korn](https://twitter.com/korndaniel1)_
 
 Starting a new position is hard, and starting as an engineering manager is doubley hard because as a
 manager you will have people immediately looking to you for guidance, inspiration and support, despite
-being new to the company. 
+being new to the company.
 
 The key factors for a good on-boarding plan are creating a sense of belong, and deliverying a sense of
 accomplishment. It should prepare people for their new role, and connec them to the culture.
@@ -115,3 +118,43 @@ accomplishment. It should prepare people for their new role, and connec them to 
 Things that should not be part of the plan are making technical contributions, and making big changes.
 
 New employees should own their own on-boarding, so they are in charge of the pace and content.
+
+## Code is poetry
+
+_[Niranjan Uma Shankar](https://leaddev.com/community/niranjan-uma-shankar)_
+
+Maintaininga clean code base can have a huge impact on team performance. It will help you to:
+
+* find bugs early
+* add features quicker
+
+Try to encourage strategic programmng over tactical programming. Schedule time for spike sessions before
+you tackle a big project, because the first idea might not be the best. Recognise strategic programming
+with rewards.
+
+All code should look like one person wrote it, so normalise nit-picking - but be kind!
+
+## Why onboarding to a company's legacy codebase sucks, and how to make it work for your team
+
+_[Shanea Leven](https://leaddev.com/community/shanea-leven)_
+
+When onboarding you need to learn a number of things...
+
+About the code/system:
+
+* how does it fit together?
+* what are the domain objects?
+
+About working with the code:
+
+* deployment procedures
+* how to test
+
+But you need to remember that people are human! Memory retention is an issue, and it's hard to learn new things.
+
+Treat every code review as a mini on-boarding to that part of the code. Start small, and expand the scope strategically.
+Choose tasks that will build confidence in the codebase - tasks that require learning on a small number of new things.
+
+Tech debt reduction can be a good first task. Upgrades need little knowledge.
+
+Learn about the frameworks used, as well as the implementation.
