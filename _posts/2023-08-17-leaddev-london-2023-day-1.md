@@ -13,7 +13,7 @@ As with last year, this is a one-track conference focused on leadership and engi
 Unlike last year LeadDev was also running a separate one-track conference at the same time, StaffPlus,
 focused on Staff+ engineers. As I didn't have a ticket to that, I didn't attend any of those talks but it
 was great to see LeadDev expanding and I'll be considering StaffPlus next year.
-<!-- more -->
+<!--more-->
 
 The event took place at the same location, the Barbican in central London. The auditorium is a lovely
 space, with excellent sight lines from everywhere and good acoustics. The spaces outside are pretty

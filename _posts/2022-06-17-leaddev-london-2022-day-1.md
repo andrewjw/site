@@ -17,7 +17,7 @@ lovely venue. The seats in the hall were comfortable, and spending two days sitt
 as unpleasant as I had feared. The Barbican itself was built in the early 1980s, and a few areas,
 in particular, looked like they needed some refurbishment - particularly the downstairs men's
 toilets.
-<!-- more -->
+<!--more-->
 
 The food was very nice, particularly the [Banoffee pie](https://en.wikipedia.org/wiki/Banoffee_pie)
 from lunch on day two. The size of portions was generally good, although you did need to stock up

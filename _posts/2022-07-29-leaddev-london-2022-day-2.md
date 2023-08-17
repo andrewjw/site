@@ -14,7 +14,7 @@ post covers the second day.
 The following is a summary of my notes from each talk. Any mistakes, errors or things that don't
 make sense are entirely my fault. Hopefully, this will provide a flavour of each talk and inspire
 you to watch the ones that interest you the most to get the full story.
-<!-- more -->
+<!--more-->
 
 ## Why we are writing a monolith, not a microservice
 
