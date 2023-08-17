@@ -63,4 +63,3 @@ I see great value in writing a weekly update for yourself, and if as a manager y
 then others will follow suit. As a team of leaders, more communication, more collaboration and more alignment
 on what you're working on can only be a good thing. Let me know what you think about weekly updates in the
 comments below! Have you tried writing them? Have you commented on other people's updates?
-
