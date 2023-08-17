@@ -213,3 +213,66 @@ The are risks with being this focused on value:
 * poor code quality (so aim to make active tradeoffs)
 * unhealthy competition
   * not everyone is fast in the same way
+
+## How we support making architectural decisions
+
+_[Olena Sovyn](https://twitter.com/frontendgirl)_
+
+This was a description of their current process for making architectural decisions. They have
+7 members of Technical Design Architecture Advisors. They have different domain knowledge, and
+they rotate members regularly. Their aim is to be advisors, not gatekeepers.
+
+[This article from Stack Overflow was recommended](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)
+as it describes how to write a technical design document, and gives a good structure to start with.
+
+Once a change has been proposed the spend 3-4 days gathering further details, and 3-4 days discussing in the group
+before making a decision. The possible outcomes are:
+* Sponsered - they approve this change.
+* Needs update - the proposal needs more work.
+* Not recommended - they aren't gatekeepers, so can't say no, but they suggest not to do this change.
+* Review not needed - this is an area they don't cover.
+* Escalated - for some reason this needs to be looked at by senior management.
+
+## Where we’re going wrong with developer productivity
+
+_[Cat Hicks](https://leaddev.com/community/cat-hicks)_
+
+* Productivity is the stuff that is hard.
+* Productivity is never stopping.
+* Productivity is lonely.
+  * we need to work together!
+
+* Brittle productivity.
+  * productive is nothing goes wrong.
+
+vs
+
+* Resilliant productivity
+  * when something goes wrong, it delivers.
+
+Thriving means:
+* Agency
+* Learning Culture
+* Motiviation & Self Efficacy
+* Support & Belonging
+
+Good managers blame processes not people.
+
+Good productivity is adaptive and sustainable.
+
+## Engineering A More Equitable Hiring Process
+
+_[Jason Wodicka](https://github.com/jwodicka)_
+
+Equity = treated differently to enable the same outcome.
+
+Tolerance = You are allowed to be here.
+
+Inclusion = We want you to be here.
+
+Avoid pedigree bias - where they went to school or worked.
+
+Decouple assessments - clarity of speech and explanation vs
+just communication.
+
+
