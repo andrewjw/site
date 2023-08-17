@@ -1,9 +1,9 @@
 ---
 layout: post
 title: LeadDev London 2023 (Day 1)
-date: 2023-07-06
+date: 2023-08-17
 tags: conference leaddev
-permalink: "/2023/07/06/leadev-london-2023-day-1/"
+permalink: "/2023/08/17/leadev-london-2023-day-1/"
 image: leaddev2023_welcome.jpeg
 image_title: Welcome To LeadDev London 2023
 ---
