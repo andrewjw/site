@@ -68,7 +68,7 @@ jobs:
           bundle install
       - name: Build
         run: |
-          echo "ga_id: ${{ secrets.GA_ID }} >> _config.yml
+          echo "ga_id: ${{ secrets.GA_ID }}" >> _config.yml
           bundle exec jekyll build
       - name: Deploy
         run: |
