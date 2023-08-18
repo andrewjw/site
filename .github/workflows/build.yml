@@ -68,8 +68,7 @@ jobs:
           bundle install
       - name: Build
         run: |
-          bundle exec jekyll build ga_id="${{ secrets.GA_ID }}"
-          head _site/index.html
+          GA_ID="${{ secrets.GA_ID }}" bundle exec jekyll build
       - name: Deploy
         run: |
           rsync -avc --delete _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
