@@ -1,6 +1,6 @@
 <head>
   <pre>
-    site: {{ site | jsonify | escape }}
+    site: {{ site.ga_id | jsonify | escape }}
   </pre>
   {% if site.ga_id %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
