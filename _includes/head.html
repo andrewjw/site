@@ -1,4 +1,7 @@
 <head>
+  <pre>
+    site: {{ site | jsonify | escape }}
+  </pre>
   {% if site.ga_id %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
