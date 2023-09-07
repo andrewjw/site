@@ -69,6 +69,8 @@ jobs:
       - name: Build
         run: |
           GA_ID="${{ secrets.GA_ID }}" bundle exec jekyll build
+          cp requirements.txt _site/
       - name: Deploy
         run: |
           rsync -avc --delete _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
+          sudo pip3 install -r site/requirements.txt
