@@ -1,6 +1,13 @@
 ---
 layout: post
 title: Leadership Stand-Ups
+date: 2023-09-28
+tags: management
+permalink: "/2023/09/28/leadership-stand-ups/"
+unsplash_image: online_meeting.jpg
+unsplash_title: Untitled
+unsplash_url: https://unsplash.com/photos/YUuSAJkS3U4
+unsplash_user: "@sigmund"
 ---
 Standups are standard practice among developers, but when you move into the realm of leadership
 they stop. If you're a team leader then you will probably join your team's stand up meeting, but
@@ -27,19 +34,19 @@ better view of my progress.
 
 As a leadership team you probably already have a weekly meeting, so why not spend the first 15 minutes of that
 doing a stand-up? You could, but it's probably quite an expensive 15 minutes, and a rushed, or not well thought
-out update is probably not much use to the team.
+out update does not deliver any value.
 
 With remote working now being much more common the tools for asynchronous communication are far more widely available
 and used. Whether it's an email, a slack post or something else a weekly post that's shared with others will have benefits
 for yourself, and your leadership team.
 
-For the last two and a bit years I've been posting a weekly update on Slack, based on the concepts of the
+For the last three and a bit years I've been posting a weekly update on Slack, based on the concepts of the
 [5-15 updates](https://lethain.com/weekly-updates/) - a message that takes you 15 minutes to write, and five minutes to read.
-Much like with blogging (which I'm far less good at keeping to my schedule) the habit of writing every week, on a Friday
+Much like with blogging (where I'm far less good at keeping to my schedule) the habit of writing every week, on a Friday
 afternoon has been very beneficial.
 
 The act of writing each week and organising my thoughts on what I've achieved greatly increases my
-satisfcation that I've made a positive contribution, or sometimes forces me to realise I need to do
+satisfaction that I've made a positive contribution, or sometimes forces me to realise I need to do
 better next week! I divide my updates into two sections, what I've done, and what I hope to do next
 week. By publically committing to doing certain things next week I hold myself to account for them,
 and allow others to contribute if it's a topic they're interested in.
