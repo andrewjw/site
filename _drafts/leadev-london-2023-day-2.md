@@ -7,7 +7,7 @@ permalink: "/2023/09/21/leadev-london-2023-day-2/"
 image: leaddev2023_welcome.jpeg
 image_title: Welcome To LeadDev London 2023
 ---
-This is a follow up my first post about [day 1](/2023/08/17/leadev-london-2023-day-1/) of the 
+This is a follow-up to my first post about [day 1](/2023/08/17/leadev-london-2023-day-1/) of the 
 LeadDev London 2023 conference. That post covers my notes on talks from day 1, as well as my
 thoughts on the overall conference.
 
@@ -20,9 +20,9 @@ _[James Stanier](https://twitter.com/jstanier)_, _[Winter Wei](https://leaddev.c
 _[Janet Balneaves](https://leaddev.com/community/janet-balneaves)_
 
 This was an interesting style compared to the other talks at LeadDev. Instead of one or two people delivering
-a prepared talk here we had three people (one from each disipline of engineering, product and design) having
-a discussion. It worked pretty well, and they had clearly prepared so made some useful and interesting points.
-As it wasn't a prepared presetnation it perhaps wasn't as impactful as the other talks, but it was definitely
+a prepared talk, here we had three people (one from each discipline of engineering, product and design) having
+a discussion. It worked pretty well, and they had clearly prepared and made some useful and interesting points.
+As it wasn't a prepared presentation it perhaps wasn't as impactful as the other talks, but it was definitely
 a nice change of pace.
 
 ## Riding the rollercoaster of emotions
@@ -47,10 +47,10 @@ Dev and Ops -> Dev and DevOps -> Dev and SRE - rebranded teams, same problems.
 
 The goal of platform teams is the enablement of developers.
 
-Have a problem first mindset - ensure you are solving problems your developers are having. Developers know
+Have a problem-first mindset - ensure you are solving problems your developers are having. Developers know
 what problems they are having - ask them!
 
-Even with platform teams, agile is still valuable. Deliver incremental valud and get fast feedback.
+Even with platform teams, agile is still valuable. Deliver incremental value and get fast feedback.
 
 ## Cultural post mortems: an approach to learning and recovering when your people systems fail
 
@@ -67,7 +67,7 @@ Complex adaptive systems operate at the edge of chaos. We work in organisation c
 
 _[Rafia Qutab Kilian](https://leaddev.com/community/rafia-qutab-kilian)_
 
-Leadership is a learned skillset.
+Leadership is a learned skill set.
 
 Assess a company like you would a neighbourhood.
 
@@ -92,7 +92,7 @@ _[Bianca Costache](https://twitter.com/biiancacostache)_
 
 Create a sense of shared accountability and empowerment.
 
-Look at the mean number of interupted nights.
+Look at the mean number of interrupted nights.
 
 To improve the on-call experience tackle:
 
@@ -100,10 +100,10 @@ To improve the on-call experience tackle:
 * Poor documentation
 * Boring technical adversity (where all fixes lead to large problems)
 
-Make sure alerting is connect to service level targets. You don't want to 
+Make sure alerting is connected to service level targets. You don't want to 
 be alerted for issues that are not causing a problem.
 
-To improve avoid the status quo bias - "would you like a shovel? But I'm already
+To improve avoid the status quo bias - "Would you like a shovel? But I'm already
 using a spoon!"
 
 Atomic habits:
@@ -128,11 +128,11 @@ Prepare for the event:
 * Talk to direct leaders
 
 Through the layoff
-* Talk to impacted people immediatately
+* Talk to impacted people immediately
 * Talk to the company as soon as possible
-* Talk to teams as soon you can after you've talked to the company
+* Talk to teams as soon as you can after you've talked to the company
 
-Give people time to say goodby. Don't make another big change for a while.
+Give people time to say goodbye. Don't make another big change for a while.
 
 Moving forward there will be...
 
@@ -151,10 +151,10 @@ To help retain those who remain:
 
 _[Sinéad Cummings](https://leaddev.com/community/sinead-cummings)_
 
-Sleep bad = code bad - and as a new parent you are almost guarenteed to be sleeping bad.
+Sleep bad = code bad - and as a new parent, you are almost guaranteed to be sleeping bad.
 
 People who were working while someone was on leave will have seen changes be introduced slowly. The
-person who was on leave will see them introduced over night, when they return.
+person who was on leave will see them introduced overnight, when they return.
 
 Try to limit the knowledge gap created by long leave through documentation. Keep a record of changes
 for them to review when they return.
@@ -173,34 +173,107 @@ return. This is optional, people might not want a buddy.
 
 _[Sally Lait](https://leaddev.com/community/sally-lait)_
 
-xx
+A progression framework is a compass, not a map. If you have a checklist you'll end up with a specific
+view of what a good engineer looks like.
+
+Focus on outcomes, not prescribing how. If someone doesn't want to give talks, they could find ways
+to share their knowledge with others.
+
+Time is relative. You might say people need to demonstrate behaviours for six months, but for people
+on parental leave or who are part-time, this might not work. People should demonstrate behaviour over
+multiple quarters, but it is important to give people context about why time is important.
 
 ## Building for the underserved, solving for all
 
 _[Serah Njambi Kiburu](https://leaddev.com/community/serah-njambi-kiburu)_
 
-xx
+W3C four principles of accessibility:
+
+* Perceivable
+* Operable
+* Understandable
+* Robust - must work with a variety of assistive technologies, browsers and devices.
 
 ## Driving positive change through performance improvement plans
 
 _[Cristina Yenyxe Gonzalez Garcia](https://leaddev.com/community/cristina-yenyxe-gonzalez-garcia)_
 
-xx
+Performance Improvement Plans are one of the most challenging processes to navigate. Everyone understands
+the importance, but no one is excited about the prospect. They usually happen too late and are rushed. The
+aim should be to set the employee up for success.
+
+Stage 1: Before
+
+* Give initial feedback.
+* Try to avoid the PIP, but equally don't wait for multiple occurrences of the behaviour.
+* Actively work towards the employee's development.
+
+Stage 2: Initiation
+
+* Ensure they understand the full meaning.
+* Be clear about the good and bad outcomes.
+* Choose measurable outcomes to decide the result of the PIP.
+
+Stage 3: Duration
+
+* Celebrate improvements.
+* Don't let them think things are going well went they aren't.
+ * Give feedback
+ * Don't be too nice
+* Keep a written record.
+
+Stage 4: Wrap Up
+
+If it didn't work out...
+
+* Have a final review of unsatisfied criteria.
+* Clarify next steps
+
+It went well...
+
+* Celebrate success.
+* Follow up to ensure are continuing to go well.
 
 ## Exit plans and how to talk about them
 
 _[David Kiger](https://leaddev.com/community/david-kiger)_
 
-xx
+The average tenure of someone is three years, but we assume people will
+stay forever.
+
+Having conversations about exit plans allows people to move ahead with
+confidence. It is okay to talk about exit plans! Talking about will help
+you avoid surprises.
+
+Managers are better than most people at leaving because it happens to
+them so often.
+
+What if people think those who aren't sufficiently committed will be
+punished? Make it clear that people have options in the company, and
+support people who decide to leave.
+
+Avoid getting to the point where you have to make a last-minute save, as
+they rarely work for long.
+
+It is much cheaper and easier to engage with and retain current staff
+than to hire.
+
+You need a strong foundation of trust to have these conversations.
 
 ## Orchestrating thousands of bots from the cloud
 
 _[James Donkin](https://leaddev.com/community/james-donkin)_
 
-xx
+As I work for Ocado I can't really comment on this talk. It's worth
+watching if you want to see some of our snazzy technology though!
 
 ## The awful agony of the app store: When software delivery goes wrong
 
 _[Clare Sudbery](https://twitter.com/claresudbery)_
 
-xx
+As with last year, the conference was closed by a talk from Clare Sudbery.
+While I enjoyed that talk, I didn't connect with this
+one and didn't understand the point of it. It was about her attempts to build
+a mobile game, and the nonsensical rules and interactions with Apple's App
+Store. The only interesting idea I took away was the concept of a walking
+skeleton - a Hello World app that you can deploy, and then iterate on.
