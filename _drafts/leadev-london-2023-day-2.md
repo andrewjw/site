@@ -7,7 +7,7 @@ permalink: "/2023/09/21/leadev-london-2023-day-2/"
 image: leaddev2023_welcome.jpeg
 image_title: Welcome To LeadDev London 2023
 ---
-This is a follow-up to my first post about [day 1](/2023/08/17/leadev-london-2023-day-1/) of the 
+This is a follow-up to my first post about [day 1](/2023/08/17/leadev-london-2023-day-1/) of the
 LeadDev London 2023 conference. That post covers my notes on talks from day 1, as well as my
 thoughts on the overall conference.
 
@@ -100,7 +100,7 @@ To improve the on-call experience tackle:
 * Poor documentation
 * Boring technical adversity (where all fixes lead to large problems)
 
-Make sure alerting is connected to service level targets. You don't want to 
+Make sure alerting is connected to service level targets. You don't want to
 be alerted for issues that are not causing a problem.
 
 To improve avoid the status quo bias - "Would you like a shovel? But I'm already
@@ -127,7 +127,8 @@ Prepare for the event:
 * Take diversity into account
 * Talk to direct leaders
 
-Through the layoff
+Through the layoff:
+
 * Talk to impacted people immediately
 * Talk to the company as soon as possible
 * Talk to teams as soon as you can after you've talked to the company
@@ -218,8 +219,8 @@ Stage 3: Duration
 
 * Celebrate improvements.
 * Don't let them think things are going well went they aren't.
- * Give feedback
- * Don't be too nice
+  * Give feedback
+  * Don't be too nice
 * Keep a written record.
 
 Stage 4: Wrap Up
