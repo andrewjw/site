@@ -10,7 +10,7 @@ unsplash_url: https://unsplash.com/photos/YUuSAJkS3U4
 unsplash_user: "@sigmund"
 ---
 Standups are standard practice among developers, but when you move into the realm of leadership
-they stop. If you're a team leader then you will probably join your team's stand up meeting, but
+they stop. If you're a team leader then you will probably join your team's stand-up meeting, but
 often you only contribute a brief update, if anything at all. Mostly you just listen and perhaps
 facilitate discussion on other people's updates.
 
@@ -23,7 +23,7 @@ to bring to the table will not function as well as a group that can benefit from
 brought to bear on problems.
 
 When you start a leadership position your calendar suddenly fills up with meetings, so the idea of adding
-a daily meeting might seem crazy, and it probably is. But leadership is a different role to a developer, and
+a daily meeting might seem crazy, and it probably is. However leadership is a different role to a developer, and
 you can use different processes to achieve the same goals.
 
 As a developer, simplifying greatly, you might work on one ticket, then move on to the next, all working towards
@@ -33,14 +33,13 @@ each one a little bit each time. There's not much use in giving a daily update, 
 better view of my progress.
 
 As a leadership team you probably already have a weekly meeting, so why not spend the first 15 minutes of that
-doing a stand-up? You could, but it's probably quite an expensive 15 minutes, and a rushed, or not well thought
-out update does not deliver any value.
+doing a stand-up? You could, but it's probably quite an expensive 15 minutes, and a rushed, or not well-thought-out update does not deliver any value.
 
 With remote working now being much more common the tools for asynchronous communication are far more widely available
-and used. Whether it's an email, a slack post or something else a weekly post that's shared with others will have benefits
+and used. Whether it's an email, a Slack post or something else a weekly post that's shared with others will have benefits
 for yourself, and your leadership team.
 
-For the last three and a bit years I've been posting a weekly update on Slack, based on the concepts of the
+For the last three and a bit years, I've been posting a weekly update on Slack, based on the concepts of the
 [5-15 updates](https://lethain.com/weekly-updates/) - a message that takes you 15 minutes to write, and five minutes to read.
 Much like with blogging (where I'm far less good at keeping to my schedule) the habit of writing every week, on a Friday
 afternoon has been very beneficial.
@@ -56,12 +55,12 @@ able to see what is important to me, and either help or suggest things that I sh
 instead.
 
 Finally, while I've not had to write a [brag document](https://jvns.ca/blog/brag-documents/) in the sense that
-Julia Evans describes, I have found an archive of what I've been working on useful on occasions. Looking
+Julia Evans describes. I have found an archive of what I've been working on useful on occasions. Looking
 back through the updates it's clear that I'm not the same person I was when I started, and that's a great
 self-motivational tool.
 
 One problem with being a manager is that you occasionally get involved in secret work. This might be an HR
-process, or perhaps some company announcement that is not yours to announce. Hopefully these are few and far
+process, or perhaps some company announcement that is not yours to announce. Hopefully, these are few and far
 between, and for the HR work you should never make that public. Once something you have been working on has
 been published then you should include an update that describes your contribution, so the historical record
 is complete.
