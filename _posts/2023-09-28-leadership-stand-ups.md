@@ -25,6 +25,7 @@ brought to bear on problems.
 When you start a leadership position your calendar suddenly fills up with meetings, so the idea of adding
 a daily meeting might seem crazy, and it probably is. However leadership is a different role to a developer, and
 you can use different processes to achieve the same goals.
+<!--more-->
 
 As a developer, simplifying greatly, you might work on one ticket, then move on to the next, all working towards
 completing a small number of projects. Leadership positions usually involve much longer running pieces of work,
