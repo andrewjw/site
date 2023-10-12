@@ -77,3 +77,9 @@ label.small-block {
 code {
     padding: .25em 0em;
 }
+
+.sidebar .followme {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
