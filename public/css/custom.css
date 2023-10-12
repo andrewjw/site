@@ -80,6 +80,10 @@ code {
 
 .sidebar .followme {
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 1rem;
+    right: 1rem;
+}
+
+.sidebar .followme img {
+    display: inline;
 }
