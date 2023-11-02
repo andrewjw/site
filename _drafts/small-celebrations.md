@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Small Celebrations, Big Motivation
-date: 2023-10-12
+date: 2023-11-02
 tags: management
-permalink: "/2023/10/12/small-celebration/"
+permalink: "/2023/11/02/small-celebration/"
 ---
 Software development can sometimes feel like an endless treadmill. Push that commit, review that code,
 investigate and solve that bug. Rinse and repeat, day after day.
@@ -48,8 +48,8 @@ budget or roadmap meetings, so you shouldn't turn down the opportunity to highli
 Getting the business to truly value your work can be a double-edged sword. Having the CEO, or other
 high-level manager discuss a project, or even announce a goal related to it, is unmatched in the ability
 to help people feel like their work is important to the company, and to focus minds on exactly what you are
-trying to achieve. However, this level of attention can feel like the eye of Sauron and is not always welcome
-- especially if the work is particularly challenging or aspects of it are unknown. 
+trying to achieve. However, this level of attention can feel like the eye of Sauron and is not always welcome -
+especially if the work is particularly challenging or aspects of it are unknown.
 
 I believe the benefits of having a senior manager engage publically with a project your team is working on
 far outweigh the potential issues, so make sure you're using your meetings with them to advocate and sell
