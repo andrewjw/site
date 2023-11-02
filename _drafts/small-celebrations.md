@@ -4,6 +4,10 @@ title: Small Celebrations, Big Motivation
 date: 2023-11-02
 tags: management
 permalink: "/2023/11/02/small-celebration/"
+unsplash_image: small_celebrations.jpg
+unsplash_title: Man In White Dress Shirt Sitting Beside Woman In Black Long Sleeve Shirt
+unsplash_url: https://unsplash.com/photos/man-in-white-dress-shirt-sitting-beside-woman-in-black-long-sleeve-shirt-376KN_ISplE
+unsplash_user: "@krakenimages"
 ---
 Software development can sometimes feel like an endless treadmill. Push that commit, review that code,
 investigate and solve that bug. Rinse and repeat, day after day.
