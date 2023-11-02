@@ -6,7 +6,7 @@ import os
 import time
 import sys
 
-from akismet import Akismet
+from akismet import Akismet # type: ignore
 from github import Github
 
 user_ip = os.environ["REMOTE_ADDR"]

@@ -29,6 +29,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           bundle install
+      - name: Check Python
+        run: |
+          mypy *.py
       - name: Code Style
         run: |
           ./run_checks.sh
