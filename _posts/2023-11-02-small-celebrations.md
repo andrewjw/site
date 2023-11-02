@@ -24,6 +24,7 @@ made.
 It can be hard to know how to celebrate, and how often. Too frequently and you'll be celebrating things
 that are too small and simple, and it will seem forced. If you wait for the large projects to finish
 then you could be waiting for a very long time, and it will feel like you never celebrate anything.
+<!--more-->
 
 I'm not saying never celebrate the small stuff, and never celebrate the big projects. If someone has
 completed a particularly gnarly ticket, then it's worth shouting about. Take the team out for a meal
