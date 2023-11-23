@@ -4,6 +4,10 @@ title: Sustainable Software Development
 date: 2023-11-16
 tags: management
 permalink: "/2023/11/09/sustainable-software/"
+unsplash_image: mouse_ivy.jpg
+unsplash_title: White Apple Magic Mouse Beside Green Leaves
+unsplash_url: https://unsplash.com/photos/white-apple-magic-mouse-beside-green-leaves-a3pA4QNHVbk
+unsplash_user: "@larisabirta"
 ---
 When you're in the zone it can be hard to think about the future of the code you're writing, but
 the time you're spending writing it is just a fraction of its lifespan. Code may be written
@@ -34,7 +38,7 @@ simple changes, compared to software which is regularly altered.
 The DevOps movement helps significantly with maintainability as any manual process ages
 very quickly. Even with excellent documentation, it isn't easy to reliably follow a process you're not
 familiar with. Automation, particularly the build, test and deployment steps, are well worth the time spent on
-building them. If you can combine a tool like (Renovate)[https://github.com/renovatebot/renovate] with
+building them. If you can combine a tool like [Renovate](https://github.com/renovatebot/renovate) with
 a high-quality test suite, and a continuous deployment pipeline, you can focus on other things, safe in
 the knowledge that your application is being kept up to date with the latest security fixes.
 
@@ -57,7 +61,7 @@ Languages and libraries don't by themselves deliver value. They might enable you
 quicker compared to other choices, but only if you can unlock that advantage, and maintain it long-term.
 
 The other aspect is the community around the technology, and where you are comfortable sitting on the 
-(technology adoption lifecycle)[https://en.wikipedia.org/wiki/Technology_adoption_life_cycle]. It's certainly
+[technology adoption lifecycle](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle). It's certainly
 a good idea to keep abreast of new developments and experiment with them by building things you're happy
 to throw away once you've learned about them. But betting your company on a brand new library, that's only existed
 for a month and has one contributor, has a high risk of you depending on code that's been abandoned and either
@@ -68,7 +72,7 @@ something you are using.
 
 Most software development projects last many months or years. For people working in an Agile fashion, there might not
 even be a specific end goal, just an endlessly evolving set of requirements and software that is growing to meet them.
-(Burnout is a significant issue in software development)[https://www.forbes.com/sites/forbestechcouncil/2022/07/13/the-key-to-retaining-software-developers-stopping-burnout/]
+[Burnout is a significant issue in software development](https://www.forbes.com/sites/forbestechcouncil/2022/07/13/the-key-to-retaining-software-developers-stopping-burnout/)
 and as a leader, it is your job to recognise the signs and work to prevent it. If your team burns out, productivity
 and quality will collapse, and the costs will be much greater than if you had worked more sustainably.
 
@@ -79,7 +83,7 @@ development process.
 
 One of the most demoralising things about being a developer is working on software that is hard to change, but
 you don't have the permission, or time, to make the needed improvements. By dedicating an appropriate amount
-of time to (tech debt reduction)[https://www.theandrewwilkinson.com/2022/02/03/dont-call-it-tech-debt/] you not
+of time to [tech debt reduction](https://www.theandrewwilkinson.com/2022/02/03/dont-call-it-tech-debt/) you not
 only end up with more sustainable software but a more sustainable culture of development too. As a leader,
 you might need to defend this time, but by looking at security vulnerabilities in dependencies, or the risk that
 you will no longer be able to get support should you need it, it is possible to build a strong business case
@@ -92,7 +96,7 @@ give your customers a better experience, save your company money, and reduce the
 
 A centralised database clearly has a significantly smaller environmental impact than a blockchain-based ledger - even
 if you take into account techniques like
-(Ethereum's Proof of Stake)[https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/]. Which one is better
+[Ethereum's Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/). Which one is better
 depends on what your priorities are, and what tradeoffs you are willing to make. They are tradeoffs though, and they
 demand consideration during your design process.
 
