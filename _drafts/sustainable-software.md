@@ -60,7 +60,7 @@ between applications and focus on the logic and not the surrounding implementing
 Languages and libraries don't by themselves deliver value. They might enable you to deliver value
 quicker compared to other choices, but only if you can unlock that advantage, and maintain it long-term.
 
-The other aspect is the community around the technology, and where you are comfortable sitting on the 
+The other aspect is the community around the technology, and where you are comfortable sitting on the
 [technology adoption lifecycle](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle). It's certainly
 a good idea to keep abreast of new developments and experiment with them by building things you're happy
 to throw away once you've learned about them. But betting your company on a brand new library, that's only existed
