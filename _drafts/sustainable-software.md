@@ -13,7 +13,7 @@ When you're in the zone it can be hard to think about the future of the code you
 the time you're spending writing it is just a fraction of its lifespan. Code may be written
 once, but it will be edited a few times, perhaps copied once or twice, and likely executed many
 hundred, if not thousands or millions of times. You as a software developer will (hopefully) have
-a long and productive time in software development, as will the team you work with. And finally, you
+a long and productive career in software development, as will the team you work with. And finally, you
 also do your work on planet Earth (hi to any readers on the
 [ISS](https://en.wikipedia.org/wiki/International_Space_Station)), and without it you'd really
 struggle.
@@ -21,8 +21,7 @@ struggle.
 When creating or modifying an object or system that we intend to last for a long time, it is crucial
 to consider sustainability. This includes factors such as the sustainability of the source
 code, your or your team's ability to work on it for an extended period, and the software's impact on
-the environment. All of these aspects are significant and should be
-carefully considered.
+the environment. All of these aspects are significant and should be carefully considered.
 
 If you're working in a scrappy start-up, fighting for survival, then the long-term maintainability
 of your code will not be important to you. In most cases though, code can be expected to last
@@ -35,7 +34,7 @@ as will the operating system it runs on. These will provide new features, fix bu
 vulnerabilities. Software that has not been touched for a while requires significantly more time to make
 simple changes, compared to software which is regularly altered.
 
-The DevOps movement helps significantly with maintainability as any manual process ages
+The DevOps movement helps significantly with maintainability, as any manual process ages
 very quickly. Even with excellent documentation, it isn't easy to reliably follow a process you're not
 familiar with. Automation, particularly the build, test and deployment steps, are well worth the time spent on
 building them. If you can combine a tool like [Renovate](https://github.com/renovatebot/renovate) with
