@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Sustainable Software Development
-date: 2023-11-16
+date: 2023-12-07
 tags: management
-permalink: "/2023/11/09/sustainable-software/"
+permalink: "/2023/12/07/sustainable-software/"
 unsplash_image: mouse_ivy.jpg
 unsplash_title: White Apple Magic Mouse Beside Green Leaves
 unsplash_url: https://unsplash.com/photos/white-apple-magic-mouse-beside-green-leaves-a3pA4QNHVbk
