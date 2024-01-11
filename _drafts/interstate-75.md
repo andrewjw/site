@@ -24,7 +24,7 @@ contains an [RP2040](https://www.raspberrypi.com/products/rp2040/specifications/
 
 Assembling the panel is easy as the board slots into a space on the panel easily, and connects
 with a couple of provided wires. Just don't forget to connect the power cable as well as the
-data cable (as I did), as it powers up but the colours look very strange and you'll be confused
+data cable (as I did), as without it it powers up but the colours look very strange and you'll be confused
 for a while.
 
 Getting started with the board is straightforward as [Pimoroni provide an excellent guide](https://learn.pimoroni.com/article/getting-started-with-interstate-75),
