@@ -36,7 +36,7 @@ The additional libraries have a lot of useful functionality, like drawing lines 
 images, text, etc. However, I quickly discovered that the development process was not quite
 as slick as I would like. There's no way to run your code on your PC - it will only run on
 the physical hardware. Given I would like to mount the panel in my kitchen, having to plug
-it in every time I wanted to work on change was going to be impractical.
+it in every time I wanted to work on a change was going to be impractical.
 
 Partly to solve that inconvenience, and partly because I don't like to make things easy on myself,
 I built my own library, [i75](https://github.com/andrewjw/i75). This builds on top of
@@ -57,22 +57,22 @@ ok.
 
 As I write this I have not yet implemented all the displays I wanted to, but it does display the time,
 some bouncing balls (mostly as a test of speed), arrival and departure times from my local train
-station and the album art from whatever's playing on my Kitchen (Sonos)[https://www.sonos.com/].
+station and the album art from whatever's playing on my Kitchen [Sonos](https://www.sonos.com/).
 
-![Album Art From Sonos](/assets/i75_album_art.png)
+![Album Art From Sonos](/assets/i75_album_art.jpg)
 
 To further improve the speed of development, and to work around the memory and processor limitations
 the display has a [frontend](https://github.com/andrewjw/smartdisplay-frontend) and
 [backend](https://github.com/andrewjw/smartdisplay-backend) component. The backend is standard Python 3
 running in a Docker container on my [Synology NAS](https://www.synology.com/), and it does all the
-communication with downstream systems, and only returns the minimal JSON required for the display to show
+communication with downstream systems, and only returns minimal JSON for the display to show
 the required information. MicroPython includes a cut-down version of the `requests` library, which lets
 you make HTTP requests and parse the returned JSON. 
 
 One interesting challenge was handling Sonos album art. It was pretty obvious that the frontend wouldn't
-be able to handle loading the image directly, but even after retrieving and resizing it memory issues
-were a problem. The backend loads the album art and track information using the
-[SoCo](https://github.com/SoCo/SoCo), and then resizes the album down to 64x64 using [Pillow](https://python-pillow.org/).
+be able to cope with loading the image directly, but even after retrieving and resizing it memory issues
+were a problem. The backend loads the album art and track information using
+[SoCo](https://github.com/SoCo/SoCo), and then resizes the album cover down to 64x64 using [Pillow](https://python-pillow.org/).
 I had assumed this would be small enough to send to the frontend easily, as it's only 12kb, but when I stuck
 it in the JSON response I would get out-of-memory errors. Processing the JSON allocates quite
 a bit of memory, but it's still surprising it fails as there is 120kb available. Instead, I moved the loading
@@ -89,7 +89,7 @@ denser display to be able to distinguish them clearly.
 
 Unfortunately while dealing with network resources errors are inevitable. By default console output on the Interstate
 75W is lost, when not connected to a computer. To work around this I implemented the code below, which attempts to
-catch all exceptions, post the traceback to my backend server (which logs it) and then restart. This works well as I
+catch all exceptions, post the traceback to my backend server (which logs it) and then restarts. This works well as I
 can track any errors that occur, and it keeps running rather than needing to be power cycled. I have still experienced
 some issues with hangs, but I think those are to do with network calls missing timeouts. In future, I might try to
 add support for [Sentry](https://sentry.io/), but for now this keeps things running in event of bugs.
@@ -119,7 +119,7 @@ def log_error(error: str) -> None:
 ```
 
 I've had the panel running for several months so far, and it's been very reliable. The network connection is stable,
-and there have been no unexpected crashes or hangs. The display is very bright and clear, although it would be nice
+and there have been no problems that were not due to my code. The display is very bright and clear, although it would be nice
 to come up with a box or frame to hide the wires and make the whole package a bit neater. In general, I highly
 recommend the Interstate 75W if you're looking for a display for a home project.
 
