@@ -40,8 +40,8 @@ it in every time I wanted to work on a change was going to be impractical.
 
 Partly to solve that inconvenience, and partly because I don't like to make things easy on myself,
 I built my own library, [i75](https://github.com/andrewjw/i75). This builds on top of
-Pimoroni's MicroPython libraries, but only uses the ability to set individual pixels. It also 
-abstracts the Interstate 75 away, so when running on a PC it mimics the panel using 
+Pimoroni's MicroPython libraries, but only uses the ability to set individual pixels. It also
+abstracts the Interstate 75 away, so when running on a PC it mimics the panel using
 [PyGame](https://www.pygame.org/).
 
 ![Emulated Interstate 75W Display](/assets/i75_emulated_display.png)
@@ -67,7 +67,7 @@ the display has a [frontend](https://github.com/andrewjw/smartdisplay-frontend) 
 running in a Docker container on my [Synology NAS](https://www.synology.com/), and it does all the
 communication with downstream systems, and only returns minimal JSON for the display to show
 the required information. MicroPython includes a cut-down version of the `requests` library, which lets
-you make HTTP requests and parse the returned JSON. 
+you make HTTP requests and parse the returned JSON.
 
 One interesting challenge was handling Sonos album art. It was pretty obvious that the frontend wouldn't
 be able to cope with loading the image directly, but even after retrieving and resizing it memory issues
