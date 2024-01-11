@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Pimoroni's Interstate 75
-date: 2023-12-07
-tags: hardware
-permalink: "/2024/01/01/pimoroni-interstate-75/"
+title: Pimoroni's Interstate 75W
+date: 2024-01-11
+tags: 
+- grafana
+- hardware
+permalink: "/2024/01/11/pimoroni-interstate-75w/"
 ---
 I've previously [written about my attempts to get metrics about my house into Prometheus](/2020/10/14/house-measurements/)
 and to visualise them with Grafana. This project has gone well, and I can measure
