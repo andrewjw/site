@@ -59,7 +59,7 @@ As I write this I have not yet implemented all the displays I wanted to, but it 
 some bouncing balls (mostly as a test of speed), arrival and departure times from my local train
 station and the album art from whatever's playing on my Kitchen [Sonos](https://www.sonos.com/).
 
-![Album Art From Sonos](/assets/i75_album_art.jpg)
+![Album Art From Sonos](/assets/i75_albumart.jpg)
 
 To further improve the speed of development, and to work around the memory and processor limitations
 the display has a [frontend](https://github.com/andrewjw/smartdisplay-frontend) and
