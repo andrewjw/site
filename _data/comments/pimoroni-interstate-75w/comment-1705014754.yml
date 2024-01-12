@@ -3,61 +3,61 @@ date: '2024-01-11 23:12:34'
 url: 'None'
 message: >-
   Hi Andrew!
-
-let's consider using a simulated water sensor using a Raspberry Pi and a flow sensor. Note that the specifics can vary based on the actual hardware you have. In this example, we'll use the `RPi.GPIO` library for GPIO access on a Raspberry Pi. If you're using a different platform or sensor, adapt accordingly.
-
-First, install the required library:
-
-```bash
-pip install RPi.GPIO
-```
-
-Now, a simple example using a hypothetical flow sensor:
-
-```python
-import RPi.GPIO as GPIO
-import time
-
-class WaterSensor:
-    def __init__(self, pin):
-        self.pin = pin
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(self.pin, GPIO.IN)
-
-    def get_water_usage(self):
-        try:
-            pulse_count = 0
-            last_state = GPIO.input(self.pin)
-            
-            while True:
-                current_state = GPIO.input(self.pin)
-                
-                if current_state != last_state:
-                    pulse_count += 1
-
-                last_state = current_state
-                time.sleep(0.1)  # Adjust sleep time based on your sensor's characteristics
-
-        except KeyboardInterrupt:
-            # Cleanup GPIO on keyboard interrupt
-            GPIO.cleanup()
-
-# Assuming the flow sensor is connected to GPIO pin 17
-sensor = WaterSensor(pin=17)
-
-try:
-    # Fetch water usage from the sensor
-    water_usage = sensor.get_water_usage()
-
-    # For demonstration purposes, print the water usage every 5 seconds
-    while True:
-        print(f"Water Usage: {water_usage} pulses")
-        time.sleep(5)
-
-except KeyboardInterrupt:
-    print("\n  Exiting...")
-finally:
-    GPIO.cleanup()
-```
-
-Note that this is a simplified example, and the actual implementation might vary based on your specific flow sensor and hardware setup. Make sure to consult your sensor's datasheet and wiring diagrams for accurate integration.
+  
+  let's consider using a simulated water sensor using a Raspberry Pi and a flow sensor. Note that the specifics can vary based on the actual hardware you have. In this example, we'll use the `RPi.GPIO` library for GPIO access on a Raspberry Pi. If you're using a different platform or sensor, adapt accordingly.
+  
+  First, install the required library:
+  
+  ```bash
+  pip install RPi.GPIO
+  ```
+  
+  Now, a simple example using a hypothetical flow sensor:
+  
+  ```python
+  import RPi.GPIO as GPIO
+  import time
+  
+  class WaterSensor:
+      def __init__(self, pin):
+          self.pin = pin
+          GPIO.setmode(GPIO.BCM)
+          GPIO.setup(self.pin, GPIO.IN)
+  
+      def get_water_usage(self):
+          try:
+              pulse_count = 0
+              last_state = GPIO.input(self.pin)
+              
+              while True:
+                  current_state = GPIO.input(self.pin)
+                  
+                  if current_state != last_state:
+                      pulse_count += 1
+  
+                  last_state = current_state
+                  time.sleep(0.1)  # Adjust sleep time based on your sensor's characteristics
+  
+          except KeyboardInterrupt:
+              # Cleanup GPIO on keyboard interrupt
+              GPIO.cleanup()
+  
+  # Assuming the flow sensor is connected to GPIO pin 17
+  sensor = WaterSensor(pin=17)
+  
+  try:
+      # Fetch water usage from the sensor
+      water_usage = sensor.get_water_usage()
+  
+      # For demonstration purposes, print the water usage every 5 seconds
+      while True:
+          print(f"Water Usage: {water_usage} pulses")
+          time.sleep(5)
+  
+  except KeyboardInterrupt:
+      print("\n  Exiting...")
+  finally:
+      GPIO.cleanup()
+  ```
+  
+  Note that this is a simplified example, and the actual implementation might vary based on your specific flow sensor and hardware setup. Make sure to consult your sensor's datasheet and wiring diagrams for accurate integration.
