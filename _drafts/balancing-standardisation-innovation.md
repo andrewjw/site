@@ -28,12 +28,38 @@ use certain languages, frameworks, third-party libraries or design patterns to b
 is enforced, the end result is the same - developers trade off increased speed of delivery and reduced cognitive load against reduced
 freedom to write code as they wish.
 
-What happens if you want to do something that's doesn't fit with your PaaS platform? Or perhaps your company has standardised on Java
-and would like to write some code in Kotlin, or maybe Python? Maybe a new build tool has been released that you think will offer
+What happens if you want to do something that doesn't fit with your PaaS platform? Or perhaps your company has standardised on Java
+but you would like to write some code in Kotlin, or maybe Python? Maybe a new build tool has been released that you think will offer
 quicker builds or simpler configuration, speeding up your cycle time. Whatever the reason, changing the status quo is hard, but
-feeling like you are forced to stick with what is currently used is devastating for a developer's morale. You might also be missing
-out on improvements if you stick to your standards too strictly.
+feeling like you are forced to stick with what is currently used is devastating for a developer's morale.
 
 As a leader, you need to balance the benefits of standards against the threat of stagnation. While standards give you benefits with
 current development, you also need a defined policy to change the standard, and a process to update existing code to match the new rules.
+If you don't then your teams may be missing out on improved ways of working as the technological landscape evolves.
 
+To allow for innovation you need to create time for developers to experiment, with the expectation that the code written will often not
+be deployed into production. Whether or not an experiment is successful is not important - what matters is that you learn one way or
+the other. This innovation could take the form of 10% time, or just giving developers flexibility to add experiments onto the team roadmap
+with low friction. While hackathons are a good way to build experimental new apps, they aren't good at changing standards. Firstly they
+usually come around too infrequently, and with the goal of building something that you can demo they don't lend themselves well to more technical
+or process experiments.
+
+As well as providing time for developers to experiment, you also need to supply motivation. If developers see ideas for improvements
+being shot down without proper consideration, if they don't understand why they were rejected, or worst of all if suggestions
+languish with no decision either way then people will not choose to put themselves forward to experiment. Instead, they will feel like they 
+have to suffer with the current processes, even though they believe they can be improved. This is terminal for morale, and productivity.
+
+Once you have created a standard, and provided space to propose changes to it, the next step is to document the process for proposing those
+changes, how they will be judged (and by whom), and how they will applied. How this will work depends on the size and structure of your
+organisation. You might have an individual architect or head of engineering who would make sense as a decision-maker, even better would
+be a group of developers who can act as an architectural council. There should be a list of criteria that will be applied, so people know
+what to address in their proposal. Some examples could include the effect on running costs, the learning curve for other developers, or the effect on the
+speed of feature implementation (perhaps by reducing the number of lines of code that need to be written).
+
+Applying a standard change to your existing code base can be painful. It's important to approach it actively though, otherwise code that
+follows the old standard just becomes technical debt. You need to identify areas where the legacy method is used, and create a project or
+projects to update them. This won't happen overnight, but scheduling this alongside a team's other work is needed to avoid the old code
+languishing until it is forgotten about.
+
+How do you handle standardisation in your teams? Have you found a way to encourage innovation while maintaining a coherent code base?
+Please let me know in the comments below!
