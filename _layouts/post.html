@@ -48,6 +48,9 @@ published: true
   {% if page.unsplash_image %}
   <p>Photo {{ page.unsplash_title }}</a> by {{ page.unsplash_user }} from <a href="{{ page.unsplash_url }}">Unsplash</a>.</p>
   {% endif %}
+  {% if page.image_credit %}
+  <p>{{ page.image_credit }}</p>
+  {% endif %}
 </div>
 
 <div class="subscribe">
