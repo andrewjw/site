@@ -38,18 +38,18 @@ published: true
   {% endif %}
 
   {% if page.flickr_image %}
-  <p>Photo <a href="{{ page.flickr_imagelink }}">{{ page.flickr_imagename }}</a> by <a href="{{ page.flickr_user }}">{{ page.flickr_username }}</a>.</p>
+  <p class="post_footer">Photo <a href="{{ page.flickr_imagelink }}">{{ page.flickr_imagename }}</a> by <a href="{{ page.flickr_user }}">{{ page.flickr_username }}</a>.</p>
   {% endif %}
   {% if page.flickr %}
    {% for image in page.flickr %}
-   <p>Photo <a href="{{ image.imagelink }}">{{ image.imagename }}</a> by <a href="{{ image.user }}">{{ image.username }}</a>.</p>
+   <p class="post_footer">Photo <a href="{{ image.imagelink }}">{{ image.imagename }}</a> by <a href="{{ image.user }}">{{ image.username }}</a>.</p>
    {% endfor %}
   {% endif %}
   {% if page.unsplash_image %}
-  <p>Photo {{ page.unsplash_title }}</a> by {{ page.unsplash_user }} from <a href="{{ page.unsplash_url }}">Unsplash</a>.</p>
+  <p class="post_footer">Photo {{ page.unsplash_title }}</a> by {{ page.unsplash_user }} from <a href="{{ page.unsplash_url }}">Unsplash</a>.</p>
   {% endif %}
   {% if page.image_credit %}
-  <p>{{ page.image_credit }}</p>
+  <p class="post_footer">{{ page.image_credit }}</p>
   {% endif %}
 </div>
 
