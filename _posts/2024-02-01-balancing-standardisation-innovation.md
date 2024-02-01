@@ -61,7 +61,7 @@ be a group of developers who can act as an architectural council. There should b
 what to address in their proposal. Some examples could include the effect on running costs, the learning curve for other developers, or the effect on the
 speed of feature implementation (perhaps by reducing the number of lines of code that need to be written).
 
-Applying change in standards to your existing code base can be painful. It's important to approach it actively though, otherwise code that
+Applying a change in standards to your existing code base can be painful. It's important to approach it actively though, otherwise code that
 follows the old standard just becomes technical debt. You need to identify areas where the legacy method is used, and create a project or
 projects to update them. This won't happen overnight, but scheduling this alongside a team's other work is needed to avoid the old code
 languishing until it is forgotten about.
