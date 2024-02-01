@@ -6,22 +6,22 @@ tags: management
 permalink: "/2024/02/01/balancing-standardisation-innovation/"
 ---
 
-Previously I posted about [Sustainable Software Development](https://www.theandrewwilkinson.com/2023/12/07/sustainable-software/)
-where I talked about how to build software that can be maintained and improved over the long term, and running teams that can
+In my earlier post [Sustainable Software Development](https://www.theandrewwilkinson.com/2023/12/07/sustainable-software/)
+I talked about how to build software that can be maintained and improved over the long term, and how to run teams that can
 work without burning out. In this post, I want to expand on one area of this - how to maintain innovation while using standards
 to reduce diversity in your code base.
 
 Snow-flake applications, which have unique characteristics compared to others in your estate, take a significantly outsized amount
-of time to maintain. The extra complexity requires specialist knowledge in your developers, and time taken to context switching between
-applications is increased. You also don't benefit from the economies of scale, where you can apply improvements across many of your
-applications simultaneously.
+of time to maintain. This extra complexity requires specialist knowledge in your developers, and the time taken to context switching
+between applications is increased. You also don't benefit from the economies of scale, where you can apply improvements across many
+of your applications simultaneously.
 
 Historically, sharing code across applications would be done through shared libraries, but the modern software development landscape
 is more complex and many companies are moving to Platform-as-a-Service models (PaaS). This is where the infrastructure used to run
-an application is more than just a server with a CPU, some memory and disk. Instead, it is a whole ecosystem of APIs, developer tools
+an application is more than just a server with a CPU, some memory and a disk. Instead, it is a whole ecosystem of APIs, developer tools
 and a platform for running code. Whether internally developed, or purchased from an external company, PaaS systems are chosen because
-they abstract developers away from much of the drudgery they previously would have had to work through but constrain them to only using
-services provided by the platform.
+they abstract developers away from much of the drudgery that previously they would have had to work through, but this also constrains
+them to only using services provided by the platform.
 
 PaaS is not the only form of standardisation though, companies will usually have policies (whether implicit or explicit) that they only
 use certain languages, frameworks, third-party libraries or design patterns to build their applications. However standardisation
@@ -47,7 +47,7 @@ or process experiments.
 As well as providing time for developers to experiment, you also need to supply motivation. If developers see ideas for improvements
 being shot down without proper consideration, if they don't understand why they were rejected, or worst of all if suggestions
 languish with no decision either way then people will not choose to put themselves forward to experiment. Instead, they will feel like they 
-have to suffer with the current processes, even though they believe they can be improved. This is terminal for morale, and productivity.
+have to suffer with the current processes, even though they believe that it can be improved. This is terminal for morale, and productivity.
 
 Once you have created a standard, and provided space to propose changes to it, the next step is to document the process for proposing those
 changes, how they will be judged (and by whom), and how they will applied. How this will work depends on the size and structure of your
@@ -56,7 +56,7 @@ be a group of developers who can act as an architectural council. There should b
 what to address in their proposal. Some examples could include the effect on running costs, the learning curve for other developers, or the effect on the
 speed of feature implementation (perhaps by reducing the number of lines of code that need to be written).
 
-Applying a standard change to your existing code base can be painful. It's important to approach it actively though, otherwise code that
+Applying change in standards to your existing code base can be painful. It's important to approach it actively though, otherwise code that
 follows the old standard just becomes technical debt. You need to identify areas where the legacy method is used, and create a project or
 projects to update them. This won't happen overnight, but scheduling this alongside a team's other work is needed to avoid the old code
 languishing until it is forgotten about.
