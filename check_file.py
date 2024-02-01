@@ -12,7 +12,7 @@ allowed_keys = set([
     "layout", "title", "date", "tags", "permalink",
     "flickr_user", "flickr_username", "flickr_image", "flickr_imagelink", "flickr_imagename",
     "flickr", "unsplash_image", "unsplash_title", "unsplash_url", "unsplash_user",
-    "youtube", "image", "image_title"
+    "youtube", "image", "image_title", "image_credit"
 ])
 
 def check_file(fn):
