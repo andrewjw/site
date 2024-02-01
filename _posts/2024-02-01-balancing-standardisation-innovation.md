@@ -26,6 +26,8 @@ and a platform for running code. Whether internally developed, or purchased from
 they abstract developers away from much of the drudgery that previously they would have had to work through, but this also constrains
 them to only using services provided by the platform.
 
+<!--more-->
+
 PaaS is not the only form of standardisation though, companies will usually have policies (whether implicit or explicit) that they only
 use certain languages, frameworks, third-party libraries or design patterns to build their applications. However standardisation
 is enforced, the end result is the same - developers trade off increased speed of delivery and reduced cognitive load against reduced
