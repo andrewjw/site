@@ -4,6 +4,9 @@ title: Balancing Standardisation With Innovation
 date: 2024-02-01
 tags: management
 permalink: "/2024/02/01/balancing-standardisation-innovation/"
+image: robot_coding_standards.jpeg
+image_title: A robot changing a list of coding standards.
+image_credit: Image created with Bing Image Creator.
 ---
 
 In my earlier post [Sustainable Software Development](https://www.theandrewwilkinson.com/2023/12/07/sustainable-software/)
