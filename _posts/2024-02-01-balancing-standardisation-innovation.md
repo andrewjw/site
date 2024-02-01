@@ -46,7 +46,7 @@ or process experiments.
 
 As well as providing time for developers to experiment, you also need to supply motivation. If developers see ideas for improvements
 being shot down without proper consideration, if they don't understand why they were rejected, or worst of all if suggestions
-languish with no decision either way then people will not choose to put themselves forward to experiment. Instead, they will feel like they 
+languish with no decision either way then people will not choose to put themselves forward to experiment. Instead, they will feel like they
 have to suffer with the current processes, even though they believe that it can be improved. This is terminal for morale, and productivity.
 
 Once you have created a standard, and provided space to propose changes to it, the next step is to document the process for proposing those
