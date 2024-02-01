@@ -8,7 +8,7 @@ div.post {
     margin-bottom: 1em;
 }
 
-div.footer {
+div.footer, p.post_footer {
     color: grey;
     font-size: 0.9em;
 }
