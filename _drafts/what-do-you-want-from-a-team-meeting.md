@@ -28,14 +28,27 @@ to be non-threatening enough that they feel comfortable with sharing their
 issues with the group.
 
 What if you were able to get the team to work together on topics before they
-become a problem? To build relationships that foster collaboration outside the
-regular meeting, and allow people to be more proactive rather than reactive.
+become a problem? If you could build relationships that foster collaboration
+outside the regular meeting, and allow people to be proactive rather than
+reactive.
 
 In the book Time To Think by Nancy Kline she talks about creating a "Thinking
 Environment". Now, this book has quite a few problems (to put it quite mildly)
 and I'm not a fan of it, but the core idea is sound - by giving people the space,
 time and attention to think clearly they will reward you with insights that may
 lead to a step change in their, and your team's, performance.
+
+Team meetings between individual contributors and those between a team of leaders have a
+different focus. When it is ICs collaborating the team should be working on the same domain.
+While they might have different foci or skills, the challenges they face and the goals they
+are working towards will be similar. For a team of leaders this is not necessarily true,
+and the differences between the areas represented in the meeting can mean there is little
+overlap in the challenges being faced.
+
+In both cases though you should aim to mould your team members into a team. Where
+there are more disparate people involved this will be harder, but can be achieved
+by reiterating why you are part of the same team, and what the common objectives are.
+Either way, you want to turn the group of people in your meeting into a team.
 
 So how do you do that? First, open your meeting with a positive "icebreaker".
 Just asking people to share one positive thing that happened to them in the
@@ -51,16 +64,38 @@ a project or problem that is being worked on.
 
 While discussing strategy getting as many views as possible is key. No idea should be
 unheard, and while you do eventually need to agree as a team on the desired approach,
-at the beginning of the discussion the more inputs there are the better.
+at the beginning of the discussion the more inputs there are the better. Once someone
+has shared something, allow everyone to comment and to discuss it. Whether you do
+this by explicitly going round each member of the team, or more subtly asking those
+who haven't yet spoken what they think doesn't matter, just make sure everyone contributes.
+
+After you have contributions from everyone, and people have asked clarifying questions
+of each other, either yourself as the moderator or the person who raised the topic
+should summarise the discussion, and list the action points. These should be assigned
+and follow-up dates agreed upon.
+
+One aspect of building a team is that people have to feel that they are jointly contributing
+to achieving success. If other people in the team have completed a project or solved a problem,
+then others will (hopefully) be happy for them, but unless people can see how they achieved
+that outcome together, it won't help build a team. As part of your meeting bring back topics
+that were previously discussed and mention how the discussion contributed to success. Perhaps
+the action points were completed, the discussion brought to light an alternative approach, or
+highlighted potential problems that were avoided. Whatever the reason for the success, if it
+is tied back to the work of everyone as a team, team connectedness with improve.
 
 As a leader, it's easy to feel that problems that are most acute in or only affect, your
-teams should be dealt with by you. In fact, building a leadership team who share problems
-and collaborates on solutions benefits everyone, and can only happen if people share. ** we want people to bring future issues **
+teams should be dealt with by you. Building a leadership team that shares problems
+and collaborates on solutions benefits everyone, and can only happen if people share.
+Encourage people to consider the future of their team, and ask for feedback from their
+peers on things that they don't consider problems. If they are regularly sharing and
+discussing their teams with their peers then they will make sure they are constantly
+challenged to be the best leader they can be, and when a genuine problem does arise in their
+team they will be well placed to resolve it.
 
-Team meetings between individual contributors and those between a team of leaders have a
-different focus. When it is ICs collaborating the team should be focused on the same domain.
-While they might have different foci or skills, the challenges they face and the goals they
-are working towards will be similar. For a team of leaders this is not necessarily true,
-and the differences between the areas represented in the meeting can mean there is little
-overlap in the challenges being faced.
+As the moderator of your team meeting, make sure you know when to guide the team to a decision,
+when to encourage discussion and problem-sharing, and when to create space for everyone to be
+heard. The team meeting is your key opportunity to set the tone that will influence how your
+team interact with each other for the rest of the week, so don't waste it.
 
+How do you ensure your team meetings are both productive and help you to build team spirit?
+Let me know what you've tried, and how it went, in the comments below.
