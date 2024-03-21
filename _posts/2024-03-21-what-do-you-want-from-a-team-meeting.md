@@ -29,6 +29,7 @@ The problem with this is that you are encouraging people to just bring
 existing problems to the table, and then only if you manage to get the culture
 to be non-threatening enough that they feel comfortable with sharing their
 issues with the group.
+<!--more -->
 
 What if you were able to get the team to work together on topics before they
 become a problem? If you could build relationships that foster collaboration
