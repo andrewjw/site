@@ -5,7 +5,6 @@ date: 2012-05-29 20:24:45.000000000 +01:00
 tags:
 - gaming
 - alanwake
-- Gaming
 - lanoire
 permalink: "/2012/05/29/losing-games/"
 flickr:
