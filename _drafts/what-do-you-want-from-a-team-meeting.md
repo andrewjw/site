@@ -1,9 +1,12 @@
 ---
 layout: post
 title: What Do You Want From A Team Meeting? A Decision Or A Team?
-date: 2024-03-01
+date: 2024-03-21
 tags: management
-permalink: "/2024/02/01/what-do-you-want-from-a-team-meeting/"
+permalink: "/2024/03/21/what-do-you-want-from-a-team-meeting/"
+image: decision_or_team.jpeg
+image_title: A group of sad people in suits around a table looking at a graph that is going down.
+image_credit: Image created with Bing Image Creator.
 ---
 
 Most teams will have a team meeting on a regular schedule. Once a week,
@@ -40,13 +43,13 @@ lead to a step change in their, and your team's, performance.
 
 Team meetings between individual contributors and those between a team of leaders have a
 different focus. When it is ICs collaborating the team should be working on the same domain.
-While they might have different foci or skills, the challenges they face and the goals they
-are working towards will be similar. For a team of leaders this is not necessarily true,
-and the differences between the areas represented in the meeting can mean there is little
-overlap in the challenges being faced.
+While they might have focus on different areas, or have different skillsets, the challenges
+they face and the goals they are working towards will be similar. For a team of leaders
+this is not necessarily true, and the differences between the areas represented in the
+meeting can mean there is little overlap in the challenges being faced.
 
 In both cases though you should aim to mould your team members into a team. Where
-there are more disparate people involved this will be harder, but can be achieved
+more disparate people are involved this will be harder, but can be achieved
 by reiterating why you are part of the same team, and what the common objectives are.
 Either way, you want to turn the group of people in your meeting into a team.
 
@@ -58,9 +61,9 @@ and show that everyone's contributions are welcomed.
 Once everyone has had a turn to speak, move on to the agenda. At this point, you
 need to decide what you want out of the meeting this week. It could be that there
 is an urgent problem that needs a decision; in that case, you should
-steer the group towards making it. However, often while there are topics to discuss,
-the conversation is more about the strategy the team wants to take while tackling
-a project or problem that is being worked on. 
+steer the group towards making it. However, often the conversation is more about
+deciding the strategy the team wants to take while tackling a project or problem,
+which will shape the future work.
 
 While discussing strategy getting as many views as possible is key. No idea should be
 unheard, and while you do eventually need to agree as a team on the desired approach,
@@ -79,9 +82,9 @@ to achieving success. If other people in the team have completed a project or so
 then others will (hopefully) be happy for them, but unless people can see how they achieved
 that outcome together, it won't help build a team. As part of your meeting bring back topics
 that were previously discussed and mention how the discussion contributed to success. Perhaps
-the action points were completed, the discussion brought to light an alternative approach, or
+the action points were completed, the discussion brought to light an alternative approach or
 highlighted potential problems that were avoided. Whatever the reason for the success, if it
-is tied back to the work of everyone as a team, team connectedness with improve.
+is tied back to the work of everyone as a team, team connectedness will improve.
 
 As a leader, it's easy to feel that problems that are most acute in or only affect, your
 teams should be dealt with by you. Building a leadership team that shares problems
@@ -97,5 +100,5 @@ when to encourage discussion and problem-sharing, and when to create space for e
 heard. The team meeting is your key opportunity to set the tone that will influence how your
 team interact with each other for the rest of the week, so don't waste it.
 
-How do you ensure your team meetings are both productive and help you to build team spirit?
+How do you ensure your team meetings are productive and help you build team spirit?
 Let me know what you've tried, and how it went, in the comments below.
