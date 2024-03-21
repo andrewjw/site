@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import os
 import sentry_sdk
 
 sentry_sdk.init(
@@ -10,7 +11,6 @@ sentry_sdk.init(
 
 import cgi
 from datetime import datetime
-import os
 import time
 import sys
 
