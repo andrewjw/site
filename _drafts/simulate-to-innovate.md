@@ -28,14 +28,28 @@ an oven, packed and then shipped. As well as physically installing the conveyors
 to create the software that manages the flow of products, to ensure they spend the right amount of time in the oven, and
 that the products are packed onto the right pallets, to be sent to the correct customer.
 
-At the beginning of the project the project team need to provide a business case to justify the investment into the project.
-At this stage it needs to justify the work the build a simulation of the system, to validate the physical install. Only once
+At the beginning of the project, the project team needs to provide a business case to justify the investment into the project.
+At this stage it needs to justify the work to build a simulation of the system, which will validate the physical design. Only once
 that has been created will the company's board sign off on the money to proceed with the build. The company plan to sell an
 additional ten thousand cookies per day, so the project team need a ball-park figure of how many ovens and packing stations
 they need, so they can estimate the return on investment, and decide it is likely to fit into the physical space they have
 available.
 
-Even a calculation like _items picked per hour * number of stations * shift length * uptime_ will give you some ball-park
-figures to use in discussions about the project.
+The first step is to gather some basic metrics about the different components in the system, in this case the ovens, packing stations
+and conveyors to link them together. Following some research, the team came up with the required numbers - a conveyor can move 500 cookies
+per hour, an oven can bake 1,000 cookies an hour using two conveyor lines, and a packer at one station can pack 300 cookies per hour.
+Immediately the team spotted a problem - the factory currently works an 8-hour shift, so one oven can only bake 8,000 cookies per day -
+below the company's 10k target. 
+
+We haven't even made it to the stage of what could be called a "simulation", and already the work to get there is showing benefits.
+Taking these numbers back to the business, along with the fact that the ovens are expected to have a 95% uptime, they agree to plan
+for a two oven system, as that gives scope for growth, and the ability to keep baking during downtime for one oven.
+
+The team now need to use this guidance and the numbers found in their research to calculate some ball-park figures to build a business case.
+Even a calculation like _items picked per hour * number of stations * shift length * uptime_ will give you some useful numbers,
+so that is what they do. For packing stations the equation becomes _300 * n * 8 * 0.99_. With `n=4` they could pack ~9500 cookies
+per day, while `n=5` packs nearly 12k, giving a nice buffer above the company's target. They have already agreed to use two ovens,
+the remaining question is how many conveyor lines. Using the same equation form they find _500 * n * 8 * 0.95_ tells them they need
+three conveyor lines to hit the 10k target.
 
 In the example of 
