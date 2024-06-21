@@ -142,9 +142,35 @@ A learning culture drives up productivity.
 
 _[Parul Singh](https://www.linkedin.com/in/theadhdtechrecruiter/)_
 
+This talk had amazing slides with a classic video game vibe. Unfortunately the video game didn't seem to apply to anything other than
+the slides, which felt like a bit of a missed opportunity.
+
+They said that 53% of people technology are neurodivergent, but only 3% are disclosed. To help people work better small accommodations
+make the world of difference. And don't be afraid to make suggestions - neurotypical people can make good suggestions too.
+
+Try to take advantage of people with a different point of view, and a different way of thinking - dissent opens the mind. Be care though,
+because unresolved conflict leads to a disengaged team and lower productivity.
+
+Only 1 in 4 people is diagnosed as a child, so they are often learning what works best for them. Some people produce a "user guide" or a
+"working with me manual" which describes how they like to work and helps to avoid conflict.
+
 ## How to use technology radars to make transparent tech decisions
 
 _[Andra Blaj](https://www.linkedin.com/in/andrablaj/)_
+
+Most people question a technology choice when tey join a company.
+
+To create tech radar:
+
+* Get leadership buy-in.
+* Document all technology choices, including retroactively.
+* Use human-centered design to make the radar easier to use.
+  * one for contributors
+  * one for implementors *check what this meant*
+ 
+You should use the tech radar to question established technology choices.
+
+Building a tech radar is easy, but building a culture of documenting decisions is hard. It takes time to embed that in a the culture.
 
 ## Delivery metrics - the good, the bad and the utterly ridiculous
 
