@@ -53,29 +53,90 @@ onto YouTube after a few months.
 
 _[Renee Hunt](https://leaddev.com/community/renee-hunt)_
 
+This was an interesting talk by the CTO at [Compare The Market](https://www.comparethemarket.com/) about the overlap between technology
+and business. Half the executive team at CTM come from a tech background. Being a technology leader is morphing into business leadership,
+a tech person can learn about business, but you can't give a business person 20 years of experience in technology.
+
+She described how the number one priority for the business was a migration to [GitLab](https://about.gitlab.com/). This is obviously a very
+technology focused project, but all the executives (including non-technical execs, like the CFO) were on-board with it being the top
+priority for the business because a good story had been told about why it was good for the business, and the future changes it would allow.
+
+She closed with a message that people should prepare to lead, but even as a technologist, that role might not be direct in tech.
+
 ## How do you deliver a feature on the biggest stage in the world?
 
 _[Josh McNamee](https://www.linkedin.com/in/joshmcnamee/)_
+
+This was a bit of an odd talk for LeadDev. It focused on the technology needed to display video at the [Las Vegas Sphere](https://www.thesphere.com/),
+which is a giant dome with the world's largest video screen. It's certainly interesting technology, and it looks cool - but the talk was pitched halfway
+between a tech demo, and a talk about the organisation that helped it happen. As a result, it didn't really succeed at either.
 
 ## Engineering leadership in 2024 and beyond: Skating where the puck is going when the ice is melting
 
 _[Lena Reinhard](https://twitter.com/lrnrd) and [Scott Carey](https://twitter.com/scarey102)_
 
+In this session the results of [The LeadDev Engineering Leadership Report 2024](https://leaddev.com/engineering-leadership-report-2024)
+were discussed. The tech landscape has been complicated over the last few years, with waves of layoffs. Apparently, 7% of companies had
+both layoffs and hiring increases in the last year, and 71% of engineering leaders have seen the scope of their work increase. The main
+takeaway was that leaders should be "skating the where the puck is going, not where it has been". The landscapre is changing so fast,
+being left behind is a real concern.
+
 ## Tech debt as innovation, reframing this forever problem as an opportunity
 
 _[Bruce Wang](https://twitter.com/batmany13)_
+
+This was a great talk from a really engaging speaker. Tech debt is a natural byproduct of the software development lifecycle, but tech
+debt has a marketing problem. Tech debt doesn't come from no-where - systems that we are advocating now will become tech debt. 
+
+Bruce defined tech debt as the delta between a system's current state and it's ideal state. *Add more here*
+
+His recommendations for dealing with it include...
+
+* be specific - what debt exactly are we talking about?
+* Make the debt visible, perhaps through metrics or reports that show where the debt is.
+* Be proactive - neglect is not a strategy.
+
+Leaders change. Teams change. Business priorities change and technologies change.
+
+Lies that people tell themselves about tech debt include:
+
+* Legacy code == debt *Check this*
+* Having debt zero as a goal.
+* Debt reduction work is only for junior folks, or as part of on-boarding.
+* There's nothing we can do.
+
+Manage debt so we can say yes to the business more.
 
 ## From overload to oasis: Creating more time for the cool stuff
 
 _[Dominika Pietrzak](https://www.linkedin.com/in/dominika-pietrzak-183755137/?originalSubdomain=uk)_
 
+Cool stuff is relative, and changes over time. Your boring is someone else's cool. Share work that you consider
+to not be cool to create space what you do consider to be cool, and because your boring is someone's cool.
+
 ## Managing across timezones; A retrospective
 
 _[Matt Boyle](https://www.linkedin.com/in/mattjamesboyle/?originalSubdomain=uk)_
 
+I found this talk decidedly "meh". Timezones can be a real pain to manage across, but it's not a particularly complicated issue.
+
+The main points from this talk were:
+
+* Block out "golden hours" - when everyone is online. You won't always use the slot, but you want it available in case you do need it.
+* Experiment with your processes.
+* Use async processes as much as possible - wikis, blogs, ADRs, messages in public channels.
+* Embrace timezones, and use them to reduce out of hours on call
+
 ## Building for the new developer
 
 _[Cat Hicks](https://leaddev.com/community/cat-hicks)_
+
+This was a very academic talk, with a much more rigorous evidence base than usual. Unfortunately I found it bit unclear and unfocused,
+and I think it tried to cover too much given the timeslot for the talk.
+
+When we join a new company we look for signals about what success means in that organisation.
+
+A learning culture drives up productivity.
 
 ## Demystifying neurodiversity in tech with nostalgic video games
 
