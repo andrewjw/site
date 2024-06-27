@@ -15,7 +15,7 @@ bag with plenty of room left for some conference swag, and got on the train to t
 [day 1](/2023/08/17/leadev-london-2023-day-1/) and [day 2](/2023/09/21/leadev-london-2023-day-2/)).
 As with last year, this is a one-track conference focused on leadership and engineering management, with a
 separate one-track conference at the same time, StaffPlus, focused on Staff+ engineers. I only have a ticket
-to LeadDev, so only got to see those talks.
+to LeadDev, so I only got to see those talks.
 <!--more-->
 
 As in previous years the event was held at the Barbican in central London. The main event space remains excellent,
