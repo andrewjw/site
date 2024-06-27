@@ -36,7 +36,7 @@ nearly doubles the commute time for me it's highly likely I'll be attending agai
 
 One addition to the schedule compared to last year was a set of three "micro workshops", which ran for 80 minutes at the same time
 as one block of talks. With three workshops, each running twice, there was plenty of opportunity to find a workshop that interested you
-and didn't clash with talks you were keen on. As I attended the talk on the second day I'll cover the workshop in the second part of this
+and didn't clash with talks you were keen on. As I attended the workshop on the second day I'll cover it in the second part of this
 write-up.
 
 In general, the quality of the talks was excellent, and even the first-time speakers did a great job of hiding their nerves and putting
@@ -81,7 +81,7 @@ _[Lena Reinhard](https://twitter.com/lrnrd) and [Scott Carey](https://twitter.co
 In this session the results of [The LeadDev Engineering Leadership Report 2024](https://leaddev.com/engineering-leadership-report-2024)
 were discussed. The tech landscape has been complicated over the last few years, with waves of layoffs. Apparently, 7% of companies had
 both layoffs and hiring increases in the last year, and 71% of engineering leaders have seen the scope of their work increase. The main
-takeaway was that leaders should be "skating to where the puck is going, not where it has been". The landscapre is changing so fast,
+takeaway was that leaders should be "skating to where the puck is going, not where it has been". The landscape is changing so fast,
 being left behind is a real concern.
 
 ## Tech debt as innovation, reframing this forever problem as an opportunity
@@ -97,7 +97,7 @@ or tools - just because you didn't write it, doesn't make it tech debt.
 
 His recommendations for dealing with it include...
 
-* be specific - what debt exactly are we talking about?
+* Be specific - what debt exactly are we talking about?
 * Make the debt visible, perhaps through metrics or reports that show where the debt is.
 * Be proactive - neglect is not a strategy.
 
