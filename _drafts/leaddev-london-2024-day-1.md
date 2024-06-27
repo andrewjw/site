@@ -89,7 +89,9 @@ _[Bruce Wang](https://twitter.com/batmany13)_
 This was a great talk from a really engaging speaker. Tech debt is a natural byproduct of the software development lifecycle, but tech
 debt has a marketing problem. Tech debt doesn't come from nowhere - systems that we are advocating for now, will become tech debt. 
 
-Bruce defined tech debt as the delta between a system's current state and its ideal state. *Add more here*
+Bruce defined tech debt as the delta between a system's current state and its ideal state. It is not business decisions you don't
+agree with, or strategy misalignment. It's not normal bugs and software errors, or even just bad code. It's also not inherited code, systems
+or tools - just because you didn't write it, doesn't make it tech debt.
 
 His recommendations for dealing with it include...
 
@@ -101,19 +103,19 @@ Leaders change. Teams change. Business priorities change and technologies change
 
 Lies that people tell themselves about tech debt include:
 
-* Legacy code == debt *Check this*
+* Legacy code == tech debt (just because it's old doesn't automatically make it tech debt.)
 * Having debt zero as a goal.
 * Debt reduction work is only for junior folks, or as part of on-boarding.
 * There's nothing we can do.
 
-Manage debt so we can say yes to the business more.
+We should manage technical debt so we can say yes to the business more.
 
 ## From overload to oasis: Creating more time for the cool stuff
 
 _[Dominika Pietrzak](https://www.linkedin.com/in/dominika-pietrzak-183755137/?originalSubdomain=uk)_
 
-Cool stuff is relative, and changes over time. Your boring is someone else's cool. Share work that you consider
-to not be cool to create space what you do consider to be cool, and because your boring is someone's cool.
+Cool stuff is relative, and changes over time. Share work that you consider not be cool to create space
+to do what you _do_ consider cool, and because your boring is someone's cool.
 
 ## Managing across timezones; A retrospective
 
@@ -132,10 +134,13 @@ The main points from this talk were:
 
 _[Cat Hicks](https://leaddev.com/community/cat-hicks)_
 
-This was a very academic talk, with a much more rigorous evidence base than usual. Unfortunately I found it bit unclear and unfocused,
+This was a very academic talk, with a much more rigorous evidence base than usual. Unfortunately, I found it a bit unclear and unfocused,
 and I think it tried to cover too much given the timeslot for the talk.
 
-When we join a new company we look for signals about what success means in that organisation.
+When we join a new company we look for signals about what success means in that organisation. We use our biases and preconceptions
+about what a success requires in a field to decide who is brilliant - our biases and preconceptions can be wrong! 
+
+There was quite a lot about the AI Skill Threat and how it interactives with a thriving culture, and a contest culture in an organisation.
 
 A learning culture drives up productivity.
 
@@ -143,13 +148,13 @@ A learning culture drives up productivity.
 
 _[Parul Singh](https://www.linkedin.com/in/theadhdtechrecruiter/)_
 
-This talk had amazing slides with a classic video game vibe. Unfortunately the video game didn't seem to apply to anything other than
+This talk had amazing slides with a classic video game vibe. Unfortunately, the video game theme didn't seem to apply to anything other than
 the slides, which felt like a bit of a missed opportunity.
 
 They said that 53% of people technology are neurodivergent, but only 3% are disclosed. To help people work better small accommodations
 make the world of difference. And don't be afraid to make suggestions - neurotypical people can make good suggestions too.
 
-Try to take advantage of people with a different point of view, and a different way of thinking - dissent opens the mind. Be care though,
+Try to take advantage of people with a different point of view, and a different way of thinking - dissent opens the mind. Be careful though,
 because unresolved conflict leads to a disengaged team and lower productivity.
 
 Only 1 in 4 people is diagnosed as a child, so they are often learning what works best for them. Some people produce a "user guide" or a
@@ -166,8 +171,7 @@ To create tech radar:
 * Get leadership buy-in.
 * Document all technology choices, including retroactively.
 * Use human-centered design to make the radar easier to use.
-  * one for contributors
-  * one for implementors *check what this meant*
+* Build a culture of documenting technology choices.
  
 You should use the tech radar to question established technology choices.
 
@@ -177,9 +181,9 @@ Building a tech radar is easy, but building a culture of documenting decisions i
 
 _[Jennifer Mackown](https://www.linkedin.com/in/jennifer-mackown-4352aa37/)_
 
-This talk was about measuring the performance of software teams, although it didn't as many examples as I had expected based on the title.
+This talk was about measuring the performance of software teams, although it didn't include as many examples as I had expected based on the title.
 Jennifer talked about the importance of distinguishing between measuring "What are we building?" vs "How are we building it?". One key
-measure she talked about was the "goal ratio". This is based on the fact that we know the sprint goal, and we know the work in the sprint.
+measure she mentioned was the "goal ratio". This is based on the fact that we know the sprint goal, and we know the work in the sprint.
 The ratio of work that is goal related against total work in the sprint is the "goal ratio".
 
 ## Measure for change
@@ -198,7 +202,7 @@ half the picture. Developer productivity is complex - quantitative data is rigid
 Developers know where the problems are, so just ask them. You can correlate sentiment with data from your build tool.
 
 This was a talk from a conference sponsor ([DX](https://getdx.com/)) so it was clearly a talk that was justifying their product, but
-it was not that obviously, and Laura focused on the problem rather than how their tool helps to solve it.
+it was not that obvious, and Laura focused on the problem rather than how their tool helps to solve it.
 
 ## Data science demystified
 
@@ -212,10 +216,10 @@ talk did what it set out to achieve. I'm just not sure why, and I'm not sure who
 _[Nickolas Means](https://twitter.com/nmeans)_
 
 As was the case with the previous two LeadDev London's that I've attended the first day was closed by Nickolas Means, who is a brilliant
-story teller. In previous years he has talked about [Fukushima](https://leaddev.com/leaddev-london-2023/video/91-magnitude-meltdown-fukushima),
+storyteller. In previous years he has talked about [Fukushima](https://leaddev.com/leaddev-london-2023/video/91-magnitude-meltdown-fukushima),
 the [Boeing 737 Max](https://leaddev.com/london/video/taking-737-max) and [Three Mile Island](https://leaddev.com/team/who-destroyed-three-mile-island).
-In a change of pace this year he didn't talk about a disaster, but about the history the Barbican. He started by dropping the bombshell that this
+In a change of pace this year he didn't talk about a disaster, but about the history of the Barbican. He started by dropping the bombshell that this
 would be the final year of LeadDev at the Barbican (although the new venue wasn't revealed until the end of day two), and then worked his
-way from the end of World War 2 through the design, planning and building process to the present day. I will always recommend Nickolas' talks,
+way from the end of World War II through the design, planning and building process to the present day. I will always recommend Nickolas' talks,
 although in this case it's probably more interesting if you have a connection to the Barbican. The general management theme he drew at the end
 was a bit tacked on, and not as immediately relevant as in his previous disaster talks.
