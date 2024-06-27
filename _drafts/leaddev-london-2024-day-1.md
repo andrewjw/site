@@ -22,14 +22,15 @@ As in previous years the event was held at the Barbican in central London. The m
 with good acoustics and sightlines for all 1000+ attendees. Last year I complained about the state of the toilets,
 and while the existing toilets are still there and haven't been renovated there was a temporary set of additional
 toilets which were much better. The quality and speed of the food remains excellent, although I was a bit short-changed
-at lunch on the second so had to have a second dessert to ensure I had enough energy for the final set of talks.
+at lunch on the second day so needed to have a second dessert to ensure I had enough energy for the final set of talks
+(#FirstWorldProblems).
 
-There were an expanded set of activities during all the breaks, but these were very popular and terrible acoustics meant
+There was an expanded set of activities during all the breaks, but these were very popular and the terrible acoustics meant
 it was challenging to get close enough to even hear what was happening, let alone contribute. This fact was acknowledged by
 the host [Meri Williams](https://leaddev.com/community/meri-williams) at the end of the conference, where the bombshell news
-that will be leaving the Barbican after nine years was dropped. The venue for next year will be the
+that LeadDev will be leaving the Barbican after nine years was dropped. The venue for next year will be the
 [InterContinental at the O2](https://iclondon-theo2.com/). Hopefully, this will solve the acoustic issues with the activities
-and they will have better toilets. Apparently the move is to allow the conference to expand, so fingers crossed it keeps
+and they will have better toilets. Apparently, the move is to allow the conference to expand, so fingers crossed it keeps
 the lovely sense of community and doesn't become a faceless megaconf (e.g. QCon). Time will tell, and even though the new location
 nearly doubles the commute time for me it's highly likely I'll be attending again.
 
@@ -44,7 +45,7 @@ on a polished presentation despite speaking to over 1,000 people. I'm secretly g
 As usual, there was a good range of topics that are likely to be relevant to a wide range of leaders, and they mostly avoided sales pitches,
 with the notable exception of the [Vercel](https://vercel.com/) talk on day 2 which I felt badly misjudged the room. It was also interesting
 that there was a lot of scepticism of Generative AI both on stage and in the audience, apart from a couple of talks (one of which was the Vercel
-talk). It's good to see the LeadDev is not getting carried away on the Gen-AI hype train.
+talk). It's good to see that is LeadDev is not getting carried away on the Gen-AI hype train.
 
 What follows is a summary of my notes from each talk. I believe you can buy digital passes to catch up on the talks, or they are usually put
 onto YouTube after a few months.
@@ -54,14 +55,14 @@ onto YouTube after a few months.
 _[Renee Hunt](https://leaddev.com/community/renee-hunt)_
 
 This was an interesting talk by the CTO at [Compare The Market](https://www.comparethemarket.com/) about the overlap between technology
-and business. Half the executive team at CTM come from a tech background. Being a technology leader is morphing into business leadership,
-a tech person can learn about business, but you can't give a business person 20 years of experience in technology.
+and business. Half the executive team at CTM come from a tech background. Being a technology leader is morphing into business leadership
+as a tech person can learn about business, but you can't give a business person 20 years of experience in technology.
 
 She described how the number one priority for the business was a migration to [GitLab](https://about.gitlab.com/). This is obviously a very
-technology focused project, but all the executives (including non-technical execs, like the CFO) were on-board with it being the top
+technology-focused project, but all the executives (including non-technical execs, like the CFO) were on board with it being the top
 priority for the business because a good story had been told about why it was good for the business, and the future changes it would allow.
 
-She closed with a message that people should prepare to lead, but even as a technologist, that role might not be direct in tech.
+She closed with a message that people should prepare to lead, but even as a technologist, that role might not be directly in tech.
 
 ## How do you deliver a feature on the biggest stage in the world?
 
@@ -78,7 +79,7 @@ _[Lena Reinhard](https://twitter.com/lrnrd) and [Scott Carey](https://twitter.co
 In this session the results of [The LeadDev Engineering Leadership Report 2024](https://leaddev.com/engineering-leadership-report-2024)
 were discussed. The tech landscape has been complicated over the last few years, with waves of layoffs. Apparently, 7% of companies had
 both layoffs and hiring increases in the last year, and 71% of engineering leaders have seen the scope of their work increase. The main
-takeaway was that leaders should be "skating the where the puck is going, not where it has been". The landscapre is changing so fast,
+takeaway was that leaders should be "skating to where the puck is going, not where it has been". The landscapre is changing so fast,
 being left behind is a real concern.
 
 ## Tech debt as innovation, reframing this forever problem as an opportunity
@@ -86,9 +87,9 @@ being left behind is a real concern.
 _[Bruce Wang](https://twitter.com/batmany13)_
 
 This was a great talk from a really engaging speaker. Tech debt is a natural byproduct of the software development lifecycle, but tech
-debt has a marketing problem. Tech debt doesn't come from no-where - systems that we are advocating now will become tech debt. 
+debt has a marketing problem. Tech debt doesn't come from nowhere - systems that we are advocating for now, will become tech debt. 
 
-Bruce defined tech debt as the delta between a system's current state and it's ideal state. *Add more here*
+Bruce defined tech debt as the delta between a system's current state and its ideal state. *Add more here*
 
 His recommendations for dealing with it include...
 
@@ -158,7 +159,7 @@ Only 1 in 4 people is diagnosed as a child, so they are often learning what work
 
 _[Andra Blaj](https://www.linkedin.com/in/andrablaj/)_
 
-Most people question a technology choice when tey join a company.
+Most people question a technology choice when they join a company.
 
 To create tech radar:
 
@@ -170,20 +171,51 @@ To create tech radar:
  
 You should use the tech radar to question established technology choices.
 
-Building a tech radar is easy, but building a culture of documenting decisions is hard. It takes time to embed that in a the culture.
+Building a tech radar is easy, but building a culture of documenting decisions is hard. It takes time to embed that in a company culture.
 
 ## Delivery metrics - the good, the bad and the utterly ridiculous
 
 _[Jennifer Mackown](https://www.linkedin.com/in/jennifer-mackown-4352aa37/)_
 
+This talk was about measuring the performance of software teams, although it didn't as many examples as I had expected based on the title.
+Jennifer talked about the importance of distinguishing between measuring "What are we building?" vs "How are we building it?". One key
+measure she talked about was the "goal ratio". This is based on the fact that we know the sprint goal, and we know the work in the sprint.
+The ratio of work that is goal related against total work in the sprint is the "goal ratio".
+
 ## Measure for change
 
 _[Laura Tacho](https://www.linkedin.com/in/lauratacho/)_
+
+Measuring and improving are two different things. If we want to improve we must change the way we measure. We should measure for change,
+not for control. To drive change it is important to involve your team, tie data to decisions, and always follow up on actions.
+
+Quantitative data is easy to measure, but usually, it's not clear how to improve. Qualitative data is much harder to measure, but makes
+it much clearer how to improve.
+
+Software is made by humans, for humans, and disregarding the feedback from the humans (developers) making the software only gives you
+half the picture. Developer productivity is complex - quantitative data is rigid, and you can only measure what you think to measure.
+
+Developers know where the problems are, so just ask them. You can correlate sentiment with data from your build tool.
+
+This was a talk from a conference sponsor ([DX](https://getdx.com/)) so it was clearly a talk that was justifying their product, but
+it was not that obviously, and Laura focused on the problem rather than how their tool helps to solve it.
 
 ## Data science demystified
 
 _[Grishma Jena](https://www.linkedin.com/in/grishmajena/)_
 
+This was a strange talk. As the title implies, it was a basic overview of what Data Science is and how a Data Science team works, so the
+talk did what it set out to achieve. I'm just not sure why, and I'm not sure who in the audience wouldn't know what Data Science is.
+
 ## You are here: The story of the Barbican
 
 _[Nickolas Means](https://twitter.com/nmeans)_
+
+As was the case with the previous two LeadDev London's that I've attended the first day was closed by Nickolas Means, who is a brilliant
+story teller. In previous years he has talked about [Fukushima](https://leaddev.com/leaddev-london-2023/video/91-magnitude-meltdown-fukushima),
+the [Boeing 737 Max](https://leaddev.com/london/video/taking-737-max) and [Three Mile Island](https://leaddev.com/team/who-destroyed-three-mile-island).
+In a change of pace this year he didn't talk about a disaster, but about the history the Barbican. He started by dropping the bombshell that this
+would be the final year of LeadDev at the Barbican (although the new venue wasn't revealed until the end of day two), and then worked his
+way from the end of World War 2 through the design, planning and building process to the present day. I will always recommend Nickolas' talks,
+although in this case it's probably more interesting if you have a connection to the Barbican. The general management theme he drew at the end
+was a bit tacked on, and not as immediately relevant as in his previous disaster talks.
