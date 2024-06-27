@@ -87,7 +87,7 @@ being left behind is a real concern.
 _[Bruce Wang](https://twitter.com/batmany13)_
 
 This was a great talk from a really engaging speaker. Tech debt is a natural byproduct of the software development lifecycle, but tech
-debt has a marketing problem. Tech debt doesn't come from nowhere - systems that we are advocating for now, will become tech debt. 
+debt has a marketing problem. Tech debt doesn't come from nowhere - systems that we are advocating for now, will become tech debt.
 
 Bruce defined tech debt as the delta between a system's current state and its ideal state. It is not business decisions you don't
 agree with, or strategy misalignment. It's not normal bugs and software errors, or even just bad code. It's also not inherited code, systems
@@ -138,7 +138,7 @@ This was a very academic talk, with a much more rigorous evidence base than usua
 and I think it tried to cover too much given the timeslot for the talk.
 
 When we join a new company we look for signals about what success means in that organisation. We use our biases and preconceptions
-about what a success requires in a field to decide who is brilliant - our biases and preconceptions can be wrong! 
+about what a success requires in a field to decide who is brilliant - our biases and preconceptions can be wrong!
 
 There was quite a lot about the AI Skill Threat and how it interactives with a thriving culture, and a contest culture in an organisation.
 
@@ -172,7 +172,7 @@ To create tech radar:
 * Document all technology choices, including retroactively.
 * Use human-centered design to make the radar easier to use.
 * Build a culture of documenting technology choices.
- 
+
 You should use the tech radar to question established technology choices.
 
 Building a tech radar is easy, but building a culture of documenting decisions is hard. It takes time to embed that in a company culture.
