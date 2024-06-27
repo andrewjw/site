@@ -1,9 +1,9 @@
 ---
 layout: post
 title: LeadDev London 2024 (Day 1)
-date: 2024-07-01
+date: 2024-06-27
 tags: conference leaddev
-permalink: "/2024/07/01/leaddev-london-2024-day-1/"
+permalink: "/2024/06/27/leaddev-london-2024-day-1/"
 image: leaddev2024_welcome.jpeg
 image_title: Welcome To LeadDev London 2024
 ---
@@ -46,6 +46,8 @@ As usual, there was a good range of topics that are likely to be relevant to a w
 with the notable exception of the [Vercel](https://vercel.com/) talk on day 2 which I felt badly misjudged the room. It was also interesting
 that there was a lot of scepticism of Generative AI both on stage and in the audience, apart from a couple of talks (one of which was the Vercel
 talk). It's good to see that is LeadDev is not getting carried away on the Gen-AI hype train.
+
+![The LeadDev London 2024 Crowd](/assets/leaddev2024_crowd.jpeg)
 
 What follows is a summary of my notes from each talk. I believe you can buy digital passes to catch up on the talks, or they are usually put
 onto YouTube after a few months.
