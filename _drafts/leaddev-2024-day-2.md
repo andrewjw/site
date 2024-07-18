@@ -126,34 +126,98 @@ _[Jitesh Gosai](https://twitter.com/JitGo)_
 
 This talk is worth watching for the slides alone. They zoom and slide over the screen, connecting one screen to the next
 in a very slick way. The talk started with some examples of people or companies who resisted change - the
-[Luddites](https://en.wikipedia.org/wiki/Luddite) (who resisted textile machinery), Seers (who failed to adapt to online
-shopping), Blockbuster (who had the chance to buy Netflixs and didn't), and Nokia (who were sold to Microsoft and still
+[Luddites](https://en.wikipedia.org/wiki/Luddite) (who resisted textile machinery), Sears (who failed to adapt to online
+shopping), Blockbuster (who had the chance to buy Netflix and didn't), and Nokia (who were sold to Microsoft and still
 failed to remain relevant).
 
-Jitesh then moved on to talking about the psycology of change, and how people resist big change because it's hard to predict,
+Jitesh then moved on to talking about the psychology of change, and how people resist big change because it's hard to predict,
 but small changes offer more certainty. They talked about our fight, flight, freeze and faun (i.e. submission) instincts, and
 how we can't tell the difference between a change in a team's ways of working and a bear.
 
 They then moved on to the difference between complex and complicated. Complex systems are unknowable due to emergent
-behaviours, while complicated systems They described how modern software is complex, not complicated.
+behaviours, while complicated systems are difficult to follow and understand, but are ultimately knowable. They described how
+modern software is complex, not complicated.
 
-NOT FINISHED!
+Testing gives us certainty about how systems perform and should be focused on reducing uncertainty, not catching bugs.
 
 ## Managing the marathon: Leading teams through lengthy migration projects
 
 _[Lawrence Taylor](https://www.linkedin.com/in/lawrencedanieltaylor/)_
 
+Migration projects are a staple of software development teams. They are coming for you whether you like it or not. To lead your
+teams through such a project you should focus on a story that will influence the outcome, and educate your stakeholders.
+
+Highlight milestones as part of your storytelling:
+
+ * Landmarks in the development
+ * Capabilities that demonstrate new features
+ * Integration milestones.
+
+Become a better storyteller to engage, motivate and inspire your team.
+
 ## The software bug all stars - and what we can learn from them
 
 _[Christian Seifert](https://www.linkedin.com/in/cn-seifert/)_
+
+This was a quick run-through of some of the times software bugs have had a significant, even life-threatening impact. The
+cost of operational software failures in 2020 in the US was $1.5 trillion.
+
+The Mars Climate Orbiter was lost after orbit insertion around Mars. The probe cost $327 dollars, without taking into account
+the cost of the rocket. The probe was lost because it entered orbit 57 km above Mars, rather than 150km. Lockheed Martin were
+responsible for the orbiter, while NASA JPL looked after the ground systems. Lockeed used imperial units while NASA used metric
+(pounds of force vs Newtons) - there are a factor of 4.5 out.
+
+The ground team realised there was a problem while doing testing as the probe was approaching Mars. They alerted management, but
+management ignored them as they didn't follow the right channels. The issue was only found a few days before Mars arrival, so there
+was no time for the proper channels. The result was the probe was lost.
+
+If you have a function like `int getTotalAmount()` how do you know what the type of the amount is? You need to try and avoid the need
+for implicit information, perhaps by using a `MonetaryValue` type.
+
+The Therac-25 was a radiation treatment device which had a race condition that resulted in three people dying from a radiation
+overdose. The manufacturer claimed it couldn't happen, even after it did. The race condition occurred when entering data too quickly.
+It took two years for the issue to occur because people had to learn and get quicker at using the system.
+
+Be humble and don't dismiss that it might not be you. Don't just display error messages - display options and information so the
+user can make an informed decision about how to proceed.
+
+Date handling is a huge source of bugs:
+
+* The Microsoft Zune stopped working on 31st December 2008 because 2008 was a leap year, and it only handled 365 days.
+* On the 1st of January 2012 Apple iOS alarm clocks didn't work. This bug was caused by the fact that 1st January was in week 52 of 2011.
+* An F-22 Raptor fighter jet crashed when it flew over the date terminator because the software couldn't handle the date going backwards.
 
 ## How to set goals with people who don’t want to set goals
 
 _[Alicia Collymore](https://leaddev.com/community/alicia-collymore)_
 
+This talk didn't really match the title. It was Alicia's process for working with her reports to set goals, but didn't address
+how to get people who don't want to set goals to engage with the process. Still, it sounded like a good process that some people
+might want to try out.
+
+The first step is to a brain dump of ideas:
+
+* Think big - do you want to be a CTO?
+* Think small
+* Include personal life.
+* Have they received any recent feedback?
+
+Next, map each item to a timeline of short, medium and long-term. Then draw a line between items that depend on each other.
+
+Finally, you need to shape the ideas and make them more specific so they fit your company's goal framework
+(e.g. SMART, OKRs, etc).
+
 ## Managing Engineering Teams in the Era of AI
 
 _[Chris Class](https://www.linkedin.com/in/chrisclass/)_
+
+While I've been pretty negative in my write-up of talks, this one was good as it was a clear case study of how they actually
+added AI to their product, and the issues they faced.
+
+Chris recommended experimenting early so that when you want to add AI to your product the team is ready with the right skills
+and knowledge. The team was used to delivering features quickly, but AI needed a different pace. In particular, the unpredictability
+of AI meant a lot more time was needed to handle edge cases than was expected. They also learnt that minor changes in prompts
+made little difference to users, but took up a lot of development time.
 
 ## If you’re not part of the solution, you’re part of the problem
 
