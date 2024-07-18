@@ -223,6 +223,55 @@ made little difference to users, but took up a lot of development time.
 
 _[Alessandro Canessa](https://www.linkedin.com/in/alexcanessa/)_
 
+This was a great talk, but difficult to take notes from. The idea is that being good is not enough, you have to drive change. Fixing
+other people's mistakes is not a sustainable solution - you have to help people get better.
+
 ## Mentorship + sponsorship
 
 _[Lara Hogan](https://twitter.com/lara_hogan)_
+
+As is often the case with the final talks, this one was also hard to take notes from. When growing in our careers it can be
+hard to feel progress, mentors and sponsors can help both to grow your career, but also feel like you are growing.
+
+Lara talked about the difference between coaching, sponsorship and mentorship.
+
+ * Mentorship is great when you want help onboarding, or need unblocking.
+ * Coaching is the best tool for internal growth.
+ * Sponsorship helps you to find more opportunities.
+
+To find a sponsor...
+
+1. Do great work!
+2. Find someone who knows your work.
+3. Know how you want to grow.
+
+Look for people who will help you grow!
+
+## The engineering leader's playbook: A hands-on guide to DORA
+
+_[Finn Toner](https://www.linkedin.com/in/finntoner) and [Rob Edwards](http://www.twitter.com/SapientCoffee)_
+
+This was the 80-minute micro-workshop I attended on the Wednesday afternoon. The two Googlers, Finn and Rob, who
+were running the session did a good job talking about DORA and some of the findings as well as facilitating a discuss
+between the 30 or so people who were there.
+
+The question being tackled was "How do you optimise value delivery from investment in tech and technologists?" They
+highlighted that DORA is not just the metrics most people know about, but it also looks at how the capabilities of a
+team predict their performance. Performance means both in terms of the reliability of their software delivery, but also
+how the well-being of their team members predicts organisational performance.
+
+The key DORA metrics are:
+
+ * Lead time for change
+ * Deployment frequency
+ * Change fail rate
+ * Failed deployment recovery time
+
+Teams that have a climate for learning have fast feedback cycles and make small changes.
+
+They also talked about what change strategies work. Communities of practice and bottom-up or grassroots changes work well.
+Training centres, centres of excellence and big bang changes don't work.
+
+You can take the [DORA QuickCheck](https://dora.dev/quickcheck/) to get an overview of where your team sits, and
+[DORA Conversations](https://conversations.dora.dev/) is an interesting way to spark conversations on how to
+improve.
