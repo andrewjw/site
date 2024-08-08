@@ -73,7 +73,7 @@ Potential + Motivation = Gain
 _[Jared Palmer](https://x.com/jaredpalmer)_
 
 This was a blatant pitch for [Vercel](https://vercel.com/), which in itself is not a bad thing, but it was so overblown that it
-just seemed like a puff-piece of AI hype. There was an interesting section in the middle of the talk about testing AI model and
+just seemed like a puff-piece of AI hype. There was an interesting section in the middle of the talk about testing AI models and
 using data to improve and guide the training. One of the key points seemed to be that Vercel made it incredibly quick to deploy,
 on the order of seconds to deploy a new AI model. There was no talk about actually implementing functionality, it was just AI
 can do everything for you. Avoid.
@@ -82,8 +82,8 @@ can do everything for you. Avoid.
 
 _[Ellissa Verseput](https://www.linkedin.com/in/ellissaverseput/)_
 
-In age of AI dominating everything (see the previous talk!) this was a talk advocating for "traditional" machine learning
-and data analytics to be forgotten. Ellissa works for a company that are trying to balance electrical grid supply and demand,
+In the age of AI dominating everything (see the previous talk!) this was a talk advocating for "traditional" machine learning
+and data analytics not to be forgotten. Ellissa works for a company that are trying to balance electrical grid supply and demand,
 which is important with an increasing share of green sources. They do this by turning large industrial appliances on and off.
 
 The value proposition was established using a spreadsheet, and then they gradually evolved their data strategy by automating
@@ -101,7 +101,7 @@ bugs there are in computer software will find this terrifying...
 
 The key message from this talk was that we should give our teams the right skills to do their jobs. We should listen to
 users and teams, and not bury our heads in the sand about potential problems. We should also trust people over systems,
-but verify to ensure our trust is well placed. And finally we should be humble about our software.
+but verify to ensure our trust is well placed. And finally, we should be humble about our software.
 
 ## The boss's shoes don't fit: And other surprises of leadership
 
@@ -162,10 +162,10 @@ _[Christian Seifert](https://www.linkedin.com/in/cn-seifert/)_
 This was a quick run-through of some of the times software bugs have had a significant, even life-threatening impact. The
 cost of operational software failures in 2020 in the US was $1.5 trillion.
 
-The Mars Climate Orbiter was lost after orbit insertion around Mars. The probe cost $327 dollars, without taking into account
+The Mars Climate Orbiter was lost after orbit insertion around Mars. The probe cost $327 million dollars, without taking into account
 the cost of the rocket. The probe was lost because it entered orbit 57 km above Mars, rather than 150km. Lockheed Martin were
-responsible for the orbiter, while NASA JPL looked after the ground systems. Lockeed used imperial units while NASA used metric
-(pounds of force vs Newtons) - there are a factor of 4.5 out.
+responsible for the orbiter, while NASA JPL looked after the ground systems. Lockheed used imperial units while NASA used metric
+(pounds of force vs Newtons) - they are a factor of 4.5 out.
 
 The ground team realised there was a problem while doing testing as the probe was approaching Mars. They alerted management, but
 management ignored them as they didn't follow the right channels. The issue was only found a few days before Mars arrival, so there
@@ -183,7 +183,7 @@ user can make an informed decision about how to proceed.
 
 Date handling is a huge source of bugs:
 
-* The Microsoft Zune stopped working on 31st December 2008 because 2008 was a leap year, and it only handled 365 days.
+* The Microsoft Zune stopped working on 31st December 2008 because 2008 was a leap year, and it only handled 365 days per year.
 * On the 1st of January 2012 Apple iOS alarm clocks didn't work. This bug was caused by the fact that 1st January was in week 52 of 2011.
 * An F-22 Raptor fighter jet crashed when it flew over the date terminator because the software couldn't handle the date going backwards.
 
@@ -195,7 +195,7 @@ This talk didn't really match the title. It was Alicia's process for working wit
 how to get people who don't want to set goals to engage with the process. Still, it sounded like a good process that some people
 might want to try out.
 
-The first step is to a brain dump of ideas:
+The first step is to do a brain dump of ideas:
 
 * Think big - do you want to be a CTO?
 * Think small
@@ -211,7 +211,7 @@ Finally, you need to shape the ideas and make them more specific so they fit you
 
 _[Chris Class](https://www.linkedin.com/in/chrisclass/)_
 
-While I've been pretty negative in my write-up of talks, this one was good as it was a clear case study of how they actually
+While I've been pretty negative in my write-up of AI talks, this one was good as it was a clear case study of how they actually
 added AI to their product, and the issues they faced.
 
 Chris recommended experimenting early so that when you want to add AI to your product the team is ready with the right skills
