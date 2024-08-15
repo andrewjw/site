@@ -14,8 +14,8 @@ of my notes, so will give you a flavour of the talks. This should help you decid
 a digital pass to access the videos, or if enough time has passed to look them up on YouTube or the
 [LeadDev site](https://leaddev.com/).
 
-In the afternoon I attend a workshop by a couple of Google engineers on [DORA](https://dora.dev/). I've
-watched the recording of the talks I missed, so I've included my thoughts below. My write up of the workshop
+In the afternoon I attended a workshop by a couple of Google engineers on [DORA](https://dora.dev/). I've
+watched the recording of the talks I missed, so I've included my thoughts on those below. My write-up of the workshop
 is at the end of this post.
 
 And with that out of the way, on with the talks...
@@ -117,7 +117,7 @@ This was a talk about the early stages of becoming a manager.
    Connect the dots.
 3. 5:1 ratio of positive to negative feedback. (There's a lot on this in other talks and books, but I'm not convinced
    it's a good thing to follow.)
-4. Be a good story teller - accomplishments don't speak for themselves.
+4. Be a good storyteller - accomplishments don't speak for themselves.
 5. Celebrate! Credit is infinite.
 
 ## Uncertainty of change
