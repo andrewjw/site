@@ -1,9 +1,9 @@
 ---
 layout: post
 title: LeadDev London 2024 (Day 2)
-date: 2024-08-01
+date: 2024-08-15
 tags: conference leaddev
-permalink: "/2024/08/01/leaddev-london-2024-day-2/"
+permalink: "/2024/08/15/leaddev-london-2024-day-2/"
 image: leaddev2024_room.jpeg
 image_title: LeadDev London 2024 at the Barbican
 ---
@@ -58,11 +58,11 @@ manager? Bias affects how you see gains, and overlook costs so try to be imparti
 
 Katerina then presented a model for how to make technical decisions
 
- * Potential. Try to use metrics to identify the gains.
- * Risks. Identify constraints and uncertainties. Do we have the money and resources for this project?
- * Involvement. Who needs to support the project? Get their buy-in.
- * Skills. Do you or your team have the right skills?
- * Motivation. How excited are the team?
+* Potential. Try to use metrics to identify the gains.
+* Risks. Identify constraints and uncertainties. Do we have the money and resources for this project?
+* Involvement. Who needs to support the project? Get their buy-in.
+* Skills. Do you or your team have the right skills?
+* Motivation. How excited are the team?
 
 Risks + Involvement + Skills = Cost
 
@@ -109,16 +109,16 @@ _[Inna Weiner](https://www.linkedin.com/in/inna-weiner/)_
 
 This was a talk about the early stages of becoming a manager.
 
-1. Speak less - you are likely not the most knowledgeable person in the room. Also, as a manager, your words will be\
-amplified 10x.\
-Listen more - if you avoid micromanagement you can become an absent manager, so be engaged and pay attention.
-2. Speak more, but differently - explain the way you are thinking, and explain why something is important. Be curious.\
-Diffuse the situation if necessary. You're in other meetings, so be generous with the knowledge this gives you.\
-Connect the dots.
-3. 5:1 ratio of positive to negative feedback. (There's a lot on this in other talks and books, but I'm not convinced\
-it's a good thing to follow.)
-4. Be a good storyteller - accomplishments don't speak for themselves.
-5. Celebrate! Credit is infinite.
+1. Speak less - you are likely not the most knowledgeable person in the room. Also, as a manager, your words will be
+   amplified 10x.
+   Listen more - if you avoid micromanagement you can become an absent manager, so be engaged and pay attention.
+1. Speak more, but differently - explain the way you are thinking, and explain why something is important. Be curious.
+   Diffuse the situation if necessary. You're in other meetings, so be generous with the knowledge this gives you.\
+   Connect the dots.
+1. 5:1 ratio of positive to negative feedback. (There's a lot on this in other talks and books, but I'm not convinced
+   it's a good thing to follow.)
+1. Be a good storyteller - accomplishments don't speak for themselves.
+1. Celebrate! Credit is infinite.
 
 ## Uncertainty of change
 
@@ -149,9 +149,9 @@ teams through such a project you should focus on a story that will influence the
 
 Highlight milestones as part of your storytelling:
 
- * Landmarks in the development
- * Capabilities that demonstrate new features
- * Integration milestones.
+* Landmarks in the development
+* Capabilities that demonstrate new features
+* Integration milestones.
 
 Become a better storyteller to engage, motivate and inspire your team.
 
@@ -183,9 +183,9 @@ user can make an informed decision about how to proceed.
 
 Date handling is a huge source of bugs:
 
- * The Microsoft Zune stopped working on 31st December 2008 because 2008 was a leap year, and it only handled 365 days per year.
- * On the 1st of January 2012 Apple iOS alarm clocks didn't work. This bug was caused by the fact that 1st January was in week 52 of 2011.
- * An F-22 Raptor fighter jet crashed when it flew over the date terminator because the software couldn't handle the date going backwards.
+* The Microsoft Zune stopped working on 31st December 2008 because 2008 was a leap year, and it only handled 365 days per year.
+* On the 1st of January 2012 Apple iOS alarm clocks didn't work. This bug was caused by the fact that 1st January was in week 52 of 2011.
+* An F-22 Raptor fighter jet crashed when it flew over the date terminator because the software couldn't handle the date going backwards.
 
 ## How to set goals with people who don’t want to set goals
 
@@ -197,10 +197,10 @@ might want to try out.
 
 The first step is to do a brain dump of ideas:
 
- * Think big - do you want to be a CTO?
- * Think small
- * Include personal life.
- * Have they received any recent feedback?
+* Think big - do you want to be a CTO?
+* Think small
+* Include personal life.
+* Have they received any recent feedback?
 
 Next, map each item to a timeline of short, medium and long-term. Then draw a line between items that depend on each other.
 
@@ -235,15 +235,15 @@ hard to feel progress, mentors and sponsors can help both to grow your career, b
 
 Lara talked about the difference between coaching, sponsorship and mentorship.
 
- * Mentorship is great when you want help onboarding, or need unblocking.
- * Coaching is the best tool for internal growth.
- * Sponsorship helps you to find more opportunities.
+* Mentorship is great when you want help onboarding, or need unblocking.
+* Coaching is the best tool for internal growth.
+* Sponsorship helps you to find more opportunities.
 
 To find a sponsor...
 
- 1. Do great work!
- 2. Find someone who knows your work.
- 3. Know how you want to grow.
+1. Do great work!
+1. Find someone who knows your work.
+1. Know how you want to grow.
 
 Look for people who will help you grow!
 
@@ -262,10 +262,10 @@ how the well-being of their team members predicts organisational performance.
 
 The key DORA metrics are:
 
- * Lead time for change
- * Deployment frequency
- * Change fail rate
- * Failed deployment recovery time
+* Lead time for change
+* Deployment frequency
+* Change fail rate
+* Failed deployment recovery time
 
 Teams that have a climate for learning have fast feedback cycles and make small changes.
 
