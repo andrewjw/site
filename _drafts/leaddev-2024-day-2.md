@@ -241,9 +241,9 @@ Lara talked about the difference between coaching, sponsorship and mentorship.
 
 To find a sponsor...
 
-1. Do great work!
-2. Find someone who knows your work.
-3. Know how you want to grow.
+ 1. Do great work!
+ 2. Find someone who knows your work.
+ 3. Know how you want to grow.
 
 Look for people who will help you grow!
 
