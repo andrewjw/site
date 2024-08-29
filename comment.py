@@ -24,13 +24,15 @@ form = cgi.FieldStorage()
 slug = form.getfirst("slug")
 name = form.getfirst("name")
 url = form.getfirst("url")
-message = form.getfirst("message").replace(r"\n", r"\n  ")
+message = form.getfirst("message")
 
 if slug is None or name is None or message is None:
     print("Content-Type: text/text")
     print()
     print("Missing details")
     sys.exit(0)
+
+message = message..replace(r"\n", r"\n  ")
 
 comment_time = str(int(time.time()))
 
