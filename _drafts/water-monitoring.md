@@ -42,6 +42,8 @@ want to use a pull-up switch, and that we want a debounce time of 0.1 seconds. Y
 number to reflect the pin you connected to. One problem that stumped me for longer than I would like to admit is that the pin identifiers on
 the board don't match the GPIO pin identifiers. Make sure you map the physical pin you're using to the correct GPIO id.
 
+![Wiring of the Raspberry Pi Pico W](/assets/watermeter_inside.jpeg)
+
 I'm not going to go into the difference between pull-up and pull-down switches. For a circuit as simple as this the built-in pull-up/pull-down
 resistors are sufficient, and I'm not aware of any practical difference between the two options. Please do your own research before wiring your
 circuit up to avoid frying your Pico!
@@ -51,6 +53,8 @@ a solid value. With a switch that is physically moving it can take a short amoun
 you will see it flip between on and off causing you to count pulses that aren't real. In my use case, a pulse every 0.1 seconds would work out to
 36,000 litres of water every hour. The highest rate I've seen is just under 1000L/h, so this is well above the expected max, and seems to be long
 enough to avoid counting phantom pulses. You might need to experiment to find the sweet spot for your situation.
+
+![The Raspberry Pi Pico W sitting on top of my water softner](/assets/watermeter_install.jpeg)
 
 Once you have a counter variable, you need to expose the value to Prometheus through an HTTP end-point. Since we expect this to only be accessed
 by Prometheus, I decided to skip most of the HTTP spec and return just enough for the metric scraping to work.
@@ -90,3 +94,5 @@ You can find the code, plus a bit of extra code for error handling and reporting
 To finish, here is a screenshot of my Grafana dashboard showing several different ways of visualising the data. The cost is calculated by
 another application I have running, which uses the Prometheus metric and the known cost per litre (plus a standing charge) to work out how much
 our water usage has cost me.
+
+![Water usage Graphana dashboard](/assets/watermeter_graphs.png)
