@@ -3,7 +3,7 @@ layout: post
 title: Water Monitoring
 date: 2024-11-07
 tags: prometheus grafana
-permalink: "/2024/11/07/water-monitoring/"
+permalink: "/2025/01/09/water-monitoring/"
 ---
 In some of my previous posts, I talked about my journey towards (monitoring every aspect of my home)[/2020/10/14/house-measurements/].
 For a long time now I've been measuring temperatures, (electricity and gas usage)[/2020/12/02/meter-readings-over-mqtt/], solar power
@@ -52,3 +52,41 @@ you will see it flip between on and off causing you to count pulses that aren't 
 36,000 litres of water every hour. The highest rate I've seen is just under 1000L/h, so this is well above the expected max, and seems to be long
 enough to avoid counting phantom pulses. You might need to experiment to find the sweet spot for your situation.
 
+Once you have a counter variable, you need to expose the value to Prometheus through an HTTP end-point. Since we expect this to only be accessed
+by Prometheus, I decided to skip most of the HTTP spec and return just enough for the metric scraping to work.
+
+```python
+wlan = network.WLAN(network.STA_IF)
+wlan.active(True)
+wlan.connect(WIFI_SSID, WIFI_PASSWORD)
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind(("", 80))
+s.listen()
+
+while True:
+    conn, addr = s.accept()
+    request = conn.recv(1024)
+
+    conn.sendall(
+f"""HTTP/1.1 200 OK
+Content-Type: text/plain; charset=UTF-8; version=0.0.4
+Access-Control-Allow-Origin: *
+Connection: close
+
+# HELP watermeter_count Total litres of water used.
+# TYPE watermeter_count counter
+watermeter_count {PULSES}
+""")
+```
+
+The first block of code connects to the WIFI, then we open a socket to listen on port 80. In a loop we then accept an incoming connection, read
+but discard the body of the request (so whatever path and HTTP verb you use, you'll get the metrics back), and send a preformatted response
+with just the count of the pulses substituted in.
+
+You can find the code, plus a bit of extra code for error handling and reporting via (Sentry.io)[https://sentry.io/] on
+(GitHub)[https://github.com/andrewjw/pico-pulse-counter-prom/tree/main].
+
+To finish, here is a screenshot of my Grafana dashboard showing several different ways of visualising the data. The cost is calculated by
+another application I have running, which uses the Prometheus metric and the known cost per litre (plus a standing charge) to work out how much
+our water usage has cost me.
