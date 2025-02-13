@@ -14,6 +14,7 @@ him to fit a water meter which has allowed me to finally start tracking this dat
 The key discovery that allowed me to do this was that you can get "pulsed" water meters (I used [this model](https://www.bmeters.com/en/products/gsd8-i/)
 from B-Meters). They come preequipped with an inductive reader, and have a couple of wires you can connect to that receive a pulse for
 every litre of water used. Installing the meter was relatively straightforward for my plumber, despite the cramped space he had available.
+<!--more-->
 
 I purchased a [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico/) as it is easy to connect up the external devices,
 has WI-FI and runs a version of Python called MicroPython. I'm not the best at the physical side of builds, and my code is much neater than my wiring.
