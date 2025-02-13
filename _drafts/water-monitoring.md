@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Water Monitoring
-date: 2024-11-07
+date: 2025-02-13
 tags: prometheus grafana
-permalink: "/2025/01/09/water-monitoring/"
+permalink: "/2025/02/13/water-monitoring/"
 ---
 In some of my previous posts, I talked about my journey towards [monitoring every aspect of my home](/2020/10/14/house-measurements/).
 For a long time now I've been measuring temperatures, [electricity and gas usage](/2020/12/02/meter-readings-over-mqtt/), solar power
-and more. One area that has long been on my target list was our water usage - not least because a few years ago we had a leak that
+and more. One area that has been on my target list from the start was our water usage - not least because a few years ago we had a leak that
 went undetected until it became a fairly significant problem. Recently while my plumber was doing our annual gas boiler service I asked
 him to fit a water meter which has allowed me to finally start tracking this data.
 
