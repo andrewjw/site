@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: 3.11
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.219.0
+        uses: ruby/setup-ruby@v1.245.0
         with:
           ruby-version: '3.2'
       - name: Install dependencies
@@ -61,7 +61,7 @@ jobs:
         with:
           python-version: 3.11
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.219.0
+        uses: ruby/setup-ruby@v1.245.0
         with:
           ruby-version: '3.2'
       - name: Install dependencies
