@@ -75,5 +75,5 @@ jobs:
           cp requirements.txt _site/
       - name: Deploy
         run: |
-          rsync -avc --delete --exclude site/venv _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
+          rsync -avc --delete --exclude /venv _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
           ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} ". site/venv/bin/activate; pip3 install -r site/requirements.txt"
