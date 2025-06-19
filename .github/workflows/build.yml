@@ -76,4 +76,4 @@ jobs:
       - name: Deploy
         run: |
           rsync -avc --delete _site/ ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }}:site/
-          ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} sudo pip3 install -r site/requirements.txt
+          ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} ". site/venv/bin/activate; pip3 install -r site/requirements.txt"
