@@ -9,7 +9,7 @@ sentry_sdk.init(
     profiles_sample_rate=0.0,
 )
 
-import cgi
+import cgi # type: ignore
 from datetime import datetime
 import time
 import sys

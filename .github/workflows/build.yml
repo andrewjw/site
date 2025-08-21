@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11
+          python-version: 3.13
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1.256.0
         with:
@@ -56,10 +56,10 @@ jobs:
           echo "${{ secrets.SSH_PUBLIC_KEY }}" > ~/.ssh/id_rsa.pub
           sudo chmod 600 ~/.ssh/id_rsa
           ssh-keyscan ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11
+          python-version: 3.13
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1.256.0
         with:
