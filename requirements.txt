@@ -1,6 +1,6 @@
 PyYAML==6.0.2
 PyGitHub==2.7.0
 akismet==24.11.0
-mypy==1.16.1
+mypy==1.17.1
 types-PyYAML==6.0.12.20250809
 sentry-sdk==2.30.0
