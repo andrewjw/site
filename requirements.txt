@@ -3,5 +3,5 @@ PyGitHub==2.9.1
 akismet==24.11.0
 mypy==2.1.0
 types-PyYAML==6.0.12.20260518
-sentry-sdk==2.61.1
+sentry-sdk==2.62.0
 legacy-cgi==2.6.4; python_version >= '3.13'
